@@ -2,6 +2,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+$primary-color: #565a5c;
+$radio-color: #ffd400;
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -13,6 +16,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: $primary-color;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -65,6 +69,57 @@ body {
 
 .marketing p + h4 {
     margin-top: 28px;
+}
+
+.nav-pills > li.active > a{
+    background-color: $radio-color;
+}
+
+.redLine{
+    background-color: #c60c30;
+}
+
+.orangeLine{
+    background-color: #f9461c;
+}
+
+.yellowLine{
+    background-color: #f9e300;
+}
+
+.greenLine{
+    background-color: #009b3a;
+}
+
+.blueLine{
+    background-color: #00a1de;
+}
+
+.purpleLine{
+    background-color: #522398;
+}
+
+.pinkLine{
+    background-color: #e27ea6;
+}
+
+.brownLine{
+    background-color: #62361b;
+}
+
+.signGrey{
+    background-color: #565a5c;
+}
+
+.line{
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 800;
+    font-size:medium;
+}
+
+.borderless > tbody > tr > td{
+    border-top: 4px solid $primary-color;
 }
 
 /* Responsive: Portrait tablets and up */
