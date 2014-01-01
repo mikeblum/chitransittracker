@@ -6,11 +6,11 @@ define([
 ], function (_, Backbone) {
 	'use strict';
 
-	var TrainLineModel = Backbone.Model.extend({
+	var TrainStatusModel = Backbone.Model.extend({
 		defaults: {
 			status: 'Unavalible'
 		}
 	});
 
-	return TrainLineModel;
+	return TrainStatusModel;
 });

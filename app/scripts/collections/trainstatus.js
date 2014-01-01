@@ -3,17 +3,17 @@
 define([
     'underscore',
     'backbone',
-    'models/trainline'
-], function (_, Backbone, TrainLineModel) {
+    'models/trainstatus'
+], function (_, Backbone, TrainStatusModel) {
     'use strict';
 
-    var TrainLineCollection = Backbone.Collection.extend({
-        model: TrainLineModel,
+    var TrainStatusCollection = Backbone.Collection.extend({
+        model: TrainStatusModel,
         url: 'http://www.transitchicago.com/api/1.0/routes.aspx',
         parse: function(response) {
 			return response;
 		}
     });
 
-    return TrainLineCollection;
+    return TrainStatusCollection;
 });
