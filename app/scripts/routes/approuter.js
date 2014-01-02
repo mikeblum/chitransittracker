@@ -3,21 +3,28 @@
 define([
 	'jquery',
 	'backbone',
-	'../collections/trainstatus',
-	'../views/trainstatus'
-], function ($, Backbone, TrainStatusCollection, TrainStatusView) {
+	'../views/trainstatus',
+	'../views/detailedalert'
+], function ($, Backbone, TrainStatusView, DetailedAlertView) {
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
 		initialize: function() {
 		},
 		routes: {
-			'' : 'trainStatus'
+			'' : 'root'
 		},
 		trainStatus: function(){
-			this.trainStatus = new TrainStatusCollection();
-	        this.trainStatusView = new TrainStatusView({model:this.trainStatus});
+	        this.trainStatusView = new TrainStatusView();
 	       	this.trainStatusView.render();
+		},
+		detailedAlerts: function(){
+	        this.detailedAlertView = new DetailedAlertView();
+	       	this.detailedAlertView.render();
+		},
+		root: function(){
+			this.trainStatus();
+			this.detailedAlerts();
 		}
 	});
 

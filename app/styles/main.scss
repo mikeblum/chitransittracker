@@ -130,6 +130,22 @@ a{
     width: 30px;
 }
 
+.alert_logo{
+    width: 50px;
+    margin-top: 2%;
+}
+
+.detailed-alert{
+    width: 290px;
+    height:60px;
+    background-color:#FFFFFF;
+    margin-bottom: 5px;
+}
+
+#notifications{
+    margin-top: 10px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
