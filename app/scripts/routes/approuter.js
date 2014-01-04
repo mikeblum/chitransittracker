@@ -4,8 +4,8 @@ define([
 	'jquery',
 	'backbone',
 	'../views/trainstatus',
-	'../views/detailedalert'
-], function ($, Backbone, TrainStatusView, DetailedAlertView) {
+	'../views/notification'
+], function ($, Backbone, TrainStatusView, NotificationView) {
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -18,13 +18,13 @@ define([
 	        this.trainStatusView = new TrainStatusView();
 	       	this.trainStatusView.render();
 		},
-		detailedAlerts: function(){
-	        this.detailedAlertView = new DetailedAlertView();
-	       	this.detailedAlertView.render();
+		notifications: function(){
+	        this.notificationView = new NotificationView();
+	       	this.notificationView.render();
 		},
 		root: function(){
 			this.trainStatus();
-			this.detailedAlerts();
+			this.notifications();
 		}
 	});
 
