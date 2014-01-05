@@ -115,11 +115,14 @@ a{
     background-color: #565a5c;
 }
 
-.line{
-    color: white;
+.line td p{
+    color: #ffffff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 800;
-    font-size:medium;
+    font-weight: 400;
+}
+
+.glyphicon-inverse{
+    color: #ffffff;
 }
 
 .borderless > tbody > tr > td{

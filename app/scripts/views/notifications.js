@@ -8,16 +8,17 @@ define([
 ], function ($, _, Backbone, JST) {
   'use strict';
 
-  var NotificationView = Backbone.View.extend({
-    template: JST['app/scripts/templates/notification.hbs'],
+  var NotificationsView = Backbone.View.extend({
+    template: JST['app/scripts/templates/notifications.hbs'],
     initialize: function(){
       var self = this;
+
     },
     render: function(){
-        $('#notifications').html(this.template());
+      $('#notifications').html(this.template());
         return this;
       }
   });
 
-  return NotificationView;
+  return NotificationsView;
 });
