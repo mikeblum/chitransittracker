@@ -6,6 +6,7 @@ var mountFolder = function (connect, dir) {
     return connect.static(require('path').resolve(dir));
 };
 
+var router = require('./server');
 // # Globbing
 // for performance reasons we're only matching one level down:
 // 'test/spec/{,*/}*.js'
@@ -80,7 +81,8 @@ module.exports = function (grunt) {
                         return [
                             lrSnippet,
                             mountFolder(connect, '.tmp'),
-                            mountFolder(connect, yeomanConfig.app)
+                            mountFolder(connect, yeomanConfig.app),
+                            connect().use(router).listen(SERVER_PORT)
                         ];
                     }
                 }
