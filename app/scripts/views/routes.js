@@ -6,8 +6,9 @@ define([
 	'backbone',
 	'templates',
 	'handlebars',
+	'typeahead',
 	'../collections/ctaRoutes'
-], function ($, _, Backbone, JST, Handlebars, CtaRoutesCollection) {
+], function ($, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection) {
 	'use strict';
 
 	var isTrain = function(input){
@@ -23,7 +24,6 @@ define([
 		var out = '<div id="routeStatus" class="accordion">';
 		var icon;
 		_.each(routes, function(route){
-			console.log(route);
 			if(isTrain(route.ServiceId[0])){
 				icon = 'images/cta_train.png';
 			}else{
@@ -64,8 +64,30 @@ define([
 			});
 		},
 		render: function(){
-		  $('#train-status').html(this.template(this.context));
-		  return this;
+			var self = this;
+		 	$('#train-status').html(this.template(self.context));
+			var routes = [];
+			_.each(self.context.routes, function(route){
+				var tokens = route.Route[0].split('/');
+					tokens.push(route.ServiceId[0]);
+				routes.push({
+					'value': route.Route[0],
+  					'tokens': tokens,
+					'route': route.Route[0],
+					'routeColorCode': route.RouteColorCode[0],
+					'icon': isTrain(route.ServiceId[0]) ? 'images/cta_train.png' : 'images/cta_bus.png'
+				});
+			});
+
+			var source   = '<div style="background-color:#{{routeColorCode}};">'+
+			'<table class="table routeTable"><tr><td><img class="transit_logo" src={{icon}}></img></td>' +
+		                '<td><div class="line">{{route}}</div></td></tr>';
+			var hbs = Handlebars.compile(source);
+		  	$('input.routesTypeahead').typeahead({
+		  		prefetch: 'cta.json',
+		  		template: hbs
+			});
+		  	return this;
 		}
 	});
 
