@@ -11,7 +11,8 @@
     "modernizr": "~2.6.2",
     "handlebars": "~1.0.0",
     "request": "~2.30.1",
-    "bootstrap": "~3.0.3"
+    "bootstrap": "~3.0.3",
+    "typeahead.js": "~0.9.3"
   },
   "devDependencies": {}
 }

@@ -28,6 +28,7 @@ module.exports = function (app, response) {
 	            convert2js(xml);
 	        }
 	    });
+	}else if(parts[0].indexOf('/cta') !== -1){
 	}else{
 		response.writeHead(404, {'Content-Type': 'application/json'});
 		response.end("Failed to serve " + url);
