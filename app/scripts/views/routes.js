@@ -20,20 +20,31 @@ define([
 	};
 
 	Handlebars.registerHelper('train-routes', function(routes) {
-		var out = '<table class="table borderless">';
+		var out = '<div id="routeStatus" class="accordion">';
 		var icon;
 		_.each(routes, function(route){
-			console.log(route.Route + " " + route.ServiceId);
+			console.log(route);
 			if(isTrain(route.ServiceId[0])){
 				icon = 'images/cta_train.png';
 			}else{
 				icon = 'images/cta_bus.png';
 			}
 
-			out = out + '<tr class="line" style="background-color:#' + route.RouteColorCode + '";><td><p><img class="transit_logo" src=' + icon + '></img>'+
-				 route.Route + '</p></td><td><p>' + route.RouteStatus + '  <span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></p></td></tr>';
+			out = out + '<div class="accordion-group line routeAlert" style="background-color:#' + route.RouteColorCode + '; data-parent="#routeStatus" data-toggle="collapse" data-target="#' + route.ServiceId + '" class="accordion-toggle">' + 
+		            '<div class="accordion-heading">' +
+		            	'<table class="table routeTable"><tr><td><img class="transit_logo" src=' + icon + '></img></td>' +
+		                '<td><div class="line">' + route.Route + '</div></td>' +
+		                '<td><div class="line">' + route.RouteStatus + '</div></td>' +  
+		                '<td class="statusChevron"><span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></td></tr></table>' + 
+		            '</div>' + 
+		            '<div class="accordion-body collapse" id=' + route.ServiceId +'>' + 
+		                '<div class="accordion-inner line routeAlertText">' + 
+		                    '<p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of Web pages. <a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>' +
+		               '</div>' +
+		            '</div>' +
+		        '</div>';
 		});
-		return out + '</table>';
+		return out + '</div>';
 	});
 
 	var RoutesView = Backbone.View.extend({

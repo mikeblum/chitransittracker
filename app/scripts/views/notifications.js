@@ -2,10 +2,11 @@
 
 define([
   'jquery',
+  'bootstrap',
   'underscore',
   'backbone',
   'templates'
-], function ($, _, Backbone, JST) {
+], function ($, Bootstrap, _, Backbone, JST) {
   'use strict';
 
   var NotificationsView = Backbone.View.extend({

@@ -12,21 +12,25 @@ module.exports = function (app, response) {
 	}
 
 	var url = app.url;
-	if(app.url === '/alerts'){
-		request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
+	var parts = url.split('?'); //grab parameters
+	if(parts.length == 1){
+		parts.push("");
+	}
+	if(parts[0].indexOf('/alerts') !== -1){
+		request('http://www.transitchicago.com/api/1.0/alerts.aspx?' + parts[1], function (err, res, xml) {
 	        if (!err && res.statusCode === 200) {
 	            convert2js(xml);
 	        }
 	    });
-	}else if(app.url === '/routes'){
-		request('http://www.transitchicago.com/api/1.0/routes.aspx', function (err, res, xml) {
+	}else if(parts[0].indexOf('/routes') !== -1){
+		request('http://www.transitchicago.com/api/1.0/routes.aspx?' + parts[1], function (err, res, xml) {
 	        if (!err && res.statusCode === 200) {
 	            convert2js(xml);
 	        }
 	    });
 	}else{
-		response.end({ 'error': 404,
-					   'message': 'Route Not Found'
-					  });
+		response.writeHead(404, {'Content-Type': 'application/json'});
+		response.end("Failed to serve " + url);
 	}
+
 };

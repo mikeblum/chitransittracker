@@ -10,7 +10,8 @@
     "requirejs-text": "~2.0.5",
     "modernizr": "~2.6.2",
     "handlebars": "~1.0.0",
-    "request": "~2.30.1"
+    "request": "~2.30.1",
+    "bootstrap": "~3.0.3"
   },
   "devDependencies": {}
 }
