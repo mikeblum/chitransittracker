@@ -16,14 +16,11 @@ define([
 	var isTrain = function(input){
 		if(input == 'Red' || input === 'Blue' || input == 'Brn' ||
 			input == 'G' || input == 'Org' || input == 'P' ||
-			input == 'Pexp' || input == 'Pink' || input == "Y"){
+			input == 'Pexp' || input == 'Pink' || input == "Y" ||
+			input == "Train"){
 			return true;
 		}
 		return false;
-	};
-
-	var isSystemWide = function(input){
-
 	};
 
 	var RoutesView = Backbone.View.extend({
@@ -57,13 +54,23 @@ define([
 				var icon;
 				
 				_.each(routes, function(route){
+					console.log(route);
+					var routeNum = true;
 					if(isTrain(route.ServiceId[0])){
+						routeNum = false;
 						icon = 'images/cta_train.png';
 					}else{
 						icon = 'images/cta_bus.png';
 					}
+
+					//catch Systemwise and All Routes edge cases
+					if(route.ServiceId[0] === "Bus" ||
+						route.ServiceId[0] === "Systemwide"){
+						routeNum = false;
+					}
 					var description = "";
 					var chevron = "";
+					var busNumber = routeNum ? '<span class="line">#' + route.ServiceId + '</span>' : "";
 					 _.find(self.context.alerts, function(alert){
 						if(alert.ImpactedService[0].Service[0].ServiceId[0] === route.ServiceId[0]){
 							description = alert.FullDescription[0];
@@ -73,7 +80,8 @@ define([
 
 					 out = out + '<div class="accordion-group line routeAlert" style="background-color:#' + route.RouteColorCode + '; data-parent="#routeStatus" data-toggle="collapse" data-target="#' + route.ServiceId + '" class="accordion-toggle">' + 
 							'<div class="accordion-heading">' +
-								'<table class="table routeTable"><tr><td><img class="transit_logo" src=' + icon + '></img></td>' +
+								'<table class="table routeTable"><tr>' +
+								'<td>' + busNumber + '<img class="transit_logo" src=' + icon + '></img></td>' +
 								'<td><div class="line">' + route.Route + '</div></td>' +
 								'<td><div class="line">' + route.RouteStatus + '</div></td>' +  
 								chevron + '</tr></table>' + 
