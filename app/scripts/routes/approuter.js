@@ -3,9 +3,8 @@
 define([
 	'jquery',
 	'backbone',
-	'../views/routes',
-	'../views/notifications'
-], function ($, Backbone, RoutesView, NotificationsView) {
+	'../views/routes'
+], function ($, Backbone, RoutesView) {
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -15,9 +14,6 @@ define([
 			'' : 'root'
 		},
 		root: function(){
-			this.notificationsView = new NotificationsView();
-	       	this.notificationsView.render();
-
 	       	this.routesView = new RoutesView();
 	       	this.routesView.render();
 		}
