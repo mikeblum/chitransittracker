@@ -10,6 +10,7 @@ define([
     var CtaRoutesCollection = Backbone.Collection.extend({
         model: CtaRouteModel,
         url: 'routes',
+        icon: 'images/signal.png',
         parse: function(data){
         	return data.CTARoutes.RouteInfo;
         }

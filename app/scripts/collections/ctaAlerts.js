@@ -10,6 +10,7 @@ define([
     var CtaAlertsCollection = Backbone.Collection.extend({
         model: CtaAlertModel,
         url: 'alerts',
+        icon: 'images/signal.png',
         parse: function(data){
         	return data.CTAAlerts.Alert;
         }
