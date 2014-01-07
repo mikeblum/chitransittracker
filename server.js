@@ -1,10 +1,9 @@
 module.exports = function (app, response) {
 	var request = require('request'),
 		xml2js = require('xml2js');
-
+	var parser = xml2js.Parser({ explicitArray: false });
 	var convert2js = function(xml){
-		var parseString = xml2js.parseString;
-        parseString(xml, function (err, result) {
+        parser.parseString(xml, function (err, result) {
             sendToApi = JSON.stringify(result);
             response.writeHead(200, {'Content-Type': 'application/json'});
 			response.end(sendToApi);
@@ -28,7 +27,6 @@ module.exports = function (app, response) {
 	            convert2js(xml);
 	        }
 	    });
-	}else if(parts[0].indexOf('/cta') !== -1){
 	}else{
 		response.writeHead(404, {'Content-Type': 'application/json'});
 		response.end("Failed to serve " + url);
