@@ -49,7 +49,7 @@ define([
 				url: 'routes?type=station',
 			}).fetch({
 				success: function(data){
-					self.context.busRoutes = data.toJSON();
+					self.context.stations = data.toJSON();
 					console.log(self.context.stations);
 				},
 				error: function(collection, response, options){
