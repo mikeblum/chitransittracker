@@ -25,7 +25,6 @@ define([
 			}).fetch({
 				success: function(data){
 					self.context.railRoutes = data.toJSON();
-					console.log(self.context.railRoutes);
 				},
 				error: function(collection, response, options){
 					console.log('error: ' + response);
@@ -38,7 +37,6 @@ define([
 			}).fetch({
 				success: function(data){
 					self.context.busRoutes = data.toJSON();
-					console.log(self.context.busRoutes);
 				},
 				error: function(collection, response, options){
 					console.log('error: ' + response);
@@ -50,7 +48,6 @@ define([
 			}).fetch({
 				success: function(data){
 					self.context.stations = data.toJSON();
-					console.log(self.context.stations);
 				},
 				error: function(collection, response, options){
 					console.log('error: ' + response);
@@ -117,26 +114,36 @@ define([
 		render: function(){
 			var self = this;
 			$('#train-status').html(this.template(self.context));
-			var routes = [];
-			_.each(self.context.routes, function(route){
-				var tokens = route.Route.split('/');
-					tokens.push(route.ServiceId);
-				routes.push({
-					'value': route.Route,
-					'tokens': tokens,
-					'route': route.Route,
-					'routeColorCode': route.RouteColorCode,
-					'icon': isTrain(route.ServiceId) ? 'images/cta_train.png' : 'images/cta_bus.png'
-				});
-			});
 
-			var source   = '<div style="background-color:#{{routeColorCode}};">'+
-			'<table class="table routeTable"><tr><td><img class="transit_logo" src={{icon}}></img></td>' +
-						'<td><div class="line">{{route}}</div></td></tr>';
+			var source = '<div style="background-color:#{{routeColorCode}};">'+
+			'<table class="table routeTable"><tr><td><img class="transit_logo" src={{routeIcon}}></img></td>' +
+						'<td><div class="line">{{route}}</div></td></tr></table>';
 			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
-				prefetch: 'cta.json',
-				template: hbs
+				remote: {
+		        	url: 'search?query=%QUERY',
+			        filter: function(data) {
+			            var retval = [];
+			            _.each(data, function(el){
+			            	var route = el.Route.split('|')[0].trim(); //trim mailing address from station name
+			            	retval.push({
+			                    value: route,
+			                    tokens: [ el.Route, el.ServiceId ],
+			                    route: route,
+								routeColorCode: el.RouteColorCode || '0f0f0f',
+								routeTextColor: el.RouteTextColor,
+								serviceId: el.ServiceId,
+								routeURL: el.RouteURL,
+								routeStatus: el.RouteStatus,
+								routeStatusColor: el.RouteStatusColor,
+								routeIcon: el.RouteIcon
+			                });
+			            });
+			            console.log(retval);
+			            return retval;
+			        }
+		    	},
+		    	template: hbs
 			});
 			return this;
 		}
