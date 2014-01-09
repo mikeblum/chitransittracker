@@ -116,34 +116,65 @@ define([
 			$('#train-status').html(this.template(self.context));
 
 			var source = '<div style="background-color:#{{routeColorCode}};">'+
-			'<table class="table routeTable"><tr><td><img class="transit_logo" src={{routeIcon}}></img></td>' +
+			'<table class="table routeTable">' + 
+			'<tr><td><div class="line">{{ busNumber }}' + 
+						'<img class="transit_logo" src={{routeIcon}}></img></div></td>' +
 						'<td><div class="line">{{route}}</div></td></tr></table>';
 			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
 				remote: {
-		        	url: 'search?query=%QUERY',
-			        filter: function(data) {
-			            var retval = [];
-			            _.each(data, function(el){
-			            	var route = el.Route.split('|')[0].trim(); //trim mailing address from station name
-			            	retval.push({
-			                    value: route,
-			                    tokens: [ el.Route, el.ServiceId ],
-			                    route: route,
-								routeColorCode: el.RouteColorCode || '0f0f0f',
+					url: 'search?query=%QUERY',
+					filter: function(data) {
+						console.log(data);
+						var retval = [];
+						_.each(data.busRoutes, function(el){
+							retval.push({
+								value: el.Route,
+								tokens: [ el.Route, el.ServiceId ],
+								route: el.Route,
+								routeColorCode: el.RouteColorCode,
 								routeTextColor: el.RouteTextColor,
 								serviceId: el.ServiceId,
 								routeURL: el.RouteURL,
 								routeStatus: el.RouteStatus,
 								routeStatusColor: el.RouteStatusColor,
-								routeIcon: el.RouteIcon
-			                });
-			            });
-			            console.log(retval);
-			            return retval;
-			        }
-		    	},
-		    	template: hbs
+								routeIcon: 'images/cta_bus.svg',
+								busNumber: '#' + el.ServiceId
+							});
+						});
+						_.each(data.railRoutes, function(el){
+							retval.push({
+								value: el.Route,
+								tokens: [ el.Route ],
+								route: el.Route,
+								routeColorCode: el.RouteColorCode,
+								routeTextColor: el.RouteTextColor,
+								serviceId: el.ServiceId,
+								routeURL: el.RouteURL,
+								routeStatus: el.RouteStatus,
+								routeStatusColor: el.RouteStatusColor,
+								routeIcon: 'images/cta_train.svg'
+							});
+						});
+						_.each(data.stations, function(el){
+							var routeName = el.Route.split('|')[0];
+							retval.push({
+								value: routeName,
+								tokens: [ routeName ],
+								route: routeName,
+								routeColorCode: el.RouteColorCode,
+								routeTextColor: el.RouteTextColor,
+								serviceId: el.ServiceId,
+								routeURL: el.RouteURL,
+								routeStatus: el.RouteStatus,
+								routeStatusColor: el.RouteStatusColor,
+								routeIcon: 'images/cta_train.svg'
+							});
+						});
+						return retval;
+					}
+				},
+				template: hbs
 			});
 			return this;
 		}
