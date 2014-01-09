@@ -43,21 +43,14 @@ db.on('error', console.error.bind(console, 'connection error:'));
 var Schema = mongoose.Schema;
 
 var routeSchema = Schema({
-	'Route': String,
+	'Route': Array,
+	'Address': String,
 	'RouteColorCode': String,
 	'RouteTextColor': String,
 	'ServiceId': String,
 	'RouteURL': String,
 	'RouteStatus': String,
 	'RouteStatusColor': String
-});
-
-routeSchema.virtual('routeName').get(function () {
-	return this.Route.split('|')[0];
-});
-
-routeSchema.virtual('routeAddress').get(function () {
-	return this.Route.split('|')[1];
 });
 
 var RailRoute = mongoose.model('RailRoute', routeSchema, 'RailRoutes');
@@ -70,6 +63,7 @@ var pushRoutesToServer = function(data, type){
 	_.each(data.CTARoutes.RouteInfo, function(el){
 		var RouteType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 		var route = type === 'rail' ? new RailRoute(el) : (type === 'bus') ? new BusRoute(el) : new Station(el);
+		el.Route = el.Route.split('|'); //split route name from physical address
 		RouteType.findOneAndUpdate({ Route: route.Route }, el, { upsert: true }, function (err) {
 			if(err){ console.log(err); }
 		});
@@ -103,7 +97,7 @@ module.exports = function (app, response) {
 		var results = {};
 		var regex = query.query;
 		Station.find( {
-			Route: new RegExp(regex, 'i')
+			'Route.0': new RegExp(regex, 'i')
 		}, function (err, docs){
 			results.stations = docs; 
 			RailRoute.find({

@@ -119,7 +119,8 @@ define([
 			'<table class="table routeTable">' + 
 			'<tr><td><div class="line">{{ busNumber }}' + 
 						'<img class="transit_logo" src={{routeIcon}}></img></div></td>' +
-						'<td><div class="line">{{route}}</div></td></tr></table>';
+						'<td><div class="line">{{route}}</div></td></tr>' +
+						'<table class="table routeTable"><tr><td class="muted line">{{ address }}</td></tr></table></table>';
 			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
 				remote: {
@@ -130,8 +131,8 @@ define([
 						_.each(data.busRoutes, function(el){
 							retval.push({
 								value: el.Route,
-								tokens: [ el.Route, el.ServiceId ],
-								route: el.Route,
+								tokens: [ el.Route[0], el.ServiceId ],
+								route: el.Route[0],
 								routeColorCode: el.RouteColorCode,
 								routeTextColor: el.RouteTextColor,
 								serviceId: el.ServiceId,
@@ -145,8 +146,8 @@ define([
 						_.each(data.railRoutes, function(el){
 							retval.push({
 								value: el.Route,
-								tokens: [ el.Route ],
-								route: el.Route,
+								tokens: [ el.Route[0] ],
+								route: el.Route[0],
 								routeColorCode: el.RouteColorCode,
 								routeTextColor: el.RouteTextColor,
 								serviceId: el.ServiceId,
@@ -157,11 +158,11 @@ define([
 							});
 						});
 						_.each(data.stations, function(el){
-							var routeName = el.Route.split('|')[0];
 							retval.push({
-								value: routeName,
-								tokens: [ routeName ],
-								route: routeName,
+								value: el.Route,
+								tokens: [ el.Route[0] ],
+								route: el.Route[0],
+								address: el.Route[1].split(',')[0],
 								routeColorCode: el.RouteColorCode,
 								routeTextColor: el.RouteTextColor,
 								serviceId: el.ServiceId,
