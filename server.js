@@ -43,14 +43,14 @@ db.on('error', console.error.bind(console, 'connection error:'));
 var Schema = mongoose.Schema;
 
 var routeSchema = Schema({
-	'Route': Array,
-	'Address': String,
-	'RouteColorCode': String,
-	'RouteTextColor': String,
-	'ServiceId': String,
-	'RouteURL': String,
-	'RouteStatus': String,
-	'RouteStatusColor': String
+	'route': Array,
+	'routeColorCode': String,
+	'routeTextColor': String,
+	'serviceId': String,
+	'routeURL': String,
+	'routeStatus': String,
+	'routeStatusColor': String,
+	'lastUpdated': { type: Date, default: Date.now }
 });
 
 var RailRoute = mongoose.model('RailRoute', routeSchema, 'RailRoutes');
@@ -62,9 +62,23 @@ var Station = mongoose.model('Station', routeSchema, 'Stations');
 var pushRoutesToServer = function(data, type){
 	_.each(data.CTARoutes.RouteInfo, function(el){
 		var RouteType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
+
+		el.Route =  el.Route.split('|'); //split route name from physical address
+
 		var route = type === 'rail' ? new RailRoute(el) : (type === 'bus') ? new BusRoute(el) : new Station(el);
-		el.Route = el.Route.split('|'); //split route name from physical address
-		RouteType.findOneAndUpdate({ ServiceId: route.ServiceId }, el, { upsert: true }, function (err) {
+
+		console.log(route);
+
+		RouteType.findOneAndUpdate({ serviceId: el.ServiceId }, {
+			route: el.Route,
+			routeColorCode: el.RouteColorCode,
+			routeTextColor: el.RouteTextColor,
+			serviceId: el.ServiceId,
+			routeURL: el.RouteURL,
+			routeStatus: el.RouteStatus,
+			routeStatusColor: el.RouteStatusColor,
+			lastUpdated: route.lastUpdated
+		}, { upsert: true }, function (err) {
 			if(err){ console.log(err); }
 		});
 	});
@@ -97,16 +111,16 @@ module.exports = function (app, response) {
 		var results = {};
 		var regex = query.query;
 		Station.find( {
-			'Route.0': new RegExp(regex, 'i')
+			'route.0': new RegExp(regex, 'i')
 		}, function (err, docs){
 			results.stations = docs; 
 			RailRoute.find({
-				Route: new RegExp(regex, 'i') 
+				route: new RegExp(regex, 'i') 
 			}, function (err, docs){
 				results.railRoutes = docs;
 				BusRoute.find( { $or: [ 
-					{ ServiceId: new RegExp(regex, 'i') }, 
-					{ Route: new RegExp(regex, 'i') }
+					{ serviceId: new RegExp(regex, 'i') }, 
+					{ route: new RegExp(regex, 'i') }
 				]}, function (err, docs){
 					results.busRoutes = docs;
 					response.writeHead(200, {'Content-Type': 'application/json'});

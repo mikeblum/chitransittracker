@@ -8,14 +8,56 @@ define([
 	'templates',
 	'handlebars',
 	'typeahead',
+	 '../collections/ctaRoutes',
 	'./route'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, RouteView) {
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, RouteView) {
 	'use strict';
 
 	var SearchView = Backbone.View.extend({
+		collection: CtaRoutesCollection,
 		initialize: function(){
 			var self = this;
+			self.context = {};
 			self.routeView = new RouteView();
+
+		    self.railRoutes = new self.collection([], { 
+		            url: 'routes?type=rail',
+		            icon: 'images/cta_train.png'
+		    }).fetch({
+		            success: function(data){
+		            	self.context.railRoutes = data.toJSON();
+		            	console.log(self.context.railRoutes);
+		            },
+		            error: function(collection, response, options){
+		            	console.log('error: ' + response);
+
+		            }
+		    });
+
+		    self.busRoutes = new self.collection([], { 
+		            url: 'routes?type=bus',
+		            icon: 'images/bus.png'
+		    }).fetch({
+		            success: function(data){
+		               	self.context.busRoutes = data.toJSON();
+		               	console.log(self.context.busRoutes);
+		            },
+		            error: function(collection, response, options){
+		                console.log('error: ' + response);
+		            }
+		    });
+
+		    self.stations = new self.collection([], { 
+		            url: 'routes?type=station',
+		    }).fetch({
+		            success: function(data){
+		                self.context.stations = data.toJSON();
+		                console.log(self.context.stations);
+		            },
+		            error: function(collection, response, options){
+		                console.log('error: ' + response);
+		            }
+		    });
 		},
 		render: function(){
 			var self = this;
@@ -35,45 +77,45 @@ define([
 						var retval = [];
 						_.each(data.busRoutes, function(el){
 							retval.push({
-								value: el.Route,
-								tokens: [ el.Route[0], el.ServiceId ],
-								route: el.Route[0],
-								routeColorCode: el.RouteColorCode,
-								routeTextColor: el.RouteTextColor,
-								serviceId: el.ServiceId,
-								routeURL: el.RouteURL,
-								routeStatus: el.RouteStatus,
-								routeStatusColor: el.RouteStatusColor,
+								value: el.route,
+								tokens: [ el.route[0], el.serviceId ],
+								route: el.route[0],
+								routeColorCode: el.routeColorCode,
+								routeTextColor: el.routeTextColor,
+								serviceId: el.serviceId,
+								routeURL: el.routeURL,
+								routeStatus: el.routeStatus,
+								routeStatusColor: el.routeStatusColor,
 								routeIcon: 'images/cta_bus.svg',
-								busNumber: '#' + el.ServiceId
+								busNumber: '#' + el.serviceId
 							});
 						});
 						_.each(data.railRoutes, function(el){
 							retval.push({
-								value: el.Route,
-								tokens: [ el.Route[0] ],
-								route: el.Route[0],
-								routeColorCode: el.RouteColorCode,
-								routeTextColor: el.RouteTextColor,
-								serviceId: el.ServiceId,
-								routeURL: el.RouteURL,
-								routeStatus: el.RouteStatus,
-								routeStatusColor: el.RouteStatusColor,
+								value: el.route,
+								tokens: [ el.route[0] ],
+								route: el.route[0],
+								routeColorCode: el.routeColorCode,
+								routeTextColor: el.routeTextColor,
+								serviceId: el.serviceId,
+								routeURL: el.routeURL,
+								routeStatus: el.routeStatus,
+								routeStatusColor: el.routeStatusColor,
 								routeIcon: 'images/cta_train.svg'
 							});
 						});
 						_.each(data.stations, function(el){
 							retval.push({
-								value: el.Route,
-								tokens: [ el.Route[0] ],
-								route: el.Route[0],
-								address: el.Route[1].split(',')[0],
-								routeColorCode: el.RouteColorCode,
-								routeTextColor: el.RouteTextColor,
-								serviceId: el.ServiceId,
-								routeURL: el.RouteURL,
-								routeStatus: el.RouteStatus,
-								routeStatusColor: el.RouteStatusColor,
+								value: el.route,
+								tokens: [ el.route[0] ],
+								route: el.route[0],
+								address: el.route[1].split(',')[0],
+								routeColorCode: el.routeColorCode,
+								routeTextColor: el.routeTextColor,
+								serviceId: el.serviceId,
+								routeURL: el.routeURL,
+								routeStatus: el.routeStatus,
+								routeStatusColor: el.routeStatusColor,
 								routeIcon: 'images/cta_train.svg'
 							});
 						});
