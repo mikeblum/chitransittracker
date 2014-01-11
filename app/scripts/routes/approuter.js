@@ -3,8 +3,8 @@
 define([
 	'jquery',
 	'backbone',
-	'../views/routes'
-], function ($, Backbone, RoutesView) {
+	'../views/search'
+], function ($, Backbone, SearchView) {
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -14,8 +14,8 @@ define([
 			'' : 'root'
 		},
 		root: function(){
-	       	this.routesView = new RoutesView();
-	       	this.routesView.render();
+	       	this.SearchView = new SearchView();
+	       	this.SearchView.render();
 		}
 	});
 

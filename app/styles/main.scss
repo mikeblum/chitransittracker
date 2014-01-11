@@ -132,15 +132,15 @@ a{
     cursor: pointer;
 }
 
-.routeTable, .table > tbody > tr > td{
+#route, .routeTable, .table > tbody > tr > td{
     text-align: left;
     border-top: 0px;
     margin-bottom: 0px;
     table-layout: fixed;
 }
 
-.statusChevron{
-    
+#route{
+    margin-top: 5%;
 }
 
 
@@ -184,6 +184,16 @@ a{
     font-size: 18px;
     border-radius: 6px;
     line-height: 1.33;
+}
+
+.twitter-typeahead {
+     width: 100%;
+}
+.tt-dropdown-menu {
+     width: 100%;
+}
+.tt-hint {
+     width: 100%;
 }
 
 /* Responsive: Portrait tablets and up */

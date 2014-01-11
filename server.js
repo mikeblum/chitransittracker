@@ -64,7 +64,7 @@ var pushRoutesToServer = function(data, type){
 		var RouteType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 		var route = type === 'rail' ? new RailRoute(el) : (type === 'bus') ? new BusRoute(el) : new Station(el);
 		el.Route = el.Route.split('|'); //split route name from physical address
-		RouteType.findOneAndUpdate({ Route: route.Route }, el, { upsert: true }, function (err) {
+		RouteType.findOneAndUpdate({ ServiceId: route.ServiceId }, el, { upsert: true }, function (err) {
 			if(err){ console.log(err); }
 		});
 	});
