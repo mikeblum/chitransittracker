@@ -137,6 +137,7 @@ a{
     text-align: left;
     border-top: 0px;
     margin-bottom: 0px;
+    table-layout:fixed;
 }
 
 #route{
@@ -162,6 +163,10 @@ a{
 
 .routeTable > tbody > tr > td > div.line{
     font-size: 14px;
+}
+
+.typeaheadSuggestions{
+    table-layout:fixed;
 }
 
 .borderless > tbody > tr > td{

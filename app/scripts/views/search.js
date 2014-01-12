@@ -116,7 +116,7 @@ define([
             $('#routeStatus').html(routes);
 
 			var source = '<div style="background-color:#{{routeColorCode}};">'+
-			'<table class="table routeTable">' + 
+			'<table class="table routeTable typeaheadSuggestions">' + 
 			'<tr><td class="line">{{ busNumber }} <img class="transit_logo" src={{routeIcon}}></img></td>' +
 				'<td class="line">{{route}}</td>' +
 				'<td class="line">{{ routeStatus }}</td></tr>' +
@@ -176,9 +176,11 @@ define([
 					}
 				},
 				template: hbs
-			}).on('typeahead:selected', function (obj, datum) {
+			}).on('typeahead:selected typeahead:autocompleted', function (obj, datum) {
 			   self.routeView.setRoute(datum);
-			   self.routeView.render(); 
+			   self.routeView.render();
+			   $('.routesTypeahead.typeahead').trigger('blur');
+			   return datum;
 			});
 			return this;
 		}
