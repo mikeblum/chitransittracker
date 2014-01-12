@@ -6,6 +6,8 @@ var url = require('url'),
 	mongoose = require('mongoose'),
 	_ = require('underscore');
 
+var ctaApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
+
 var parser = xml2js.Parser({ explicitArray: false });
 
 // Build the connection string
@@ -67,8 +69,6 @@ var pushRoutesToServer = function(data, type){
 
 		var route = type === 'rail' ? new RailRoute(el) : (type === 'bus') ? new BusRoute(el) : new Station(el);
 
-		console.log(route);
-
 		RouteType.findOneAndUpdate({ serviceId: el.ServiceId }, {
 			route: el.Route,
 			routeColorCode: el.RouteColorCode,
@@ -85,7 +85,7 @@ var pushRoutesToServer = function(data, type){
 };
 
 
-var convert2js = function(xml, response, type){
+var processRoutes = function(xml, response, type){
 	parser.parseString(xml, function (err, json) {
 		pushRoutesToServer(json, type);
 		response.writeHead(200, {'Content-Type': 'application/json'});
@@ -93,6 +93,13 @@ var convert2js = function(xml, response, type){
 	});
 };
 
+//don't push arrivals to db - too slow
+var processArrivals = function(xml, response, type){
+	parser.parseString(xml, function (err, json) {
+		response.writeHead(200, {'Content-Type': 'application/json'});
+		response.end(JSON.stringify(json));
+	});
+};
 
 module.exports = function (app, response) {
 	var urlParts = url.parse(app.url, true);
@@ -103,7 +110,7 @@ module.exports = function (app, response) {
 		request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + query.type,
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
-					convert2js(xml, response, query.type);
+					processRoutes(xml, response, query.type);
 				}
 			}
 		);
@@ -128,6 +135,15 @@ module.exports = function (app, response) {
 				});
 			});
 		});
+	}else if(path.indexOf('arrivals') !== -1){
+		console.log(query);
+		request('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaApiKey + '&mapid=' + query.stop + '&max=4',
+			function (err, res, xml) {
+				if (!err && res.statusCode === 200) {
+					processArrivals(xml, response, query.stop);
+				}
+			}
+		);
 	}
 
 };

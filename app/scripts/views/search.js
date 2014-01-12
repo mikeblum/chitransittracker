@@ -21,12 +21,10 @@ define([
 			self.routeView = new RouteView();
 
 		    self.railRoutes = new self.collection([], { 
-		            url: 'routes?type=rail',
-		            icon: 'images/cta_train.png'
+		            url: 'routes?type=rail'
 		    }).fetch({
 		            success: function(data){
 		            	self.context.railRoutes = data.toJSON();
-		            	console.log(self.context.railRoutes);
 		            },
 		            error: function(collection, response, options){
 		            	console.log('error: ' + response);
@@ -35,12 +33,10 @@ define([
 		    });
 
 		    self.busRoutes = new self.collection([], { 
-		            url: 'routes?type=bus',
-		            icon: 'images/bus.png'
+		            url: 'routes?type=bus'
 		    }).fetch({
 		            success: function(data){
 		               	self.context.busRoutes = data.toJSON();
-		               	console.log(self.context.busRoutes);
 		            },
 		            error: function(collection, response, options){
 		                console.log('error: ' + response);
@@ -52,7 +48,6 @@ define([
 		    }).fetch({
 		            success: function(data){
 		                self.context.stations = data.toJSON();
-		                console.log(self.context.stations);
 		            },
 		            error: function(collection, response, options){
 		                console.log('error: ' + response);
@@ -64,16 +59,16 @@ define([
 
 			var source = '<div style="background-color:#{{routeColorCode}};">'+
 			'<table class="table routeTable">' + 
-			'<tr><td><div class="line">{{ busNumber }}' + 
-						'<img class="transit_logo" src={{routeIcon}}></img></div></td>' +
-						'<td><div class="line">{{route}}</div></td></tr>' +
-						'<table class="table routeTable"><tr><td class="line">{{ address }}</td></tr></table></table></div>';
+			'<tr><td class="line">{{ busNumber }} <img class="transit_logo" src={{routeIcon}}></img></td>' +
+				'<td class="line">{{route}}</td>' +
+				'<td class="line">{{ routeStatus }}</td></tr>' +
+				'<table class="table routeTable"><tr><td class="line">{{ address }}</td></tr></table></table></div>';
 			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
+				limit: 7,
 				remote: {
 					url: 'search?query=%QUERY',
 					filter: function(data) {
-						console.log(data);
 						var retval = [];
 						_.each(data.busRoutes, function(el){
 							retval.push({
