@@ -9,9 +9,22 @@ define([
 	'handlebars',
 	'typeahead',
 	 '../collections/ctaRoutes',
+	 '../collections/ctaAlerts',
 	'./route'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, RouteView) {
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection, RouteView) {
 	'use strict';
+
+	var getRailLines = function(railLines){
+		var lines = [];
+		_.each(railLines, function(line){
+			if(line.ServiceId == 'Red' || line.ServiceId === 'Blue' || line.ServiceId == 'Brn' ||
+                line.ServiceId == 'G' || line.ServiceId == 'Org' || line.ServiceId == 'P' ||
+                line.ServiceId == 'Pexp' || line.ServiceId == 'Pink' || line.ServiceId == "Y"){
+                lines.push(line);
+        	}
+		});
+        return lines;
+    };
 
 	var SearchView = Backbone.View.extend({
 		collection: CtaRoutesCollection,
@@ -20,11 +33,15 @@ define([
 			self.context = {};
 			self.routeView = new RouteView();
 
+			self.railLines = [];
+
 		    self.railRoutes = new self.collection([], { 
 		            url: 'routes?type=rail'
 		    }).fetch({
 		            success: function(data){
 		            	self.context.railRoutes = data.toJSON();
+		            	self.railLines = getRailLines(self.context.railRoutes);
+		            	self.render();
 		            },
 		            error: function(collection, response, options){
 		            	console.log('error: ' + response);
@@ -53,9 +70,50 @@ define([
 		                console.log('error: ' + response);
 		            }
 		    });
+
+		    self.alerts = new CtaAlertsCollection().fetch({
+	            success: function(data){
+		            self.context.alerts = data.toJSON();
+		            self.render();
+                },
+                error: function(error){
+                        console.log('error');
+                }
+	        });
 		},
 		render: function(){
 			var self = this;
+
+			var routes = '<div id="routeStatus" class="accordion">';
+           	var icon = 'images/cta_train.png';
+		    _.each(self.railLines, function(route){
+		        var description = "";
+		        var chevron = '<td class="statusChevron"></td>';
+		         _.find(self.context.alerts, function(alert){
+		                if(alert.ImpactedService.Service.ServiceId === route.ServiceId){
+		                    description = alert.FullDescription;
+		                    chevron = '<td class="statusChevron"><span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></td>';
+		                }
+		        });
+
+		        routes = routes + '<div class="accordion-group line routeAlert" style="background-color:#' + route.RouteColorCode + '; data-parent="#routeStatus" data-toggle="collapse" data-target="#' + route.ServiceId + '" class="accordion-toggle">' + 
+                        '<div class="accordion-heading">' +
+                                '<table class="table routeTable"><tr>' +
+                                '<td>' + '<img class="transit_logo" src=' + icon + '></img></td>' +
+                                '<td><div class="line">' + route.Route + '</div></td>' +
+                                '<td><div class="line">' + route.RouteStatus + '</div></td>' +
+                                chevron + '</tr></table>' + 
+                        '</div>' + 
+                        '<div class="accordion-body collapse" id=' + route.ServiceId +'>' + 
+                                '<div class="accordion-inner line routeAlertText">' + 
+                                        description +        
+                                '</div>' +
+                        '</div>' +
+                '</div>';
+            });
+            routes += '</div>';
+
+            $('#routeStatus').html(routes);
 
 			var source = '<div style="background-color:#{{routeColorCode}};">'+
 			'<table class="table routeTable">' + 
@@ -65,7 +123,7 @@ define([
 				'<table class="table routeTable"><tr><td class="line">{{ address }}</td></tr></table></table></div>';
 			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
-				limit: 7,
+				limit: 10,
 				remote: {
 					url: 'search?query=%QUERY',
 					filter: function(data) {

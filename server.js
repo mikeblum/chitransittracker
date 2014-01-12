@@ -93,6 +93,13 @@ var processRoutes = function(xml, response, type){
 	});
 };
 
+var processAlerts = function(xml, response){
+	parser.parseString(xml, function (err, json) {
+		response.writeHead(200, {'Content-Type': 'application/json'});
+		response.end(JSON.stringify(json));
+	});
+};
+
 //don't push arrivals to db - too slow
 var processArrivals = function(xml, response, type){
 	parser.parseString(xml, function (err, json) {
@@ -144,6 +151,12 @@ module.exports = function (app, response) {
 				}
 			}
 		);
+	}else if(path.indexOf('alerts') !== -1){
+        request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
+            if (!err && res.statusCode === 200) {
+                processAlerts(xml, response);
+            }
+        });
 	}
 
 };
