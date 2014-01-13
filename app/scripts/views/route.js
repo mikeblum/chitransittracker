@@ -45,6 +45,7 @@ define([
 			if(self.arrivals){
 				var source = JST['app/scripts/templates/arrivals.hbs'];
 				var arrivalsTemplate = {
+					routeColor: self.route.routeColorCode,
 					arrivals: []
 				};
 				_.each(self.arrivals, function(arrival){

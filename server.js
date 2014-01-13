@@ -144,7 +144,6 @@ module.exports = function (app, response) {
 			});
 		});
 	}else if(path.indexOf('arrivals') !== -1){
-		console.log(query);
 		request('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaApiKey + '&mapid=' + query.stop + '&max=4',
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
