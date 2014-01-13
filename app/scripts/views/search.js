@@ -46,7 +46,7 @@ define([
 		            },
 		            error: function(collection, response, options){
 		            	console.log('error: ' + response);
-
+		            	$('#error').show();
 		            }
 		    });
 
@@ -58,6 +58,7 @@ define([
 		            },
 		            error: function(collection, response, options){
 		                console.log('error: ' + response);
+		                $('#error').show();
 		            }
 		    });
 
@@ -69,6 +70,7 @@ define([
 		            },
 		            error: function(collection, response, options){
 		                console.log('error: ' + response);
+		                $('#error').show();
 		            }
 		    });
 
@@ -79,6 +81,7 @@ define([
                 },
                 error: function(error){
                         console.log('error');
+                        $('#error').show();
                 }
 	        });
 		},
