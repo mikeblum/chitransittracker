@@ -1,0 +1,14 @@
+<table id="arrivalsTable" class="table routeTable">
+	{{#each arrivals}}
+		<tr>
+			<td class="line">{{ destination }}</td>
+			{{#if approaching}}
+				<td class="line">Arriving</td>
+			{{else}}
+				<td class="line">{{ computedTime }} Minutes</td>
+			{{/if}}
+		</tr>
+	{{/each}}
+</table>
+<div class="arrivalsFooter" style="background-color:#{{ routeColor }};">
+</div>

@@ -22,6 +22,9 @@ require.config({
         },
         typeahead:{
             exports: 'Typeahead'
+        },
+        moment:{
+            exports: 'Moment'
         }
     },
     paths: {
@@ -30,7 +33,8 @@ require.config({
         underscore: '../bower_components/underscore/underscore',
         bootstrap: '../bower_components/sass-bootstrap/dist/js/bootstrap',
         handlebars: '../bower_components/handlebars/handlebars',
-        typeahead: '../bower_components/typeahead.js/dist/typeahead'
+        typeahead: '../bower_components/typeahead.js/dist/typeahead',
+        moment: '../bower_components/moment/min/moment.min'
     }
 });
 

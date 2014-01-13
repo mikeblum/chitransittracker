@@ -6,12 +6,12 @@ define([
 ], function (_, Backbone) {
     'use strict';
 
-    var CtaRoutesCollection = Backbone.Collection.extend({
-        url: 'routes',
+    var CtaArrivalsCollection = Backbone.Collection.extend({
+        url: 'arrivals',
         parse: function(data){
-        	return data.CTARoutes.RouteInfo;
+        	return data.ctatt.eta;
         }
     });
 
-    return CtaRoutesCollection;
+    return CtaArrivalsCollection;
 });
