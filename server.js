@@ -11,7 +11,8 @@ var ctaApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
 var parser = xml2js.Parser({ explicitArray: false });
 
 // Build the connection string
-var dbURI = 'mongodb://localhost/test';
+var dbURI = process.env.MONGOLAB_URI ||
+  process.env.MONGOHQ_URL || 'mongodb://localhost/test';
 
 // Create the database connection
 mongoose.connect(dbURI);
