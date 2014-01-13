@@ -30,6 +30,7 @@ define([
 		collection: CtaRoutesCollection,
 		initialize: function(){
 			var self = this;
+			$('#routeSpinner').show();
 			self.context = {};
 			self.routeView = new RouteView();
 
@@ -83,7 +84,6 @@ define([
 		},
 		render: function(){
 			var self = this;
-
 			var routes = '<div id="routeStatus" class="accordion">';
            	var icon = 'images/cta_train.png';
 		    _.each(self.railLines, function(route){
@@ -182,6 +182,10 @@ define([
 			   $('.routesTypeahead.typeahead').trigger('blur');
 			   return datum;
 			});
+			setTimeout(function() {
+			    $('#routeSpinner').fadeOut('fast');
+			}, 1000);
+
 			return this;
 		}
 	});

@@ -22,14 +22,13 @@ define([
 		setRoute: function(route){
 			var self = this;
 			self.route = route;
-			$('.spinner').show();
+			$('#arrivalsSpinner').show();
 			self.arrivalsCollection = new CtaArrivalsCollection([], {
 				url: 'arrivals?stop=' + self.route.serviceId
 			}).fetch({
 				success: function(data){
 					self.arrivals = data.toJSON();
 					self.render();
-					$('.spinner').hide();
 				},
 				error: function(collection, response, options){
 					console.log('error: ' + response);
@@ -61,6 +60,10 @@ define([
 				    return 0;
 				});
 				$('#arrivals').html(source(arrivalsTemplate));
+
+				setTimeout(function() {
+			    	$('#arrivalsSpinner').fadeOut('fast');
+			}, 1000);
 			}
 			return self;
 		}
