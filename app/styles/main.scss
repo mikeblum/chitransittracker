@@ -265,6 +265,11 @@ a{
   }
 }
 
+.favorite:hover {
+  stroke: $radio-color;
+  stroke-width: 3;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

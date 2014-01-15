@@ -18,10 +18,49 @@ define([
 			var self = this;
 			self.arrivals = {};
 			self.route = route;
+
+			self.saveRoute = function(){
+				if(typeof(Storage)!=="undefined"){
+					var favorites = localStorage.getItem('favorites');
+					if(favorites === null){
+						favorites = [];
+					}else{
+						favorites = JSON.parse(favorites);
+					}
+					favorites.push(self.route.serviceId);
+					console.log(favorites);
+					localStorage.setItem('favorites', JSON.stringify(favorites));
+				}
+			};
+			
+			self.removeRoute = function(){
+				if(typeof(Storage)!=="undefined"){
+					var favorites = localStorage.getItem('favorites');
+					if(favorites === null && favorites !== undefined && favorites.length > 0){
+						favorites = JSON.parse(favorites);
+						favorites = _.without(favorites, self.route.serviceId);
+						console.log(favorites);
+						localStorage.setItem('favorites', JSON.stringify(favorites));
+					}
+				}
+			};
+
+			Handlebars.registerHelper('saveFavorite', function(){
+				if(event.type == "mousedown"){
+					if(event.target.getAttribute('fill') === 'none'){
+						self.saveRoute();
+						event.target.setAttribute("fill", "#ffd400");
+					}else{
+						self.removeRoute();
+						event.target.setAttribute("fill", "none");
+					}
+				}
+			});
 		},
 		setRoute: function(route){
 			var self = this;
 			self.route = route;
+
 			$('#arrivalsSpinner').show();
 			self.arrivalsCollection = new CtaArrivalsCollection([], {
 				url: 'arrivals?stop=' + self.route.serviceId
@@ -40,6 +79,19 @@ define([
 		},
 		render: function(){
 			var self = this;
+			if(typeof(Storage)!=="undefined"){
+				var favorites = localStorage.getItem('favorites');
+				if(favorites === null){
+					self.route.favorite = "none";
+				}else{
+					favorites = JSON.parse(favorites);
+					if(_.indexOf(favorites, self.route.serviceId) > -1){
+						self.route.favorite = "#ffd400";
+					}else{
+						self.route.favorite = "none";
+					}
+				}
+			}
 			$('#route').html(self.template(self.route));
 			if(self.arrivals){
 				var source = JST['app/scripts/templates/arrivals.hbs'];
@@ -56,13 +108,13 @@ define([
 				});
 				arrivalsTemplate.arrivals = arrivalsTemplate.arrivals.sort(function(a,b){
 					if(a.destination < b.destination) return -1;
-				    if(a.destination > b.destination) return 1;
-				    return 0;
+					if(a.destination > b.destination) return 1;
+					return 0;
 				});
 				$('#arrivals').html(source(arrivalsTemplate));
 
 				setTimeout(function() {
-			    	$('#arrivalsSpinner').fadeOut('fast');
+					$('#arrivalsSpinner').fadeOut('fast');
 			}, 1000);
 			}
 			return self;
