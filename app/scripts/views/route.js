@@ -18,44 +18,6 @@ define([
 			var self = this;
 			self.arrivals = {};
 			self.route = route;
-
-			self.saveRoute = function(){
-				if(typeof(Storage)!=="undefined"){
-					var favorites = localStorage.getItem('favorites');
-					if(favorites === null){
-						favorites = [];
-					}else{
-						favorites = JSON.parse(favorites);
-					}
-					favorites.push(self.route.serviceId);
-					console.log(favorites);
-					localStorage.setItem('favorites', JSON.stringify(favorites));
-				}
-			};
-			
-			self.removeRoute = function(){
-				if(typeof(Storage)!=="undefined"){
-					var favorites = localStorage.getItem('favorites');
-					if(favorites === null && favorites !== undefined && favorites.length > 0){
-						favorites = JSON.parse(favorites);
-						favorites = _.without(favorites, self.route.serviceId);
-						console.log(favorites);
-						localStorage.setItem('favorites', JSON.stringify(favorites));
-					}
-				}
-			};
-
-			Handlebars.registerHelper('saveFavorite', function(){
-				if(event.type == "mousedown"){
-					if(event.target.getAttribute('fill') === 'none'){
-						self.saveRoute();
-						event.target.setAttribute("fill", "#ffd400");
-					}else{
-						self.removeRoute();
-						event.target.setAttribute("fill", "none");
-					}
-				}
-			});
 		},
 		setRoute: function(route){
 			var self = this;

@@ -1,10 +1,52 @@
+<script>
+	var saveRoute = function(){
+		if(typeof(Storage)!=="undefined"){
+			var favorites = localStorage.getItem('favorites');
+			if(favorites === null){
+				favorites = [];
+			}else{
+				favorites = JSON.parse(favorites);
+			}
+			favorites.push('{{ serviceId }}');
+			localStorage.setItem('favorites', JSON.stringify(favorites));
+		}
+	};
+	var removeRoute = function(){
+		if(typeof(Storage)!=="undefined"){
+			var favorites = localStorage.getItem('favorites');
+			if(favorites === null){
+				return;
+			}else{
+				favorites = JSON.parse(favorites);
+				var index = favorites.indexOf('{{ serviceId }}');
+				if(index > -1){
+					favorites.splice(index, 1);
+				}
+				localStorage.setItem('favorites', JSON.stringify(favorites));
+			}
+		}
+	};
+	var selected = function(evt)
+    {
+    	if(evt.type == "mousedown"){
+    		if(evt.target.getAttribute('fill') === 'none'){
+    			saveRoute();
+        		evt.target.setAttribute("fill", "#ffd400");
+        	}else{
+        		removeRoute();
+        		evt.target.setAttribute("fill", "none");
+        	}
+    	}
+    };
+</script>
+
 <div style="background-color:#{{routeColorCode}};">
 	<table class="table routeTable">
 			<tr><td class="line">{{ busNumber }} <img class="transit_logo" src={{routeIcon}}></img></td>
 			<td class="line">{{route}}</td>
 			<td class="line">{{ routeStatus }}</td>
 			<td class="statusChevron">
-				<svg width="25px" height="25px" onmousedown="{{ saveFavorite }}">
+				<svg width="25px" height="25px" onmousedown="selected(evt);">
 				<polygon class="favorite" fill="{{ favorite }}" stroke="#FDD403" stroke-width="2" stroke-miterlimit="10" points="18.16,21.719 12.517,17.369 6.896,21.742 9.031,14.682 3.389,10.334 10.351,10.319 12.485,3.259 14.652,10.309 21.611,10.293 15.99,14.668 "/>
 				</svg>
 			</td></tr>
