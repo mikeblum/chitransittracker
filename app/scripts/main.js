@@ -34,7 +34,8 @@ require.config({
         bootstrap: '../bower_components/sass-bootstrap/dist/js/bootstrap',
         handlebars: '../bower_components/handlebars/handlebars',
         typeahead: '../bower_components/typeahead.js/dist/typeahead',
-        moment: '../bower_components/moment/min/moment.min'
+        moment: '../bower_components/moment/min/moment.min',
+        localstorage: '../bower_components/backbone.localstorage/backbone.localStorage-min'
     }
 });
 

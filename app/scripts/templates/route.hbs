@@ -1,28 +1,33 @@
 <script>
 	var saveRoute = function(){
 		if(typeof(Storage)!=="undefined"){
-			var favorites = localStorage.getItem('favorites');
+			var favorites = localStorage.getItem('chitransittracker-favorites');
 			if(favorites === null){
 				favorites = [];
 			}else{
 				favorites = JSON.parse(favorites);
 			}
-			favorites.push('{{ serviceId }}');
-			localStorage.setItem('favorites', JSON.stringify(favorites));
+			var fav = {
+				route: '{{ route }}',
+				serviceId: '{{ serviceId }}'
+			};
+			favorites.push(fav);
+			localStorage.setItem('chitransittracker-favorites', JSON.stringify(favorites));
 		}
 	};
 	var removeRoute = function(){
 		if(typeof(Storage)!=="undefined"){
-			var favorites = localStorage.getItem('favorites');
+			var favorites = localStorage.getItem('chitransittracker-favorites');
 			if(favorites === null){
 				return;
 			}else{
 				favorites = JSON.parse(favorites);
-				var index = favorites.indexOf('{{ serviceId }}');
-				if(index > -1){
-					favorites.splice(index, 1);
-				}
-				localStorage.setItem('favorites', JSON.stringify(favorites));
+				_.each(favorites, function(fav, index){
+					if(fav.serviceId === '{{ serviceId }}'){
+						favorites.splice(index, 1);
+					}
+				});
+				localStorage.setItem('chitransittracker-favorites', JSON.stringify(favorites));
 			}
 		}
 	};

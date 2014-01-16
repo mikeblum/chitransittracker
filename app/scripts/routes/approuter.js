@@ -3,8 +3,9 @@
 define([
 	'jquery',
 	'backbone',
-	'../views/search'
-], function ($, Backbone, SearchView) {
+	'../views/search',
+	'../views/favorite'
+], function ($, Backbone, SearchView, FavoriteView) {
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -14,6 +15,8 @@ define([
 			'' : 'root'
 		},
 		root: function(){
+			this.favoriteView = new FavoriteView();
+			this.favoriteView.render();
 	       	this.SearchView = new SearchView();
 	       	this.SearchView.render();
 		}

@@ -42,14 +42,19 @@ define([
 		render: function(){
 			var self = this;
 			if(typeof(Storage)!=="undefined"){
-				var favorites = localStorage.getItem('favorites');
+				var favorites = localStorage.getItem('chitransittracker-favorites');
 				if(favorites === null){
 					self.route.favorite = "none";
 				}else{
+					var favorited = false;
 					favorites = JSON.parse(favorites);
-					if(_.indexOf(favorites, self.route.serviceId) > -1){
-						self.route.favorite = "#ffd400";
-					}else{
+					_.map(favorites, function(fav){
+						if(fav.serviceId === self.route.serviceId){
+							self.route.favorite = "#ffd400";
+							favorited = true;
+						}
+					});
+					if(!favorited){
 						self.route.favorite = "none";
 					}
 				}
