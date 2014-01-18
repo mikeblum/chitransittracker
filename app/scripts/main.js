@@ -35,7 +35,8 @@ require.config({
         handlebars: '../bower_components/handlebars/handlebars',
         typeahead: '../bower_components/typeahead.js/dist/typeahead',
         moment: '../bower_components/moment/min/moment.min',
-        localstorage: '../bower_components/backbone.localstorage/backbone.localStorage-min'
+        localstorage: '../bower_components/backbone.localstorage/backbone.localStorage-min',
+        layoutmanager: '../bower_components/layoutmanager/backbone.layoutmanager'
     }
 });
 

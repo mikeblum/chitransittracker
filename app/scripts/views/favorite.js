@@ -7,11 +7,13 @@ define([
 	'backbone',
 	'templates',
 	'handlebars',
-	'../collections/ctaFavorites'
+	'../collections/ctaFavorites',
+	'layoutmanager'
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection) {
 	'use strict';
 	
 	var FavoriteView = Backbone.View.extend({
+		manage: true,
 		template: JST['app/scripts/templates/favorite.hbs'],
 		initialize: function(){
 			var self = this;

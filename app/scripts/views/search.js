@@ -10,7 +10,8 @@ define([
 	'typeahead',
 	 '../collections/ctaRoutes',
 	 '../collections/ctaAlerts',
-	'./route'
+	'./route',
+	'layoutmanager'
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection, RouteView) {
 	'use strict';
 
@@ -26,8 +27,8 @@ define([
         return lines;
     };
 
-	var SearchView = Backbone.View.extend({
-		collection: CtaRoutesCollection,
+	var SearchView = Backbone.Layout.extend({
+		template: JST['app/scripts/templates/search.hbs'],
 		initialize: function(){
 			var self = this;
 			$('#routeSpinner').show();
@@ -36,7 +37,7 @@ define([
 
 			self.railLines = [];
 
-		    self.railRoutes = new self.collection([], { 
+		    self.railRoutes = new CtaRoutesCollection([], { 
 		            url: 'routes?type=rail'
 		    }).fetch({
 		            success: function(data){
@@ -50,7 +51,7 @@ define([
 		            }
 		    });
 
-		    self.busRoutes = new self.collection([], { 
+		    self.busRoutes = new CtaRoutesCollection([], { 
 		            url: 'routes?type=bus'
 		    }).fetch({
 		            success: function(data){
@@ -62,7 +63,7 @@ define([
 		            }
 		    });
 
-		    self.stations = new self.collection([], { 
+		    self.stations = new CtaRoutesCollection([], { 
 		            url: 'routes?type=station',
 		    }).fetch({
 		            success: function(data){
@@ -73,58 +74,9 @@ define([
 		                $('#error').show();
 		            }
 		    });
-
-		    self.alerts = new CtaAlertsCollection().fetch({
-	            success: function(data){
-		            self.context.alerts = data.toJSON();
-		            self.render();
-                },
-                error: function(error){
-                        console.log('error');
-                        $('#error').show();
-                }
-	        });
 		},
-		render: function(){
+		beforeRender: function(){
 			var self = this;
-			var routes = '<div id="routeStatus" class="accordion">';
-           	var icon = 'images/cta_train.png';
-		    _.each(self.railLines, function(route){
-		        var description = "";
-		        var chevron = '<td class="statusChevron"></td>';
-		         _.find(self.context.alerts, function(alert){
-		                if(alert.ImpactedService.Service.ServiceId === route.ServiceId){
-		                    description = alert.FullDescription;
-		                    chevron = '<td class="statusChevron"><span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></td>';
-		                }
-		        });
-
-		        routes = routes + '<div class="accordion-group line routeAlert" style="background-color:#' + route.RouteColorCode + '; data-parent="#routeStatus" data-toggle="collapse" data-target="#' + route.ServiceId + '" class="accordion-toggle">' + 
-                        '<div class="accordion-heading">' +
-                                '<table class="table routeTable"><tr>' +
-                                '<td>' + '<img class="transit_logo" src=' + icon + '></img></td>' +
-                                '<td><div class="line">' + route.Route + '</div></td>' +
-                                '<td><div class="line">' + route.RouteStatus + '</div></td>' +
-                                chevron + '</tr></table>' + 
-                        '</div>' + 
-                        '<div class="accordion-body collapse" id=' + route.ServiceId +'>' + 
-                                '<div class="accordion-inner line routeAlertText">' + 
-                                        description +        
-                                '</div>' +
-                        '</div>' +
-                '</div>';
-            });
-            routes += '</div>';
-
-            $('#routeStatus').html(routes);
-
-			var source = '<div style="background-color:#{{routeColorCode}};">'+
-			'<table class="table routeTable typeaheadSuggestions">' + 
-			'<tr><td class="line">{{ busNumber }} <img class="transit_logo" src={{routeIcon}}></img></td>' +
-				'<td class="line">{{route}}</td>' +
-				'<td class="line">{{ routeStatus }}</td></tr>' +
-				'<table class="table routeTable"><tr><td class="line">{{ address }}</td></tr></table></table></div>';
-			var hbs = Handlebars.compile(source);
 			$('.routesTypeahead.typeahead').typeahead({
 				limit: 10,
 				remote: {
@@ -178,18 +130,15 @@ define([
 						return retval;
 					}
 				},
-				template: hbs
+				template: self.template
 			}).on('typeahead:selected typeahead:autocompleted', function (obj, datum) {
 			   self.routeView.setRoute(datum);
-			   self.routeView.render();
 			   $('.routesTypeahead.typeahead').trigger('blur');
 			   return datum;
 			});
 			setTimeout(function() {
 			    $('#routeSpinner').fadeOut('fast');
 			}, 1000);
-
-			return this;
 		}
 	});
 

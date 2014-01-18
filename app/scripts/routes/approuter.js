@@ -4,8 +4,11 @@ define([
 	'jquery',
 	'backbone',
 	'../views/search',
-	'../views/favorite'
-], function ($, Backbone, SearchView, FavoriteView) {
+	'../views/favorite',
+	'../views/status',
+	'../views/route',
+	'layoutmanager'
+], function ($, Backbone, SearchView, FavoriteView, StatusView, RouteView){
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -15,10 +18,18 @@ define([
 			'' : 'root'
 		},
 		root: function(){
-			this.favoriteView = new FavoriteView();
-			this.favoriteView.render();
-	       	this.SearchView = new SearchView();
-	       	this.SearchView.render();
+			this.SearchView = new SearchView();
+			var status = new StatusView();
+			$(".routeStatus").empty().append(status.el);
+			// Render the layout.
+			status.render();
+
+			var route = new RouteView();
+			$(".route").empty().append(route.el);
+
+			var favorites = new FavoriteView();
+			$(".favorites").empty().append(favorites.el);
+			favorites.render();
 		}
 	});
 

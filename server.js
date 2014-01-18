@@ -63,6 +63,7 @@ var BusRoute = mongoose.model('BusRoute', routeSchema, 'BusRoutes');
 var Station = mongoose.model('Station', routeSchema, 'Stations');
 
 var pushRoutesToServer = function(data, type){
+	console.log("GET: " + JSON.stringify(data));
 	_.each(data.CTARoutes.RouteInfo, function(el){
 		var RouteType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 
@@ -113,12 +114,14 @@ module.exports = function (app, response) {
 	var urlParts = url.parse(app.url, true);
 	var path = urlParts.pathname;
 	var query = urlParts.query;
-
 	if(path.indexOf('routes') !== -1){
 		request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + query.type,
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
+					console.log('processing routes');
 					processRoutes(xml, response, query.type);
+				}else{
+					console.log(err);
 				}
 			}
 		);
@@ -148,6 +151,8 @@ module.exports = function (app, response) {
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
 					processArrivals(xml, response, query.stop);
+				}else{
+					console.log(err);
 				}
 			}
 		);
@@ -155,7 +160,9 @@ module.exports = function (app, response) {
         request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
             if (!err && res.statusCode === 200) {
                 processAlerts(xml, response);
-            }
+            }else{
+					console.log(err);
+				}
         });
 	}
 
