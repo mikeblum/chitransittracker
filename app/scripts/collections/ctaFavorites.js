@@ -1,18 +1,14 @@
 define([
     'underscore',
     'backbone',
-    'localstorage'
-], function (_, Backbone, localstorage) {
+    'localstorage',
+    '../models/CtaFavorite'
+], function (_, Backbone, localstorage, CtaFavorite) {
     'use strict';
 
     var CtaFavoritesCollection = Backbone.Collection.extend({
-        model: new Backbone.Model.extend({
-            default: {
-                route: '',
-                serviceId: ''
-            }
-        }),
+        model: CtaFavorite,
         localStorage: new Backbone.LocalStorage("chitransittracker-favorites")
     });
-    return CtaFavoritesCollection;
+    return new CtaFavoritesCollection();
 });

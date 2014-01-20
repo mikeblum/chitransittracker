@@ -8,8 +8,9 @@ define([
 	'templates',
 	'handlebars',
 	'../collections/ctaFavorites',
+	'./route',
 	'layoutmanager'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection) {
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, RouteView) {
 	'use strict';
 	
 	var FavoriteView = Backbone.View.extend({
@@ -17,22 +18,48 @@ define([
 		template: JST['app/scripts/templates/favorite.hbs'],
 		initialize: function(){
 			var self = this;
-			self.favoritesCollection = new CtaFavoritesCollection().fetch({
+			self.favoritesCollection = CtaFavoritesCollection;
+			self.favoritesCollection.fetch({
 				success: function(data){
-					self.favorites = data.toJSON();
-					console.log(self.favorites);
 					self.render();
 				},
 				error: function(collection, response, options){
 					console.log('error: ' + response);
 				}
 			});
-			
+			self.favoritesCollection.bind("change", function() {
+		        self.render();
+		    });
 		},
-		render: function(){
+		removeFavorite: function(serviceId){
+			if(typeof(Storage)!=="undefined"){
+				var favorite = this.favoritesCollection.findWhere({
+					serviceId: serviceId
+				});
+				favorite.destroy();
+				this.favoritesCollection.remove(favorite);
+				this.render();
+			}
+		},
+		beforeRender: function(){
+			$(".favorites").empty().append(this.el);
+		},
+		afterRender: function(){
 			var self = this;
-			
-			return self;
+			$(".trash").click(function(event){
+				self.removeFavorite(event.currentTarget.id);
+			});
+
+			$(".favorite").click(function(event){
+				var serviceId = event.currentTarget.classList[1];
+				console.log(serviceId);
+				RouteView.setRoute(serviceId);
+			});
+		},
+		serialize: function(){
+			return {
+				favorites: this.favoritesCollection.toJSON()
+			}
 		}
 	});
 

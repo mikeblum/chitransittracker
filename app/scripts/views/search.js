@@ -33,13 +33,13 @@ define([
 			var self = this;
 			$('#routeSpinner').show();
 			self.context = {};
-			self.routeView = new RouteView();
+			self.routeView = RouteView;
 
 			self.railLines = [];
 
-		    self.railRoutes = new CtaRoutesCollection([], { 
-		            url: 'routes?type=rail'
-		    }).fetch({
+		    self.railRoutes = new CtaRoutesCollection();
+			self.railRoutes.url = 'routes?type=rail';
+		    self.railRoutes.fetch({
 		            success: function(data){
 		            	self.context.railRoutes = data.toJSON();
 		            	self.railLines = getRailLines(self.context.railRoutes);
@@ -51,9 +51,9 @@ define([
 		            }
 		    });
 
-		    self.busRoutes = new CtaRoutesCollection([], { 
-		            url: 'routes?type=bus'
-		    }).fetch({
+		    self.busRoutes = new CtaRoutesCollection();
+		    self.busRoutes.url = 'routes?type=bus';
+		    self.busRoutes.fetch({
 		            success: function(data){
 		               	self.context.busRoutes = data.toJSON();
 		            },
@@ -63,9 +63,9 @@ define([
 		            }
 		    });
 
-		    self.stations = new CtaRoutesCollection([], { 
-		            url: 'routes?type=station',
-		    }).fetch({
+		    self.stations = new CtaRoutesCollection();
+		    self.stations.url = 'routes?type=station';
+		    self.stations.fetch({
 		            success: function(data){
 		                self.context.stations = data.toJSON();
 		            },

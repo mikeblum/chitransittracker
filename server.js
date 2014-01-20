@@ -63,7 +63,6 @@ var BusRoute = mongoose.model('BusRoute', routeSchema, 'BusRoutes');
 var Station = mongoose.model('Station', routeSchema, 'Stations');
 
 var pushRoutesToServer = function(data, type){
-	console.log("GET: " + JSON.stringify(data));
 	_.each(data.CTARoutes.RouteInfo, function(el){
 		var RouteType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 

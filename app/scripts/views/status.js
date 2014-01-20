@@ -10,9 +10,8 @@ define([
 	'typeahead',
 	 '../collections/ctaRoutes',
 	 '../collections/ctaAlerts',
-	'./route',
 	'layoutmanager'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection, RouteView) {
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection) {
 	'use strict';
 
 	var routes;
@@ -36,7 +35,6 @@ define([
 			var self = this;
 			$('#routeSpinner').show();
 			self.context = {};
-			self.routeView = new RouteView();
 
 			self.railLines = [];
 

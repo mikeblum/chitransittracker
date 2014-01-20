@@ -8,8 +8,11 @@ define([
 	'templates',
 	'handlebars',
 	'moment',
-	'../collections/ctaArrivals'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, Moment, CtaArrivalsCollection) {
+	'../collections/ctaArrivals',
+	'../collections/ctaFavorites',
+	'../models/CtaFavorite',
+	'../models/ctaRoute'
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, Moment, CtaArrivalsCollection, CtaFavoritesCollection, CtaFavorite, CtaRoute){
 	'use strict';
 
 	var RouteView = Backbone.View.extend({
@@ -19,12 +22,12 @@ define([
 			var self = this;
 			self.arrivals = {};
 			self.route = route;
+			self.favorites = CtaFavoritesCollection;
 		},
 		setRoute: function(route){
 			var self = this;
-			self.route = route;
-
 			$('#arrivalsSpinner').show();
+			self.route = route;
 			self.arrivalsCollection = new CtaArrivalsCollection();
 			self.arrivalsCollection.url = 'arrivals?stop=' + self.route.serviceId;
 			self.arrivalsCollection.fetch({
@@ -33,50 +36,38 @@ define([
 					self.render();
 				},
 				error: function(collection, response, options){
-					console.log('error: ' + response);
+					console.log('error: ' + JSON.stringify(response));
 				}
 			});
 		},
 		saveFavorite: function(){
 			if(typeof(Storage)!=="undefined"){
-				var favorites = localStorage.getItem('chitransittracker-favorites');
-				if(favorites === null){
-					favorites = [];
-				}else{
-					favorites = JSON.parse(favorites);
-				}
-				var fav = {
-					route: '{{ route }}',
-					serviceId: '{{ serviceId }}'
-				};
-				favorites.push(fav);
-				localStorage.setItem('chitransittracker-favorites', JSON.stringify(favorites));
+				var favorite = new CtaFavorite(
+					this.route
+				);
+				this.favorites.fetch();
+				this.favorites.add(favorite);
+				favorite.save();
 			}
 		},
 		removeFavorite: function(){
 			if(typeof(Storage)!=="undefined"){
-				var favorites = localStorage.getItem('chitransittracker-favorites');
-				if(favorites === null){
-					return;
-				}else{
-					favorites = JSON.parse(favorites);
-					_.each(favorites, function(fav, index){
-						if(fav.serviceId === '{{ serviceId }}'){
-							favorites.splice(index, 1);
-						}
-					});
-					localStorage.setItem('chitransittracker-favorites', JSON.stringify(favorites));
-				}
+				this.favorites.fetch();
+				var favorite = this.favorites.findWhere({
+					serviceId: this.route.serviceId
+				});
+				favorite.destroy();
+				this.favorites.remove(favorite);
 			}
 		},
-		favoriteRoute: function(evt)
+		favoriteRoute: function()
 		{
-			if(evt.target.getAttribute('fill') === 'none'){
-				saveFavorite();
-				evt.target.setAttribute("fill", "#ffd400");
+			if($( ".favorite" ).css('fill') === 'none'){
+				this.saveFavorite();
+				$( ".favorite" ).css({fill: "#ffd400"});
 			}else{
-				removeFavorite();
-				evt.target.setAttribute("fill", "none");
+				this.removeFavorite();
+				$( ".favorite" ).css({fill: "none"});
 			}
 		},
 		convertDate: function(ctaDate){
@@ -86,21 +77,15 @@ define([
 			var self = this;
 			if(self.route){
 				if(typeof(Storage)!=="undefined"){
-					var favorites = localStorage.getItem('chitransittracker-favorites');
-					if(favorites === null){
+					this.favorites.fetch();
+					var favRoute = this.favorites.findWhere({
+						route: this.route.route,
+						serviceId: this.route.serviceId
+					});
+					if(!favRoute){
 						self.route.favorite = "none";
 					}else{
-						var favorited = false;
-						favorites = JSON.parse(favorites);
-						_.map(favorites, function(fav){
-							if(fav.serviceId === self.route.serviceId){
-								self.route.favorite = "#ffd400";
-								favorited = true;
-							}
-						});
-						if(!favorited){
-							self.route.favorite = "none";
-						}
+						self.route.favorite = "#ffd400";
 					}
 				}
 				if(self.arrivals){
@@ -133,7 +118,7 @@ define([
 		},
 		afterRender: function(){
 			var self = this;
-			$( ".favorite" ).click(function() {
+			$( ".favorite" ).click(function(){
 			  self.favoriteRoute();
 			});
 		},
@@ -143,5 +128,5 @@ define([
 		}
 	});
 
-	return RouteView;
+	return new RouteView();
 });
