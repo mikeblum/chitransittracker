@@ -30,6 +30,12 @@
                 <img class="svg train_logo" width="50px" src="images/cta_train_logo.svg"></img>
                 ChiTransitTracker
             </h3>
+
+            <div class="alert alert-danger fade in hidden" id="error">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <p><strong>Warning!</strong></p>
+            </div>
+
             <form class="row">
                 <div class="col-md-12">
                     <input type="text" class="form-control routesTypeahead typeahead" placeholder="Search"></input>
@@ -57,8 +63,8 @@
             <div class="col-sm-12 col-md-offset-1 col-md-10 routeStatus"></div>
            
             <footer class="col-md-12">
-                <p class="line"><img class="svg github" width="25px" src="images/github.svg"></img>
-                Contribute on Github</p>
+                <a class="line" href="https://github.com/roguequery/chitransittracker"><img class="svg github" width="25px" src="images/github.svg"></img>
+                Contribute on Github</a>
             </footer>
 
         </div>

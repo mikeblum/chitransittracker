@@ -9,8 +9,9 @@ define([
 	'handlebars',
 	'../collections/ctaFavorites',
 	'./route',
+	'../models/ctaRoute',
 	'layoutmanager'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, RouteView) {
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, RouteView, CtaRoute) {
 	'use strict';
 	
 	var FavoriteView = Backbone.View.extend({
@@ -53,8 +54,19 @@ define([
 
 			$(".favoriteRoute").click(function(event){
 				var serviceId = event.currentTarget.classList[1];
-				console.log(serviceId);
-				RouteView.setRoute(serviceId);
+				var ctaRoute = new CtaRoute();
+				ctaRoute.url = 'stationId?serviceId=' + serviceId;
+				ctaRoute.fetch({
+					success: function(data){
+						var routeData = data.toJSON();
+						routeData.route = routeData.route[0];
+						routeData.routeIcon = routeData.type === 'rail' ?  'images/cta_train.svg' : (routeData.type === 'bus') ? 'images/cta_bus.svg' : 'images/cta_train.svg';
+						RouteView.setRoute(routeData);
+					},
+					error: function(collection, response, options){
+						console.log('error: ' + JSON.stringify(response));
+					}
+				});
 			});
 		},
 		serialize: function(){

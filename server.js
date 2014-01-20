@@ -94,7 +94,7 @@ var processRoutes = function(xml, response, type){
 	});
 };
 
-var processAlerts = function(xml, response){
+var processResponse = function(xml, response){
 	parser.parseString(xml, function (err, json) {
 		response.writeHead(200, {'Content-Type': 'application/json'});
 		response.end(JSON.stringify(json));
@@ -156,13 +156,39 @@ module.exports = function (app, response) {
 			}
 		);
 	}else if(path.indexOf('alerts') !== -1){
-        request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
-            if (!err && res.statusCode === 200) {
-                processAlerts(xml, response);
-            }else{
+		request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
+			if (!err && res.statusCode === 200) {
+				processResponse(xml, response);
+			}else{
 					console.log(err);
 				}
-        });
+		});
+	}else if(path.indexOf('stationId') !== -1){
+		var results = {};
+		var serviceId = query.serviceId;
+		Station.find( {
+			serviceId: serviceId
+		}, function (err, docs){
+			results = docs[0]; 
+			results.type = 'station';
+		RailRoute.find({
+			serviceId: serviceId
+		}, function (err, docs){
+			if(docs.length > 0){
+				results = docs[0];
+				results.type = 'rail';
+			}
+		BusRoute.find({
+			serviceId: serviceId
+		}, function (err, docs){
+				if(docs.length > 0){
+					results = docs[0];
+					results.type = 'bus';
+				}
+				response.writeHead(200, {'Content-Type': 'application/json'});
+				response.end(JSON.stringify(results));
+				});
+			});
+		});
 	}
-
 };

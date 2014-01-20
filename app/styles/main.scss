@@ -19,8 +19,12 @@ body {
     background-color: $primary-color;
 }
 
-a{
+a, a:link, a:hover{
     color: #ffffff;
+}
+
+a:visited, a:active{
+  color: $radio-color;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -142,6 +146,10 @@ a{
 
 #route{
     margin-top: 5%;
+}
+
+.favoriteRoute{
+    cursor: pointer;
 }
 
 #arrivalsTable > tr > td{
