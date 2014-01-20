@@ -27,7 +27,7 @@ define([
 					console.log('error: ' + response);
 				}
 			});
-			self.favoritesCollection.bind("change", function() {
+			self.favoritesCollection.on("change reset add remove", function() {
 		        self.render();
 		    });
 		},
@@ -39,6 +39,7 @@ define([
 				favorite.destroy();
 				this.favoritesCollection.remove(favorite);
 				this.render();
+				RouteView.render();
 			}
 		},
 		beforeRender: function(){
@@ -50,7 +51,7 @@ define([
 				self.removeFavorite(event.currentTarget.id);
 			});
 
-			$(".favorite").click(function(event){
+			$(".favoriteRoute").click(function(event){
 				var serviceId = event.currentTarget.classList[1];
 				console.log(serviceId);
 				RouteView.setRoute(serviceId);
