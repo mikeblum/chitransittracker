@@ -23,13 +23,27 @@ define([
 			self.arrivals = {};
 			self.route = route;
 			self.favorites = CtaFavoritesCollection;
+			self.arrivalsCollection = new CtaArrivalsCollection();
 		},
 		setRoute: function(route){
 			var self = this;
 			$('#arrivalsSpinner').show();
 			self.route = route;
-			self.arrivalsCollection = new CtaArrivalsCollection();
 			self.arrivalsCollection.url = 'arrivals?stop=' + self.route.serviceId;
+			self.arrivalsCollection.fetch({
+				success: function(data){
+					self.arrivals = data.toJSON();
+					self.render();
+				},
+				error: function(collection, response, options){
+					console.log('error: ' + JSON.stringify(response));
+				}
+			});
+		},
+		refresh: function(serviceId){
+			var self = this;
+			$('#arrivalsSpinner').show();
+			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId;
 			self.arrivalsCollection.fetch({
 				success: function(data){
 					self.arrivals = data.toJSON();
@@ -119,7 +133,12 @@ define([
 		afterRender: function(){
 			var self = this;
 			$( ".favorite" ).click(function(){
-			  self.favoriteRoute();
+			 	self.favoriteRoute();
+			});
+
+			$("#refresh").click(function(){
+				var serviceId = $('.serviceId').attr('class').split(' ')[1];
+				self.refresh(serviceId);
 			});
 		},
 		serialize: function(){
