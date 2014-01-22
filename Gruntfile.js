@@ -195,7 +195,13 @@ module.exports = function (grunt) {
                         'templates': '../../.tmp/scripts/templates',
                         'jquery': '../../app/bower_components/jquery/jquery',
                         'underscore': '../../app/bower_components/underscore/underscore',
-                        'backbone': '../../app/bower_components/backbone/backbone'
+                        'backbone': '../../app/bower_components/backbone/backbone',
+                        'bootstrap': '../../app/bower_components/sass-bootstrap/dist/js/bootstrap',
+                        'handlebars': '../../app/bower_components/handlebars/handlebars',
+                        'typeahead': '../../app/bower_components/typeahead.js/dist/typeahead',
+                        'moment': '../../app/bower_components/moment/min/moment.min',
+                        'localstorage': '../../app/bower_components/backbone.localstorage/backbone.localStorage-min',
+                        'layoutmanager': '../../app/bower_components/layoutmanager/backbone.layoutmanager'
                     },
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
