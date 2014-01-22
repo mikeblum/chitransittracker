@@ -7,12 +7,11 @@ define([
 	'backbone',
 	'templates',
 	'handlebars',
-	'moment',
-	'../collections/ctaArrivals',
 	'../collections/ctaFavorites',
 	'../models/CtaFavorite',
-	'../models/ctaRoute'
-], function ($, Bootstrap, _, Backbone, JST, Handlebars, Moment, CtaArrivalsCollection, CtaFavoritesCollection, CtaFavorite, CtaRoute){
+	'../models/ctaRoute',
+	'./arrivals',
+], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, CtaFavorite, CtaRoute, Arrivals){
 	'use strict';
 
 	var RouteView = Backbone.View.extend({
@@ -20,39 +19,17 @@ define([
 		template: JST['app/scripts/templates/route.hbs'],
 		initialize: function(route){
 			var self = this;
-			self.arrivals = {};
 			self.route = route;
 			self.favorites = CtaFavoritesCollection;
-			self.arrivalsCollection = new CtaArrivalsCollection();
+			self.arrivals = new Arrivals();
 		},
 		setRoute: function(route){
 			var self = this;
 			$('#arrivalsSpinner').show();
 			self.route = route;
-			self.arrivalsCollection.url = 'arrivals?stop=' + self.route.serviceId;
-			self.arrivalsCollection.fetch({
-				success: function(data){
-					self.arrivals = data.toJSON();
-					self.render();
-				},
-				error: function(collection, response, options){
-					console.log('error: ' + JSON.stringify(response));
-				}
-			});
-		},
-		refresh: function(serviceId){
-			var self = this;
-			$('#arrivalsSpinner').show();
-			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId;
-			self.arrivalsCollection.fetch({
-				success: function(data){
-					self.arrivals = data.toJSON();
-					self.render();
-				},
-				error: function(collection, response, options){
-					console.log('error: ' + JSON.stringify(response));
-				}
-			});
+			self.arrivals.setRoute(self.route);
+			self.arrivals.refresh(self.route.serviceId);
+			self.render();
 		},
 		saveFavorite: function(){
 			if(typeof(Storage)!=="undefined"){
@@ -84,9 +61,6 @@ define([
 				$( ".favorite" ).css({fill: "none"});
 			}
 		},
-		convertDate: function(ctaDate){
-			return Moment(ctaDate, 'YYYYMMDD hh:mm:ss');
-		},
 		beforeRender: function(){
 			var self = this;
 			if(self.route){
@@ -102,43 +76,15 @@ define([
 						self.route.favorite = "#ffd400";
 					}
 				}
-				if(self.arrivals){
-					var source = JST['app/scripts/templates/arrivals.hbs'];
-					var arrivalsTemplate = {
-						routeColor: self.route.routeColorCode,
-						arrivals: []
-					};
-					_.each(self.arrivals, function(arrival){
-						arrivalsTemplate.arrivals.push({
-							destination: arrival.destNm,
-							computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
-							approaching: arrival.isApp === '1' ? '1' : ''
-						});
-					});
-					arrivalsTemplate.arrivals = arrivalsTemplate.arrivals.sort(function(a,b){
-						if(a.destination < b.destination) return -1;
-						if(a.destination > b.destination) return 1;
-						return 0;
-					});
-					$('.arrivals').html(source(arrivalsTemplate));
-
-					setTimeout(function() {
-						$('#arrivalsSpinner').fadeOut('fast');
-					}, 1000);
-				}
 			}
-			$(".route").empty().append(self.el);
+			console.log('route rendered');
+			$("#route").empty().append(this.el);
 			return self;
 		},
 		afterRender: function(){
 			var self = this;
 			$( ".favorite" ).click(function(){
 			 	self.favoriteRoute();
-			});
-
-			$("#refresh").click(function(){
-				var serviceId = $('.serviceId').attr('class').split(' ')[1];
-				self.refresh(serviceId);
 			});
 		},
 		serialize: function(){

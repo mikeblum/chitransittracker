@@ -24,6 +24,9 @@ define([
 			// Render the layout.
 			status.render();
 
+			var route = RouteView;
+			$("#route").empty().append(route.el);
+
 			var favorites = new FavoriteView();
 		}
 	});

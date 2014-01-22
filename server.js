@@ -11,8 +11,7 @@ var ctaApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
 var parser = xml2js.Parser({ explicitArray: false });
 
 // Build the connection string
-var dbURI = process.env.MONGOLAB_URI ||
-  process.env.MONGOHQ_URL || 'mongodb://localhost/test';
+var dbURI = process.env.MONGOHQ_URL || 'mongodb://localhost/test';
 
 // Create the database connection
 mongoose.connect(dbURI);
@@ -127,6 +126,7 @@ module.exports = function (app, response) {
 	}else if(path.indexOf('search') !== -1){
 		var results = {};
 		var regex = query.query;
+		console.log("query: " + regex);
 		Station.find( {
 			'route.0': new RegExp(regex, 'i')
 		}, function (err, docs){

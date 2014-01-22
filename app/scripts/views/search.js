@@ -82,6 +82,17 @@ define([
 				remote: {
 					url: 'search?query=%QUERY',
 					filter: function(data) {
+						var query = false;
+						if(data){
+							_.each(data, function(type){
+								if(type.length > 0){
+									query = true;
+								}
+							});
+						}
+						if(!query){
+							return '';
+						}
 						var retval = [];
 						_.each(data.busRoutes, function(el){
 							retval.push({
@@ -131,10 +142,12 @@ define([
 					}
 				},
 				template: self.template
-			}).on('typeahead:selected typeahead:autocompleted', function (obj, datum) {
-			   self.routeView.setRoute(datum);
-			   $('.routesTypeahead.typeahead').trigger('blur');
-			   return datum;
+			}).on('typeahead:selected ', function (obj, datum) {
+				//clear typeahead
+				$('.typeahead').typeahead('setQuery', '');
+				console.log(JSON.stringify(datum))
+			   	self.routeView.setRoute(datum);
+			   	$('.routesTypeahead.typeahead').trigger('blur');
 			});
 			setTimeout(function() {
 			    $('#routeSpinner').fadeOut('fast');
