@@ -6,12 +6,12 @@ define([
     'backbone',
    	'moment',
     'templates',
-    '../collections/ctaArrivals'
+    '../collections/ctaArrivals',
+   	'layoutmanager'
 ], function ($, _, Backbone, Moment, JST, ctaArrivals) {
     'use strict';
 
-    var ArrivalsView = Backbone.View.extend({
-    	manage: true,
+    var ArrivalsView = Backbone.Layout.extend({
         template: JST['app/scripts/templates/arrivals.hbs'],
         initialize: function(){
         	var self = this;

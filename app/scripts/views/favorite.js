@@ -14,8 +14,7 @@ define([
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, RouteView, CtaRoute) {
 	'use strict';
 	
-	var FavoriteView = Backbone.View.extend({
-		manage: true,
+	var FavoriteView = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/favorite.hbs'],
 		initialize: function(){
 			var self = this;

@@ -11,11 +11,11 @@ define([
 	'../models/CtaFavorite',
 	'../models/ctaRoute',
 	'./arrivals',
+	'layoutmanager'
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, CtaFavoritesCollection, CtaFavorite, CtaRoute, Arrivals){
 	'use strict';
 
-	var RouteView = Backbone.View.extend({
-		manage: true,
+	var RouteView = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/route.hbs'],
 		initialize: function(route){
 			var self = this;
@@ -90,7 +90,10 @@ define([
 		serialize: function(){
 			var self = this;
 			return self.route;
-		}
+		},
+		// render: function(){
+		// 	$("#route").html(this.template(this.route));
+		// }
 	});
 
 	return new RouteView();
