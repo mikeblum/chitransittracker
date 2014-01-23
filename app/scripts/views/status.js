@@ -16,18 +16,6 @@ define([
 
 	var routes;
 
-	var getRailLines = function(railLines){
-		var lines = [];
-		_.each(railLines, function(line){
-			if(line.ServiceId == 'Red' || line.ServiceId === 'Blue' || line.ServiceId == 'Brn' ||
-                line.ServiceId == 'G' || line.ServiceId == 'Org' || line.ServiceId == 'P' ||
-                line.ServiceId == 'Pexp' || line.ServiceId == 'Pink' || line.ServiceId == "Y"){
-                lines.push(line);
-        	}
-		});
-        return lines;
-    };
-
 	var StatusView = Backbone.View.extend({
 		manage: true,
 		template: JST['app/scripts/templates/status.hbs'],
@@ -43,7 +31,7 @@ define([
 		    self.railRoutes.fetch({
 		            success: function(data){
 		            	self.context.railRoutes = data.toJSON();
-		            	self.railLines = getRailLines(self.context.railRoutes);
+		            	self.railLines = self.context.railRoutes;
 		            	self.render();
 		            },
 		            error: function(collection, response, options){

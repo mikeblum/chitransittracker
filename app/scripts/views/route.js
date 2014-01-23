@@ -19,9 +19,27 @@ define([
 		template: JST['app/scripts/templates/route.hbs'],
 		initialize: function(route){
 			var self = this;
+			if(self.supportsGeoLocation()){
+				navigator.geolocation.getCurrentPosition(self.getLocation, self.locationError);
+			}else{
+				console.log('geolocation failed');
+			}
 			self.route = route;
 			self.favorites = CtaFavoritesCollection;
 			self.arrivals = new Arrivals();
+		},
+		supportsGeoLocation: function(){
+			return 'geolocation' in navigator;
+		},
+		getLocation: function(position){
+			 var latitude = position.coords.latitude;
+			 var longitude = position.coords.longitude;
+			 console.log('lat: ' + latitude + ', longitude: ' + longitude);
+		},
+		locationError: function(err){
+			if (err.code == 1) {
+				console.log('location services denied');
+			}
 		},
 		setRoute: function(route){
 			var self = this;
@@ -77,7 +95,6 @@ define([
 					}
 				}
 			}
-			console.log('route rendered');
 			$("#route").empty().append(this.el);
 			return self;
 		},
@@ -90,10 +107,7 @@ define([
 		serialize: function(){
 			var self = this;
 			return self.route;
-		},
-		// render: function(){
-		// 	$("#route").html(this.template(this.route));
-		// }
+		}
 	});
 
 	return new RouteView();

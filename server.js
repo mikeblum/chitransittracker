@@ -6,7 +6,9 @@ var url = require('url'),
 	mongoose = require('mongoose'),
 	_ = require('underscore');
 
-var ctaApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
+var ctaTrainTrackerApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
+
+var ctaBusTrackerApiKey = 'RhGdYdxaX4Wxa5Tw2nGzGvk9G';
 
 var parser = xml2js.Parser({ explicitArray: false });
 
@@ -146,7 +148,7 @@ module.exports = function (app, response) {
 			});
 		});
 	}else if(path.indexOf('arrivals') !== -1){
-		request('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaApiKey + '&mapid=' + query.stop + '&max=4',
+		request('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaTrainTrackerApiKey + '&mapid=' + query.stop + '&max=4',
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
 					processArrivals(xml, response, query.stop);
@@ -160,8 +162,8 @@ module.exports = function (app, response) {
 			if (!err && res.statusCode === 200) {
 				processResponse(xml, response);
 			}else{
-					console.log(err);
-				}
+				console.log(err);
+			}
 		});
 	}else if(path.indexOf('stationId') !== -1){
 		var results = {};
@@ -189,6 +191,14 @@ module.exports = function (app, response) {
 				response.end(JSON.stringify(results));
 				});
 			});
+		});
+	}else if(path.indexOf('busPredictions') !== -1){
+		request('http://www.ctabustracker.com/bustime/api/v1/getpredictions?key=' + ctaBusTrackerApiKey + '&stpid=' + query.stop + '&top=4', function (err, res, xml){
+			if (!err && res.statusCode === 200) {
+				processResponse(xml, response);
+			}else{
+				console.log(err);
+			}
 		});
 	}
 };

@@ -42,6 +42,13 @@ define([
 				RouteView.render();
 			}
 		},
+		supportsLocalStorage: function() {
+			try {
+				return 'localStorage' in window && window['localStorage'] !== null;
+			}catch(e){
+				return false;
+			}
+		},
 		beforeRender: function(){
 			$(".favorites").empty().append(this.el);
 		},
