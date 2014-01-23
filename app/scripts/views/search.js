@@ -15,18 +15,6 @@ define([
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection, RouteView) {
 	'use strict';
 
-	var getRailLines = function(railLines){
-		var lines = [];
-		_.each(railLines, function(line){
-			if(line.ServiceId == 'Red' || line.ServiceId === 'Blue' || line.ServiceId == 'Brn' ||
-                line.ServiceId == 'G' || line.ServiceId == 'Org' || line.ServiceId == 'P' ||
-                line.ServiceId == 'Pexp' || line.ServiceId == 'Pink' || line.ServiceId == "Y"){
-                lines.push(line);
-        	}
-		});
-        return lines;
-    };
-
 	var SearchView = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/search.hbs'],
 		initialize: function(){
@@ -34,22 +22,6 @@ define([
 			$('#routeSpinner').show();
 			self.context = {};
 			self.routeView = RouteView;
-
-			self.railLines = [];
-
-		    self.railRoutes = new CtaRoutesCollection();
-			self.railRoutes.url = 'routes?type=rail';
-		    self.railRoutes.fetch({
-		            success: function(data){
-		            	self.context.railRoutes = data.toJSON();
-		            	self.railLines = getRailLines(self.context.railRoutes);
-		            	self.render();
-		            },
-		            error: function(collection, response, options){
-		            	console.log('error: ' + response);
-		            	$('#error').show();
-		            }
-		    });
 
 		    self.busRoutes = new CtaRoutesCollection();
 		    self.busRoutes.url = 'routes?type=bus';
@@ -107,20 +79,6 @@ define([
 								routeStatusColor: el.routeStatusColor,
 								routeIcon: 'images/cta_bus.svg',
 								busNumber: '#' + el.serviceId
-							});
-						});
-						_.each(data.railRoutes, function(el){
-							retval.push({
-								value: el.route,
-								tokens: [ el.route[0] ],
-								route: el.route[0],
-								routeColorCode: el.routeColorCode,
-								routeTextColor: el.routeTextColor,
-								serviceId: el.serviceId,
-								routeURL: el.routeURL,
-								routeStatus: el.routeStatus,
-								routeStatusColor: el.routeStatusColor,
-								routeIcon: 'images/cta_train.svg'
 							});
 						});
 						_.each(data.stations, function(el){
