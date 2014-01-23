@@ -131,13 +131,18 @@ module.exports = function (app, response) {
 			'route.0': new RegExp(regex, 'i')
 		}, function (err, docs){
 			results.stations = docs; 
-			BusRoute.find( { $or: [ 
-				{ serviceId: new RegExp(regex, 'i') }, 
-				{ route: new RegExp(regex, 'i') }
-			]}, function (err, docs){
-				results.busRoutes = docs;
-				response.writeHead(200, {'Content-Type': 'application/json'});
-				response.end(JSON.stringify(results));
+			RailRoute.find({
+				route: new RegExp(regex, 'i') 
+			}, function (err, docs){
+				results.railRoutes = docs;
+				BusRoute.find( { $or: [ 
+					{ serviceId: new RegExp(regex, 'i') }, 
+					{ route: new RegExp(regex, 'i') }
+				]}, function (err, docs){
+					results.busRoutes = docs;
+					response.writeHead(200, {'Content-Type': 'application/json'});
+					response.end(JSON.stringify(results));
+				});
 			});
 		});
 	}else if(path.indexOf('arrivals') !== -1){
