@@ -6,9 +6,9 @@ var url = require('url'),
 	mongoose = require('mongoose'),
 	_ = require('underscore');
 
-var ctaTrainTrackerApiKey = '1c3467a09f364ab58ab65c2d4cf4594a';
+var ctaTrainTrackerApiKey = process.env.CTA_TRAIN_TRACKER_API_KEY;
 
-var ctaBusTrackerApiKey = 'RhGdYdxaX4Wxa5Tw2nGzGvk9G';
+var ctaBusTrackerApiKey = process.env.CTA_BUS_TRACKER_API_KEY;
 
 var parser = xml2js.Parser({ explicitArray: false });
 
@@ -148,6 +148,7 @@ module.exports = function (app, response) {
 			});
 		});
 	}else if(path.indexOf('arrivals') !== -1){
+		console.log('arrivals: http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaTrainTrackerApiKey + '&mapid=' + query.stop + '&max=4');
 		request('http://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=' + ctaTrainTrackerApiKey + '&mapid=' + query.stop + '&max=4',
 			function (err, res, xml) {
 				if (!err && res.statusCode === 200) {
