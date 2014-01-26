@@ -20,3 +20,10 @@
 		</tr>
 		<tr><td class="line">{{ address }}</td></tr>
 </table>
+{{#if busRoute}}
+<form class="row">
+    <div class="col-sm-12 col-md-12">
+        <input type="text" class="form-control busStopsTypeahead typeahead" placeholder="Bus Route Or #"></input>
+    </div>
+</form>
+{{/if}}

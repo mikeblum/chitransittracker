@@ -8,8 +8,13 @@ define([
 
     var CtaArrivalsCollection = Backbone.Collection.extend({
         url: 'arrivals',
+        type: 'rail',
         parse: function(data){
-        	return data.ctatt.eta;
+            if(this.type === 'rail'){
+        	   return data.ctatt.eta;
+            }else{
+                return data['bustime-response'];
+            }
         }
     });
 

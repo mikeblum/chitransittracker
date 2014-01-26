@@ -25,30 +25,42 @@ define([
 			this.route = route;
 		},
 		refresh: function(serviceId){
-			$('#arrivalsSpinner').show();
 			var self = this;
-			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId;
+			$('#arrivalsSpinner').show();
+			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
+			self.arrivalsCollection.type = this.route.type;
 			self.arrivalsCollection.fetch({
 				success: function(data){
 					self.arrivalsTable = data.toJSON();
-					self.arrivals = [];
-					_.each(self.arrivalsTable, function(arrival){
-						self.arrivals.push({
-							destination: arrival.destNm,
-							computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
-							approaching: arrival.isApp === '1' ? '1' : ''
+					if(self.route.type === 'bus'){
+						//error?
+						if(self.arrivalsTable[0].error){
+							self.error = self.arrivalsTable[0].error.msg;
+						}else{ //get arrival times
+
+						}
+					}else{
+						self.arrivals = [];
+						if(!self.arrivalsTable || self.arrivalsTable.length === 0){
+							self.error = 'Arrival times not available';
+						}
+						_.each(self.arrivalsTable, function(arrival){
+							self.arrivals.push({
+								destination: arrival.destNm,
+								computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
+								approaching: arrival.isApp === '1' ? '1' : ''
+							});
 						});
-					});
-					self.arrivals = self.arrivals.sort(function(a,b){
-						if(a.destination < b.destination) return -1;
-						if(a.destination > b.destination) return 1;
-						return 0;
-					});
-					console.log(self.arrivals);
+						self.arrivals = self.arrivals.sort(function(a,b){
+							if(a.destination < b.destination) return -1;
+							if(a.destination > b.destination) return 1;
+							return 0;
+						});
+					}
 					self.render();
 				},
 				error: function(collection, response, options){
-					console.log('error: ' + JSON.stringify(response));
+					
 				},
 				complete: function(){
 					setTimeout(function() {
@@ -69,7 +81,8 @@ define([
 		serialize: function(){
 			return {
 				route: this.route,
-				arrivals: this.arrivals
+				arrivals: this.arrivals,
+				error: this.error
 			};
 		}
     });

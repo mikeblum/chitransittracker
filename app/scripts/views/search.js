@@ -15,18 +15,6 @@ define([
 ], function ($, Bootstrap, _, Backbone, JST, Handlebars, Typeahead, CtaRoutesCollection, CtaAlertsCollection, RouteView) {
 	'use strict';
 
-	var getRailLines = function(railLines){
-		var lines = [];
-		_.each(railLines, function(line){
-			if(line.ServiceId == 'Red' || line.ServiceId === 'Blue' || line.ServiceId == 'Brn' ||
-                line.ServiceId == 'G' || line.ServiceId == 'Org' || line.ServiceId == 'P' ||
-                line.ServiceId == 'Pexp' || line.ServiceId == 'Pink' || line.ServiceId == "Y"){
-                lines.push(line);
-        	}
-		});
-        return lines;
-    };
-
 	var SearchView = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/search.hbs'],
 		initialize: function(){
@@ -35,44 +23,28 @@ define([
 			self.context = {};
 			self.routeView = RouteView;
 
-			self.railLines = [];
-
-		    self.railRoutes = new CtaRoutesCollection();
-			self.railRoutes.url = 'routes?type=rail';
-		    self.railRoutes.fetch({
-		            success: function(data){
-		            	self.context.railRoutes = data.toJSON();
-		            	self.railLines = getRailLines(self.context.railRoutes);
-		            	self.render();
-		            },
-		            error: function(collection, response, options){
-		            	console.log('error: ' + response);
-		            	$('#error').show();
-		            }
-		    });
-
 		    self.busRoutes = new CtaRoutesCollection();
 		    self.busRoutes.url = 'routes?type=bus';
 		    self.busRoutes.fetch({
-		            success: function(data){
-		               	self.context.busRoutes = data.toJSON();
-		            },
-		            error: function(collection, response, options){
-		                console.log('error: ' + response);
-		                $('#error').show();
-		            }
+	            success: function(data){
+	               	self.context.busRoutes = data.toJSON();
+	               	self.render();
+	            },
+	            error: function(collection, response, options){
+	                $('#error').show();
+	            }
 		    });
 
 		    self.stations = new CtaRoutesCollection();
 		    self.stations.url = 'routes?type=station';
 		    self.stations.fetch({
-		            success: function(data){
-		                self.context.stations = data.toJSON();
-		            },
-		            error: function(collection, response, options){
-		                console.log('error: ' + response);
-		                $('#error').show();
-		            }
+	            success: function(data){
+	                self.context.stations = data.toJSON();
+	                self.render();
+	            },
+	            error: function(collection, response, options){
+	                $('#error').show();
+	            }
 		    });
 		},
 		beforeRender: function(){
@@ -106,21 +78,8 @@ define([
 								routeStatus: el.routeStatus,
 								routeStatusColor: el.routeStatusColor,
 								routeIcon: 'images/cta_bus.svg',
-								busNumber: '#' + el.serviceId
-							});
-						});
-						_.each(data.railRoutes, function(el){
-							retval.push({
-								value: el.route,
-								tokens: [ el.route[0] ],
-								route: el.route[0],
-								routeColorCode: el.routeColorCode,
-								routeTextColor: el.routeTextColor,
-								serviceId: el.serviceId,
-								routeURL: el.routeURL,
-								routeStatus: el.routeStatus,
-								routeStatusColor: el.routeStatusColor,
-								routeIcon: 'images/cta_train.svg'
+								busNumber: '#' + el.serviceId,
+								type: 'bus'
 							});
 						});
 						_.each(data.stations, function(el){
@@ -135,7 +94,8 @@ define([
 								routeURL: el.routeURL,
 								routeStatus: el.routeStatus,
 								routeStatusColor: el.routeStatusColor,
-								routeIcon: 'images/cta_train.svg'
+								routeIcon: 'images/cta_train.svg',
+								type: 'rail'
 							});
 						});
 						return retval;
@@ -144,9 +104,9 @@ define([
 				template: self.template
 			}).on('typeahead:selected ', function (obj, datum) {
 				//clear typeahead
-				$('.typeahead').typeahead('setQuery', '');
-				console.log(JSON.stringify(datum))
+				$('.routesTypeahead.typeahead').typeahead('setQuery', '');
 			   	self.routeView.setRoute(datum);
+			   	self.routeView.refresh(datum.serviceId);
 			   	$('.routesTypeahead.typeahead').trigger('blur');
 			});
 			setTimeout(function() {

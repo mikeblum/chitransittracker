@@ -66,7 +66,7 @@ define([
 					success: function(data){
 						var routeData = data.toJSON();
 						routeData.route = routeData.route[0];
-						routeData.routeIcon = routeData.type === 'rail' ?  'images/cta_train.svg' : (routeData.type === 'bus') ? 'images/cta_bus.svg' : 'images/cta_train.svg';
+						routeData.routeIcon = routeData.type === 'rail' ?  'images/cta_train.svg' : 'images/cta_bus.svg';
 						RouteView.setRoute(routeData);
 					},
 					error: function(collection, response, options){

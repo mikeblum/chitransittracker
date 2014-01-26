@@ -35,7 +35,6 @@ define([
 		            	self.render();
 		            },
 		            error: function(collection, response, options){
-		            	console.log('error: ' + response);
 		            	$('#error').show();
 		            }
 		    });
@@ -48,8 +47,7 @@ define([
 		            self.render();
                 },
                 error: function(error){
-                        console.log('error');
-                        $('#error').show();
+                    $('#error').show();
                 }
 	        });
 		},

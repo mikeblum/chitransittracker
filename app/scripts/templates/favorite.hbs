@@ -8,7 +8,7 @@
 </div>
 {{#each favorites}}
 	<table class="table routeTable">
-	    <tr class="favoriteRoute {{ serviceId }}" style="background-color:#{{routeColorCode}};">
+	    <tr class="favoriteRoute {{ serviceId }}" name="{{ serviceId }}" style="background-color:#{{routeColorCode}};">
 			<td class="line">{{ busNumber }}<img class="transit_logo" src="{{routeIcon}}"></img></td>
 			<td class="line">{{ route }}</td>
 			<td class="statusChevron"><span id="{{ serviceId }}" class="glyphicon glyphicon-trash glyphicon-inverse trash"></span></td>

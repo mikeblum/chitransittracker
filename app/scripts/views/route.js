@@ -18,36 +18,20 @@ define([
 	var RouteView = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/route.hbs'],
 		initialize: function(route){
-			var self = this;
-			if(self.supportsGeoLocation()){
-				navigator.geolocation.getCurrentPosition(self.getLocation, self.locationError);
-			}else{
-				console.log('geolocation failed');
-			}
-			self.route = route;
-			self.favorites = CtaFavoritesCollection;
-			self.arrivals = new Arrivals();
-		},
-		supportsGeoLocation: function(){
-			return 'geolocation' in navigator;
-		},
-		getLocation: function(position){
-			 var latitude = position.coords.latitude;
-			 var longitude = position.coords.longitude;
-			 console.log('lat: ' + latitude + ', longitude: ' + longitude);
-		},
-		locationError: function(err){
-			if (err.code == 1) {
-				console.log('location services denied');
-			}
+			this.route = route;
+			this.favorites = CtaFavoritesCollection;
+			this.arrivals = new Arrivals();
 		},
 		setRoute: function(route){
-			var self = this;
-			$('#arrivalsSpinner').show();
-			self.route = route;
-			self.arrivals.setRoute(self.route);
-			self.arrivals.refresh(self.route.serviceId);
-			self.render();
+			this.route = route;
+			this.arrivals.setRoute(this.route);
+			if(this.route.type === 'bus'){
+				this.route.busRoute = true;
+			}else{
+				this.route.busRoute = false;
+			}
+			this.arrivals.refresh(this.route.serviceId);
+			this.render();
 		},
 		saveFavorite: function(){
 			if(typeof(Storage)!=="undefined"){
@@ -100,13 +84,43 @@ define([
 		},
 		afterRender: function(){
 			var self = this;
+
+			var busStopTemplate = JST['app/scripts/templates/busRoute.hbs'];
+
 			$( ".favorite" ).click(function(){
-			 	self.favoriteRoute();
+				self.favoriteRoute();
+			});
+
+			$('.busStopsTypeahead.typeahead').typeahead({
+				limit: 10,
+				remote: {
+					url: 'busStops?query=%QUERY&serviceId=' + this.route.serviceId,
+					filter: function(data){
+						var results = [];
+						_.each(data, function(stop){
+							results.push({
+								value: stop.stpnm,
+								tokens: [ stop.stpnm, stop.stpid ],
+								latitude: stop.lat,
+								longitude: stop.lon,
+								stopNumber: stop.stpid
+							});
+						});
+						return results;
+					}
+				},
+				template: busStopTemplate
+			}).on('typeahead:selected ', function (obj, datum) {
+				//clear typeahead
+				$('.busStopsTypeahead.typeahead').typeahead('setQuery', '');
+
+				self.arrivals.refresh(datum.stopNumber);
+
+			   	$('.routesTypeahead.typeahead').trigger('blur');
 			});
 		},
 		serialize: function(){
-			var self = this;
-			return self.route;
+			return this.route;
 		}
 	});
 
