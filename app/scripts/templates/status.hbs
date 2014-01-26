@@ -8,20 +8,29 @@
 </div>
 <div id="routeStatus" class="accordion">
         {{#each routes}}
-        <div class="accordion-group line routeAlert" style="background-color:#{{ RouteColorCode }}";
-        data-parent="#routeStatus" data-toggle="collapse" data-target="#{{ ServiceId }}" class="accordion-toggle">
+        <div class="accordion-group line routeAlert" style="background-color:#{{ routeColorCode }}";
+        data-parent="#routeStatus" data-toggle="collapse" data-target="#{{ serviceId }}" class="accordion-toggle">
                 <div class="accordion-heading">
                         <table class="table routeTable"><tr>
                         <td><img class="transit_logo" src="images/cta_train.png"></img></td>
-                        <td><div class="line">{{ Route }}</div></td>
-                        <td><div class="line">{{ RouteStatus }}</div></td>
+                        <td><div class="line">{{ route }}</div></td>
+                        <td><div class="line">{{ routeStatus }}</div></td>
                         {{{ chevron }}}</tr></table> 
                 </div>
-                <div class="accordion-body collapse" id="{{ ServiceId }}"> 
-                        <div class="accordion-inner line routeAlertText">
-                                {{{ description }}}       
+                <div class="accordion-body collapse" id="{{ serviceId }}">
+                    <div class="accordion-inner">
+                        {{#each alerts}}
+                        <div class="statusPanel panel-default">
+                            <div class="panel-heading">
+                                {{{ shortDescription }}}
+                            </div>
+                            <div class="panel-body" style="background-color:#{{ ../routeColorCode }}";>
+                                {{{ fullDescription }}}
+                            </div>
                         </div>
+                        {{/each}}
+                    </div>
                 </div>
-        </div>
+            </div>
         {{/each}}
 </div>

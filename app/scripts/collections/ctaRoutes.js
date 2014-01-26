@@ -9,7 +9,7 @@ define([
     var CtaRoutesCollection = Backbone.Collection.extend({
         url: 'routes',
         parse: function(data){
-        	return data.CTARoutes.RouteInfo;
+        	return data;
         }
     });
 

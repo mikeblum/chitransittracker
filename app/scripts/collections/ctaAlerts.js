@@ -9,7 +9,7 @@ define([
     var CtaAlertsCollection = Backbone.Collection.extend({
         url: 'alerts',
         parse: function(data){
-        	return data.CTAAlerts.Alert;
+        	return data;
         }
     });
 

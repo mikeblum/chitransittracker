@@ -26,45 +26,61 @@ define([
 
 			self.railLines = [];
 
-		    self.railRoutes = new CtaRoutesCollection();
-		    self.railRoutes.url = 'routes?type=rail';
-		    self.railRoutes.fetch({
-		            success: function(data){
-		            	self.context.railRoutes = data.toJSON();
-		            	self.railLines = self.context.railRoutes;
-		            	self.render();
-		            },
-		            error: function(collection, response, options){
-		            	$('#error').show();
-		            }
-		    });
+			self.railRoutes = new CtaRoutesCollection();
+			self.railRoutes.url = 'routes?type=rail';
+			self.railRoutes.fetch({
+				success: function(data){
+					self.railLines = data.toJSON();
+					var temp = ['Red', 'Blue', 'Brn', 'G', 'Org', 'P', 'Pexp', 'Pink', 'Y'];
+					//sort rail lines into cta order
+					_.each(temp, function(serviceId, index){
+						var route = _.findWhere(self.railLines, {serviceId: serviceId});
+						temp[index] = route;
+					});
+					self.railLines = temp;
+					self.render();
+				},
+				error: function(collection, response, options){
+					
+				}
+			});
 
-		    self.alerts = new CtaAlertsCollection();
+			self.alerts = new CtaAlertsCollection();
 
-		    self.alerts.fetch({
-	            success: function(data){
-		            self.context.alerts = data.toJSON();
-		            self.render();
-                },
-                error: function(error){
-                    $('#error').show();
-                }
-	        });
+			self.alerts.fetch({
+				success: function(data){
+					self.context.alerts = data.toJSON();
+					self.render();
+				},
+				error: function(error){
+					
+				}
+			});
 		},
 		beforeRender: function(){
 			var self = this;
 			routes = [];
-		    _.each(self.railLines, function(route){
-		        route.description = "";
-		        route.chevron = '<td class="statusChevron"></td>';
-		         _.find(self.context.alerts, function(alert){
-		                if(alert.ImpactedService.Service.ServiceId === route.ServiceId){
-		                    route.description = alert.FullDescription;
-		                    route.chevron = '<td class="statusChevron"><span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></td>';
-		                }
-		        });
-		        routes.push(route);
-            });
+			_.each(self.railLines, function(route){
+				route.description = "";
+				route.chevron = '<td class="statusChevron"></td>';
+				var impactedServices = [];
+				var alerts =  _.filter(self.context.alerts, function(alert){
+					if(alert.impactedService.Service.ServiceId === route.serviceId){
+						if(impactedServices.length > 0 && _.contains(impactedServices, alert.shortDescription)){
+							return false;
+						}else{
+							impactedServices.push(alert.shortDescription);
+							return true;
+						}
+					}
+					return false;
+				});
+				route.alerts = alerts;
+				if(alerts && alerts.length > 0){
+					route.chevron = '<td class="statusChevron"><span class="glyphicon glyphicon-chevron-down glyphicon-inverse"></span></td>';
+				}
+				routes.push(route);
+			});
 		},
 		serialize: function(){
 			return { routes: routes };

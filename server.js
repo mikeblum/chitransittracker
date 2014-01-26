@@ -60,11 +60,32 @@ var routeSchema = Schema({
 	'type': String
 });
 
+var alertSchema = Schema({
+	'alertId': String,
+	'alertURL': String,
+	'eventEnd': String,
+	'eventStart': String,
+	'fullDescription': String,
+	'guid': String,
+	'headline': String,
+	'impact': String,
+	'impactedService': {},
+	'majorAlert': String,
+	'severityCSS': String,
+	'severityColor': String,
+	'severityScore': String,
+	'shortDescription': String,
+	'tbd': String,
+	'ttim': String
+});
+
 var RailRoute = mongoose.model('RailRoute', routeSchema, 'RailRoutes');
 
 var BusRoute = mongoose.model('BusRoute', routeSchema, 'BusRoutes');
 
 var Station = mongoose.model('Station', routeSchema, 'Stations');
+
+var Alert = mongoose.model('Alert', alertSchema, 'Alerts');
 
 var pushRouteToDatabase = function(routeType, route){
 	routeType.findOneAndUpdate({ serviceId: route.ServiceId }, {
@@ -87,10 +108,9 @@ var prepareRoutesForDatabase = function(data, type){
 		var routeType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 
 		route.Route =  route.Route.split('|'); //split route name from physical address
-		route.type = 'rail';
+		route.type = type === 'bus' ? 'bus' : 'rail';
 		//get directions of bus routes
 		if(type === 'bus'){
-			route.type = 'bus';
 			request('http://www.ctabustracker.com/bustime/api/v1/getdirections?key=' + ctaBusTrackerApiKey + '&rt=' + route.ServiceId, function (err, res, xml){
 				if (!err && res.statusCode === 200) {
 					parser.parseString(xml, function (err, json) {
@@ -124,12 +144,45 @@ var prepareRoutesForDatabase = function(data, type){
 	});
 };
 
-
 var processRoutes = function(xml, response, type){
 	parser.parseString(xml, function (err, json) {
 		prepareRoutesForDatabase(json, type);
 		response.writeHead(200, {'Content-Type': 'application/json'});
-		response.end(JSON.stringify(json));
+		response.end();
+	});
+};
+
+var prepareAlertsForDatabase = function(data, type){
+	Alert.remove({}); //clear alerts from db
+	_.each(data.CTAAlerts.Alert, function(alert){
+		Alert.findOneAndUpdate({ serviceId: alert.AlertId }, {
+			alertId: alert.AlertId,
+			alertURL: alert.AlertURL,
+			eventEnd: alert.EventEnd,
+			eventStart: alert.EventStart,
+			fullDescription: alert.FullDescription,
+			guid: alert.GUID,
+			headline: alert.Headline,
+			impact: alert.Impact,
+			impactedService: alert.ImpactedService,
+			majorAlert: alert.MajorAlert,
+			severityCSS: alert.SeverityCSS,
+			severityColor: alert.SeverityColor,
+			severityScore: alert.SeverityScore,
+			shortDescription: alert.ShortDescription,
+			tbd: alert.TBD,
+			ttim: alert.ttim
+		}, { upsert: true }, function (err) {
+			if(err){ console.log(err); }
+		});
+	});
+};
+
+var processAlerts = function(xml, response){
+	parser.parseString(xml, function (err, json) {
+		prepareAlertsForDatabase(json);
+		response.writeHead(200, {'Content-Type': 'application/json'});
+		response.end();
 	});
 };
 
@@ -141,21 +194,52 @@ var processResponse = function(xml, response){
 	});
 };
 
+var getDataFromCTA = function(type){
+	request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + type,
+		function (err, res, xml) {
+			if (!err && res.statusCode === 200) {
+				processRoutes(xml, response, params.type);
+			}else{
+				console.log(err);
+			}
+		}
+	);	
+};
+
+var getAlertsFromCTA = function(){
+	request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
+		if (!err && res.statusCode === 200) {
+			processAlerts(xml, response);
+		}else{
+			console.log(err);
+		}
+	});
+};
+			
+
+
+setInterval(function(){
+	console.log('getting CTA data');
+	getDataFromCTA('station');
+	getDataFromCTA('bus');
+	getDataFromCTA('rail');
+}, 86400000); //get routes from CTA servers once a day
+
+setInterval(function(){
+	getAlertsFromCTA();
+}, 3600000); //get alerts every hour
+
 module.exports = function (app, response) {
 	var urlParts = url.parse(app.url, true);
 	var path = urlParts.pathname;
 	var params = urlParts.query;
 	if(path.indexOf('routes') !== -1){
-		request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + params.type,
-			function (err, res, xml) {
-				if (!err && res.statusCode === 200) {
-					console.log('processing routes');
-					processRoutes(xml, response, params.type);
-				}else{
-					console.log(err);
-				}
-			}
-		);
+		var routeType = params.type === 'rail' ? RailRoute : (params.type === 'bus') ? BusRoute : Station;
+		routeType.find({}, function (err, docs){
+			results = docs; 
+			response.writeHead(200, {'Content-Type': 'application/json'});
+			response.end(JSON.stringify(results));
+		});
 	}else if(path.indexOf('search') !== -1){
 		var results = {};
 		var regex = params.query;
@@ -184,7 +268,6 @@ module.exports = function (app, response) {
 				}
 			);
 		}else{
-			console.log('bus: ' + 'http://www.ctabustracker.com/bustime/api/v1/getpredictions?key=' + ctaBusTrackerApiKey + '&stpid=' + params.stop + '&top=4');
 			request('http://www.ctabustracker.com/bustime/api/v1/getpredictions?key=' + ctaBusTrackerApiKey + '&stpid=' + params.stop + '&top=4',
 				function (err, res, xml){
 					if (!err && res.statusCode === 200) {
@@ -195,12 +278,10 @@ module.exports = function (app, response) {
 			});
 		}
 	}else if(path.indexOf('alerts') !== -1){
-		request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
-			if (!err && res.statusCode === 200) {
-				processResponse(xml, response);
-			}else{
-				console.log(err);
-			}
+		Alert.find({}, function (err, docs){
+			results = docs; 
+			response.writeHead(200, {'Content-Type': 'application/json'});
+			response.end(JSON.stringify(results));
 		});
 	}else if(path.indexOf('stationId') !== -1){
 		var results = {};

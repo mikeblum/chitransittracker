@@ -129,6 +129,12 @@ a, a:link, a:hover, a:visited, a:active{
     cursor: pointer;
 }
 
+.panel-default > .panel-heading{
+    background-color: #fcf8e3;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
 #route, .routeTable, .table > tbody > tr > td{
     text-align: left;
     border-top: 0px;
