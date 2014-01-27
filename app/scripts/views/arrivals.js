@@ -32,31 +32,51 @@ define([
 			self.arrivalsCollection.fetch({
 				success: function(data){
 					self.arrivalsTable = data.toJSON();
+					self.arrivals = [];
 					if(self.route.type === 'bus'){
 						//error?
-						if(self.arrivalsTable[0].error){
-							self.error = self.arrivalsTable[0].error.msg;
-						}else{ //get arrival times
-
+						if(serviceId !== self.route.serviceId){
+							if(self.arrivalsTable[0].error){
+								self.error = self.arrivalsTable[0].error.msg;
+							}else{ //get arrival times
+								self.error = false;
+								if(self.arrivalsTable[0].prd){
+									if(self.arrivalsTable[0].prd.stpnm){ //only one arrival - .hack
+										var arrival = self.arrivalsTable[0].prd;
+										self.arrivals.push({
+											destination: arrival.des,
+											computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes')
+										});
+									}else{
+										_.each(self.arrivalsTable[0].prd, function(arrival){
+											self.arrivals.push({
+												destination: arrival.des,
+												computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes')
+											});
+										});
+									}
+								}
+							}
 						}
 					}else{
-						self.arrivals = [];
 						if(!self.arrivalsTable || self.arrivalsTable.length === 0){
 							self.error = 'Arrival times not available';
-						}
-						_.each(self.arrivalsTable, function(arrival){
-							self.arrivals.push({
-								destination: arrival.destNm,
-								computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
-								approaching: arrival.isApp === '1' ? '1' : ''
+						}else{
+							self.error = false;
+							_.each(self.arrivalsTable, function(arrival){
+								self.arrivals.push({
+									destination: arrival.destNm,
+									computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
+									approaching: arrival.isApp === '1' ? '1' : ''
+								});
 							});
-						});
-						self.arrivals = self.arrivals.sort(function(a,b){
-							if(a.destination < b.destination) return -1;
-							if(a.destination > b.destination) return 1;
-							return 0;
-						});
+						}
 					}
+					self.arrivals = self.arrivals.sort(function(a,b){
+						if(a.destination < b.destination) return -1;
+						if(a.destination > b.destination) return 1;
+						return 0;
+					});
 					self.render();
 				},
 				error: function(collection, response, options){
