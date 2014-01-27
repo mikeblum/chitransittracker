@@ -152,7 +152,7 @@ var processRoutes = function(xml, response, type){
 	});
 };
 
-var prepareAlertsForDatabase = function(data, type){
+var prepareAlertsForDatabase = function(data){
 	Alert.remove({}); //clear alerts from db
 	_.each(data.CTAAlerts.Alert, function(alert){
 		Alert.findOneAndUpdate({ serviceId: alert.AlertId }, {
@@ -178,7 +178,7 @@ var prepareAlertsForDatabase = function(data, type){
 	});
 };
 
-var processAlerts = function(xml, response){
+var processAlerts = function(xml){
 	parser.parseString(xml, function (err, json) {
 		prepareAlertsForDatabase(json);
 		response.writeHead(200, {'Content-Type': 'application/json'});
@@ -209,7 +209,7 @@ var getDataFromCTA = function(type){
 var getAlertsFromCTA = function(){
 	request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
 		if (!err && res.statusCode === 200) {
-			processAlerts(xml, response);
+			processAlerts(xml);
 		}else{
 			console.log(err);
 		}
