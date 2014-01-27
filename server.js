@@ -194,7 +194,7 @@ var getDataFromCTA = function(type){
 	request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + type,
 		function (err, res, xml) {
 			if (!err && res.statusCode === 200) {
-				processRoutes(xml, params.type);
+				processRoutes(xml, type);
 			}else{
 				console.log(err);
 			}
@@ -211,8 +211,6 @@ var getAlertsFromCTA = function(){
 		}
 	});
 };
-			
-
 
 setInterval(function(){
 	console.log('getting CTA data');
