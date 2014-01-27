@@ -144,11 +144,9 @@ var prepareRoutesForDatabase = function(data, type){
 	});
 };
 
-var processRoutes = function(xml, response, type){
+var processRoutes = function(xml, type){
 	parser.parseString(xml, function (err, json) {
 		prepareRoutesForDatabase(json, type);
-		response.writeHead(200, {'Content-Type': 'application/json'});
-		response.end();
 	});
 };
 
@@ -181,8 +179,6 @@ var prepareAlertsForDatabase = function(data){
 var processAlerts = function(xml){
 	parser.parseString(xml, function (err, json) {
 		prepareAlertsForDatabase(json);
-		response.writeHead(200, {'Content-Type': 'application/json'});
-		response.end();
 	});
 };
 
@@ -198,7 +194,7 @@ var getDataFromCTA = function(type){
 	request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + type,
 		function (err, res, xml) {
 			if (!err && res.statusCode === 200) {
-				processRoutes(xml, response, params.type);
+				processRoutes(xml, params.type);
 			}else{
 				console.log(err);
 			}
