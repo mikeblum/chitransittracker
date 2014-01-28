@@ -18,7 +18,10 @@ define([
 			'' : 'root'
 		},
 		root: function(){
-			this.SearchView = new SearchView();
+			var search = new SearchView();
+			$("#search").empty().append(search.el);
+			search.render();
+
 			var status = new StatusView();
 			$(".routeStatus").empty().append(status.el);
 			// Render the layout.

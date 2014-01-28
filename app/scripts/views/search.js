@@ -20,9 +20,11 @@ define([
 		initialize: function(){
 			var self = this;
 			self.context = {};
+
+			self.searchResultTemplate = JST['app/scripts/templates/searchResult.hbs'];
 			self.routeView = RouteView;
 		},
-		beforeRender: function(){
+		afterRender: function(){
 			var self = this;
 			$('.routesTypeahead.typeahead').typeahead({
 				limit: 10,
@@ -76,7 +78,7 @@ define([
 						return retval;
 					}
 				},
-				template: self.template
+				template: self.searchResultTemplate
 			}).on('typeahead:selected ', function (obj, datum) {
 				//clear typeahead
 				$('.routesTypeahead.typeahead').typeahead('setQuery', '');
