@@ -30,7 +30,13 @@ define([
 				limit: 10,
 				remote: {
 					url: 'search?query=%QUERY',
+					beforeSend: function(xhr){
+						$('#searchSpinner').show();
+					},
 					filter: function(data) {
+						setTimeout(function() {
+							$('#searchSpinner').fadeOut('fast');
+						}, 1000);
 						var query = false;
 						if(data){
 							_.each(data, function(type){
@@ -82,9 +88,9 @@ define([
 			}).on('typeahead:selected ', function (obj, datum) {
 				//clear typeahead
 				$('.routesTypeahead.typeahead').typeahead('setQuery', '');
-			   	self.routeView.setRoute(datum);
-			   	self.routeView.refresh(datum.serviceId);
-			   	$('.routesTypeahead.typeahead').trigger('blur');
+				self.routeView.setRoute(datum);
+				self.routeView.refresh(datum.serviceId);
+				$('.routesTypeahead.typeahead').trigger('blur');
 			});
 		}
 	});
