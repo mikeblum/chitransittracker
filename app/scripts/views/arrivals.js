@@ -81,12 +81,11 @@ define([
 				},
 				error: function(collection, response, options){
 					
-				},
-				complete: function(){
-					setTimeout(function() {
-                    	$('#arrivalsSpinner').fadeOut('fast');
-                    }, 1000);
 				}
+			}).complete(function(){
+				setTimeout(function() {
+				    $('#arrivalsSpinner').fadeOut('fast');
+				}, 1000);
 			});
 		},
 		beforeRender: function(){

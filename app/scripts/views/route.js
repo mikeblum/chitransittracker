@@ -111,8 +111,8 @@ define([
 				},
 				template: busStopTemplate
 			}).on('typeahead:selected ', function (obj, datum) {
-				//clear typeahead
-				$('.busStopsTypeahead.typeahead').typeahead('setQuery', '');
+				// //clear typeahead
+				// $('.busStopsTypeahead.typeahead').typeahead('setQuery', '');
 
 				self.arrivals.refresh(datum.stopNumber);
 

@@ -42,7 +42,11 @@ define([
 				},
 				error: function(collection, response, options){
 					
-				}
+				},
+			}).complete(function(){
+				setTimeout(function() {
+				    $('#routeSpinner').fadeOut('fast');
+				}, 1000);
 			});
 
 			self.alerts = new CtaAlertsCollection();

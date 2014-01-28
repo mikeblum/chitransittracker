@@ -237,6 +237,7 @@ module.exports = function (app, response) {
 	}else if(path.indexOf('search') !== -1){
 		var results = {};
 		var regex = params.query;
+		regex = regex.replace(" and "," & ");
 		Station.find( {
 			'route.0': new RegExp(regex, 'i')
 		}, function (err, docs){
@@ -301,6 +302,8 @@ module.exports = function (app, response) {
 	}else if(path.indexOf('busStops') !== -1){
 		var serviceId = params.serviceId;
 		var regex = params.query;
+		//replace any and with &
+		regex = regex.replace(" and "," & ");
 		BusRoute.find({
 			serviceId: serviceId
 		}, function (err, docs){

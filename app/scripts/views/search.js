@@ -19,33 +19,8 @@ define([
 		template: JST['app/scripts/templates/search.hbs'],
 		initialize: function(){
 			var self = this;
-			$('#routeSpinner').show();
 			self.context = {};
 			self.routeView = RouteView;
-
-		    self.busRoutes = new CtaRoutesCollection();
-		    self.busRoutes.url = 'routes?type=bus';
-		    self.busRoutes.fetch({
-	            success: function(data){
-	               	self.context.busRoutes = data.toJSON();
-	               	self.render();
-	            },
-	            error: function(collection, response, options){
-	                $('#error').show();
-	            }
-		    });
-
-		    self.stations = new CtaRoutesCollection();
-		    self.stations.url = 'routes?type=station';
-		    self.stations.fetch({
-	            success: function(data){
-	                self.context.stations = data.toJSON();
-	                self.render();
-	            },
-	            error: function(collection, response, options){
-	                $('#error').show();
-	            }
-		    });
 		},
 		beforeRender: function(){
 			var self = this;
@@ -109,9 +84,6 @@ define([
 			   	self.routeView.refresh(datum.serviceId);
 			   	$('.routesTypeahead.typeahead').trigger('blur');
 			});
-			setTimeout(function() {
-			    $('#routeSpinner').fadeOut('fast');
-			}, 1000);
 		}
 	});
 
