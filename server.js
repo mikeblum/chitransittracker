@@ -213,13 +213,14 @@ var getAlertsFromCTA = function(){
 };
 
 setInterval(function(){
-	console.log('getting CTA data');
+	console.log('update-db: getting CTA data');
 	getDataFromCTA('station');
 	getDataFromCTA('bus');
 	getDataFromCTA('rail');
 }, 86400000); //get routes from CTA servers once a day
 
 setInterval(function(){
+	console.log('update-db: getting CTA alerts');
 	getAlertsFromCTA();
 }, 3600000); //get alerts every hour
 
