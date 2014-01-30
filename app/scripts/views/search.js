@@ -89,7 +89,6 @@ define([
 				//clear typeahead
 				$('.routesTypeahead.typeahead').typeahead('setQuery', '');
 				self.routeView.setRoute(datum);
-				self.routeView.refresh(datum.serviceId);
 				$('.routesTypeahead.typeahead').trigger('blur');
 			});
 		}

@@ -110,13 +110,10 @@ define([
 					}
 				},
 				template: busStopTemplate
-			}).on('typeahead:selected ', function (obj, datum) {
-				// //clear typeahead
-				// $('.busStopsTypeahead.typeahead').typeahead('setQuery', '');
+			}).on('typeahead:selected ', function (obj, datum){
+				self.arrivals.refresh(datum.stopNumber, true);
 
-				self.arrivals.refresh(datum.stopNumber);
-
-			   	$('.routesTypeahead.typeahead').trigger('blur');
+			   	$('.busStopsTypeahead.typeahead').trigger('blur');
 			});
 		},
 		serialize: function(){

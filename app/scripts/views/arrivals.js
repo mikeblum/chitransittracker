@@ -24,41 +24,42 @@ define([
 		setRoute: function(route){
 			this.route = route;
 		},
-		refresh: function(serviceId){
+		refresh: function(serviceId, isBusRoute){
 			var self = this;
 			$('#arrivalsSpinner').show();
+
 			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
 			self.arrivalsCollection.type = this.route.type;
 			self.arrivalsCollection.fetch({
 				success: function(data){
 					self.arrivalsTable = data.toJSON();
 					self.arrivals = [];
-					if(self.route.type === 'bus'){
-						//error?
-						if(serviceId !== self.route.serviceId){
-							if(self.arrivalsTable[0].error){
-								self.error = self.arrivalsTable[0].error.msg;
-							}else{ //get arrival times
-								self.error = false;
-								if(self.arrivalsTable[0].prd){
-									if(self.arrivalsTable[0].prd.stpnm){ //only one arrival - .hack
-										var arrival = self.arrivalsTable[0].prd;
+					if(self.route.type === 'bus' && isBusRoute){
+						self.isBusRoute = isBusRoute;
+						//update the service id to be the bus stop
+						self.route.serviceId = serviceId;
+						if(self.arrivalsTable[0].error){
+							self.error = self.arrivalsTable[0].error.msg;
+						}else{ //get arrival times
+							self.error = false;
+							if(self.arrivalsTable[0].prd){
+								if(self.arrivalsTable[0].prd.stpnm){ //only one arrival - .hack
+									var arrival = self.arrivalsTable[0].prd;
+									self.arrivals.push({
+										destination: arrival.des,
+										computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes')
+									});
+								}else{
+									_.each(self.arrivalsTable[0].prd, function(arrival){
 										self.arrivals.push({
 											destination: arrival.des,
 											computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes')
 										});
-									}else{
-										_.each(self.arrivalsTable[0].prd, function(arrival){
-											self.arrivals.push({
-												destination: arrival.des,
-												computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes')
-											});
-										});
-									}
+									});
 								}
 							}
 						}
-					}else{
+					}else if(self.route.type === 'rail'){
 						if(!self.arrivalsTable || self.arrivalsTable.length === 0){
 							self.error = 'Arrival times not available';
 						}else{
@@ -80,7 +81,7 @@ define([
 					self.render();
 				},
 				error: function(collection, response, options){
-					
+					self.error = 'Arrival times not available';
 				}
 			}).complete(function(){
 				setTimeout(function() {
@@ -94,7 +95,7 @@ define([
 		afterRender: function(){
 			var self = this;
 			$('.arrivalsFooter').click(function(){
-				self.refresh(self.route.serviceId);
+				self.refresh(self.route.serviceId, self.isBusRoute);
 			});
 		},
 		serialize: function(){
