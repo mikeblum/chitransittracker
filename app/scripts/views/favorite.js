@@ -24,7 +24,7 @@ define([
 					self.render();
 				},
 				error: function(collection, response, options){
-					console.log('error: ' + response);
+
 				}
 			});
 			self.favoritesCollection.on("change reset add remove", function() {
@@ -40,13 +40,6 @@ define([
 				this.favoritesCollection.remove(favorite);
 				this.render();
 				RouteView.render();
-			}
-		},
-		supportsLocalStorage: function() {
-			try {
-				return 'localStorage' in window && window['localStorage'] !== null;
-			}catch(e){
-				return false;
 			}
 		},
 		beforeRender: function(){
@@ -70,7 +63,7 @@ define([
 						RouteView.setRoute(routeData);
 					},
 					error: function(collection, response, options){
-						console.log('error: ' + JSON.stringify(response));
+						
 					}
 				});
 			});
