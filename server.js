@@ -4,6 +4,7 @@ var url = require('url'),
 	request = require('request'),
 	xml2js = require('xml2js'),
 	mongoose = require('mongoose'),
+	moment = require('moment'),
 	_ = require('underscore');
 
 var ctaTrainTrackerApiKey = process.env.CTA_TRAIN_TRACKER_API_KEY;
@@ -87,101 +88,6 @@ var Station = mongoose.model('Station', routeSchema, 'Stations');
 
 var Alert = mongoose.model('Alert', alertSchema, 'Alerts');
 
-var pushRouteToDatabase = function(routeType, route){
-	routeType.findOneAndUpdate({ serviceId: route.ServiceId }, {
-			route: route.Route,
-			routeColorCode: route.RouteColorCode,
-			routeTextColor: route.RouteTextColor,
-			serviceId: route.ServiceId,
-			routeURL: route.RouteURL,
-			routeStatus: route.RouteStatus,
-			routeStatusColor: route.RouteStatusColor,
-			directions: route.directions,
-			stops: route.stops
-		}, { upsert: true }, function (err) {
-			if(err){ console.log(err); }
-	});
-};
-
-var prepareRoutesForDatabase = function(data, type){
-	_.each(data.CTARoutes.RouteInfo, function(route){
-		var routeType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
-
-		route.Route =  route.Route.split('|'); //split route name from physical address
-		route.type = type === 'bus' ? 'bus' : 'rail';
-		//get directions of bus routes
-		if(type === 'bus'){
-			request('http://www.ctabustracker.com/bustime/api/v1/getdirections?key=' + ctaBusTrackerApiKey + '&rt=' + route.ServiceId, function (err, res, xml){
-				if (!err && res.statusCode === 200) {
-					parser.parseString(xml, function (err, json) {
-						route.directions = json['bustime-response'].dir || [];
-						route.stops = {};
-						if(route.directions){
-							//get stops for each direction
-							_.each(route.directions, function(direction){
-								request('http://www.ctabustracker.com/bustime/api/v1/getstops?key=' + ctaBusTrackerApiKey + '&rt=' + route.ServiceId + '&dir=' + direction, function (err, res, xml){
-									if (!err && res.statusCode === 200) {
-										parser.parseString(xml, function (err, json){
-											route.stops[direction] = json['bustime-response'].stop || [];
-											pushRouteToDatabase(routeType, route);
-										});
-									}else{
-										console.log(err);
-									}
-								});
-							});
-						}else{
-							pushRouteToDatabase(routeType, route);
-						}
-					});
-				}else{
-					console.log(err);
-				}
-			});
-		}else{
-			pushRouteToDatabase(routeType, route);
-		}
-	});
-};
-
-var processRoutes = function(xml, type){
-	parser.parseString(xml, function (err, json) {
-		prepareRoutesForDatabase(json, type);
-	});
-};
-
-var prepareAlertsForDatabase = function(data){
-	Alert.remove({}); //clear alerts from db
-	_.each(data.CTAAlerts.Alert, function(alert){
-		Alert.findOneAndUpdate({ serviceId: alert.AlertId }, {
-			alertId: alert.AlertId,
-			alertURL: alert.AlertURL,
-			eventEnd: alert.EventEnd,
-			eventStart: alert.EventStart,
-			fullDescription: alert.FullDescription,
-			guid: alert.GUID,
-			headline: alert.Headline,
-			impact: alert.Impact,
-			impactedService: alert.ImpactedService,
-			majorAlert: alert.MajorAlert,
-			severityCSS: alert.SeverityCSS,
-			severityColor: alert.SeverityColor,
-			severityScore: alert.SeverityScore,
-			shortDescription: alert.ShortDescription,
-			tbd: alert.TBD,
-			ttim: alert.ttim
-		}, { upsert: true }, function (err) {
-			if(err){ console.log(err); }
-		});
-	});
-};
-
-var processAlerts = function(xml){
-	parser.parseString(xml, function (err, json) {
-		prepareAlertsForDatabase(json);
-	});
-};
-
 //don't push these responses to db - too slow
 var processResponse = function(xml, response){
 	parser.parseString(xml, function (err, json) {
@@ -189,40 +95,6 @@ var processResponse = function(xml, response){
 		response.end(JSON.stringify(json));
 	});
 };
-
-var getDataFromCTA = function(type){
-	request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + type,
-		function (err, res, xml) {
-			if (!err && res.statusCode === 200) {
-				processRoutes(xml, type);
-			}else{
-				console.log(err);
-			}
-		}
-	);	
-};
-
-var getAlertsFromCTA = function(){
-	request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
-		if (!err && res.statusCode === 200) {
-			processAlerts(xml);
-		}else{
-			console.log(err);
-		}
-	});
-};
-
-setInterval(function(){
-	console.log('update-db: getting CTA data');
-	getDataFromCTA('station');
-	getDataFromCTA('bus');
-	getDataFromCTA('rail');
-}, 86400000); //get routes from CTA servers once a day
-
-setInterval(function(){
-	console.log('update-db: getting CTA alerts');
-	getAlertsFromCTA();
-}, 3600000); //get alerts every hour
 
 module.exports = function (app, response) {
 	var urlParts = url.parse(app.url, true);

@@ -289,7 +289,8 @@ module.exports = function (grunt) {
                     cwd: '.',
                     dest: '<%= yeoman.dist %>',
                     src: [
-                        'server.js'
+                        'server.js',
+                        'clock.js'
                     ]
                 }]
             }
