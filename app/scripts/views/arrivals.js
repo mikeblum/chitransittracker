@@ -70,14 +70,16 @@ define([
 									self.arrivals.push({
 										destination: arrival.des,
 										computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
-										routeColorCode: '059'
+										routeColorCode: '059',
+										routeDir: arrival.rtdir
 									});
 								}else{
 									_.each(self.arrivalsTable[0].prd, function(arrival){
 										self.arrivals.push({
 											destination: arrival.des,
 											computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
-											routeColorCode: '059'
+											routeColorCode: '059',
+											routeDir: arrival.rtdir
 										});
 									});
 								}

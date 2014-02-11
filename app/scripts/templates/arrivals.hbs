@@ -7,7 +7,7 @@
 	<table id="arrivalsTable" class="table routeTable">
 		{{#each arrivals}}
 			<tr style="background-color:#{{routeColorCode}};">
-				<td></td>
+				<td class="line">{{ routeDir }}</td>
 				<td class="line">{{ destination }}</td>
 				{{#if approaching}}
 					<td class="line">Arriving</td>
