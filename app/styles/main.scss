@@ -130,6 +130,10 @@ a, a:link, a:hover, a:visited, a:active{
     cursor: pointer;
 }
 
+#arrivalsTable, #arrivalsTable>tbody>tr{
+  border: 10px solid #565a5c;
+}
+
 #arrivalsTable > tr > td{
     text-align: center;
     vertical-align: middle;

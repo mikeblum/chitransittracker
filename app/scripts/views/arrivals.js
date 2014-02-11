@@ -21,12 +21,34 @@ define([
         convertDate: function(ctaDate){
 			return Moment(ctaDate, 'YYYYMMDD hh:mm:ss');
 		},
+		getRailColor: function(route){
+			var rt = route.toLowerCase();
+			if(rt === 'red'){
+				return 'c60c30';
+			}else if(rt === 'blue'){
+				return '00a1de';
+			}else if(rt === 'brn'){
+				return '62361b';
+			}else if(rt === 'g'){
+				return '009b3a';
+			}else if(rt === 'org'){
+				return 'f9461c';
+			}else if(rt === 'pexp' || rt === 'p'){
+				return '522398';
+			}else if(rt === 'pink'){
+				return 'e27ea6';
+			}else if(rt === 'y'){
+				return 'f9e300';
+			}
+		},
 		setRoute: function(route){
 			this.route = route;
 		},
 		refresh: function(serviceId, isBusRoute){
 			var self = this;
 			$('#arrivalsSpinner').show();
+			this.$('#arrivalsTable').hide();
+			this.$('.arrivalsFooter').hide();
 
 			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
 			self.arrivalsCollection.type = this.route.type;
@@ -68,7 +90,8 @@ define([
 								self.arrivals.push({
 									destination: arrival.destNm,
 									computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
-									approaching: arrival.isApp === '1' ? '1' : ''
+									approaching: arrival.isApp === '1' ? '1' : '',
+									routeColorCode: self.getRailColor(arrival.rt)
 								});
 							});
 						}
@@ -87,6 +110,8 @@ define([
 				setTimeout(function() {
 				    $('#arrivalsSpinner').fadeOut('fast');
 				}, 1000);
+				self.$('#arrivalsTable').show();
+				self.$('.arrivalsFooter').show();
 			});
 		},
 		beforeRender: function(){
@@ -94,7 +119,7 @@ define([
 		},
 		afterRender: function(){
 			var self = this;
-			$('.arrivalsFooter').click(function(){
+			this.$('.arrivalsFooter').click(function(){
 				self.refresh(self.route.serviceId, self.isBusRoute);
 			});
 		},

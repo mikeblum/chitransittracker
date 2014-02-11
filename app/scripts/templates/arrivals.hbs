@@ -6,13 +6,15 @@
 {{else}}
 	<table id="arrivalsTable" class="table routeTable">
 		{{#each arrivals}}
-			<tr>
+			<tr style="background-color:#{{routeColorCode}};">
+				<td></td>
 				<td class="line">{{ destination }}</td>
 				{{#if approaching}}
 					<td class="line">Arriving</td>
 				{{else}}
 					<td class="line">{{ computedTime }} Minutes</td>
 				{{/if}}
+				<td></td>
 			</tr>
 		{{/each}}
 	</table>
