@@ -71,7 +71,8 @@ define([
 										destination: arrival.des,
 										computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
 										routeColorCode: '059',
-										routeDir: arrival.rtdir
+										routeDir: arrival.rtdir,
+										busArrivals: true
 									});
 								}else{
 									_.each(self.arrivalsTable[0].prd, function(arrival){
@@ -79,7 +80,8 @@ define([
 											destination: arrival.des,
 											computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
 											routeColorCode: '059',
-											routeDir: arrival.rtdir
+											routeDir: arrival.rtdir,
+											busArrivals: true
 										});
 									});
 								}
