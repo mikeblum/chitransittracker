@@ -7,8 +7,9 @@ define([
 	'../views/favorite',
 	'../views/status',
 	'../views/route',
+	'../views/nearby',
 	'layoutmanager'
-], function ($, Backbone, SearchView, FavoriteView, StatusView, RouteView){
+], function ($, Backbone, SearchView, FavoriteView, StatusView, RouteView, NearbyView){
 	'use strict';
 
 	var AppRouter = Backbone.Router.extend({
@@ -31,6 +32,11 @@ define([
 			$("#route").empty().append(route.el);
 
 			var favorites = new FavoriteView();
+
+			var nearby = new NearbyView();
+			$(".nearby").empty().append(nearby.el);
+			// Render the layout.
+			nearby.render();
 		}
 	});
 

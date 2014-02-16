@@ -80,6 +80,20 @@ var alertSchema = Schema({
 	'ttim': String
 });
 
+var stopSchema = Schema({
+	'stop_id': Number,
+	'stop_code': Number,
+	'stop_name': String,
+	'stop_desc': String,
+	'loc':{
+		'stop_lat': Number,
+		'stop_lon': Number
+	},
+	'location_type':String,
+	'parent_station': String,
+	'wheelchair_boarding': String
+});
+
 var RailRoute = mongoose.model('RailRoute', routeSchema, 'RailRoutes');
 
 var BusRoute = mongoose.model('BusRoute', routeSchema, 'BusRoutes');
@@ -87,6 +101,8 @@ var BusRoute = mongoose.model('BusRoute', routeSchema, 'BusRoutes');
 var Station = mongoose.model('Station', routeSchema, 'Stations');
 
 var Alert = mongoose.model('Alert', alertSchema, 'Alerts');
+
+var Stop = mongoose.model('Stop', stopSchema, 'Stops');
 
 //don't push these responses to db - too slow
 var processResponse = function(xml, response){
@@ -198,6 +214,17 @@ module.exports = function (app, response) {
 				response.writeHead(500, {'Content-Type': 'application/json'});
 				response.end();
 			}
+		});
+	}else if(path.indexOf('nearby') !== -1){
+		var dist = 0.20/111.12; //200 meters / degrees
+		Stop.find({
+		    loc: {
+		        $near: [params.long, params.lat], //mongo expects longitude first
+		        $maxDistance: dist
+		    }
+		}, function(err, docs){
+			response.writeHead(200, {'Content-Type': 'application/json'});
+			response.end(JSON.stringify(docs));
 		});
 	}
 };
