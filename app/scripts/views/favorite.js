@@ -47,11 +47,11 @@ define([
 		},
 		afterRender: function(){
 			var self = this;
-			$(".trash").click(function(event){
+			this.$(".trash").click(function(event){
 				self.removeFavorite(event.currentTarget.id);
 			});
 
-			$(".favoriteRoute").click(function(event){
+			this.$(".favoriteRoute").click(function(event){
 				var serviceId = event.currentTarget.classList[1];
 				var ctaRoute = new CtaRoute();
 				ctaRoute.url = 'stationId?serviceId=' + serviceId;

@@ -30,7 +30,7 @@ define([
 			}else{
 				this.route.busRoute = false;
 			}
-			this.arrivals.refresh(this.route.serviceId);
+			this.arrivals.refresh(this.route, this.route.type === 'bus');
 			this.render();
 		},
 		saveFavorite: function(){

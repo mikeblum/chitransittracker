@@ -217,8 +217,7 @@ module.exports = function (app, response) {
 		});
 	}else if(path.indexOf('nearby') !== -1){
 		var dist = 0.20/111.12; //200 meters / degrees
-		Stop.distinct('stop_id', 
-		{
+		Stop.distinct('stop_id', {
 		    loc: {
 		        $near: [params.long, params.lat], //mongo expects longitude first
 		        $maxDistance: dist
@@ -231,13 +230,15 @@ module.exports = function (app, response) {
 			//this is expensive
 			BusRoute.find({}, function(err, busRoutes){
 				_.each(busRoutes, function(route){
-					var routeId = route.serviceId;
+					var routeName = route.route[0];
+					var serviceId = route.serviceId;
 					_.each(route.stops, function(direction){
 						_.each(direction, function(stop){
 							if(_.indexOf(stopIds, stop.stpid) > -1){
-								stop.routeId = routeId;
+								stop.serviceId = serviceId;
 								stop.type = 'bus';
-								stop.routeName = stop.stpnm;
+								stop.stopName = stop.stpnm;
+								stop.route = routeName;
 								results.push(stop);
 							}
 						});

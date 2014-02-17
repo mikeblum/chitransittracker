@@ -44,11 +44,19 @@ define([
 		setRoute: function(route){
 			this.route = route;
 		},
-		refresh: function(serviceId, isBusRoute){
+		refresh: function(route, isBusRoute){
 			var self = this;
 			$('#arrivalsSpinner').show();
 			this.$('#arrivalsTable').hide();
 			this.$('.arrivalsFooter').hide();
+
+			var serviceId;
+
+			if(isBusRoute){
+				serviceId = route.stpid;
+			}else{
+				serviceId = route.serviceId;
+			}
 
 			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
 			self.arrivalsCollection.type = this.route.type;

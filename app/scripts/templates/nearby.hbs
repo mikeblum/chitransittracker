@@ -8,9 +8,9 @@
 </div>
 {{#each stops}}
 	<table class="table routeTable nearbyTable" style="background-color: #059;">
-		<tr>
-			<td class="line">#{{ routeId }}<img class="transit_logo" src="{{routeIcon}}"></img></td>
-			<td class="line">{{ routeName }}</td>
+		<tr class="nearbyRoute {{ stpid }}">
+			<td class="line">#{{ serviceId }}<img class="transit_logo" src="{{routeIcon}}"></img></td>
+			<td class="line">{{ stopName }}</td>
 		</tr>
 	</table>
 {{/each}}
