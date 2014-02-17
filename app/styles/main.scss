@@ -122,6 +122,10 @@ a, a:link, a:hover, a:visited, a:active{
     table-layout:fixed;
 }
 
+.favoritesTable, .nearbyTable{
+  margin-bottom: 10px;
+}
+
 #route{
     margin-top: 5%;
 }

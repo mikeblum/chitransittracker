@@ -217,14 +217,35 @@ module.exports = function (app, response) {
 		});
 	}else if(path.indexOf('nearby') !== -1){
 		var dist = 0.20/111.12; //200 meters / degrees
-		Stop.find({
+		Stop.distinct('stop_id', 
+		{
 		    loc: {
 		        $near: [params.long, params.lat], //mongo expects longitude first
 		        $maxDistance: dist
 		    }
-		}, function(err, docs){
-			response.writeHead(200, {'Content-Type': 'application/json'});
-			response.end(JSON.stringify(docs));
+		}, function(err, stopIds){
+			_.each(stopIds, function(id, index){
+			    stopIds[index] = id.toString();
+			});
+			var results = [];
+			//this is expensive
+			BusRoute.find({}, function(err, busRoutes){
+				_.each(busRoutes, function(route){
+					var routeId = route.serviceId;
+					_.each(route.stops, function(direction){
+						_.each(direction, function(stop){
+							if(_.indexOf(stopIds, stop.stpid) > -1){
+								stop.routeId = routeId;
+								stop.type = 'bus';
+								stop.routeName = stop.stpnm;
+								results.push(stop);
+							}
+						});
+					});
+				});
+				response.writeHead(200, {'Content-Type': 'application/json'});
+				response.end(JSON.stringify(results));
+			});
 		});
 	}
 };
