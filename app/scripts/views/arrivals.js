@@ -43,6 +43,7 @@ define([
 		},
 		setRoute: function(route){
 			this.route = route;
+			this.isBusRoute = false;
 		},
 		refresh: function(route, isBusRoute){
 			var self = this;
@@ -56,10 +57,12 @@ define([
 			}
 
 			_.extend(this.route, route);
+
+			this.$('#arrivalsTable').hide();
+			this.$('.arrivalsFooter').hide();
+			
 			if(serviceId){
 				$('#arrivalsSpinner').show();
-				this.$('#arrivalsTable').hide();
-				this.$('.arrivalsFooter').hide();
 				self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
 				self.arrivalsCollection.type = this.route.type;
 				self.arrivalsCollection.fetch({
