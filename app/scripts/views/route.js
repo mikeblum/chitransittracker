@@ -87,11 +87,11 @@ define([
 
 			var busStopTemplate = JST['app/scripts/templates/busRoute.hbs'];
 
-			$( ".favorite" ).click(function(){
+			this.$( ".favorite" ).click(function(){
 				self.favoriteRoute();
 			});
 
-			$('.busStopsTypeahead.typeahead').typeahead({
+			this.$('.busStopsTypeahead.typeahead').typeahead({
 				limit: 10,
 				remote: {
 					url: 'busStops?query=%QUERY&serviceId=' + this.route.serviceId,
@@ -111,8 +111,13 @@ define([
 				},
 				template: busStopTemplate
 			}).on('typeahead:selected ', function (obj, datum){
-				self.arrivals.refresh(datum.stopNumber, true);
-
+				datum.type = 'bus';
+				self.route.stopName = datum.value;
+				self.route.busRoute = true;
+				datum.routeColorCode = '059';
+				datum.serviceId = self.route.serviceId;
+				self.arrivals.refresh(datum, true);
+				self.render();
 			   	$('.busStopsTypeahead.typeahead').trigger('blur');
 			});
 		},

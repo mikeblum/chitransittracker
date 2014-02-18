@@ -46,44 +46,35 @@ define([
 		},
 		refresh: function(route, isBusRoute){
 			var self = this;
-			$('#arrivalsSpinner').show();
-			this.$('#arrivalsTable').hide();
-			this.$('.arrivalsFooter').hide();
 
 			var serviceId;
 
 			if(isBusRoute){
-				serviceId = route.stpid;
+				serviceId = route.stpid || route.stopNumber;
 			}else{
 				serviceId = route.serviceId;
 			}
 
-			self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
-			self.arrivalsCollection.type = this.route.type;
-			self.arrivalsCollection.fetch({
-				success: function(data){
-					self.arrivalsTable = data.toJSON();
-					self.arrivals = [];
-					if(self.route.type === 'bus' && isBusRoute){
-						self.isBusRoute = isBusRoute;
-						//update the service id to be the bus stop
-						self.route.serviceId = serviceId;
-						if(self.arrivalsTable[0].error){
-							self.error = self.arrivalsTable[0].error.msg;
-						}else{ //get arrival times
-							self.error = false;
-							if(self.arrivalsTable[0].prd){
-								if(self.arrivalsTable[0].prd.stpnm){ //only one arrival - .hack
-									var arrival = self.arrivalsTable[0].prd;
-									self.arrivals.push({
-										destination: arrival.des,
-										computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
-										routeColorCode: '059',
-										routeDir: arrival.rtdir,
-										busArrivals: true
-									});
-								}else{
-									_.each(self.arrivalsTable[0].prd, function(arrival){
+			this.route = route;
+			if(serviceId){
+				$('#arrivalsSpinner').show();
+				this.$('#arrivalsTable').hide();
+				this.$('.arrivalsFooter').hide();
+				self.arrivalsCollection.url = 'arrivals?stop=' + serviceId + '&type=' + this.route.type;
+				self.arrivalsCollection.type = this.route.type;
+				self.arrivalsCollection.fetch({
+					success: function(data){
+						self.arrivalsTable = data.toJSON();
+						self.arrivals = [];
+						if(isBusRoute){
+							self.isBusRoute = isBusRoute;
+							if(self.arrivalsTable[0].error){
+								self.error = self.arrivalsTable[0].error.msg;
+							}else{ //get arrival times
+								self.error = false;
+								if(self.arrivalsTable[0].prd){
+									if(self.arrivalsTable[0].prd.stpnm){ //only one arrival - .hack
+										var arrival = self.arrivalsTable[0].prd;
 										self.arrivals.push({
 											destination: arrival.des,
 											computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
@@ -91,42 +82,52 @@ define([
 											routeDir: arrival.rtdir,
 											busArrivals: true
 										});
-									});
+									}else{
+										_.each(self.arrivalsTable[0].prd, function(arrival){
+											self.arrivals.push({
+												destination: arrival.des,
+												computedTime: self.convertDate(arrival.prdtm).diff(self.convertDate(arrival.tmstmp), 'minutes'),
+												routeColorCode: '059',
+												routeDir: arrival.rtdir,
+												busArrivals: true
+											});
+										});
+									}
 								}
 							}
-						}
-					}else if(self.route.type === 'rail'){
-						if(!self.arrivalsTable || self.arrivalsTable.length === 0){
-							self.error = 'Arrival times not available';
-						}else{
-							self.error = false;
-							_.each(self.arrivalsTable, function(arrival){
-								self.arrivals.push({
-									destination: arrival.destNm,
-									computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
-									approaching: arrival.isApp === '1' ? '1' : '',
-									routeColorCode: self.getRailColor(arrival.rt)
+						}else if(self.route.type === 'rail'){
+							if(!self.arrivalsTable || self.arrivalsTable.length === 0){
+								self.error = 'Arrival times not available';
+							}else{
+								self.error = false;
+								_.each(self.arrivalsTable, function(arrival){
+									self.arrivals.push({
+										destination: arrival.destNm,
+										computedTime: self.convertDate(arrival.arrT).diff(self.convertDate(arrival.prdt), 'minutes'),
+										approaching: arrival.isApp === '1' ? '1' : '',
+										routeColorCode: self.getRailColor(arrival.rt)
+									});
 								});
-							});
+							}
 						}
+						self.arrivals = self.arrivals.sort(function(a,b){
+							if(a.destination < b.destination) return -1;
+							if(a.destination > b.destination) return 1;
+							return 0;
+						});
+						self.render();
+					},
+					error: function(collection, response, options){
+						self.error = 'Arrival times not available';
 					}
-					self.arrivals = self.arrivals.sort(function(a,b){
-						if(a.destination < b.destination) return -1;
-						if(a.destination > b.destination) return 1;
-						return 0;
-					});
-					self.render();
-				},
-				error: function(collection, response, options){
-					self.error = 'Arrival times not available';
-				}
-			}).complete(function(){
-				setTimeout(function() {
-				    $('#arrivalsSpinner').fadeOut('fast');
-				}, 1000);
-				self.$('#arrivalsTable').show();
-				self.$('.arrivalsFooter').show();
-			});
+				}).complete(function(){
+					setTimeout(function() {
+					    $('#arrivalsSpinner').fadeOut('fast');
+					}, 1000);
+					self.$('#arrivalsTable').show();
+					self.$('.arrivalsFooter').show();
+				});
+			}
 		},
 		beforeRender: function(){
 			$("#arrivals").empty().append(this.el);
@@ -134,7 +135,7 @@ define([
 		afterRender: function(){
 			var self = this;
 			this.$('.arrivalsFooter').click(function(){
-				self.refresh(self.route.serviceId, self.isBusRoute);
+				self.refresh(self.route, self.isBusRoute);
 			});
 		},
 		serialize: function(){
