@@ -6,11 +6,18 @@
         </h4>
     </div>
 </div>
-{{#each stops}}
-	<table class="table routeTable nearbyTable" style="background-color: #059;">
-		<tr class="nearbyRoute {{ stpid }}">
-			<td class="line">#{{ serviceId }}<img class="transit_logo" src="{{routeIcon}}"></img></td>
-			<td class="line">{{ stopName }}</td>
-		</tr>
-	</table>
-{{/each}}
+{{#if error}}
+	<div class="alert alert-warning fade in" id="error">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <p><strong>Sorry! </strong>Nearby Stops Unavailable</p>
+    </div>
+{{else}}
+	{{#each stops}}
+		<table class="table routeTable nearbyTable" style="background-color: #059;">
+			<tr class="nearbyRoute {{ stpid }}">
+				<td class="line">#{{ serviceId }}<img class="transit_logo" src="{{routeIcon}}"></img></td>
+				<td class="line">{{ stopName }}</td>
+			</tr>
+		</table>
+	{{/each}}
+{{/if}}

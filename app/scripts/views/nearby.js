@@ -15,6 +15,7 @@ define([
 	var Nearby = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/nearby.hbs'],
 		initialize: function(){
+			this.error = false;
 			this.nearbyStops = new NearbyStops();
 			this.getLocation();
 		},
@@ -31,6 +32,7 @@ define([
 				this.nearbyStops.fetch({
 					reset: true,
 					success: function(collection){
+						self.error = false;
 						setTimeout(function() {
 						    $('#nearbySpinner').fadeOut('fast');
 						}, 1000);
@@ -48,9 +50,19 @@ define([
 						self.render();
 					},
 					error: function(){
-
+						setTimeout(function() {
+						    $('#nearbySpinner').fadeOut('fast');
+						}, 1000);
+						self.error = true;
+						self.render();
 					}
 				});
+			}.bind(this), function(){
+				setTimeout(function() {
+				    $('#nearbySpinner').fadeOut('fast');
+				}, 1000);
+				this.error = true;
+				this.render();
 			}.bind(this));
 		},
 		afterRender: function(){
@@ -64,7 +76,8 @@ define([
 		},
 		serialize: function(){
 			return {
-				stops: this.nearbyStops.toJSON()
+				stops: this.nearbyStops.toJSON(),
+				error: this.error
 			};
 		}
 	});
