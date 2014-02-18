@@ -55,7 +55,7 @@ define([
 				serviceId = route.serviceId;
 			}
 
-			this.route = route;
+			_.extend(this.route, route);
 			if(serviceId){
 				$('#arrivalsSpinner').show();
 				this.$('#arrivalsTable').hide();
@@ -141,6 +141,7 @@ define([
 		serialize: function(){
 			return {
 				route: this.route,
+				busRoute: this.isBusRoute,
 				arrivals: this.arrivals,
 				error: this.error
 			};

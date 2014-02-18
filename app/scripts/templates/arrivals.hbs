@@ -1,3 +1,12 @@
+{{#if busRoute}}
+<table class="table routeTable busStop" style="background-color:#{{route.routeColorCode}};">
+		<tr>
+			<td class="line">
+				<img class="transit_logo" src="{{route.routeIcon}}"></img></td>
+			<td class="line">{{ route.stopName }}</td>
+		</tr>
+</table>
+{{/if}}
 {{#if error}}
 	<div class="alert alert-warning fade in" id="error">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
