@@ -244,8 +244,14 @@ module.exports = function (app, response) {
 						});
 					});
 				});
-				response.writeHead(200, {'Content-Type': 'application/json'});
-				response.end(JSON.stringify(results));
+				//continue with ten stops
+				results = _.sample(results, 10);
+				Station.find({serviceId:{$in: stopIds } },
+				function (err, docs){
+					results = results.concat(docs);
+					response.writeHead(200, {'Content-Type': 'application/json'});
+					response.end(JSON.stringify(results));
+				});
 			});
 		});
 	}
