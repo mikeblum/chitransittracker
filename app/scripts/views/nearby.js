@@ -47,12 +47,14 @@ define([
 								stop.set('routeIcon', 'images/cta_bus.svg');
 								stop.set('routeColorCode', '059');
 								stop.set('busStop', true);
+								stop.set('stopId', stop.get('stpid'));
 							}else{
 								stop.set('routeIcon', 'images/cta_train.svg');
 								stop.set('type', 'rail');
 								stop.set('stopName', stop.get('route')[0]);
 								stop.set('address', stop.get('route')[1]);
 								stop.set('route', stop.get('route')[0]);
+								stop.set('stopId', stop.get('serviceId')); //buses and trains use different identifiers
 							}
 							stop = stop.attributes;
 						});
@@ -81,7 +83,7 @@ define([
 			this.$(".nearbyRoute").on('click', function(event){
 				var serviceId = event.currentTarget.classList[1];
 				var routeData = this.nearbyStops.find(function(model){
-					return model.get('serviceId') === serviceId;
+					return model.get('stopId') === serviceId;
 				}, this);
 				RouteView.setRoute(routeData.attributes);
 			}.bind(this));
