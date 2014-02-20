@@ -248,7 +248,7 @@ module.exports = function (app, response) {
 				results = _.sample(results, 10);
 				Station.find({serviceId:{$in: stopIds } },
 				function (err, docs){
-					results = results.concat(docs);
+					results = docs.concat(results);
 					response.writeHead(200, {'Content-Type': 'application/json'});
 					response.end(JSON.stringify(results));
 				});

@@ -13,6 +13,9 @@ define([
 
     var ArrivalsView = Backbone.Layout.extend({
         template: JST['app/scripts/templates/arrivals.hbs'],
+        events:{
+        	'click .arrivalsFooter': 'throttledRefresh'
+        },
         initialize: function(){
         	var self = this;
         	self.arrivalsCollection = new ctaArrivals();
@@ -45,6 +48,9 @@ define([
 			this.route = route;
 			this.isBusRoute = false;
 		},
+		throttledRefresh: _.throttle(function(){
+			this.refresh(this.route, this.isBusRoute);
+		}, 300, this),
 		refresh: function(route, isBusRoute){
 			var self = this;
 
@@ -134,12 +140,6 @@ define([
 		},
 		beforeRender: function(){
 			$("#arrivals").empty().append(this.el);
-		},
-		afterRender: function(){
-			var self = this;
-			this.$('.arrivalsFooter').click(function(){
-				self.refresh(self.route, self.isBusRoute);
-			});
 		},
 		serialize: function(){
 			return {

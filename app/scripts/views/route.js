@@ -87,7 +87,7 @@ define([
 
 			var busStopTemplate = JST['app/scripts/templates/busRoute.hbs'];
 
-			this.$( ".favorite" ).click(function(){
+			this.$('.favorite').click(function(){
 				self.favoriteRoute();
 			});
 

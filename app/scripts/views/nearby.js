@@ -14,11 +14,17 @@ define([
 
 	var Nearby = Backbone.Layout.extend({
 		template: JST['app/scripts/templates/nearby.hbs'],
+		events:{
+			'click .refreshNearby': 'getLocationThrottled'
+		},
 		initialize: function(){
 			this.error = false;
 			this.nearbyStops = new NearbyStops();
 			this.getLocation();
 		},
+		getLocationThrottled: _.throttle(function(){
+			this.getLocation();
+		}, 300, this),
 		getLocation: function() {
 			$('#nearbySpinner').show();
 			navigator.geolocation.getCurrentPosition(function(position){
@@ -37,12 +43,18 @@ define([
 						    $('#nearbySpinner').fadeOut('fast');
 						}, 1000);
 						collection.each(function(stop){
-							if(stop.get('type') === 'train'){
-								stop.set('routeIcon', 'images/cta_train.svg');
-							}else{
+							if(stop.get('type') === 'bus'){
 								stop.set('routeIcon', 'images/cta_bus.svg');
 								stop.set('routeColorCode', '059');
+								stop.set('busStop', true);
+							}else{
+								stop.set('routeIcon', 'images/cta_train.svg');
+								stop.set('type', 'rail');
+								stop.set('stopName', stop.get('route')[0]);
+								stop.set('address', stop.get('route')[1]);
+								stop.set('route', stop.get('route')[0]);
 							}
+							stop = stop.attributes;
 						});
 
 						self.nearbyStops = collection;
@@ -69,7 +81,7 @@ define([
 			this.$(".nearbyRoute").on('click', function(event){
 				var serviceId = event.currentTarget.classList[1];
 				var routeData = this.nearbyStops.find(function(model){
-					return model.get('stpid') === serviceId;
+					return model.get('serviceId') === serviceId;
 				}, this);
 				RouteView.setRoute(routeData.attributes);
 			}.bind(this));
