@@ -35,6 +35,13 @@ define([
 					//sort rail lines into cta order
 					_.each(temp, function(serviceId, index){
 						var route = _.findWhere(self.railLines, {serviceId: serviceId});
+						if(serviceId === 'Y'){
+							route.routeTextColor = "blackLine";
+							route.transitLogo = "images/cta_train_black.svg";
+						}else{
+							route.routeTextColor = "line";
+							route.transitLogo = "images/cta_train.svg";
+						}
 						temp[index] = route;
 					});
 					self.railLines = temp;

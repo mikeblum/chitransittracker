@@ -1,7 +1,7 @@
 {{#if busRoute}}
 <table class="table routeTable busStop" style="background-color:#{{route.routeColorCode}};">
 		<tr>
-			<td class="line">
+			<td class="line" style="color: #{{routeTextColor}};">
 				<img class="transit_logo" src="{{route.routeIcon}}"></img></td>
 			<td class="line">{{ route.stopName }}</td>
 		</tr>
@@ -24,13 +24,13 @@
 		{{#each arrivals}}
 			<tr style="background-color:#{{routeColorCode}};">
 				{{#if busArrivals}}
-					<td class="line">{{ routeDir }}</td>
+					<td class="line" style="color: #{{routeTextColor}};">{{ routeDir }}</td>
 				{{/if}}
-				<td class="line">{{ destination }}</td>
+				<td class="line" style="color: #{{routeTextColor}};">{{ destination }}</td>
 				{{#if approaching}}
-					<td class="line">Arriving</td>
+					<td class="line" style="color: #{{routeTextColor}};">Arriving</td>
 				{{else}}
-					<td class="line">{{ computedTime }} Minutes</td>
+					<td class="line" style="color: #{{routeTextColor}};">{{ computedTime }} Minutes</td>
 				{{/if}}
 			</tr>
 		{{/each}}

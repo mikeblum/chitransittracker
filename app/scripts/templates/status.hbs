@@ -8,15 +8,15 @@
 </div>
 <div id="routeStatus" class="accordion">
         {{#each routes}}
-        <div class="accordion-group line routeAlert" style="background-color:#{{ routeColorCode }}";
+        <div class="accordion-group {{routeTextColor}} routeAlert" style="background-color:#{{ routeColorCode }}";
         data-parent="#routeStatus" data-toggle="collapse" data-target="#{{ serviceId }}" class="accordion-toggle">
                 <div class="accordion-heading">
                         <table class="table routeTable"><tr>
                         <td>
-                            <img src="images/cta_train.png" class="transit_logo"></img>
+                            <img src="{{transitLogo}}" class="transit_logo"></img>
                         </td>
-                        <td><div class="line">{{ route }}</div></td>
-                        <td><div class="line">{{ routeStatus }}</div></td>
+                        <td><div class="{{routeTextColor}}">{{ route }}</div></td>
+                        <td><div class="{{routeTextColor}}">{{ routeStatus }}</div></td>
                         {{{ chevron }}}</tr></table> 
                 </div>
                 <div class="accordion-body collapse" id="{{ serviceId }}">

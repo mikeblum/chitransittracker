@@ -96,12 +96,16 @@ a, a:link, a:hover, a:visited, a:active{
 }
 
 
-.line{
+.line, .blackLine{
     color: #ffffff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 400;
     overflow: auto;
     font-size: 14px;
+}
+
+.blackLine{
+    color: #000000;
 }
 
 .routeAlert{

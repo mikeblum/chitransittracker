@@ -70,14 +70,14 @@ define([
 								value: el.route,
 								tokens: [ el.route[0] ],
 								route: el.route[0],
-								address: el.route[1].split(',')[0],
+								address: el.route[1] ? el.route[1].split(',')[0] : '',
 								routeColorCode: el.routeColorCode,
 								routeTextColor: el.routeTextColor,
 								serviceId: el.serviceId,
 								routeURL: el.routeURL,
 								routeStatus: el.routeStatus,
 								routeStatusColor: el.routeStatusColor,
-								routeIcon: 'images/cta_train.svg',
+								routeIcon: el.routeTextColor === '000000' ? "images/cta_train_black.svg" : 'images/cta_train.svg',
 								type: 'rail'
 							});
 						});
