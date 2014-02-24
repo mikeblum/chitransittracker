@@ -7,7 +7,8 @@ var url = require('url'),
 	xml2js = require('xml2js'),
 	mongoose = require('mongoose'),
 	moment = require('moment'),
-	_ = require('underscore');
+	_ = require('underscore'),
+	promise = require('q');
 
 var ctaTrainTrackerApiKey = process.env.CTA_TRAIN_TRACKER_API_KEY;
 
@@ -23,12 +24,15 @@ mongoose.connect(dbURI);
 // CONNECTION EVENTS
 // When successfully connected
 mongoose.connection.on('connected', function () {
-  console.log('Mongoose default connection open to ' + dbURI);
+	console.log('Mongoose default connection open to ' + dbURI);
+	console.log('update-db: getting CTA data');
+	console.log('update-db: getting CTA alerts');
 });
 
 // If the connection throws an error
 mongoose.connection.on('error',function (err) {
   console.log('Mongoose default connection error: ' + err);
+  process.exit(1);
 });
 
 // When the connection is disconnected
@@ -93,6 +97,7 @@ var Alert = mongoose.model('Alert', alertSchema, 'Alerts');
 var ctaDate = 'YYYYMMDD hh:mm:ss';
 
 var pushRouteToDatabase = function(routeType, route){
+	var deferred = promise.defer();
 	routeType.findOneAndUpdate({ serviceId: route.ServiceId }, {
 			route: route.Route,
 			routeColorCode: route.RouteColorCode,
@@ -105,10 +110,14 @@ var pushRouteToDatabase = function(routeType, route){
 			stops: route.stops
 		}, { upsert: true }, function (err) {
 			if(err){ console.log(err); }
+			deferred.resolve(true);
 	});
+	return deferred.promise;
 };
 
 var prepareRoutesForDatabase = function(data, type){
+	var promises = [];
+	var prepared = promise.defer();
 	_.each(data.CTARoutes.RouteInfo, function(route){
 		var routeType = type === 'rail' ? RailRoute : (type === 'bus') ? BusRoute : Station;
 
@@ -128,106 +137,142 @@ var prepareRoutesForDatabase = function(data, type){
 									if (!err && res.statusCode === 200) {
 										parser.parseString(xml, function (err, json){
 											route.stops[direction] = json['bustime-response'].stop || [];
-											pushRouteToDatabase(routeType, route);
+											promises.push(pushRouteToDatabase(routeType, route));
 										});
 									}else{
 										console.log(err);
+										process.exit(1);
 									}
 								});
 							});
 						}else{
-							pushRouteToDatabase(routeType, route);
+							promises.push(pushRouteToDatabase(routeType, route));
 						}
 					});
 				}else{
 					console.log(err);
+					process.exit(1);
 				}
 			});
 		}else{
-			pushRouteToDatabase(routeType, route);
+			promises.push(pushRouteToDatabase(routeType, route));
 		}
 	});
+	promise.allSettled(promises).then(function(){
+		console.log('routes done');
+		prepared.resolve(true);
+	}).done();
+	return prepared.promise;
 };
 
 var processRoutes = function(xml, type){
+	var parsed = promise.defer();
 	parser.parseString(xml, function (err, json) {
-		prepareRoutesForDatabase(json, type);
+		parsed.resolve(prepareRoutesForDatabase(json));
 	});
+	return parsed.promise;
+};
+
+var pushAlertToDatabase = function(alert){
+	var deferred = promise.defer();
+	Alert.findOneAndUpdate({ serviceId: alert.AlertId }, {
+		alertId: alert.AlertId,
+		alertURL: alert.AlertURL,
+		eventEnd: alert.EventEnd,
+		eventStart: alert.EventStart,
+		fullDescription: alert.FullDescription,
+		guid: alert.GUID,
+		headline: alert.Headline,
+		impact: alert.Impact,
+		impactedService: alert.ImpactedService,
+		majorAlert: alert.MajorAlert,
+		severityCSS: alert.SeverityCSS,
+		severityColor: alert.SeverityColor,
+		severityScore: alert.SeverityScore,
+		shortDescription: alert.ShortDescription,
+		tbd: alert.TBD,
+		ttim: alert.ttim
+	}, { upsert: true }, function (err) {
+		if(err){ 
+			console.log(err);
+		}
+		deferred.resolve(true);
+	});
+	return deferred.promise;
 };
 
 var prepareAlertsForDatabase = function(data){
+	var promises = [];
+	var prepared = promise.defer();
 	var now = moment();
-	Alert.remove().exec(); //clear alerts from db
-	_.each(data.CTAAlerts.Alert, function(alert){
-		//only display an alert if we are padt the start date and before the end date
-		var start = moment(alert.EventStart, ctaDate);
-		var end = moment(alert.EventEnd, ctaDate);
-		if((start.diff(now) > 0 && end.diff(now) > 0) || (start.diff(now) > 0 && !alert.EventEnd)){
-			Alert.findOneAndUpdate({ serviceId: alert.AlertId }, {
-				alertId: alert.AlertId,
-				alertURL: alert.AlertURL,
-				eventEnd: alert.EventEnd,
-				eventStart: alert.EventStart,
-				fullDescription: alert.FullDescription,
-				guid: alert.GUID,
-				headline: alert.Headline,
-				impact: alert.Impact,
-				impactedService: alert.ImpactedService,
-				majorAlert: alert.MajorAlert,
-				severityCSS: alert.SeverityCSS,
-				severityColor: alert.SeverityColor,
-				severityScore: alert.SeverityScore,
-				shortDescription: alert.ShortDescription,
-				tbd: alert.TBD,
-				ttim: alert.ttim
-			}, { upsert: true }, function (err) {
-				if(err){ console.log(err); }
-			});
-		}
-	});
+	Alert.remove().exec(function(){
+		_.each(data.CTAAlerts.Alert, function(alert){
+			//only display an alert if we are padt the start date and before the end date
+			var start = moment(alert.EventStart, ctaDate);
+			var end = moment(alert.EventEnd, ctaDate);
+			if((start.diff(now) > 0 && end.diff(now) > 0) || (start.diff(now) > 0 && !alert.EventEnd)){
+				promises.push(pushAlertToDatabase(alert));
+			}
+		});
+		promise.allSettled(promises).then(function(){
+			console.log('alerts done');
+			prepared.resolve(true);
+		}).done();
+	}); //clear alerts from db
+	return prepared.promise;
 };
 
 var processAlerts = function(xml){
+	var parsed = promise.defer();
 	parser.parseString(xml, function (err, json) {
-		prepareAlertsForDatabase(json);
+		parsed.resolve(prepareAlertsForDatabase(json));
 	});
-};
-
-//don't push these responses to db - too slow
-var processResponse = function(xml, response){
-	parser.parseString(xml, function (err, json) {
-		response.writeHead(200, {'Content-Type': 'application/json'});
-		response.end(JSON.stringify(json));
-	});
+	return parsed.promise;
 };
 
 var getDataFromCTA = function(type){
+	var done = promise.defer();
 	request('http://www.transitchicago.com/api/1.0/routes.aspx?type=' + type,
 		function (err, res, xml) {
 			if (!err && res.statusCode === 200) {
-				processRoutes(xml, type);
+				processRoutes(xml, type).then(function(){
+					done.resolve(true);
+				});
 			}else{
 				console.log(err);
+				process.exit(1);
 			}
 		}
 	);	
+	return done.promise;
 };
 
 var getAlertsFromCTA = function(){
+	var done = promise.defer();
 	request('http://www.transitchicago.com/api/1.0/alerts.aspx', function (err, res, xml) {
 		if (!err && res.statusCode === 200) {
-			processAlerts(xml);
+			processAlerts(xml).then(function(){
+				done.resolve(true);
+			});
 		}else{
 			console.log(err);
+			process.exit(1);
 		}
 	});
+	return done.promise;
 };
 
-console.log('update-db: getting CTA data');
-getDataFromCTA('station');
-getDataFromCTA('bus');
-getDataFromCTA('rail');
+promise.allSettled([
+	getDataFromCTA('station'),
+	getDataFromCTA('bus'),
+	getDataFromCTA('rail'),
+	getAlertsFromCTA()
+]).then(function(results){
+	console.log('update-db: settled');
+	mongoose.connection.close(function () {
+		console.log('update-db: complete');
+		process.exit(0);
+	});
+}).done();
 
 
-console.log('update-db: getting CTA alerts');
-getAlertsFromCTA();
