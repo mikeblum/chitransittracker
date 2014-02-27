@@ -22,15 +22,15 @@
 {{else}}
 	<table id="arrivalsTable" class="table routeTable">
 		{{#each arrivals}}
-			<tr style="background-color:#{{routeColorCode}};">
+			<tr style="background-color:#{{../route.routeColorCode}};">
 				{{#if busArrivals}}
-					<td class="line" style="color: #{{routeTextColor}};">{{ routeDir }}</td>
+					<td class="line" style="color: #{{../route.routeTextColor}};">{{ routeDir }}</td>
 				{{/if}}
-				<td class="line" style="color: #{{routeTextColor}};">{{ destination }}</td>
+				<td class="line" style="color: #{{../route.routeTextColor}};">{{ destination }}</td>
 				{{#if approaching}}
-					<td class="line" style="color: #{{routeTextColor}};">Arriving</td>
+					<td class="line" style="color: #{{../../route.routeTextColor}};">Arriving</td>
 				{{else}}
-					<td class="line" style="color: #{{routeTextColor}};">{{ computedTime }} Minutes</td>
+					<td class="line" style="color: #{{../../route.routeTextColor}};">{{ computedTime }} Minutes</td>
 				{{/if}}
 			</tr>
 		{{/each}}

@@ -26,7 +26,7 @@ define([
 			this.getLocation();
 		}, 300, this),
 		getLocation: function() {
-			$('#nearbySpinner').show();
+			this.$('#nearbySpinner').show();
 			navigator.geolocation.getCurrentPosition(function(position){
 				var self = this;
 				var latitude = position.coords.latitude;
@@ -40,7 +40,7 @@ define([
 					success: function(collection){
 						self.error = false;
 						setTimeout(function() {
-						    $('#nearbySpinner').fadeOut('fast');
+						    this.$('#nearbySpinner').fadeOut('fast');
 						}, 1000);
 						collection.each(function(stop){
 							if(stop.get('type') === 'bus'){
@@ -65,7 +65,7 @@ define([
 					},
 					error: function(){
 						setTimeout(function() {
-						    $('#nearbySpinner').fadeOut('fast');
+						    this.$('#nearbySpinner').fadeOut('fast');
 						}, 1000);
 						self.error = true;
 						self.render();
@@ -73,7 +73,7 @@ define([
 				});
 			}.bind(this), function(){
 				setTimeout(function() {
-				    $('#nearbySpinner').fadeOut('fast');
+				    this.$('#nearbySpinner').fadeOut('fast');
 				}, 1000);
 				this.error = true;
 				this.render();
