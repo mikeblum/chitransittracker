@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-muted">
+            <img class="svg" width="25px" src="images/cta_train.svg"></img>
+            Status
+        </h4>
+    </div>
+</div>
+<div id="routeStatus" class="accordion">
+        {{#each routes}}
+        <div class="accordion-group {{routeTextColor}} routeAlert" style="background-color:#{{ routeColorCode }}";
+        data-parent="#routeStatus" data-toggle="collapse" data-target="#{{ serviceId }}" class="accordion-toggle">
+                <div class="accordion-heading">
+                        <table class="table routeTable"><tr>
+                        <td>
+                            <img src="{{transitLogo}}" class="transit_logo"></img>
+                        </td>
+                        <td><div class="{{routeTextColor}}">{{ route }}</div></td>
+                        <td><div class="{{routeTextColor}}">{{ routeStatus }}</div></td>
+                        {{{ chevron }}}</tr></table> 
+                </div>
+                <div class="accordion-body collapse" id="{{ serviceId }}">
+                    <div class="accordion-inner">
+                        {{#each alerts}}
+                        <div class="statusPanel panel-default">
+                            <div class="panel-heading">
+                                <strong>{{{ shortDescription }}}</strong>
+                            </div>
+                            <div class="panel-body" style="background-color:#{{ ../routeColorCode }}";>
+                                {{{ fullDescription }}}
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+</div>

@@ -6,19 +6,19 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 public class CTARoute {
 	
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "Route")
+	@JacksonXmlProperty(localName = "Route")
 	private String routeName;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "RouteColorCode")
+	@JacksonXmlProperty(localName = "RouteColorCode")
 	private String routeColorCode;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "RouteTextColor")
+	@JacksonXmlProperty(localName = "RouteTextColor")
 	private String routeTextColor;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "ServiceId")
+	@JacksonXmlProperty(localName = "ServiceId")
 	private String serviceId;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "RouteURL")
+	@JacksonXmlProperty(localName = "RouteURL")
 	private URI routeUrl;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "RouteStatus")
+	@JacksonXmlProperty(localName = "RouteStatus")
 	private String routeStatus;
-	@JacksonXmlProperty(namespace="RouteInfo", localName = "RouteStatusColor")
+	@JacksonXmlProperty(localName = "RouteStatusColor")
 	private String routeStatusColor;
 	
 	public String getRouteName() {

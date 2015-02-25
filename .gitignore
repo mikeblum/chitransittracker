@@ -8,7 +8,7 @@ dist
 heroku
 bin
 build
-*.log
+*.log*
 .project
 .settings
 .classpath

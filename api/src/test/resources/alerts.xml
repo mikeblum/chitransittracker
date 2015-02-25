@@ -1,0 +1,1851 @@
+<CTAAlerts>
+<TimeStamp>20150225 04:21</TimeStamp>
+<ErrorCode>0</ErrorCode>
+<ErrorMessage/>
+<Alert>
+<AlertId>23322</AlertId>
+<Headline>
+UIC-Halsted Station Peoria Entrance Temporary Closure
+</Headline>
+<ShortDescription>
+The Peoria entrance to UIC-Halsted is temporarily closed. Enter/exit the UIC-Halsted station thru the Halsted or Morgan entrances.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><span style="font-size: small"><span style="font-family: Arial"><strong>How does this affect my trip?</strong> <br />
+ The Peoria entrance to UIC-Halsted is temporarily closed. <br />
+ <br />
+ To enter or exit UIC-Halsted station, use the Morgan entrance&nbsp;located 1/8 mile west of the Peoria e
+]]>
+<![CDATA[
+ntrance, at the west end of the station platform; or use the Halsted entrance located 1/8-mile east of the Peoria entrance, at the east end of the platform. <br />
+ <br />
+ <strong>Why is service being changed?</strong> <br />
+ The Peoria entrance to UIC-Halsted is being temporarily closed due to the closure of the Peoria Street overpass for reconstruction and renovation of the Peoria station house as part of the Illinois Department of Transportation&rsquo;s Circle Interchange Project.</span></span></p>
+ <p><span style="font-size: x-small">&nbsp;</span></p>
+ <p><span style="color: #0000ff"><span style="font-size: medium"><strong>MAP<br />
+ <br />
+ <img border="0" alt="" width="409" height="230" src="/assets/1/maps/UIC-Halsted_Peoria_Entrance_closure_map_060914.gif" /></strong></span></span></p>
+]]>
+</FullDescription>
+<SeverityScore>12</SeverityScore>
+<SeverityColor>000000</SeverityColor>
+<SeverityCSS>normal</SeverityCSS>
+<Impact>Special Note</Impact>
+<EventStart>20140609 04:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=23322
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Blue Line</ServiceName>
+<ServiceId>Blue</ServiceId>
+<ServiceBackColor>00a1de</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/blueline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>cec95da5-29d6-478e-a4a5-155645ef8a6d</GUID>
+</Alert>
+<Alert>
+<AlertId>23656</AlertId>
+<Headline>Clark/Division Station Platform Access</Headline>
+<ShortDescription>
+Access to portions of the Clark/Division (Red Line) platform may sometimes be limited for people with disabilities due to construction.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip?</strong><br />
+ The new LaSalle entrance to the Clark/Division station is equipped with elevators. While construction to complete the renovation to the platform and Clark St. entrance continues, access to portions of the platform may sometimes be limited for
+]]>
+<![CDATA[
+people with disabilities&mdash;especially those using wheelchairs or other mobility devices.</p>
+ <p><strong>To avoid construction areas and difficulty accessing the elevator:</strong></p>
+ <ul>
+ <li>When riding Howard-bound trains <em>to</em> Clark/Division, ride in the <em>first </em>car.</li>
+ <li>When riding 95th-bound trains <em>to</em> Clark/Division, ride in the <em>last </em>car.<br />
+ &nbsp;</li>
+ </ul>
+ <p>When work is complete, the Clark/Division station will be accessible. See station personnel for further assistance.</p>
+ <p><a href="/clarkdivision">Learn more about the project, here.</a></p>
+ <p><strong>Why is service being changed?<br />
+ </strong>We are performing station construction to renovate the Clark/Division station.</p>
+ <p>&nbsp;</p>
+ <p><em>Related:&nbsp;</em><a href="http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=23608"><em>Clark St. Entrance Temporary Closure for Construction</em></a></p>
+]]>
+</FullDescription>
+<SeverityScore>1</SeverityScore>
+<SeverityColor>000000</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Accessiblity Note</Impact>
+<EventStart>20140630 05:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=23656
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>T</ServiceType>
+<ServiceTypeDescription>Train Station</ServiceTypeDescription>
+<ServiceName>Clark/Division</ServiceName>
+<ServiceId>40630</ServiceId>
+<ServiceBackColor>c60c30</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=42
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Red Line</ServiceName>
+<ServiceId>Red</ServiceId>
+<ServiceBackColor>c60c30</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/redline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>6bf01d83-211f-49dc-a2d4-ffbdf8ef57c7</GUID>
+</Alert>
+<Alert>
+<AlertId>24414</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The EB #55 bus stop located on the SW corner of 55th/University will be temporarily relocated to the SE corner of 55th/University.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><strong>How does this affect&nbsp;my trip?</strong></div>
+ <div>The<strong> </strong><strong>eastbound</strong> bus stop currently located on the southwest corner of 55<sup>th</sup>/University will be temporarily relocated to the southeast corner of 55<sup>th</sup>/University.</div>
+ <div><b><br />
+ <strong><span>Why is service being changed?</span></strong><br />
+ </b>The bus stop will be temporarily relocated due to construction.</div>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20140815</EventStart>
+<EventEnd>20150815</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=24414
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Garfield</ServiceName>
+<ServiceId>55</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=213
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>f29a3edf-ccb0-41cf-9d34-60e6fd9c1caa</GUID>
+</Alert>
+<Alert>
+<AlertId>24585</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+NB #22 bus stop on the southeast corner at Clark/Waveland will be temporarily relocated to the northeast corner at Clark/Waveland.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><span style="font-family: Arial"><strong><span style="font-size: small">How does this affect my trip? </span></strong><span style="font-size: small"><br />
+ The <strong>northbound #22 </strong>bus stop on the southeast corner at Clark/Waveland will be temporarily relocated to the&nbsp;northeast corner at Clark/Waveland.&nbsp; </span></span></p>
+ <p><span style="font-family: Arial"><strong><span style="font-size: small">Why is service being changed? <br />
+ </span></strong><span style="font-size: small">The bus stop is being relocated due to construction.&nbsp;&nbsp;<br />
+ &nbsp;<br />
+ </span></span></p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20140828</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=24585
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Clark</ServiceName>
+<ServiceId>22</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=181
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>ab05b879-b776-4342-b4ac-2299d627838e</GUID>
+</Alert>
+<Alert>
+<AlertId>25060</AlertId>
+<Headline>Temporary Bus Stop Elimination</Headline>
+<ShortDescription>
+EB #15 and #172 bus stop on the SW corner at Hyde Park Blvd./Lake Park Ave. has been temporarily eliminated.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip?<br />
+ </strong>The <strong>eastbound #15 Jeffery Local </strong>and <strong>#172 U. of Chicago/Kenwood </strong>bus stop on the southwest corner at Hyde Park Blvd./Lake Park Ave.&nbsp;has been temporarily eliminated.<br />
+ <br />
+ Board/exit eastbound #15 and #172 buses one block west on the southwest corner at Hyde&nbsp;Park Blvd./Blackstone.<br />
+ <br />
+ <strong>Why is service being changed?<br />
+ </strong>The bus stop has been temporarily eliminated due to construction.</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20140921</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=25060
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Jeffery Local</ServiceName>
+<ServiceId>15</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=175
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>U. of Chicago/Kenwood</ServiceName>
+<ServiceId>172</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=299
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>25caf384-8601-4a93-8253-78c22fa95ced</GUID>
+</Alert>
+<Alert>
+<AlertId>25514</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The southbound 56 stop on the northwest corner of Milwaukee/North Ave will be relocated a half-block northwest to 1630 N. Milwaukee.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip? </strong><br />
+ The southbound stop on the northwest corner of Milwaukee/North Ave will be relocated a half-block northwest to 1630 N. Milwaukee.</p>
+ <p><strong>Why Service Is Being Changed? </strong><br />
+ The bus stop is being temporarily relocated due to construction on the corner of Milwaukee/North Ave.</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20140505</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=25514
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Milwaukee</ServiceName>
+<ServiceId>56</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=217
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>314387a8-c8bb-48d5-8c2d-f6bb0b4ce321</GUID>
+</Alert>
+<Alert>
+<AlertId>25810</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The eastbound #63 stop on the southeast corner at 63rd/Stewart will be temporarily relocated to the southwest corner at 63rd/Stewart.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div>The <b>eastbound</b> stop on the southeast corner at 63rd/Stewart will be temporarily relocated to the southwest corner at 63rd/Stewart.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <p>The bus stop is being relocated due to construction.</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20141114 06:00</EventStart>
+<EventEnd>20150815 06:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=25810
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>63rd</ServiceName>
+<ServiceId>63</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=224
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>206f1cfe-9323-4ae5-abf2-09ebe6bf77b2</GUID>
+</Alert>
+<Alert>
+<AlertId>26633</AlertId>
+<Headline>Temporary Bus Stop Elimination</Headline>
+<ShortDescription>
+The EB #N4, 19, 69, N66, 147, 151, 157 bus stop located near the SE corner at Washington/Wabash will be temporarily eliminated.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><span style="font-size: small"><strong>How does this affect my trip?<br />
+ </strong>The eastbound bus stop located&nbsp;near&nbsp;the southeast corner at Washington/Wabash will be temporarily eliminated. <br />
+ <br />
+ <strong>Note: Eastbound #147 </strong>buses will be temporarily relocated to the existing eastbound&nbsp;bus stop located&nbsp;near the southeast corner at Washington/State.<br />
+ <br />
+ <strong>Why is service being changed?<br />
+ </strong>The bus stop is being temporarily eliminated due to&nbsp;utility work.&nbsp;<br />
+ <span style="font-family: Arial"><em><br />
+ </em></span></span></p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150121</EventStart>
+<EventEnd>20150320</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26633
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Cottage Grove</ServiceName>
+<ServiceId>4</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=162
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Blue Island/26th</ServiceName>
+<ServiceId>60</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=221
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Chicago</ServiceName>
+<ServiceId>66</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=228
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Outer Drive Express</ServiceName>
+<ServiceId>147</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=287
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Sheridan</ServiceName>
+<ServiceId>151</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=289
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Streeterville/Taylor</ServiceName>
+<ServiceId>157</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=293
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>United Center Express</ServiceName>
+<ServiceId>19</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=325
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>2c3f72d9-ab69-42ec-81ec-f5229b6f8e63</GUID>
+</Alert>
+<Alert>
+<AlertId>26634</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The WB #J14, 19, 20, 56, 60, 124, 157 bus stop located on the NE corner at Madison/Wabash will be temporarily relocated to the NW corner.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><span style="font-size: small"><span style="font-family: Arial"><strong>How does this affect my&nbsp;trip?<br />
+ </strong>The westbound bus&nbsp;stop located on the northeast corner at Madison/Wabash will be temporarily relocated to the northwest corner at Madison/Wabash.<br />
+ <br />
+ <span style="font-size: small"><font face=""><strong>Why is service being changed?<br />
+ </strong>The bus stop is being temporarily eliminated due to&nbsp;utility work.<br />
+ <br />
+ </font></span></span></span></p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150121</EventStart>
+<EventEnd>20150320</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26634
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Jeffery Jump</ServiceName>
+<ServiceId>J14</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=174
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Madison</ServiceName>
+<ServiceId>20</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=178
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Milwaukee</ServiceName>
+<ServiceId>56</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=217
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Blue Island/26th</ServiceName>
+<ServiceId>60</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=221
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Navy Pier</ServiceName>
+<ServiceId>124</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=275
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Streeterville/Taylor</ServiceName>
+<ServiceId>157</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=293
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>United Center Express</ServiceName>
+<ServiceId>19</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=325
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>9be4a037-1708-4973-8760-3dc179e32f5e</GUID>
+</Alert>
+<Alert>
+<AlertId>26712</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+EB #63 -via 63rd, Stewart, 65th, Wentworth, normal route on 63rd. WB - via 63rd, Wentworth, 59th, Yale, normal route on 63rd
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><strong>How does this affect my trip?</strong>&nbsp;</div>
+ <div><b>Eastbound </b>buses will operate via 63rd, Stewart, 65th, and Wentworth, then resume their normal route on 63rd.</div>
+ <div>&nbsp;</div>
+ <div><b>Westbound</b> buses will operate via 63rd, Wentworth, 59th, and Yale, then resum
+]]>
+<![CDATA[
+e their normal route on 63rd.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time. <br />
+ <br />
+ <strong><span>Why is service being changed?</span></strong> <br />
+ Buses are rerouted due to bridge reconstruction on 63rd over the Dan Ryan expressway.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150126 06:00</EventStart>
+<EventEnd>20151031 06:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26712
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>63rd</ServiceName>
+<ServiceId>63</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=224
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>af0dfa30-b0d8-4f17-b3bd-2057f1b866b1</GUID>
+</Alert>
+<Alert>
+<AlertId>26714</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+WB J14, 19, 20, 56, 60, 124, 157 bus stop on the NW corner at Madison/Wells temporarily relocated to NE corner at Madison/Franklin.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong><span style="font-family: Arial"><span style="font-size: small">How&nbsp;does this affect my trip?<br />
+ </span></span></strong><span style="font-family: Arial"><span style="font-size: small">The westbound&nbsp;bus stop on the northwest corner at Madison/Wells will be temporarily relocated to the northeast corner at Madison/Franklin.<br />
+ <br />
+ Please board westbound #J14 Jeffery Jump, #19 United Center Express, #20 Madison, #60 Blue Island/26th, #124 Navy Pier, and #157 Streeterville/Taylor and northbound #56 Milwaukee buses one-half block west at Madison/Franklin.&nbsp;</span></span></p>
+ <p><strong><span style="font-family: Arial"><span style="font-size: small">Why is service being changed?<br />
+ </span></span></strong><span style="font-family: Arial"><span style="font-size: small">The&nbsp;bus stop will be temporarily relocated due to construction. <br />
+ <br />
+ </span></span></p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150126 05:00</EventStart>
+<EventEnd>20150323</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26714
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Jeffery Jump</ServiceName>
+<ServiceId>J14</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=174
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Madison</ServiceName>
+<ServiceId>20</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=178
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Milwaukee</ServiceName>
+<ServiceId>56</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=217
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Blue Island/26th</ServiceName>
+<ServiceId>60</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=221
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Navy Pier</ServiceName>
+<ServiceId>124</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=275
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Streeterville/Taylor</ServiceName>
+<ServiceId>157</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=293
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>United Center Express</ServiceName>
+<ServiceId>19</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=325
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>fc64b496-79f6-4a9c-9a08-01e1c17c3d6c</GUID>
+</Alert>
+<Alert>
+<AlertId>26755</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+EB #147 and #151 bus stop on the SE corner at Washington/Garland will be temporarily relocated to the SE corner at Washington/State.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip?<br />
+ </strong>The eastbound #147 Outer Drive Express and #151 Sheridan bus stop on the southeast corner at Washington/Garland will be temporarily relocated to&nbsp;and <font size="2">consolidated with</font> the existing bus stop on&nbsp;the southeast corner at Washington/State.<br />
+ <br />
+ <strong>Why is service being changed?<br />
+ </strong>The bus stop will be temporarily relocated due to construction at Washington/Garland.</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150121 05:00</EventStart>
+<EventEnd>20150320 18:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26755
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Outer Drive Express</ServiceName>
+<ServiceId>147</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=287
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Sheridan</ServiceName>
+<ServiceId>151</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=289
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>445bec24-9436-46f8-9be9-ef4a061e7de3</GUID>
+</Alert>
+<Alert>
+<AlertId>26933</AlertId>
+<Headline>Bus Stop Relocation</Headline>
+<ShortDescription>
+Board #21 Cermak buses in both directions in front of the new Cermak-McCormick Place (accessible) Green Line station.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><strong>How does this affect my trip?</strong></div>
+ <div>The <strong>eastbound #21 Cermak</strong><strong> </strong>stops at the southwest corners of Cermak/State and Cermak/Wabash, and the <strong>westbound</strong> stop located at the northeast corner of Cermak/State, will be relocated&nbsp;midblock on Cermak between State and Wabash.</div>
+ <div>&nbsp;</div>
+ <div>Board <b>#21 Cermak</b> buses in both directions in front of the new Cermak-McCormick Place (accessible) Green Line station.</div>
+ <div><br />
+ <strong><span>Why is service being changed?</span></strong> <br />
+ Bus stops are being relocated for the convenience of customers transferring between #21 Cermak buses and the Green Line at the new Cermak-McCormick Place station.</div>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150206 07:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26933
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Cermak</ServiceName>
+<ServiceId>21</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=180
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>60586881-62e4-40a2-b8d0-d8bd7d26b82a</GUID>
+</Alert>
+<Alert>
+<AlertId>26948</AlertId>
+<Headline>Weekend Service Added</Headline>
+<ShortDescription>
+Weekend service will be added to the #39 Pershing route, operating Sat & Sun/hol btwn 8a-5:18p eastbound and 8:41a-6:01p westbound.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip? </strong><br />
+ Weekend service will be added to the #39 Pershing route. Buses will operate on weekends during the following hours (times leaving the terminal):</p>
+ <p><strong>Saturdays &amp; Sundays/Holidays: </strong><br />
+ 38th/St. Louis east to 40th/La
+]]>
+<![CDATA[
+ke Park:&nbsp;8:00am-5:18pm <br />
+ 40th/Lake Park west to 38th/St. Louis: 8:41am-6:01pm</p>
+ <p>Service will run approximately every 25-30 minutes.</p>
+ <p><strong>Why is service being changed? </strong><br />
+ Weekend #39 bus service is being added as part of a 180-day experiment based on increased potential ridership demand.</p>
+]]>
+</FullDescription>
+<SeverityScore>20</SeverityScore>
+<SeverityColor>000000</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Service Change</Impact>
+<EventStart>20150207</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26948
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Pershing</ServiceName>
+<ServiceId>39</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=193
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>57ededc6-43f8-464f-85fe-a31684623305</GUID>
+</Alert>
+<Alert>
+<AlertId>26950</AlertId>
+<Headline>New Cermak-McCormick Place Station Opens</Headline>
+<ShortDescription>
+The new Cermak-McCormick Place station on the Green Line is open for service.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip? </strong><br />
+ The new Cermak-McCormick Place station on the Green Line will be open for service. This station will be accessible to customers with disabilities and include these customer convenient features:</p>
+ <ul>
+ <li>Three entrances, for convenient access and bus transfers &ndash; a staffed main entrance on the north side of Cermak Road, an auxiliary farecard entrance on the south side of Cermak Road, and a staffed entrance at 23rd Street</li>
+ <li>Farecard vending machines at all three entrances</li>
+ <li>An island platform featuring full canopy coverage, heaters, and benches</li>
+ <li>Bright lighting and security cameras throughout the station</li>
+ <li>New signage, including digital displays, neighborhood maps and Braille</li>
+ <li>Bike racks at all three entrances</li>
+ <li>Convenient access to McCormick Place, Motor Row, and other Near South Side destinations</li>
+ </ul>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p><em>See also:&nbsp;<a href="http://www.transitchicago.com/news/default.aspx?ArticleId=3392">Press release</a></em></p>
+]]>
+</FullDescription>
+<SeverityScore>12</SeverityScore>
+<SeverityColor>000000</SeverityColor>
+<SeverityCSS>normal</SeverityCSS>
+<Impact>Special Note</Impact>
+<EventStart>20150208 05:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=26950
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>T</ServiceType>
+<ServiceTypeDescription>Train Station</ServiceTypeDescription>
+<ServiceName>Cermak-McCormick Place</ServiceName>
+<ServiceId>41690</ServiceId>
+<ServiceBackColor>009b3a</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=149
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Green Line</ServiceName>
+<ServiceId>G</ServiceId>
+<ServiceBackColor>009b3a</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/greenline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>33e6aa8f-cbea-4583-9330-4e5a30aee735</GUID>
+</Alert>
+<Alert>
+<AlertId>27059</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+Northbound #50 Damen buses will operate via Damen, 18th Street, Ashland, and Roosevelt, then resume their normal route on Damen.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><strong>How does this affect my trip?</strong>&nbsp;</div>
+ <div><b>Northbound</b> buses will operate via Damen, 18th Street, Ashland, and Roosevelt, then resume their normal route on Damen.</div>
+ <div>&nbsp;</div>
+ <div><b>Southbound </b>buses are not affected.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time. <br />
+ <br />
+ <strong><span>Why is service being changed?</span></strong> <br />
+ Buses are rerouted due to sewer work at 1229 S. Damen.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150224 06:00</EventStart>
+<EventEnd>20150226 18:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27059
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Damen</ServiceName>
+<ServiceId>50</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=202
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>239b7dcc-18a4-4867-90b5-24d9b9f65b4a</GUID>
+</Alert>
+<Alert>
+<AlertId>27066</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The SB bus stop on located on the NW corner at Harlem/Talcott will be temporarily relocated to the SW corner at Harlem/Talcott.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><strong>How does this affect my trip?</strong> <br />
+ The southbound bus stop on located on the northwest corner at Harlem/Talcott will be temporarily relocated to the southwest corner at Harlem/Talcott. <br />
+ <br />
+ <strong>Why is service being changed? <br />
+ </strong>The bus stop is being temporarily relocated due to construction.</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150216 08:00</EventStart>
+<EventEnd>20150320 16:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27066
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Higgins</ServiceName>
+<ServiceId>88</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=252
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>3d89535f-a43a-4aaa-9e27-b5091a19d9e6</GUID>
+</Alert>
+<Alert>
+<AlertId>27091</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+EB #N77 (Owl) via Belmont, Clark, Halsted, and Belmont, end at Belmont/Clark. WB begin at Belmont/Clark, normal route.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip? </b></div>
+ <div><b>Eastbound&nbsp;#N77 Belmont (Owl)</b>&nbsp;buses will operate via Belmont, Clark, Halsted, and Belmont, ending their trips at Belmont/Clark.</div>
+ <div>&nbsp;</div>
+ <div><b>Westbound</b> buses will begin their trips at Belmont/Clark, then continue their normal route on Belmont.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <div>Buses will be rerouted due to sewer work at Belmont/Halsted.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150225 08:00</EventStart>
+<EventEnd>20150327 16:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27091
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Belmont</ServiceName>
+<ServiceId>77</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=239
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>6c20b25c-459c-4030-abd8-2de8458a408d</GUID>
+</Alert>
+<Alert>
+<AlertId>27092</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+Trips to/frm Blmt/Hlstd Terminal: NB#151, #156 - Blmnt, Shrdn, Inner LSD, Addsn, Hlstd, end at Hlstd/Blmnt. SB begin Blmnt/Hlstd, nrml rt.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip? </b></div>
+ <div><b>Trips to/from Belmont/Halsted Terminal Only: Northbound #151 Sheridan </b>and<b> #156 LaSalle </b>buses will operate via Belmont, Sheridan, Inner Lake Shore Drive, Addison, and Halsted, ending their trips at Halsted/Belmont.&nbsp;</div>
+ <div>&nbsp;</div>
+ <div><b>Southbound #151</b> and <b>#156 LaSalle</b> buses will begin their trips at Belmont/Halsted, then continue their normal route on Belmont.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <div>Buses will be rerouted due to sewer work at Belmont/Halsted.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150225 08:00</EventStart>
+<EventEnd>20150327 16:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27092
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Sheridan</ServiceName>
+<ServiceId>151</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=289
+]]>
+</ServiceURL>
+</Service>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>LaSalle</ServiceName>
+<ServiceId>156</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=292
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>dd8f2ff7-06e8-44d8-8cd5-f8d5c3c25df9</GUID>
+</Alert>
+<Alert>
+<AlertId>27119</AlertId>
+<Headline>
+Boarding Change, Delays Between Grand and Cermak-Chinatown
+</Headline>
+<ShortDescription>
+Red Line trains will operate on the same track between Grand and Cermak-Chinatown, resulting in boarding changes and minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div>Board/exit all trains on the Howard-bound side of the platform at the Lake, Monroe, Jackson, Harrison, and Roosevelt stations.</div>
+ <div>&nbsp;</div>
+ <div>Trains in both directions will operate on the same track between Grand and Cermak-Chinatown, resulting in minor delays.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.<br />
+ <br />
+ &nbsp;</div>
+ <div><b>Why is service being changed?</b> <br />
+ We are performing maintenance work to ensure that trains continue to operate safely along the Red Line.</div>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150224 22:30</EventStart>
+<EventEnd>20150225 04:30</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27119
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Red Line</ServiceName>
+<ServiceId>Red</ServiceId>
+<ServiceBackColor>c60c30</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/redline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>577a204b-2460-40f0-84a1-f3e40bb3323b</GUID>
+</Alert>
+<Alert>
+<AlertId>27121</AlertId>
+<Headline>
+Boarding Change, Delays Between Grand and Cermak-Chinatown
+</Headline>
+<ShortDescription>
+Red Line trains will operate on the same track between Grand and Cermak-Chinatown, resulting in boarding changes and minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div>Board/exit all trains on the Howard-bound side of the platform at the Lake, Monroe, Jackson, Harrison, and Roosevelt stations.</div>
+ <div>&nbsp;</div>
+ <div>Trains in both directions will operate on the same track between Grand and Cermak-Chinatown, resulting in minor delays.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.<br />
+ <br />
+ &nbsp;</div>
+ <div><b>Why is service being changed?</b> <br />
+ We are performing maintenance work to ensure that trains continue to operate safely along the Red Line.</div>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150225 22:30</EventStart>
+<EventEnd>20150226 04:30</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27121
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Red Line</ServiceName>
+<ServiceId>Red</ServiceId>
+<ServiceBackColor>c60c30</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/redline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>4b5260b9-af9b-489b-9422-33a0efbe8c5b</GUID>
+</Alert>
+<Alert>
+<AlertId>27122</AlertId>
+<Headline>
+Boarding Change, Delays Between Grand and Cermak-Chinatown
+</Headline>
+<ShortDescription>
+Red Line trains will operate on the same track between Grand and Cermak-Chinatown, resulting in boarding changes and minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div>Board/exit all trains on the Howard-bound side of the platform at the Lake, Monroe, Jackson, Harrison, and Roosevelt stations.</div>
+ <div>&nbsp;</div>
+ <div>Trains in both directions will operate on the same track between Grand and Cermak-Chinatown, resulting in minor delays.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.<br />
+ <br />
+ &nbsp;</div>
+ <div><b>Why is service being changed?</b> <br />
+ We are performing maintenance work to ensure that trains continue to operate safely along the Red Line.</div>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150226 22:30</EventStart>
+<EventEnd>20150227 04:30</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27122
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Red Line</ServiceName>
+<ServiceId>Red</ServiceId>
+<ServiceBackColor>c60c30</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/redline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>70bffc40-7ac4-468d-a934-ff025165ee87</GUID>
+</Alert>
+<Alert>
+<AlertId>27125</AlertId>
+<Headline>Delays Between Garfield and Cottage Grove</Headline>
+<ShortDescription>
+Green Line trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><font size="2"><strong>How does this affect my trip? <br />
+ </strong>Trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays. <br />
+ <br />
+ Allow extra travel time. <br />
+ <br />
+ <strong>Why is service being changed?</strong> <br />
+ We are performing track maintenance to ensure that trains continue to operate safely along the Green Line.&nbsp;</font><br />
+ &nbsp;</p>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150225 09:00</EventStart>
+<EventEnd>20150225 15:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27125
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Green Line</ServiceName>
+<ServiceId>G</ServiceId>
+<ServiceBackColor>009b3a</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/greenline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>1112fede-c2b4-4cf5-b07f-6782d66993bd</GUID>
+</Alert>
+<Alert>
+<AlertId>27126</AlertId>
+<Headline>Delays Between Garfield and Cottage Grove</Headline>
+<ShortDescription>
+Green Line trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><font size="2"><strong>How does this affect my trip? <br />
+ </strong>Trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays. <br />
+ <br />
+ Allow extra travel time. <br />
+ <br />
+ <strong>Why is service being changed?</strong> <br
+]]>
+<![CDATA[
+/>
+ We are performing track maintenance to ensure that trains continue to operate safely along the Green Line.&nbsp;</font><br />
+ &nbsp;</p>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150226 09:00</EventStart>
+<EventEnd>20150226 15:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27126
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Green Line</ServiceName>
+<ServiceId>G</ServiceId>
+<ServiceBackColor>009b3a</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/greenline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>3bf67b16-4f01-4331-a1b8-c3f4d38c12b6</GUID>
+</Alert>
+<Alert>
+<AlertId>27127</AlertId>
+<Headline>Delays Between Garfield and Cottage Grove</Headline>
+<ShortDescription>
+Green Line trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><font size="2"><strong>How does this affect my trip? <br />
+ </strong>Trains in both directions will operate on the same track between Garfield and Cottage Grove, resulting in minor delays. <br />
+ <br />
+ Allow extra travel time. <br />
+ <br />
+ <strong>Why is service being changed?</strong> <br />
+ We are performing track maintenance to ensure that trains continue to operate safely along the Green Line.&nbsp;</font><br />
+ &nbsp;</p>
+]]>
+</FullDescription>
+<SeverityScore>25</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Work</Impact>
+<EventStart>20150227 09:00</EventStart>
+<EventEnd>20150227 15:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27127
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>R</ServiceType>
+<ServiceTypeDescription>Train Route</ServiceTypeDescription>
+<ServiceName>Green Line</ServiceName>
+<ServiceId>G</ServiceId>
+<ServiceBackColor>009b3a</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/systemguide/greenline.aspx
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>1</ttim>
+<GUID>963e2258-9093-439a-b2c6-4ac6b9aae5c4</GUID>
+</Alert>
+<Alert>
+<AlertId>27155</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+Southbound #49 buses will operate via Western, Belmont, California, and Elston, then resume their normal route on Western.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div><b>Southbound</b> buses will operate via Western, Belmont, California, and Elston, then resume their normal route on Western.</div>
+ <div>&nbsp;</div>
+ <div><b>Northbound</b> buses are not affected.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <div>Buses are rerouted due to water main work on Western between Belmont and Nelson.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150224 05:00</EventStart>
+<EventEnd>20150331 18:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27155
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Western</ServiceName>
+<ServiceId>49</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=198
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>f8245dfb-8c59-4b3d-9931-d3a201ecd336</GUID>
+</Alert>
+<Alert>
+<AlertId>27175</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+Westbound #88 buses will operate via Higgins, Harlem (O’Hare br) Blue Line station, Harlem, Higgins, and Oriole, normal route on Talcott.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div><b>Westbound </b>buses will operate via Higgins, the Harlem (O&rsquo;Hare branch) Blue Line station, Harlem, Higgins, and Oriole, then resume their normal route on Talcott.</div>
+ <div>&nbsp;</div>
+ <div><b>Eastbound</b> buses are not affected.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra travel time.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <div>Buses are rerouted due to sewer work at Talcott/Harlem.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150225 07:00</EventStart>
+<EventEnd>20150320 18:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27175
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Higgins</ServiceName>
+<ServiceId>88</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=252
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>bd769225-5f49-4c72-91f4-999f7246b696</GUID>
+</Alert>
+<Alert>
+<AlertId>27176</AlertId>
+<Headline>Bus Stop Restoration</Headline>
+<ShortDescription>
+The WB #63 bus stop on NW corner of Yale at 63rd, will be restored to its original location on 63rd St at Yale).
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><font face="Arial"><font size="2"><strong>How does this affect my trip?<br />
+ </strong>The westbound #63 63rd bus stop on the northwest corner of Yale at 63rd, will be restored to its original location on 63rd Street at Yale (same corner but on 63rd&nbsp;instead of Yale). <br />
+ <br />
+ </font></font><font face="Arial"><font size="2"><strong>Why is service being changed? <br />
+ </strong>The bus stop is being restored to improve traffic flow during on-going construction.&nbsp;</font></font><br />
+ &nbsp;</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150224 06:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27176
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>63rd</ServiceName>
+<ServiceId>63</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=224
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>7023a23d-fd35-411f-94a5-12e61fde7327</GUID>
+</Alert>
+<Alert>
+<AlertId>27177</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The WB bus stop on the NEcorner at Belmont/Halsted will be temporarily relocated to the NWcorner at Belmont/Halsted.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><!-- end print content --><strong>How does this affect my trip?<br />
+ </strong>The westbound bus stop on the northeast corner at Belmont/Halsted will be temporarily relocated to the northwest corner at Belmont/Halsted.<br />
+ <br />
+ <strong>Why is service being changed?<br />
+ </strong>The bus stop will be temporarily relocated due to <font size="2">sewer work at Belmont/Halsted.</font><br />
+ &nbsp;</p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150225 08:00</EventStart>
+<EventEnd>20150227 16:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27177
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Belmont</ServiceName>
+<ServiceId>77</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=239
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>9f6af11c-8bdf-4e8c-aaa6-f2b1664cd336</GUID>
+</Alert>
+<Alert>
+<AlertId>27212</AlertId>
+<Headline>Temporary Bus Stop Relocation</Headline>
+<ShortDescription>
+The SB #24 bus stop on the northwest corner at Yale/63rd will be temporarily relocated to the southwest corner at Yale/63rd.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<p><span style="font-size: small"><strong>How does this affect my trip?<br />
+ </strong>The southbound #24 Wentworth bus stop on the northwest corner at Yale/63rd will be&nbsp;temporarily relocated&nbsp;to the southwest corner at Yale/63rd.<br />
+ <br />
+ <strong>Why is service being changed? <br />
+ </strong>The bus stop will be temporarily relocated to improve traffic flow during on-going construction.&nbsp;<br />
+ </span></p>
+]]>
+</FullDescription>
+<SeverityScore>9</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Bus Stop Relocation</Impact>
+<EventStart>20150224 06:00</EventStart>
+<EventEnd/>
+<TBD>1</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27212
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Wentworth</ServiceName>
+<ServiceId>24</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=182
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>9114f152-f4ef-4038-9ba2-64057955905e</GUID>
+</Alert>
+<Alert>
+<AlertId>27222</AlertId>
+<Headline>Temporary Reroute</Headline>
+<ShortDescription>
+Westbound #100 buses will operate via 106th, Avenue N, 100th, Commercial, and Muskegon, then resume their normal route on 106th.
+</ShortDescription>
+<FullDescription>
+<![CDATA[
+<div><b>How does this affect my trip?</b></div>
+ <div><b>Westbound </b>buses will operate via 106th, Avenue N, 100th, Commercial, and Muskegon, then resume their normal route on 106th.</div>
+ <div>&nbsp;</div>
+ <div><b>Eastbound</b> buses are not affected.</div>
+ <div>&nbsp;</div>
+ <div>Allow extra
+]]>
+<![CDATA[
+travel time.</div>
+ <div>&nbsp;</div>
+ <div><b>Why is service being changed?</b></div>
+ <div>Buses are rerouted due gas main work under the Calumet River at 106th between Avenue O and Muskegon.</div>
+]]>
+</FullDescription>
+<SeverityScore>37</SeverityScore>
+<SeverityColor>06c</SeverityColor>
+<SeverityCSS>planned</SeverityCSS>
+<Impact>Planned Reroute</Impact>
+<EventStart>20150225 09:00</EventStart>
+<EventEnd>20150427 06:00</EventEnd>
+<TBD>0</TBD>
+<MajorAlert>0</MajorAlert>
+<AlertURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=27222
+]]>
+</AlertURL>
+<ImpactedService>
+<Service>
+<ServiceType>B</ServiceType>
+<ServiceTypeDescription>Bus Route</ServiceTypeDescription>
+<ServiceName>Jeffery Manor Express</ServiceName>
+<ServiceId>100</ServiceId>
+<ServiceBackColor>059</ServiceBackColor>
+<ServiceTextColor>ffffff</ServiceTextColor>
+<ServiceURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=264
+]]>
+</ServiceURL>
+</Service>
+</ImpactedService>
+<ttim>0</ttim>
+<GUID>6f47c712-4776-4f8b-9806-92a346bd4b83</GUID>
+</Alert>
+</CTAAlerts>
