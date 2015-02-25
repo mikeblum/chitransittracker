@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+	
+	<context:component-scan base-package="com.rest" />
+
+	<mvc:annotation-driven />
+	
+	<!--  declare the annotated method handler adapter so we can add the json message converter -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<!-- Note - the order of these matter.  The first valid will be used. -->
+			<list>
+				<ref bean="byteArrayConverter" />
+				<ref bean="jsonConverter" />
+				<ref bean="stringHttpMessageConverter" />
+				<ref bean="formConverter" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="formConverter" class="org.springframework.http.converter.FormHttpMessageConverter" />
+	
+	<!-- add byte[] converter -->
+	<bean id="byteArrayConverter" class="org.springframework.http.converter.ByteArrayHttpMessageConverter">
+	   <property name="supportedMediaTypes" value="application/octet-stream" />
+	</bean>  
+
+	<!--  add in our JSON message converter -->
+	<bean id="jsonConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	   	<property name="supportedMediaTypes" value="application/json;charset=UTF-8" />
+	</bean>
+	
+	<!-- add in our plain string message converter -->
+	<bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+		<property name="supportedMediaTypes" value="text/plain;charset=UTF-8" />
+	</bean>
+
+	<!-- Expose the authenticated handler to all beans that have been declared via annotation -->
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+	</bean>
+</beans>
