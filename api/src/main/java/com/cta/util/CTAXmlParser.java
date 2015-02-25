@@ -44,9 +44,12 @@ public class CTAXmlParser {
 	@Value("cta.api.uri.routes")
 	protected static String ROUTES;
 	
+	@Value("cta.api.uri.alerts")
+	protected static String ALERTS;
+	
 	public static CTARoutes getCTARoutesInfo(String type){
 		try {
-			InputStream fetchedResultsStream = processAPIRoutesRequest(type);
+			InputStream fetchedResultsStream = processAPIRequest(type);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 			return xmlMapper.readValue(fetchedResultsStream, CTARoutes.class);
@@ -56,15 +59,20 @@ public class CTAXmlParser {
 		return null;
 	}
 	
-	private static InputStream processAPIRoutesRequest(String type){
+	/**
+	 * Util method for making 
+	 * @param type
+	 * @return
+	 */
+	private static InputStream processAPIRequest(String type){
 		URI uriToFetchData = null;
-		HttpGet getTrainStations;
+		HttpGet request;
 		try {
 			uriToFetchData = CTAXmlParser.getCTARoutesURI(type).build();
-			getTrainStations = new HttpGet(uriToFetchData);
+			request = new HttpGet(uriToFetchData);
 			// add request header
-			getTrainStations.addHeader("User-Agent", USER_AGENT);
-			HttpResponse responseTrainStations = client.execute(getTrainStations);
+			request.addHeader("User-Agent", USER_AGENT);
+			HttpResponse responseTrainStations = client.execute(request);
 			HttpEntity entity = responseTrainStations.getEntity(); 
 			return entity.getContent();
 		} catch (Exception e) {
@@ -88,10 +96,25 @@ public class CTAXmlParser {
 		return null;
 	}
 	
+	/**
+	 * Get the fully qualified url to this CTA API type endpoint: station, bus, rail, or systemwide
+	 * @param type station, bus, rail, or systemwide
+	 * @return fully qualified url like this: http://lapi.transitchicago.com/api/1.0/routes.aspx?type=systemwide
+	 */
 	public static URIBuilder getCTARoutesURI(String type){
-		URIBuilder trainStationsURI = getAPIBase();
-		trainStationsURI.setPath(CTAXmlParser.VERSION + "/" + CTAXmlParser.ROUTES)
-					.setParameter("type", type);
-		return trainStationsURI;
+		URIBuilder routesURI = getAPIBase();
+		routesURI.setPath(CTAXmlParser.VERSION + "/" + CTAXmlParser.ROUTES)
+				 .setParameter("type", type);
+		return routesURI;
+	}
+	
+	/**
+	 * Get the fully qualified alerts url from CTA
+	 * @return fully qualified url to the alerts endpoint
+	 */
+	public static URIBuilder getCTAAlertsURI(){
+		URIBuilder alertsURI = getAPIBase();
+		alertsURI.setPath(CTAXmlParser.VERSION + "/" + CTAXmlParser.ALERTS);
+		return alertsURI;
 	}
 }

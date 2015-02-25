@@ -1,1 +1,2878 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CTARoutes><TimeStamp>20150224 22:30</TimeStamp><ErrorCode>0</ErrorCode><ErrorMessage /><RouteInfo><Route>18th | 1710 W. 18th St., Chicago, IL 60608</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40830</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=1]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>35th-Bronzeville-IIT | 16 E. 35th St., Chicago, IL 60616</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41120</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=2]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>35th-Bronzeville-IIT | 16 E. 35th St., Chicago, IL 60616</Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>41120</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=2]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>35th/Archer | 3528 S. Leavitt St., Chicago, IL 60609</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40120</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=3]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>43rd | 314 E. 43rd St., Chicago, IL 60653</Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>41270</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=4]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>43rd | 314 E. 43rd St., Chicago, IL 60653</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41270</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=4]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>47th | 314 E. 47th St., Chicago, IL 60653</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41080</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=5]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>47th | 220 W. 47th St., Chicago, IL 60609</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41230</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=6]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>47th | 314 E. 47th St., Chicago, IL 60653</Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>41080</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=5]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>51st | 319 E. 51st St., Chicago, IL 60615</Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>40130</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=7]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>51st | 319 E. 51st St., Chicago, IL 60615</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40130</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=7]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>54th/Cermak | 2134 S. 54th Av., Cicero, IL 60804</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40580</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=8]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>63rd | 220 W. 63rd St., Chicago, IL 60621</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40910</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=9]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>69th | 15 W. 69th St., Chicago, IL 60621</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40990</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=10]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>79th | 15 W. 79th St., Chicago, IL 60620</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40240</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=11]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>87th | 15 W. 87th St., Chicago, IL 60620</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41430</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=12]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>95th/Dan Ryan | 14 W. 95th St., Chicago, IL 60620</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40450</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=13]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=14]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=14]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=14]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=14]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=14]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Addison | 1818 W. Addison St., Chicago, IL 60613</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41440</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=16]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Addison | 940 W. Addison St., Chicago, IL 60613</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41420</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=17]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Addison | 3622 W. Addison St., Chicago, IL 60618</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41240</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=15]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Argyle | 1118 W. Argyle Ave., Chicago, IL 60640</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=18]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Armitage | 944 W. Armitage Ave., Chicago, IL 60614</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40660</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=19]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Armitage | 944 W. Armitage Ave., Chicago, IL 60614</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40660</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=19]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ashland | 3011 S. Ashland Ave., Chicago, IL 60608</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41060</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=22]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ashland | 1601 W. Lake St., Chicago, IL 60612</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40170</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=21]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ashland | 1601 W. Lake St., Chicago, IL 60612</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40170</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=21]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ashland/63rd | 6315 S. Ashland Ave., Chicago, IL 60636</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40290</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=20]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Austin | 351 N. Austin blvd., Chicago, IL 60644</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=24]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Austin | 1050 S. Austin blvd., Oak Park, IL 60304</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40010</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=23]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Belmont | 3355 W. Belmont Ave., Chicago, IL 60618</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40060</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=26]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41320</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=25]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41320</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=25]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41320</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=25]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Berwyn | 1121 W. Berwyn Ave., Chicago, IL 60640</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40340</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=27]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Bryn Mawr | 1119 W. Bryn Mawr Ave., Chicago, IL 60660</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=28]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>California | 2211 N. California Ave., Chicago, IL 60647</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40570</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=31]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>California | 2800 W. Lake St., Chicago, IL 60612</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41360</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=30]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>California | 2011 S. California Ave., Chicago, IL 60608</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40440</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=29]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central | 350 N. Central Ave., Chicago, IL 60644</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40280</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=33]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central | 1022 Central St., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41250</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=34]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central | 1022 Central St., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41250</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=34]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central Park | 1915 S. Central Park Ave., Chicago, IL 60623</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40780</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=32]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cermak-Chinatown | 138 W. Cermak Rd., Chicago, IL 60616</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41000</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=35]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Cermak-McCormick Place | 12 E. Cermak, Chicago, IL 60616</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41690</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=149]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago | 300 W. Chicago Ave., Chicago, IL 60610</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40710</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=37]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago | 800 N. State St., Chicago, IL</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41450</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=38]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago | 800 N. Milwaukee Ave., Chicago, IL 60622</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41410</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=36]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago | 300 W. Chicago Ave., Chicago, IL 60610</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40710</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=37]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cicero | 720 S. Cicero Ave., Chicago, IL 60644</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40970</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=40]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cicero | 4800 W. Lake St., Chicago, IL 60644</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40480</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=41]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cicero | 2134 S. Cicero Av., Cicero, IL 60804</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40420</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=39]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Division | 1200 N. Clark St., Chicago, IL 60610</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40630</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=42]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40380</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=43]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clinton | 540 W. Lake St., Chicago, IL 60661</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=46]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clinton | 540 W. Lake St., Chicago, IL 60661</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=46]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clinton | 426 S. Clinton St., Chicago, IL 60607</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40430</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=45]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Conservatory-Central Park Drive | 3631 W. Lake St., Chicago, IL 60624</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41670</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=47]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cottage Grove | 800 E. 63rd St., Chicago, IL 60637</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40720</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=55]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cumberland | 5800 N. Cumberland Ave., Chicago, IL 60631</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40230</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=48]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Damen | 1558 N. Damen Ave., Chicago, IL 60622</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40590</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=50]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Damen | 2010 S. Damen Av., Chicago, IL</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40210</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=49]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Damen | 4645 N. Damen Ave., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40090</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=141]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Davis | 1612 Benson, Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40050</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=51]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Davis | 1612 Benson, Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40050</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=51]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Dempster | 1316 N. Sherman, Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40690</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=52]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Dempster | 1316 N. Sherman, Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40690</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=52]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Dempster-Skokie | 5001 Dempster St., Skokie, IL 60077</Route><RouteColorCode>f9e300</RouteColorCode><RouteTextColor>000000</RouteTextColor><ServiceId>40140</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=126]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Diversey | 943 W. Diversey Ave., Chicago, IL 60657</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40530</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=53]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Diversey | 943 W. Diversey Ave., Chicago, IL 60657</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40530</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=53]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Division | 1200 N. Milwaukee Ave., Chicago, IL 60622</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40320</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=54]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Forest Park | 711 Des Plaines Ave., Forest Park, IL 60130</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40390</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=56]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Foster | 900 Foster St., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40520</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=57]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Foster | 900 Foster St., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40520</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=57]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Francisco | 4648 N. Francisco Ave., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40870</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=58]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41220</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=59]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41220</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=59]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41220</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=59]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Garfield | 320 E. Garfield Blvd., Chicago, IL 60637 </Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>40510</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=60]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Garfield | 220 W. Garfield Blvd., Chicago, IL 60609</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41170</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=61]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Garfield | 320 E. Garfield Blvd., Chicago, IL 60637 </Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40510</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=60]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Grand | 521 N. State St., Chicago, IL 60610</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40330</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=63]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Grand | 502 N. Milwaukee Ave., Chicago, IL 60622</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40490</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=62]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Granville | 1119 W. Granville Ave., Chicago, IL 60660</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40760</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=64]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Halsted | 6321 S. Halsted St., Chicago, IL 60621</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40940</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=65]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Halsted | 2520 S. Archer Ave., Chicago, IL 60608</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41130</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=66]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harlem (Forest Park Branch) | 701 Harlem Ave., Forest Park, IL 60130</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40980</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=67]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harlem (O'Hare Branch) | 5550 N. Harlem Ave., Chicago, IL 60656</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40750</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=69]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harlem/Lake | 1 Harlem Ave., Forest Park, IL 60130</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40020</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=68]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40850</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=92]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40850</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=92]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40850</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=92]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40850</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=92]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harrison | 608 S. State St., Chicago, IL 60605</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41490</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=70]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40900</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=71]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route><RouteColorCode>f9e300</RouteColorCode><RouteTextColor>000000</RouteTextColor><ServiceId>40900</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=71]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40900</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=71]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40900</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=71]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Illinois Medical District | 430 S. Damen Ave., Chicago, IL 60612</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40810</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=72]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Indiana | 4003 S. Indiana Ave., Chicago, IL 60653</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40300</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=73]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Indiana | 4003 S. Indiana Ave., Chicago, IL 60653</Route><RouteColorCode /><RouteTextColor>ffffff</RouteTextColor><ServiceId>40300</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=73]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Irving Park | 1816 W. Irving Park Rd., Chicago, IL 60613</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41460</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=142]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Irving Park | 4131 W. Irving Park Rd., Chicago, IL 60613</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40550</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=74]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jackson | 328 S. Dearborn St., Chicago, IL 60604</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40070</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=75]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jackson | 230 S. State St., Chicago, IL 60604</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40560</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=76]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Jarvis | 1523 W. Jarvis Ave., Chicago, IL 60626</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41190</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=77]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Jefferson Park | 4917 N. Milwaukee Ave., Chicago, IL 60630</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41280</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=78]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie | 4648 N. Kedzie Ave., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41180</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=79]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie | 3200 W. Lake St., Chicago, IL 60624</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41070</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=81]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie | 1944 S. Kedzie Ave., Chicago, IL 60623</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41040</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=80]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie | 4900 S. Kedzie Ave., Chicago, IL 60632</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41150</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=83]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie-Homan | 530 S. Kedzie Ave., Chicago, IL 60612</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40250</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=82]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kimball | 4755 N. Kimball Ave., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41290</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=84]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>King Drive | 400 E. 63rd St., Chicago, IL 60637</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41140</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=85]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kostner | 2019 S. Kostner Av., Chicago, IL 60623</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40600</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=86]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Lake | 188 N State St., Chicago, IL 60601</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41660</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=87]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Laramie | 5148 W. Lake St., Chicago, IL 60644</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40700</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=88]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle | 150 W. Congress Parkway, Chicago, IL 60605</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41340</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=89]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=90]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=90]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=90]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40160</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=90]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Lawrence | 1117 W. Lawrence Ave., Chicago, IL 60640</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40770</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=91]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Linden | 349 Linden Ave. Wilmette, IL 60091</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41050</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=93]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Linden | 349 Linden Ave. Wilmette, IL 60091</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41050</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=93]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Logan Square | 2620 N. Milwaukee Ave., Chicago, 60647</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41020</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=94]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Loyola | 1200 W. Loyola Ave., Chicago, IL 60626</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41300</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=95]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40640</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=96]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40640</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=96]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40640</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=96]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40640</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=96]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40640</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=96]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Main | 836 Chicago Ave., Evanston, IL 60202</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40270</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=97]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Main | 836 Chicago Ave., Evanston, IL 60202</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40270</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=97]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Merchandise Mart | 350 N. Wells St., Chicago, IL 60654</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40460</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=98]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Merchandise Mart | 350 N. Wells St., Chicago, IL 60654</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40460</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=98]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Midway | 4612 W. 59th St., Chicago, IL 60629</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40930</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=99]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Monroe | 26 S. State St., Chicago, IL 60603</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41090</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=101]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Monroe | 114 S. Dearborn St., Chicago, IL 60603</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40790</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=100]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Montrose | 4600 W. Montrose Ave., Chicago, IL 60641</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41330</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=102]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Montrose | 1817 W. Montrose Ave., Chicago, IL 60613</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41500</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=103]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Morgan | 958 W Lake St, Chicago, IL 60607</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41510</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=148]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Morgan | 958 W Lake St, Chicago, IL 60607</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41510</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=148]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Morse | 1358 W. Morse Ave., Chicago, IL 60626</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40100</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=104]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>North/Clybourn | 1599 N. Clybourn Ave., Chicago, IL 60622</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40650</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=105]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Noyes | 901 Noyes Ave., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40400</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=107]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Noyes | 901 Noyes Ave., Evanston, IL 60201</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40400</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=107]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>O'Hare | 1000 O'Hare Dr., Chicago, IL 60666</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40890</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=110]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Oak Park | 950 S. Oak Park Ave., Oak Park, IL 60304</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40180</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=108]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Oak Park | 100 S. Oak Park Ave., Oak Park, IL 60302</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41350</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=109]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Oakton-Skokie | 4800 Oakton St, Skokie, IL 60076</Route><RouteColorCode>f9e300</RouteColorCode><RouteTextColor>000000</RouteTextColor><ServiceId>41680</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=147]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Paulina | 3410 N. Lincoln Av., Chicago, IL 60657</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41310</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=143]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Polk | 1713 W. Polk St., Chicago, IL 60612</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41030</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=111]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pulaski | 2005 S. Pulaski Rd., Chicago, IL 60623</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40150</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=112]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pulaski | 4000 W. Lake St., Chicago, IL 60624</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40030</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=114]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pulaski | 530 S. Pulaski Rd., Chicago, IL 60612</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40920</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=113]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pulaski | 5106 S. Pulaski Rd., Chicago, IL 60632</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40960</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=115]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40040</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=116]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40040</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=116]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40040</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=116]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40040</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=116]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Racine | 430 S. Racine Ave., Chicago, IL 60607</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40470</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=117]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=118]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=118]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=118]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=118]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40200</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=118]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ridgeland | 36 N. Ridgeland Ave., Oak Park, IL 60302</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40610</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=119]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Rockwell | 4648 N. Rockwell St., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41010</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=120]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41400</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=122]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41400</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=122]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41400</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=122]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Rosemont | 5801 N. River Rd., Rosemont, IL 60018</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40820</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=123]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sedgwick | 1536 N. Sedgwick St., Chicago, IL 60610</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40800</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=124]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sedgwick | 1536 N. Sedgwick St., Chicago, IL 60610</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40800</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=124]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sheridan | 3940 N. Sheridan Rd., Chicago, IL 60613</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40080</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=125]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>South Boulevard | 601 South Blvd., Evanston, IL 60202</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40840</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=127]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Boulevard | 601 South Blvd., Evanston, IL 60202</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40840</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=127]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Southport | 3411 N. Southport Ave., Chicago, IL 60657</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40360</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=128]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sox-35th | 142 W. 35th St., Chicago, IL 60616</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40190</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=129]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route><RouteColorCode>009b3a</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=130]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=130]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=130]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=130]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40260</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=130]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Thorndale | 1118 W. Thorndale Ave., Chicago, IL 60660</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40880</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=131]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>UIC-Halsted | 430 S. Halsted St., Chicago, IL 60607</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40350</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=132]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Washington | 19 N. Dearborn St., Chicago, IL 60602</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40370</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=134]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Washington/Wells | 100 N. Wells St., Chicago, IL 60606</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40730</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=133]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Washington/Wells | 100 N. Wells St., Chicago, IL 60606</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40730</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=133]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Washington/Wells | 100 N. Wells St., Chicago, IL 60606</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40730</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=133]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Washington/Wells | 100 N. Wells St., Chicago, IL 60606</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40730</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=133]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Wellington | 945 W. Wellington Ave., Chicago, IL 60657</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41210</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=145]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Wellington | 945 W. Wellington Ave., Chicago, IL 60657</Route><RouteColorCode>522398</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41210</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=145]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western | 4901 S. Western Ave., Chicago, IL 60609</Route><RouteColorCode>f9461c</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40310</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=139]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western | 4648 N. Western Ave., Chicago, IL 60625</Route><RouteColorCode>62361b</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>41480</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=135]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western | 2009 S. Western Ave., Chicago, IL 60608</Route><RouteColorCode>e27ea6</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40740</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=136]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western (Forest Park Branch) | 430 S. Western Ave., Chicago, IL 60612</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40220</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=137]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western (O'Hare Branch) | 1900 N. Western Ave., Chicago, IL 60647</Route><RouteColorCode>00a1de</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40670</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=138]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Wilson | 4620 N. Broadway St., Chicago, IL 60640</Route><RouteColorCode>c60c30</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>40540</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/travel_information/station.aspx?StopId=140]]></RouteURL><RouteStatus>Planned Work</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo></CTARoutes>
+﻿<CTARoutes>
+<TimeStamp>20150225 03:41</TimeStamp>
+<ErrorCode>0</ErrorCode>
+<ErrorMessage/>
+<RouteInfo>
+<Route>18th | 1710 W. 18th St., Chicago, IL 60608</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40830</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=1
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+35th-Bronzeville-IIT | 16 E. 35th St., Chicago, IL 60616
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41120</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=2
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+35th-Bronzeville-IIT | 16 E. 35th St., Chicago, IL 60616
+</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41120</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=2
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+35th/Archer | 3528 S. Leavitt St., Chicago, IL 60609
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40120</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=3
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>43rd | 314 E. 43rd St., Chicago, IL 60653</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41270</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=4
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>43rd | 314 E. 43rd St., Chicago, IL 60653</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41270</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=4
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>47th | 314 E. 47th St., Chicago, IL 60653</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41080</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=5
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>47th | 220 W. 47th St., Chicago, IL 60609</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41230</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=6
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>47th | 314 E. 47th St., Chicago, IL 60653</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41080</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=5
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>51st | 319 E. 51st St., Chicago, IL 60615</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40130</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=7
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>51st | 319 E. 51st St., Chicago, IL 60615</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40130</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=7
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>54th/Cermak | 2134 S. 54th Av., Cicero, IL 60804</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40580</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=8
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>63rd | 220 W. 63rd St., Chicago, IL 60621</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40910</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=9
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>69th | 15 W. 69th St., Chicago, IL 60621</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40990</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=10
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>79th | 15 W. 79th St., Chicago, IL 60620</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40240</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=11
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>87th | 15 W. 87th St., Chicago, IL 60620</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41430</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=12
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>95th/Dan Ryan | 14 W. 95th St., Chicago, IL 60620</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40450</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=13
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=14
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=14
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=14
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=14
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Adams/Wabash | 201 S. Wabash Ave., Chicago, IL 60603
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=14
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Addison | 1818 W. Addison St., Chicago, IL 60613</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41440</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=16
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Addison | 940 W. Addison St., Chicago, IL 60613</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41420</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=17
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Addison | 3622 W. Addison St., Chicago, IL 60618</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41240</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=15
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Argyle | 1118 W. Argyle Ave., Chicago, IL 60640</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=18
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Armitage | 944 W. Armitage Ave., Chicago, IL 60614</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40660</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=19
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Armitage | 944 W. Armitage Ave., Chicago, IL 60614</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40660</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=19
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Ashland | 3011 S. Ashland Ave., Chicago, IL 60608</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41060</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=22
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Ashland | 1601 W. Lake St., Chicago, IL 60612</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40170</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=21
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Ashland | 1601 W. Lake St., Chicago, IL 60612</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40170</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=21
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Ashland/63rd | 6315 S. Ashland Ave., Chicago, IL 60636
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40290</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=20
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Austin | 351 N. Austin blvd., Chicago, IL 60644</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=24
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Austin | 1050 S. Austin blvd., Oak Park, IL 60304</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40010</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=23
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Belmont | 3355 W. Belmont Ave., Chicago, IL 60618</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40060</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=26
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41320</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=25
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41320</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=25
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Belmont | 945 W. Belmont Ave., Chicago, IL 60657</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41320</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=25
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Berwyn | 1121 W. Berwyn Ave., Chicago, IL 60640</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40340</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=27
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Bryn Mawr | 1119 W. Bryn Mawr Ave., Chicago, IL 60660
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=28
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+California | 2211 N. California Ave., Chicago, IL 60647
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40570</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=31
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>California | 2800 W. Lake St., Chicago, IL 60612</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41360</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=30
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+California | 2011 S. California Ave., Chicago, IL 60608
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40440</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=29
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Central | 350 N. Central Ave., Chicago, IL 60644</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40280</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=33
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Central | 1022 Central St., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41250</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=34
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Central | 1022 Central St., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41250</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=34
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Central Park | 1915 S. Central Park Ave., Chicago, IL 60623
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40780</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=32
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Cermak-Chinatown | 138 W. Cermak Rd., Chicago, IL 60616
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41000</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=35
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Cermak-McCormick Place | 12 E. Cermak, Chicago, IL 60616
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41690</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=149
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago | 300 W. Chicago Ave., Chicago, IL 60610</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40710</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=37
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago | 800 N. State St., Chicago, IL</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41450</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=38
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago | 800 N. Milwaukee Ave., Chicago, IL 60622</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41410</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=36
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago | 300 W. Chicago Ave., Chicago, IL 60610</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40710</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=37
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cicero | 720 S. Cicero Ave., Chicago, IL 60644</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40970</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=40
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cicero | 4800 W. Lake St., Chicago, IL 60644</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40480</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=41
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cicero | 2134 S. Cicero Av., Cicero, IL 60804</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40420</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=39
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Clark/Division | 1200 N. Clark St., Chicago, IL 60610
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40630</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=42
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark/Lake | 124 W. Lake St., Chicago, IL 60601</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40380</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=43
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clinton | 540 W. Lake St., Chicago, IL 60661</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=46
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clinton | 540 W. Lake St., Chicago, IL 60661</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=46
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clinton | 426 S. Clinton St., Chicago, IL 60607</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40430</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=45
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Conservatory-Central Park Drive | 3631 W. Lake St., Chicago, IL 60624
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41670</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=47
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cottage Grove | 800 E. 63rd St., Chicago, IL 60637</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40720</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=55
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Cumberland | 5800 N. Cumberland Ave., Chicago, IL 60631
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40230</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=48
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Damen | 1558 N. Damen Ave., Chicago, IL 60622</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40590</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=50
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Damen | 2010 S. Damen Av., Chicago, IL</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40210</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=49
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Damen | 4645 N. Damen Ave., Chicago, IL 60625</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40090</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=141
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Davis | 1612 Benson, Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40050</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=51
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Davis | 1612 Benson, Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40050</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=51
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Dempster | 1316 N. Sherman, Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40690</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=52
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Dempster | 1316 N. Sherman, Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40690</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=52
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Dempster-Skokie | 5001 Dempster St., Skokie, IL 60077
+</Route>
+<RouteColorCode>f9e300</RouteColorCode>
+<RouteTextColor>000000</RouteTextColor>
+<ServiceId>40140</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=126
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Diversey | 943 W. Diversey Ave., Chicago, IL 60657</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40530</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=53
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Diversey | 943 W. Diversey Ave., Chicago, IL 60657</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40530</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=53
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Division | 1200 N. Milwaukee Ave., Chicago, IL 60622
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40320</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=54
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Forest Park | 711 Des Plaines Ave., Forest Park, IL 60130
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40390</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=56
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Foster | 900 Foster St., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40520</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=57
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Foster | 900 Foster St., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40520</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=57
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Francisco | 4648 N. Francisco Ave., Chicago, IL 60625
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40870</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=58
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41220</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=59
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41220</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=59
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Fullerton | 943 W. Fullerton Ave., Chicago, IL 60614
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41220</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=59
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Garfield | 320 E. Garfield Blvd., Chicago, IL 60637
+</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40510</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=60
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Garfield | 220 W. Garfield Blvd., Chicago, IL 60609
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41170</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=61
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Garfield | 320 E. Garfield Blvd., Chicago, IL 60637
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40510</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=60
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Grand | 521 N. State St., Chicago, IL 60610</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40330</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=63
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Grand | 502 N. Milwaukee Ave., Chicago, IL 60622</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40490</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=62
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Granville | 1119 W. Granville Ave., Chicago, IL 60660
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40760</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=64
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Halsted | 6321 S. Halsted St., Chicago, IL 60621</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40940</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=65
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Halsted | 2520 S. Archer Ave., Chicago, IL 60608</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41130</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=66
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harlem (Forest Park Branch) | 701 Harlem Ave., Forest Park, IL 60130
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40980</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=67
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harlem (O'Hare Branch) | 5550 N. Harlem Ave., Chicago, IL 60656
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40750</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=69
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Harlem/Lake | 1 Harlem Ave., Forest Park, IL 60130</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40020</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=68
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40850</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=92
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40850</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=92
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40850</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=92
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Harold Washington Library-State/Van Buren | 26 W. Van Buren St., Chicago, IL 60604
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40850</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=92
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Harrison | 608 S. State St., Chicago, IL 60605</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41490</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=70
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40900</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=71
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route>
+<RouteColorCode>f9e300</RouteColorCode>
+<RouteTextColor>000000</RouteTextColor>
+<ServiceId>40900</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=71
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40900</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=71
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Howard | 7519 N Paulina St., Chicago, IL 60626</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40900</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=71
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Illinois Medical District | 430 S. Damen Ave., Chicago, IL 60612
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40810</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=72
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Indiana | 4003 S. Indiana Ave., Chicago, IL 60653</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40300</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=73
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Indiana | 4003 S. Indiana Ave., Chicago, IL 60653</Route>
+<RouteColorCode/>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40300</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=73
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Irving Park | 1816 W. Irving Park Rd., Chicago, IL 60613
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41460</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=142
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Irving Park | 4131 W. Irving Park Rd., Chicago, IL 60613
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40550</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=74
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jackson | 328 S. Dearborn St., Chicago, IL 60604</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40070</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=75
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jackson | 230 S. State St., Chicago, IL 60604</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40560</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=76
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jarvis | 1523 W. Jarvis Ave., Chicago, IL 60626</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41190</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=77
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Jefferson Park | 4917 N. Milwaukee Ave., Chicago, IL 60630
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41280</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=78
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kedzie | 4648 N. Kedzie Ave., Chicago, IL 60625</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41180</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=79
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kedzie | 3200 W. Lake St., Chicago, IL 60624</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41070</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=81
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kedzie | 1944 S. Kedzie Ave., Chicago, IL 60623</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41040</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=80
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kedzie | 4900 S. Kedzie Ave., Chicago, IL 60632</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41150</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=83
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Kedzie-Homan | 530 S. Kedzie Ave., Chicago, IL 60612
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40250</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=82
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kimball | 4755 N. Kimball Ave., Chicago, IL 60625</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41290</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=84
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>King Drive | 400 E. 63rd St., Chicago, IL 60637</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41140</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=85
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kostner | 2019 S. Kostner Av., Chicago, IL 60623</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40600</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=86
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Lake | 188 N State St., Chicago, IL 60601</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41660</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=87
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Laramie | 5148 W. Lake St., Chicago, IL 60644</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40700</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=88
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+LaSalle | 150 W. Congress Parkway, Chicago, IL 60605
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41340</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=89
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=90
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=90
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=90
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+LaSalle/Van Buren | 121 W. Van Buren St., Chicago, IL 60605
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40160</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=90
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Lawrence | 1117 W. Lawrence Ave., Chicago, IL 60640
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40770</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=91
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Linden | 349 Linden Ave. Wilmette, IL 60091</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41050</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=93
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Linden | 349 Linden Ave. Wilmette, IL 60091</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41050</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=93
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Logan Square | 2620 N. Milwaukee Ave., Chicago, 60647
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41020</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=94
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Loyola | 1200 W. Loyola Ave., Chicago, IL 60626</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41300</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=95
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40640</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=96
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40640</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=96
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40640</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=96
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40640</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=96
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Madison/Wabash | 2 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40640</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=96
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Main | 836 Chicago Ave., Evanston, IL 60202</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40270</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=97
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Main | 836 Chicago Ave., Evanston, IL 60202</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40270</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=97
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Merchandise Mart | 350 N. Wells St., Chicago, IL 60654
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40460</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=98
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Merchandise Mart | 350 N. Wells St., Chicago, IL 60654
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40460</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=98
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Midway | 4612 W. 59th St., Chicago, IL 60629</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40930</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=99
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Monroe | 26 S. State St., Chicago, IL 60603</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41090</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=101
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Monroe | 114 S. Dearborn St., Chicago, IL 60603</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40790</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=100
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Montrose | 4600 W. Montrose Ave., Chicago, IL 60641
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41330</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=102
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Montrose | 1817 W. Montrose Ave., Chicago, IL 60613
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41500</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=103
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Morgan | 958 W Lake St, Chicago, IL 60607</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41510</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=148
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Morgan | 958 W Lake St, Chicago, IL 60607</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41510</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=148
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Morse | 1358 W. Morse Ave., Chicago, IL 60626</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40100</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=104
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+North/Clybourn | 1599 N. Clybourn Ave., Chicago, IL 60622
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40650</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=105
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Noyes | 901 Noyes Ave., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40400</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=107
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Noyes | 901 Noyes Ave., Evanston, IL 60201</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40400</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=107
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>O'Hare | 1000 O'Hare Dr., Chicago, IL 60666</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40890</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=110
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Oak Park | 950 S. Oak Park Ave., Oak Park, IL 60304
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40180</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=108
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Oak Park | 100 S. Oak Park Ave., Oak Park, IL 60302
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41350</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=109
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Oakton-Skokie | 4800 Oakton St, Skokie, IL 60076</Route>
+<RouteColorCode>f9e300</RouteColorCode>
+<RouteTextColor>000000</RouteTextColor>
+<ServiceId>41680</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=147
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Paulina | 3410 N. Lincoln Av., Chicago, IL 60657</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41310</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=143
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Polk | 1713 W. Polk St., Chicago, IL 60612</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41030</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=111
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pulaski | 2005 S. Pulaski Rd., Chicago, IL 60623</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40150</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=112
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pulaski | 4000 W. Lake St., Chicago, IL 60624</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40030</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=114
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pulaski | 530 S. Pulaski Rd., Chicago, IL 60612</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40920</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=113
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pulaski | 5106 S. Pulaski Rd., Chicago, IL 60632</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40960</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=115
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40040</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=116
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40040</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=116
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40040</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=116
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Quincy | 220 S. Wells St., Chicago, IL 60606</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40040</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=116
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Racine | 430 S. Racine Ave., Chicago, IL 60607</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40470</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=117
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=118
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=118
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=118
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=118
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Randolph/Wabash | 151 N. Wabash Ave., Chicago, IL 60602
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40200</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=118
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Ridgeland | 36 N. Ridgeland Ave., Oak Park, IL 60302
+</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40610</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=119
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Rockwell | 4648 N. Rockwell St., Chicago, IL 60625</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41010</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=120
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41400</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=122
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41400</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=122
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Roosevelt | 1167 S. State St., Chicago, IL 60605</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41400</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=122
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Rosemont | 5801 N. River Rd., Rosemont, IL 60018</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40820</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=123
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sedgwick | 1536 N. Sedgwick St., Chicago, IL 60610</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40800</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=124
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sedgwick | 1536 N. Sedgwick St., Chicago, IL 60610</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40800</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=124
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sheridan | 3940 N. Sheridan Rd., Chicago, IL 60613</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40080</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=125
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+South Boulevard | 601 South Blvd., Evanston, IL 60202
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40840</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=127
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+South Boulevard | 601 South Blvd., Evanston, IL 60202
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40840</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=127
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Southport | 3411 N. Southport Ave., Chicago, IL 60657
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40360</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=128
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sox-35th | 142 W. 35th St., Chicago, IL 60616</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40190</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=129
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route>
+<RouteColorCode>009b3a</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=130
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=130
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=130
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=130
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State/Lake | 200 N. State St., Chicago, IL 60601</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40260</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=130
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Thorndale | 1118 W. Thorndale Ave., Chicago, IL 60660
+</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40880</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=131
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+UIC-Halsted | 430 S. Halsted St., Chicago, IL 60607
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40350</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=132
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Washington | 19 N. Dearborn St., Chicago, IL 60602</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40370</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=134
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Washington/Wells | 100 N. Wells St., Chicago, IL 60606
+</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40730</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=133
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Washington/Wells | 100 N. Wells St., Chicago, IL 60606
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40730</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=133
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Washington/Wells | 100 N. Wells St., Chicago, IL 60606
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40730</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=133
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Washington/Wells | 100 N. Wells St., Chicago, IL 60606
+</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40730</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=133
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Wellington | 945 W. Wellington Ave., Chicago, IL 60657
+</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41210</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=145
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Wellington | 945 W. Wellington Ave., Chicago, IL 60657
+</Route>
+<RouteColorCode>522398</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41210</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=145
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Western | 4901 S. Western Ave., Chicago, IL 60609</Route>
+<RouteColorCode>f9461c</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40310</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=139
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Western | 4648 N. Western Ave., Chicago, IL 60625</Route>
+<RouteColorCode>62361b</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>41480</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=135
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Western | 2009 S. Western Ave., Chicago, IL 60608</Route>
+<RouteColorCode>e27ea6</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40740</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=136
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Western (Forest Park Branch) | 430 S. Western Ave., Chicago, IL 60612
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40220</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=137
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>
+Western (O'Hare Branch) | 1900 N. Western Ave., Chicago, IL 60647
+</Route>
+<RouteColorCode>00a1de</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40670</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=138
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Wilson | 4620 N. Broadway St., Chicago, IL 60640</Route>
+<RouteColorCode>c60c30</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>40540</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/travel_information/station.aspx?StopId=140
+]]>
+</RouteURL>
+<RouteStatus>Planned Work</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+</CTARoutes>

@@ -1,1 +1,1669 @@
-﻿<?xml version="1.0" encoding="utf-8"?><CTARoutes><TimeStamp>20150224 22:29</TimeStamp><ErrorCode>0</ErrorCode><ErrorMessage /><RouteInfo><Route>Bronzeville/Union Station</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>1</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=158]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Hyde Park Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>2</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=159]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>King Drive</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>3</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=160]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cottage Grove</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>4</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=162]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>South Shore Night Bus</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>N5</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=164]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jackson Park Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>6</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=165]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Harrison</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>7</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=166]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Halsted</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>8</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=167]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Halsted</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>8A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=168]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ashland</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>9</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=169]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Museum of Science &amp; Industry</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>10</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=171]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Lincoln</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>11</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=172]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Roosevelt</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>12</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=173]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jeffery Jump</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>J14</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=174]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Jeffery Local</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>15</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=175]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>16th-18th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>18</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=177]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>United Center Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>19</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=325]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Madison</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>20</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=178]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Cermak</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>21</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=180]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Clark</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>22</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=181]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Wentworth</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>24</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=182]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>South Shore Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>26</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=183]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Stony Island</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>28</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=184]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>State</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>29</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=186]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Chicago</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>30</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=187]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Michigan</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>34</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=189]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>31st/35th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>35</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=190]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Broadway</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>36</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=191]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sedgwick</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>37</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=335]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pershing</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>39</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=193]]></RouteURL><RouteStatus>Service Change</RouteStatus><RouteStatusColor>000000</RouteStatusColor></RouteInfo><RouteInfo><Route>43rd</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>43</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=194]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Wallace-Racine</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>44</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=195]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>47th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>47</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=196]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Damen</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>48</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=197]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Western</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>49</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=198]]></RouteURL><RouteStatus>Planned Reroute</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>North Western</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>49B</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=200]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Damen</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>50</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=202]]></RouteURL><RouteStatus>Planned Reroute</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>51st</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>51</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=203]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kedzie/California</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>52</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=204]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Kedzie</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>52A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=205]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pulaski</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>53</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=206]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Pulaski</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>53A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=207]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Cicero</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>54</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=209]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>North Cicero/Skokie Blvd.</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>54A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=210]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South Cicero</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>54B</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=211]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Garfield</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>55</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=213]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>55th/Austin</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>55A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=214]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>55th/Narragansett</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>55N</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=215]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Milwaukee</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>56</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=217]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Laramie</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>57</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=219]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>59th/61st</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>59</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=220]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Blue Island/26th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>60</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=221]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Archer</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>62</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=222]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Archer/Harlem</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>62H</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=223]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>63rd</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>63</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=224]]></RouteURL><RouteStatus>Planned Reroute</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>West 63rd</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>63W</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=225]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Grand</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>65</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=227]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>66</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=228]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>67th-69th-71st</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>67</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=229]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Northwest Highway</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>68</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=230]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Division</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>70</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=232]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>71st/South Shore</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>71</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=233]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>North</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>72</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=234]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Armitage</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>73</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=235]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Fullerton</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>74</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=236]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>74th-75th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>75</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=237]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Diversey</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>76</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=238]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Belmont</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>77</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=239]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Montrose</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>78</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=240]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>79th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>79</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=241]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Irving Park</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>80</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=242]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Lawrence</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>81</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=244]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>West Lawrence</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>81W</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=245]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Kimball-Homan</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>82</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=246]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Peterson</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>84</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=247]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>85</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=248]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>North Central</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>85A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=249]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Narragansett/Ridgeland</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>86</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=250]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>87th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>87</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=251]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Higgins</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>88</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=252]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Harlem</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>90</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=253]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Austin</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>91</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=255]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Foster</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>92</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=256]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>California/Dodge</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>93</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=257]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>South California</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>94</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=258]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>West 95th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>95W</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=260]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>93rd-95th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>95E</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=259]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Lunt</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>96</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=261]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Skokie</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>97</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=262]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Avon Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>X98</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=263]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jeffery Manor Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>100</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=264]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>West 103rd</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>103</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=265]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>East 103rd</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>106</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=266]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Halsted/95th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>108</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=267]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>111th/King Drive</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>111</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=268]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pullman Shuttle</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>111A</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=347]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Vincennes/111th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>112</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=269]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Pullman/115th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>115</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=336]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Michigan/119th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>119</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=270]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Ogilvie/Streeterville Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>120</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=271]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Union/Streeterville Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>121</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=272]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Navy Pier</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>124</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=275]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Water Tower Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>125</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=276]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Jackson</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>126</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=277]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Soldier Field Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>128</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=326]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Museum Campus</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>130</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=327]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Goose Island Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>132</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=279]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Stockton/LaSalle Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>134</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=280]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Clarendon/LaSalle Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>135</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=281]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sheridan/LaSalle Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>136</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=282]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Stockton/Michigan Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>143</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=283]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Inner Drive/Michigan Exp.</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>146</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=286]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Outer Drive Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>147</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=287]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Clarendon/Michigan Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>148</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=288]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Sheridan</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>151</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=289]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>Addison</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>152</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=290]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Devon</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>155</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=291]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>LaSalle</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>156</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=292]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Streeterville/Taylor</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>157</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=293]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>West 65th</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>165</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=294]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>69th-UPS Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>169</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=296]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>U. of Chicago/Midway</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>170</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=297]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>U. of Chicago/Hyde Park</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>171</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=298]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>U. of Chicago/Kenwood</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>172</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=299]]></RouteURL><RouteStatus>Bus Stop Relocation</RouteStatus><RouteStatusColor>06c</RouteStatusColor></RouteInfo><RouteInfo><Route>U. of Chicago Hospitals Express</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>192</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=302]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Central/Ridge</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>201</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=304]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Chicago/Golf</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>205</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=305]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo><RouteInfo><Route>Evanston Circulator</Route><RouteColorCode>059</RouteColorCode><RouteTextColor>ffffff</RouteTextColor><ServiceId>206</ServiceId><RouteURL><![CDATA[http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=306]]></RouteURL><RouteStatus>Normal Service</RouteStatus><RouteStatusColor>404040</RouteStatusColor></RouteInfo></CTARoutes>
+﻿<CTARoutes>
+<TimeStamp>20150225 03:32</TimeStamp>
+<ErrorCode>0</ErrorCode>
+<ErrorMessage/>
+<RouteInfo>
+<Route>Bronzeville/Union Station</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>1</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=158
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Hyde Park Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>2</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=159
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>King Drive</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>3</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=160
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cottage Grove</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>4</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=162
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Shore Night Bus</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>N5</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=164
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jackson Park Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>6</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=165
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Harrison</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>7</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=166
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Halsted</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>8</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=167
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Halsted</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>8A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=168
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Ashland</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>9</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=169
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Museum of Science &amp; Industry</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>10</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=171
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Lincoln</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>11</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=172
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Roosevelt</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>12</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=173
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jeffery Jump</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>J14</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=174
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jeffery Local</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>15</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=175
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>16th-18th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>18</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=177
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>United Center Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>19</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=325
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Madison</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>20</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=178
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cermak</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>21</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=180
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clark</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>22</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=181
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Wentworth</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>24</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=182
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Shore Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>26</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=183
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Stony Island</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>28</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=184
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>State</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>29</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=186
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Chicago</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>30</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=187
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Michigan</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>34</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=189
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>31st/35th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>35</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=190
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Broadway</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>36</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=191
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sedgwick</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>37</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=335
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pershing</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>39</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=193
+]]>
+</RouteURL>
+<RouteStatus>Service Change</RouteStatus>
+<RouteStatusColor>000000</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>43rd</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>43</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=194
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Wallace-Racine</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>44</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=195
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>47th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>47</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=196
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Damen</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>48</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=197
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Western</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>49</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=198
+]]>
+</RouteURL>
+<RouteStatus>Planned Reroute</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>North Western</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>49B</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=200
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Damen</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>50</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=202
+]]>
+</RouteURL>
+<RouteStatus>Planned Reroute</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>51st</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>51</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=203
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kedzie/California</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>52</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=204
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Kedzie</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>52A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=205
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pulaski</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>53</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=206
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Pulaski</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>53A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=207
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Cicero</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>54</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=209
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>North Cicero/Skokie Blvd.</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>54A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=210
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South Cicero</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>54B</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=211
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Garfield</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>55</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=213
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>55th/Austin</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>55A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=214
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>55th/Narragansett</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>55N</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=215
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Milwaukee</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>56</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=217
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Laramie</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>57</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=219
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>59th/61st</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>59</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=220
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Blue Island/26th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>60</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=221
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Archer</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>62</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=222
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Archer/Harlem</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>62H</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=223
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>63rd</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>63</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=224
+]]>
+</RouteURL>
+<RouteStatus>Planned Reroute</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>West 63rd</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>63W</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=225
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Grand</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>65</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=227
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>66</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=228
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>67th-69th-71st</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>67</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=229
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Northwest Highway</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>68</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=230
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Division</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>70</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=232
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>71st/South Shore</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>71</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=233
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>North</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>72</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=234
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Armitage</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>73</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=235
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Fullerton</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>74</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=236
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>74th-75th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>75</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=237
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Diversey</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>76</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=238
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Belmont</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>77</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=239
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Montrose</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>78</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=240
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>79th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>79</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=241
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Irving Park</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>80</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=242
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Lawrence</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>81</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=244
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>West Lawrence</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>81W</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=245
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Kimball-Homan</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>82</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=246
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Peterson</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>84</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=247
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Central</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>85</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=248
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>North Central</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>85A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=249
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Narragansett/Ridgeland</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>86</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=250
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>87th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>87</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=251
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Higgins</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>88</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=252
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Harlem</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>90</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=253
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Austin</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>91</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=255
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Foster</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>92</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=256
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>California/Dodge</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>93</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=257
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>South California</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>94</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=258
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>West 95th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>95W</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=260
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>93rd-95th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>95E</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=259
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Lunt</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>96</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=261
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Skokie</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>97</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=262
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Avon Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>X98</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=263
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jeffery Manor Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>100</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=264
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>West 103rd</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>103</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=265
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>East 103rd</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>106</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=266
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Halsted/95th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>108</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=267
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>111th/King Drive</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>111</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=268
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pullman Shuttle</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>111A</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=347
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Vincennes/111th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>112</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=269
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Pullman/115th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>115</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=336
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Michigan/119th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>119</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=270
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Ogilvie/Streeterville Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>120</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=271
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Union/Streeterville Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>121</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=272
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Navy Pier</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>124</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=275
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Water Tower Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>125</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=276
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Jackson</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>126</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=277
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Soldier Field Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>128</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=326
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Museum Campus</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>130</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=327
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Goose Island Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>132</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=279
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Stockton/LaSalle Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>134</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=280
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clarendon/LaSalle Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>135</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=281
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sheridan/LaSalle Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>136</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=282
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Stockton/Michigan Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>143</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=283
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Inner Drive/Michigan Exp.</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>146</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=286
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Outer Drive Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>147</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=287
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Clarendon/Michigan Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>148</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=288
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Sheridan</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>151</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=289
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Addison</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>152</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=290
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Devon</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>155</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=291
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>LaSalle</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>156</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=292
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Streeterville/Taylor</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>157</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=293
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>West 65th</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>165</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=294
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>69th-UPS Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>169</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=296
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>U. of Chicago/Midway</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>170</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=297
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>U. of Chicago/Hyde Park</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>171</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=298
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>U. of Chicago/Kenwood</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>172</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=299
+]]>
+</RouteURL>
+<RouteStatus>Bus Stop Relocation</RouteStatus>
+<RouteStatusColor>06c</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>U. of Chicago Hospitals Express</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>192</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=302
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Central/Ridge</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>201</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=304
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Chicago/Golf</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>205</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=305
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+<RouteInfo>
+<Route>Evanston Circulator</Route>
+<RouteColorCode>059</RouteColorCode>
+<RouteTextColor>ffffff</RouteTextColor>
+<ServiceId>206</ServiceId>
+<RouteURL>
+<![CDATA[
+http://www.transitchicago.com/riding_cta/busroute.aspx?RouteId=306
+]]>
+</RouteURL>
+<RouteStatus>Normal Service</RouteStatus>
+<RouteStatusColor>404040</RouteStatusColor>
+</RouteInfo>
+</CTARoutes>
