@@ -1,5 +1,7 @@
 package com.chitransittracker.jdbc;
 
-public class DBConnector {
-	
+import java.sql.Connection;
+
+public interface DBConnector {
+	public Connection getDBConnection();
 }
