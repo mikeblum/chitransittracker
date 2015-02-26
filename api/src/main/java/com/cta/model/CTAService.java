@@ -2,12 +2,7 @@ package com.cta.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
-/**
- * CTA Service affected by a CTAAlert
- * @author mblum
- *
- */
-public class ImpactedService {
+public class CTAService {
 	@JacksonXmlProperty(localName = "ServiceType")
 	private String serviceType;
 	@JacksonXmlProperty(localName = "ServiceTypeDescription")

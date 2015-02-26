@@ -2,8 +2,10 @@ package com.cta.model;
 
 import java.net.URI;
 
+import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 
+import com.cta.util.CTAUtil;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
@@ -25,9 +27,9 @@ public class CTAAlert {
 	@JacksonXmlProperty(localName = "Impact")
 	private String impact;
 	@JacksonXmlProperty(localName = "EventStart")
-	private DateTime eventStart;
+	private String eventStart;
 	@JacksonXmlProperty(localName = "EventEnd")
-	private DateTime eventEnd;
+	private String eventEnd;
 	@JacksonXmlProperty(localName = "TBD")
 	private int tbd;
 	@JacksonXmlProperty(localName = "MajorAlert")
@@ -39,7 +41,7 @@ public class CTAAlert {
 	@JacksonXmlProperty(localName = "ImpactedService")
 	//unwrapping is important since the RouteInfo objects have no wrapper
 	@JacksonXmlElementWrapper(useWrapping = false)
-	private ImpactedService impactedService;
+	private CTAImpactedService impactedService;
 	
 	@JacksonXmlProperty(localName = "ttim")
 	private int ttim;

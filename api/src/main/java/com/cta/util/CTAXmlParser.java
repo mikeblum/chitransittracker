@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import com.cta.model.CTAAlerts;
 import com.cta.model.CTARoutes;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
@@ -47,9 +48,15 @@ public class CTAXmlParser {
 	@Value("cta.api.uri.alerts")
 	protected static String ALERTS;
 	
+	/**
+	 * Given a type, deserialize CTA XML to POJOs
+	 * @param type rail, bus, station, or systemwide
+	 * @return deserialzed XML routes as POJOs
+	 */
 	public static CTARoutes getCTARoutesInfo(String type){
 		try {
-			InputStream fetchedResultsStream = processAPIRequest(type);
+			URI uriToFetchData = CTAXmlParser.getCTARoutesURI(type).build();
+			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 			return xmlMapper.readValue(fetchedResultsStream, CTARoutes.class);
@@ -60,15 +67,31 @@ public class CTAXmlParser {
 	}
 	
 	/**
+	 * deserialize CTA XML Alerts to POJOs
+	 * @return deserialzed XML alerts as POJOs
+	 */
+	public static CTAAlerts getCTAAlerts(){
+		try {
+			URI uriToFetchData = CTAXmlParser.getCTAAlertsURI().build();
+			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
+			XmlMapper xmlMapper = new XmlMapper();
+			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+			return xmlMapper.readValue(fetchedResultsStream, CTAAlerts.class);
+		} catch (Exception e) {
+			logger.error("Failed to retireve CTA alerts", e);
+		}
+		return null;
+	}
+	
+	/**
 	 * Util method for making 
 	 * @param type
 	 * @return
 	 */
-	private static InputStream processAPIRequest(String type){
-		URI uriToFetchData = null;
+	private static InputStream processAPIRequest(URI uri){
+		URI uriToFetchData = uri;
 		HttpGet request;
 		try {
-			uriToFetchData = CTAXmlParser.getCTARoutesURI(type).build();
 			request = new HttpGet(uriToFetchData);
 			// add request header
 			request.addHeader("User-Agent", USER_AGENT);

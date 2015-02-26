@@ -1,8 +1,6 @@
 package com.cta.util;
 
-import static org.fest.assertions.api.Assertions.*;
-
-import static org.junit.Assert.assertThat;
+import static org.fest.assertions.api.Assertions.assertThat;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;
 
@@ -22,6 +20,7 @@ import org.junit.Test;
 import org.mockito.Matchers;
 import org.mockito.Mockito;
 
+import com.cta.model.CTAAlerts;
 import com.cta.model.CTARoutes;
 
 
@@ -115,5 +114,14 @@ public class CTAXmlParserTest {
 	public void testGetAlertsURI(){
 		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/alerts.aspx";
 		assertThat(CTAXmlParser.getCTAAlertsURI().toString()).isEqualTo(expectedUrl);
+	}
+	
+	@Test
+	public void testDeserializingAlerts() throws IOException{
+		mockXml = FileUtils.openInputStream(new File("src/test/resources/alerts.xml"));
+		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
+		CTAAlerts mockAlerts = CTAXmlParser.getCTAAlerts();
+		//alerts
+		assertThat(mockAlerts.getAlerts().size()).isEqualTo(31);
 	}
 }
