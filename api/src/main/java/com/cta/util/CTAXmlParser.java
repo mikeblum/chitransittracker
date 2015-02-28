@@ -10,20 +10,19 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTARoutes;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-@Component
 public class CTAXmlParser {
 	static Logger logger = Logger.getLogger(CTAXmlParser.class);
 	
 	protected static HttpClient client = HttpClientBuilder.create().build();
-	
+	@Autowired
 	@Value("${cta.user-agent}")
 	protected static String USER_AGENT;
 	
@@ -47,6 +46,7 @@ public class CTAXmlParser {
 	
 	@Value("cta.api.uri.alerts")
 	protected static String ALERTS;
+	
 	
 	/**
 	 * Given a type, deserialize CTA XML to POJOs

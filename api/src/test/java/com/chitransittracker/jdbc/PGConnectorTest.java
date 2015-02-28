@@ -13,12 +13,12 @@ import org.junit.Test;
 public class PGConnectorTest {
 	@Test
 	public void testPsqlDatabaseConnection(){
-		Connection testConnection = new PGConnector().setHost("localhost")
-													 .setPort(5432)
-													 .setUsername("postgres")
-													 .setPassword("postgres")
-													 .setDbName("chitransittracker")
-													 .getDBConnection();
+		ConnectionDetails testDetails = new ConnectionDetails().setHost("localhost")
+															   .setPort(5432)
+															   .setUsername("postgres")
+															   .setPassword("postgres")
+															   .setDbName("chitransittracker");
+		Connection testConnection = new PGConnector(testDetails).getDBConnection();
 		try {
 			Statement simpleStatement = testConnection.createStatement();
 			boolean simpleResults = simpleStatement.execute("SELECT 1");

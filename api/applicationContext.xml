@@ -1,20 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans      
-	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd      
-	http://www.springframework.org/schema/context      
-	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-	
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
            	 	<!-- add any .properties files here ex. <value>classpath:app.properties</value> 
            	 		 Properties files are located at src/java/resources by convention -->
-           		<value>classpath:cta-api-config.properties</value>
+           		<value>classpath*:*.properties</value>
             </list>
         </property> 
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
+    </bean>
+    
+    <bean id="connectionDetails" class="com.chitransittracker.jdbc.ConnectionDetails">
+    	<property name="host" value="${db.pg.host}" />
+    	<property name="port" value="${db.pg.port}" />
+    	<property name="username" value="${db.pg.username}" />
+    	<property name="password" value="${db.pg.password}" />
+    	<property name="dbName" value="${db.pg.dbName}" />
+    </bean>
+    
+    <bean id="CTAXmlParser" class="com.cta.util.CTAXmlParser">
     </bean>
 </beans>
