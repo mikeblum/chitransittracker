@@ -1,49 +1,16 @@
-delete 'build'
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
 
-apply plugin: 'java' 
-apply plugin: 'war'
-apply plugin: 'jetty'
+    repositories {
+       mavenCentral()
+    }
 
-repositories {
-	mavenCentral()
-}
+    dependencies {}
 
-dependencies {
-	compile (
-		'log4j:log4j:1.2.16',
-		'org.apache.commons:commons-lang3:3.3.2',
-		'org.apache.commons:commons-io:1.3.2',
-		'org.apache.httpcomponents:httpclient:4.3.3',
-		'org.codehaus.jackson:jackson-core-asl:1.9.13',
-		'org.codehaus.jackson:jackson-mapper-asl:1.9.13',
-		'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.4.0',
-		'org.springframework:spring-core:4.1.5.RELEASE',
-		'org.springframework:spring-webmvc:4.1.5.RELEASE',
-		'joda-time:joda-time:2.3',
-		'org.json:json:20140107',
-		'postgresql:postgresql:9.1-901-1.jdbc4'
-	)
-	providedCompile 'org.apache.tomcat:tomcat-servlet-api:8.0.8'
+    version = '1.0'
 
-	
-	testCompile (
-		'org.mockito:mockito-core:1.9.5',
-		'junit:junit:4.10',
-		'org.springframework:spring-test:3.2.2.RELEASE',
-		'org.easytesting:fest-assert:1.4',
-		'org.easytesting:fest-assert-core:2.0M10'
-	)
-}
-
-test {
-	testLogging {
-		// Show that tests are run in the command-line output
-		events 'failed', 'passed'
-	}
-}
-
-war{
-	webInf { from 'web.xml' }
-	webInf { from 'spring-dispatcher-servlet.xml' }
-	webInf { from 'applicationContext.xml' }
+    jar {
+        manifest.attributes provider: 'chitransittracker'
+    }
 }

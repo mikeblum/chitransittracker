@@ -8,10 +8,35 @@ public class CTAUtil {
 	public static DateTimeFormatter CTA_DATE_TIME = DateTimeFormat.forPattern("YYYYMMDD HH:mm");
 	
 	@Value("${cta.api.bus.key}")
-	private String CTA_API_BUS_KEY;
+	private static String CTA_API_BUS_KEY;
 	
 	@Value("${cta.api.train.key}")
-	private String CTA_API_TRAIN_KEY;
+	private static String CTA_API_TRAIN_KEY;
+	
+	public static String RAIL = "rail";
+	public static String BUS = "bus";
+	public static String STATION = "station";
+	
+	protected static String user_agent = "Mozilla/5.0";
+	protected static String scheme = "http";
+	protected static String base = "lapi.transitchicago.com/api/";
+	protected static String version = "1.0";
+	
+	//cta aspx endpoints
+	protected static String routes = "routes.aspx";
+	protected static String alerts = "alerts.aspx";
+
+	public static String getRAIL() {
+		return RAIL;
+	}
+
+	public static String getBUS() {
+		return BUS;
+	}
+
+	public static String getSTATION() {
+		return STATION;
+	}
 
 	public String getCTA_API_BUS_KEY() {
 		return CTA_API_BUS_KEY;

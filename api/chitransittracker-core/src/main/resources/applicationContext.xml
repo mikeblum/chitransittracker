@@ -23,7 +23,4 @@
     	<property name="password" value="${db.pg.password}" />
     	<property name="dbName" value="${db.pg.dbName}" />
     </bean>
-    
-    <bean id="CTAXmlParser" class="com.cta.util.CTAXmlParser">
-    </bean>
 </beans>

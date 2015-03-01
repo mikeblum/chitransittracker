@@ -1,21 +1,11 @@
 package com.chitransittracker.jdbc;
 
-import org.springframework.beans.factory.annotation.Value;
 
 public class ConnectionDetails {
-	@Value("${db.pg.host}")
 	private String host;
-	
-	@Value("${db.pg.port}")
 	private int port;
-	
-	@Value("${db.pg.username}")
 	private String username;
-	
-	@Value("${db.pg.password}")
 	private String password;
-	
-	@Value("${db.pg.dbName}")
 	private String dbName;
 	
 	public String getHost() {

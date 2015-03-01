@@ -43,15 +43,15 @@ public class CTAXmlParserTest {
 		Mockito.when(mockClient.execute(Matchers.any(HttpGet.class))).thenReturn(mockResponse);
 		Mockito.when(mockResponse.getEntity()).thenReturn(mockEntity);
 		//mimick the normally spring injected values
-		CTAXmlParser.USER_AGENT = "Mozilla/5.0";
-		CTAXmlParser.RAIL = "rail";
-		CTAXmlParser.BUS = "bus";
-		CTAXmlParser.STATION = "station";
-		CTAXmlParser.SCHEME = "http";
-		CTAXmlParser.BASE = "lapi.transitchicago.com/api/";
-		CTAXmlParser.VERSION = "1.0";
-		CTAXmlParser.ROUTES = "routes.aspx";
-		CTAXmlParser.ALERTS = "alerts.aspx";
+		CTAUtil.user_agent = "Mozilla/5.0";
+		CTAUtil.RAIL = "rail";
+		CTAUtil.BUS = "bus";
+		CTAUtil.STATION = "station";
+		CTAUtil.scheme = "http";
+		CTAUtil.base = "lapi.transitchicago.com/api/";
+		CTAUtil.version = "1.0";
+		CTAUtil.routes = "routes.aspx";
+		CTAUtil.alerts = "alerts.aspx";
 	}
 	
 	@Test
@@ -67,7 +67,7 @@ public class CTAXmlParserTest {
 	
 	@Test
 	public void testGetTrainLinesURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAXmlParser.RAIL;
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.RAIL;
 		assertThat(CTAXmlParser.getCTARoutesURI("rail").toString()).isEqualTo(expectedUrl);
 	}
 	
@@ -75,37 +75,37 @@ public class CTAXmlParserTest {
 	public void testDeserializingTrainLines() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/train_lines.xml"));
 		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockTrainLines = CTAXmlParser.getCTARoutesInfo(CTAXmlParser.RAIL);
+		CTARoutes mockTrainLines = CTAXmlParser.getCTARoutesInfo(CTAUtil.RAIL);
 		//9 cta train lines
 		assertThat(mockTrainLines.getRoutes().size()).isEqualTo(9);
 	}
 	
 	@Test
 	public void testGetTrainStationsURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAXmlParser.STATION;
-		assertThat(CTAXmlParser.getCTARoutesURI(CTAXmlParser.STATION).toString()).isEqualTo(expectedUrl);
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.STATION;
+		assertThat(CTAXmlParser.getCTARoutesURI(CTAUtil.STATION).toString()).isEqualTo(expectedUrl);
 	}
 	
 	@Test
 	public void testDeserializingTrainStations() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/stations.xml"));
 		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockTrainStations = CTAXmlParser.getCTARoutesInfo(CTAXmlParser.STATION);
+		CTARoutes mockTrainStations = CTAXmlParser.getCTARoutesInfo(CTAUtil.STATION);
 		//209 cta train stations
 		assertThat(mockTrainStations.getRoutes().size()).isEqualTo(209);
 	}
 	
 	@Test
 	public void testGetBusesURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAXmlParser.BUS;
-		assertThat(CTAXmlParser.getCTARoutesURI(CTAXmlParser.BUS).toString()).isEqualTo(expectedUrl);
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.BUS;
+		assertThat(CTAXmlParser.getCTARoutesURI(CTAUtil.BUS).toString()).isEqualTo(expectedUrl);
 	}
 	
 	@Test
 	public void testDeserializingBusStops() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/bus_routes.xml"));
 		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockBusRoutes = CTAXmlParser.getCTARoutesInfo(CTAXmlParser.BUS);
+		CTARoutes mockBusRoutes = CTAXmlParser.getCTARoutesInfo(CTAUtil.BUS);
 		//209 cta train stations
 		assertThat(mockBusRoutes.getRoutes().size()).isEqualTo(128);
 	}

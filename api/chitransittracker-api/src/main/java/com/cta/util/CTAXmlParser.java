@@ -10,8 +10,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTARoutes;
@@ -22,31 +20,6 @@ public class CTAXmlParser {
 	static Logger logger = Logger.getLogger(CTAXmlParser.class);
 	
 	protected static HttpClient client = HttpClientBuilder.create().build();
-	@Autowired
-	@Value("${cta.user-agent}")
-	protected static String USER_AGENT;
-	
-	@Value("${cta.api.rail}")
-	protected static String RAIL;
-	@Value("${cta.api.bus}")
-	protected static String BUS;
-	@Value("${cta.api.station}")
-	protected static String STATION;
-	
-	@Value("${cta.api.uri.scheme}")
-	protected static String SCHEME;
-	@Value("cta.api.uri.base")
-	protected static String BASE;
-	@Value("cta.api.uri.version")
-	protected static String VERSION;
-	
-	//cta aspx endpoints
-	@Value("cta.api.uri.routes")
-	protected static String ROUTES;
-	
-	@Value("cta.api.uri.alerts")
-	protected static String ALERTS;
-	
 	
 	/**
 	 * Given a type, deserialize CTA XML to POJOs
@@ -94,7 +67,7 @@ public class CTAXmlParser {
 		try {
 			request = new HttpGet(uriToFetchData);
 			// add request header
-			request.addHeader("User-Agent", USER_AGENT);
+			request.addHeader("User-Agent", CTAUtil.user_agent);
 			HttpResponse responseTrainStations = client.execute(request);
 			HttpEntity entity = responseTrainStations.getEntity(); 
 			return entity.getContent();
@@ -111,8 +84,8 @@ public class CTAXmlParser {
 	public static URIBuilder getAPIBase(){
 		try{
 			return new URIBuilder()
-			.setScheme(CTAXmlParser.SCHEME)
-			.setHost(CTAXmlParser.BASE);
+			.setScheme(CTAUtil.scheme)
+			.setHost(CTAUtil.base);
 		}catch(Exception e){
 			logger.debug("Failed to build uri for CTA api.", e);
 		}
@@ -126,7 +99,7 @@ public class CTAXmlParser {
 	 */
 	public static URIBuilder getCTARoutesURI(String type){
 		URIBuilder routesURI = getAPIBase();
-		routesURI.setPath(CTAXmlParser.VERSION + "/" + CTAXmlParser.ROUTES)
+		routesURI.setPath(CTAUtil.version + "/" + CTAUtil.routes)
 				 .setParameter("type", type);
 		return routesURI;
 	}
@@ -137,7 +110,7 @@ public class CTAXmlParser {
 	 */
 	public static URIBuilder getCTAAlertsURI(){
 		URIBuilder alertsURI = getAPIBase();
-		alertsURI.setPath(CTAXmlParser.VERSION + "/" + CTAXmlParser.ALERTS);
+		alertsURI.setPath(CTAUtil.version + "/" + CTAUtil.alerts);
 		return alertsURI;
 	}
 }
