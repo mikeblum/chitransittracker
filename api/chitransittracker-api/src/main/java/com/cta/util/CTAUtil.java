@@ -2,15 +2,15 @@ package com.cta.util;
 
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 public class CTAUtil {														   
 	public static DateTimeFormatter CTA_DATE_TIME = DateTimeFormat.forPattern("YYYYMMDD HH:mm");
 	
-	@Value("${cta.api.bus.key}")
+	@Value("#{ systemEnvironment['CTA_API_BUS_KEY'] }")
 	private static String CTA_API_BUS_KEY;
-	
-	@Value("${cta.api.train.key}")
+	@Value("#{ systemEnvironment['CTA_API_TRAIN_KEY'] }")
 	private static String CTA_API_TRAIN_KEY;
 	
 	public static String RAIL = "rail";
@@ -38,15 +38,15 @@ public class CTAUtil {
 		return STATION;
 	}
 
-	public String getCTA_API_BUS_KEY() {
+	public static String getCTA_API_BUS_KEY() {
 		return CTA_API_BUS_KEY;
 	}
 
 	public void setCTA_API_BUS_KEY(String cTA_API_BUS_KEY) {
 		CTA_API_BUS_KEY = cTA_API_BUS_KEY;
 	}
-
-	public String getCTA_API_TRAIN_KEY() {
+	
+	public static String getCTA_API_TRAIN_KEY() {
 		return CTA_API_TRAIN_KEY;
 	}
 
