@@ -6,6 +6,7 @@ import java.net.URI;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -20,7 +21,7 @@ public class CTAXmlParser {
 	static Logger logger = Logger.getLogger(CTAXmlParser.class);
 	
 	protected static HttpClient client = HttpClientBuilder.create().build();
-	
+	protected static RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(30 * 1000).build();
 	/**
 	 * Given a type, deserialize CTA XML to POJOs
 	 * @param type rail, bus, station, or systemwide
@@ -68,6 +69,8 @@ public class CTAXmlParser {
 			request = new HttpGet(uriToFetchData);
 			// add request header
 			request.addHeader("User-Agent", CTAUtil.user_agent);
+			
+			client = HttpClientBuilder.create().setDefaultRequestConfig(requestConfig).build();
 			HttpResponse responseTrainStations = client.execute(request);
 			HttpEntity entity = responseTrainStations.getEntity(); 
 			return entity.getContent();

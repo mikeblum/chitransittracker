@@ -13,3 +13,5 @@ build
 .settings
 .classpath
 .gradle
+api/.vagrant
+
