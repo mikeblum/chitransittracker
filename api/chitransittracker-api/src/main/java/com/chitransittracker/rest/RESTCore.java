@@ -16,7 +16,6 @@ public class RESTCore {
 	 @RequestMapping(value="/", method=RequestMethod.GET)
 	 public Map<String, String> getArrivals(){
 		 Map<String, String> map = new HashMap<String, String>();
-		 map.put("name", "Mike Blum");
 		 return map;
 	 }
 }
