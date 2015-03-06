@@ -122,6 +122,6 @@ public class CTAXmlParserTest {
 		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
 		CTAAlerts mockAlerts = CTAXmlParser.getCTAAlerts();
 		//alerts
-		assertThat(mockAlerts.getAlerts().size()).isEqualTo(31);
+		assertThat(mockAlerts.getAlerts().size()).isEqualTo(36);
 	}
 }

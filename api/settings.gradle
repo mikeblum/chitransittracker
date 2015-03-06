@@ -1,2 +1,1 @@
-rootProject.name='chitransittracker'
-include "chitransittracker-core", "chitransittracker-api", "chitransittracker-routes","chitransittracker-arrivals"
+include "chitransittracker-api", "chitransittracker-routes"

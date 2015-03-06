@@ -1,1 +1,2 @@
-rootProject.name = 'chitransittracker-api'
+rootProject.name = 'chitransittracker'
+project.war.baseName = 'chitransittracker'

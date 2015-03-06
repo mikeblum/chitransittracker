@@ -20,7 +20,6 @@ public class CTAPingTest {
 		client = HttpClientBuilder.create().build();
 	}
 	
-	@Test
 	public void testConnectingToCTAServers() throws ClientProtocolException, IOException{
 		String systemHealthCheck = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=systemwide";
 		HttpGet getSystemCheck = new HttpGet(systemHealthCheck);

@@ -1,8 +1,6 @@
 allprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse'
-    apply plugin: 'war'
-	apply plugin: 'jetty'
 
     repositories {
        mavenCentral()
@@ -17,8 +15,4 @@ allprojects {
     }
 
     version = '1.0'
-    
-    war{
-		webInf { from 'src/main/java/applicationContext.xml' }
-	}
 }

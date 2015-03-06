@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.chitransittracker.jdbc.ConnectionDetails;
 import com.chitransittracker.jdbc.PGConnector;
@@ -36,7 +37,7 @@ public class Driver {
 	public static void main(String[] args){
 		long start_time = System.currentTimeMillis();
 		//stand up Spring Context
-		ApplicationContext context = AppContext.startContext();
+		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		injectedDetails = (ConnectionDetails) context.getBean("connectionDetails");
 		ctaParser = new CTAXmlParser();
 		logger.debug("Indexing CTA Rail Lines...");

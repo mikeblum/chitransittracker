@@ -1,6 +1,3 @@
-delete 'build'
-
-apply plugin: 'java' 
 apply plugin: 'war'
 apply plugin: 'jetty'
 
@@ -10,19 +7,21 @@ repositories {
 
 dependencies {
 	compile (
-		project(':chitransittracker-core'), //get project resources
 		'log4j:log4j:1.2.16',
 		'org.apache.commons:commons-lang3:3.3.2',
 		'org.apache.commons:commons-io:1.3.2',
 		'org.apache.httpcomponents:httpclient:4.3.3',
 		'org.codehaus.jackson:jackson-core-asl:1.9.13',
 		'org.codehaus.jackson:jackson-mapper-asl:1.9.13',
+		'org.springframework:spring-webmvc:4.0.6.RELEASE',
 		'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.4.0',
 		'joda-time:joda-time:2.3',
 		'org.json:json:20140107',
 		'postgresql:postgresql:9.1-901-1.jdbc4'
 	)
+	providedCompile 'javax.servlet:servlet-api:2.5'
 	providedCompile 'org.apache.tomcat:tomcat-servlet-api:8.0.8'
+	runtime 'javax.servlet:jstl:1.1.2'
 
 	
 	testCompile (
