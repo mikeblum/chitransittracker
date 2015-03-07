@@ -45,3 +45,5 @@ war{
 	webInf { from 'spring-dispatcher-servlet.xml' }
 	webInf { from 'applicationContext.xml' }
 }
+
+jettyRunWar.contextPath = ''

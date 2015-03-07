@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.net.URI;
 
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpHeaders;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
@@ -36,6 +37,7 @@ public class CTAXmlParser {
 	public static CTARoutes getCTARoutesInfo(String type){
 		try {
 			URI uriToFetchData = CTAUtil.getCTARoutesURI(type).build();
+			logger.debug(uriToFetchData.toString());
 			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
@@ -87,7 +89,10 @@ public class CTAXmlParser {
 		try {
 			request = new HttpGet(uriToFetchData);
 			// add request header
-			request.addHeader("User-Agent", CTAUtil.user_agent);
+			request.addHeader(HttpHeaders.USER_AGENT, "Mozilla/5.0");
+			request.addHeader(HttpHeaders.CONTENT_TYPE, "text/xml; charset=utf-8");
+			//make sure to reset the connection - might hang otherwise
+			client = HttpClientBuilder.create().setDefaultRequestConfig(requestConfig).build();
 			HttpResponse responseTrainStations = client.execute(request);
 			HttpEntity entity = responseTrainStations.getEntity(); 
 			return entity.getContent();

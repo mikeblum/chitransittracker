@@ -18,12 +18,4 @@
         <property name="searchSystemEnvironment" value="true" />
         <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE"/>
     </bean>
-    
-    <bean id="connectionDetails" class="com.chitransittracker.jdbc.ConnectionDetails">
-    	<property name="host" value="${db.pg.host}" />
-    	<property name="port" value="${db.pg.port}" />
-    	<property name="username" value="${db.pg.username}" />
-    	<property name="password" value="${db.pg.password}" />
-    	<property name="dbName" value="${db.pg.dbName}" />
-    </bean>
 </beans>

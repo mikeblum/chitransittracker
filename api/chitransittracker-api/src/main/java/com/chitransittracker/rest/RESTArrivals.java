@@ -45,7 +45,7 @@ public class RESTArrivals {
 				 //convert JSON string to Map
 				 jsonMap = mapper.readValue(arrivalsItr.next().toJSON().toString(), typeRef);
 			 }catch (Exception e) {
-				 e.printStackTrace();
+				logger.error("Failed to cnovert CTAArrivals to JSON", e);
 			 }
 			 arrivalsSerialized.add(jsonMap);
 		 }

@@ -22,9 +22,15 @@ import com.cta.util.CTAXmlParser;
 public class Driver {
 	static Logger logger = Logger.getLogger(Driver.class);
 	
-	@Autowired
 	static ConnectionDetails injectedDetails;
 	static CTAXmlParser ctaParser;
+	
+	//env variables for holding db credentials
+	private static final String POSTGRES_HOST_NAME 	= "POSTGRES_HOST_NAME";
+	private static final String POSTGRES_PORT 		= "POSTGRES_PORT";
+	private static final String POSTGRES_USER_NAME 	= "POSTGRES_USER_NAME";
+	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
+	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
 	
 	static String route_columns = "route_name text,route_color text,route_text_color text,service_id text,route_url text,route_status text,route_status_color text,last_modified timestamp default now()";
 	
@@ -34,18 +40,22 @@ public class Driver {
 			    "RETURN NEW;" +	
 			"END; $$ language 'plpgsql';";
 	
-	public static void main(String[] args){
+	public static void main(String[] args) throws InterruptedException{
 		long start_time = System.currentTimeMillis();
-		//stand up Spring Context
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		injectedDetails = (ConnectionDetails) context.getBean("connectionDetails");
+		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
+												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
+												 .setUsername(System.getenv(POSTGRES_USER_NAME))
+												 .setPassword(System.getenv(POSTGRES_PASSWORD))
+												 .setDbName(System.getenv(POSTGRES_DATABASE));
 		ctaParser = new CTAXmlParser();
 		logger.debug("Indexing CTA Rail Lines...");
 		//index the CTA Rail Lines
 		Driver.indexCTARailLines();
+		Thread.sleep(1000);
 		logger.debug("Indexing CTA Train Stations...");
 		//index CTA Rail Stations
 		Driver.indexCTARailStations();
+		Thread.sleep(1000);
 		logger.debug("Indexing CTA Bus Stops...");
 		//index CTA Bus Stations
 		Driver.indexCTABusStops();
