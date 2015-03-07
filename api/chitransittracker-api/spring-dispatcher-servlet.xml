@@ -46,4 +46,6 @@
 	<!-- Expose the authenticated handler to all beans that have been declared via annotation -->
 	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
 	</bean>
+	
+	<bean id="jacksonObjectMapper" class="com.chitransittracker.JSONObjectMapper" />
 </beans>

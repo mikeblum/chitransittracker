@@ -1,0 +1,89 @@
+<ctatt>
+<tmst>20150306 00:24:32</tmst>
+<errCd>0</errCd>
+<errNm/>
+<eta>
+	<staId>41440</staId>
+	<stpId>30278</stpId>
+	<staNm>Addison</staNm>
+	<stpDe>Service toward Loop</stpDe>
+	<rn>430</rn>
+	<rt>Brn</rt>
+	<destSt>30249</destSt>
+	<destNm>Loop</destNm>
+	<trDr>5</trDr>
+	<prdt>20150306 00:23:46</prdt>
+	<arrT>20150306 00:24:46</arrT>
+	<isApp>1</isApp>
+	<isSch>0</isSch>
+	<isDly>0</isDly>
+	<isFlt>0</isFlt>
+	<flags/>
+	<lat>41.95451</lat>
+	<lon>-87.67496</lon>
+	<heading>175</heading>
+</eta>
+<eta>
+<staId>41440</staId>
+<stpId>30277</stpId>
+<staNm>Addison</staNm>
+<stpDe>Service toward Kimball</stpDe>
+<rn>434</rn>
+<rt>Brn</rt>
+<destSt>30249</destSt>
+<destNm>Kimball</destNm>
+<trDr>1</trDr>
+<prdt>20150306 00:24:12</prdt>
+<arrT>20150306 00:34:12</arrT>
+<isApp>0</isApp>
+<isSch>0</isSch>
+<isDly>0</isDly>
+<isFlt>0</isFlt>
+<flags/>
+<lat>41.92494</lat>
+<lon>-87.65286</lon>
+<heading>358</heading>
+</eta>
+<eta>
+<staId>41440</staId>
+<stpId>30278</stpId>
+<staNm>Addison</staNm>
+<stpDe>Service toward Loop</stpDe>
+<rn>433</rn>
+<rt>Brn</rt>
+<destSt>0</destSt>
+<destNm>Loop (or Belmont, see sched.)</destNm>
+<trDr>5</trDr>
+<prdt>20150306 00:24:22</prdt>
+<arrT>20150306 00:41:22</arrT>
+<isApp>0</isApp>
+<isSch>1</isSch>
+<isDly>0</isDly>
+<isFlt>0</isFlt>
+<flags/>
+<lat/>
+<lon/>
+<heading/>
+</eta>
+<eta>
+<staId>41440</staId>
+<stpId>30277</stpId>
+<staNm>Addison</staNm>
+<stpDe>Service toward Kimball</stpDe>
+<rn>428</rn>
+<rt>Brn</rt>
+<destSt>0</destSt>
+<destNm>Kimball</destNm>
+<trDr>1</trDr>
+<prdt>20150306 00:24:22</prdt>
+<arrT>20150306 00:46:22</arrT>
+<isApp>0</isApp>
+<isSch>1</isSch>
+<isDly>0</isDly>
+<isFlt>0</isFlt>
+<flags/>
+<lat/>
+<lon/>
+<heading/>
+</eta>
+</ctatt>

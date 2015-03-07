@@ -9,27 +9,27 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-@JacksonXmlRootElement(localName = "CTARoutes")
-public class CTARoutes {
-	@JacksonXmlProperty(localName = "TimeStamp")
+@JacksonXmlRootElement(localName = "ctatt")
+public class CTAArrivals {
+	@JacksonXmlProperty(localName = "tmst")
 	DateTime timeStamp;
-	@JacksonXmlProperty(localName = "ErrorCode")
-	String errorCode;
-	@JacksonXmlProperty(localName = "ErrorMessage")
-	String errorMessage;
-	@JacksonXmlProperty(localName = "RouteInfo")
-	//unwrapping is important since the RouteInfo objects have no wrapper
+	@JacksonXmlProperty(localName = "errCd")
+	String errCd;
+	@JacksonXmlProperty(localName = "errNm")
+	String errNm;
+	//unwrapping is important since the Arrivals objects have no wrapper
 	@JacksonXmlElementWrapper(useWrapping = false)
-	List<CTARoute> routes;
+	@JacksonXmlProperty(localName = "eta")
+	List<CTAArrival> arrivals;
 	
-	public List<CTARoute> getRoutes() {
-		return routes;
+	public List<CTAArrival> getArrivals(){
+		return arrivals;
 	}
-
-	public void setRoutes(List<CTARoute> routes) {
-		this.routes = routes;
+	
+	public void setArrivals(List<CTAArrival> arrivals){
+		this.arrivals = arrivals;
 	}
-
+	
 	public void setTimeStamp(String timeStamp) {
 		this.timeStamp = CTAUtil.parseDateTime(timeStamp);
 	}

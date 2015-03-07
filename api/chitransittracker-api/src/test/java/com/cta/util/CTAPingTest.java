@@ -20,13 +20,13 @@ public class CTAPingTest {
 		client = HttpClientBuilder.create().build();
 	}
 	
-	public void testConnectingToCTAServers() throws ClientProtocolException, IOException{
-		String systemHealthCheck = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=systemwide";
-		HttpGet getSystemCheck = new HttpGet(systemHealthCheck);
-		// add request header
-		getSystemCheck.addHeader("User-Agent", "Mozilla/5.0");
-		HttpResponse responseFromHealthCheck = client.execute(getSystemCheck);
-		//expect something around a 200 response
-		assertThat(responseFromHealthCheck.getStatusLine().getStatusCode()).isGreaterThanOrEqualTo(200).isLessThan(400);
-	}
+//	public void testConnectingToCTAServers() throws ClientProtocolException, IOException{
+//		String systemHealthCheck = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=systemwide";
+//		HttpGet getSystemCheck = new HttpGet(systemHealthCheck);
+//		// add request header
+//		getSystemCheck.addHeader("User-Agent", "Mozilla/5.0");
+//		HttpResponse responseFromHealthCheck = client.execute(getSystemCheck);
+//		//expect something around a 200 response
+//		assertThat(responseFromHealthCheck.getStatusLine().getStatusCode()).isGreaterThanOrEqualTo(200).isLessThan(400);
+//	}
 }

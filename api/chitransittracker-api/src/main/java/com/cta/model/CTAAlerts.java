@@ -27,6 +27,6 @@ public class CTAAlerts {
 	}
 	
 	public void setTimeStamp(String timeStamp) {
-		this.timeStamp = CTAUtil.CTA_DATE_TIME.parseDateTime(timeStamp);
+		this.timeStamp = CTAUtil.parseDateTime(timeStamp);
 	}
 }
