@@ -1,5 +1,6 @@
 package com.cta.util;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 
@@ -9,7 +10,6 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 
@@ -23,10 +23,9 @@ public class CTAXmlParser {
 	static Logger logger = Logger.getLogger(CTAXmlParser.class);
 	
 	protected static RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(30 * 1000).build();
-	protected static HttpClient client = HttpClientBuilder.create().setDefaultRequestConfig(requestConfig).build();
 	
-	public static void setHttpClient(HttpClient client){
-		CTAXmlParser.client = client;
+	public static HttpClient getHttpClient(){
+		return HttpClientBuilder.create().setDefaultRequestConfig(requestConfig).build();
 	}
 	
 	/**
@@ -38,7 +37,7 @@ public class CTAXmlParser {
 		try {
 			URI uriToFetchData = CTAUtil.getCTARoutesURI(type).build();
 			logger.debug(uriToFetchData.toString());
-			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
+			InputStream fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 			return xmlMapper.readValue(fetchedResultsStream, CTARoutes.class);
@@ -51,11 +50,13 @@ public class CTAXmlParser {
 	/**
 	 * deserialize CTA XML Alerts to POJOs
 	 * @return deserialzed XML alerts as POJOs
+	 * @throws IOException 
 	 */
 	public static CTAAlerts getCTAAlerts(){
+		InputStream fetchedResultsStream = null;
 		try {
 			URI uriToFetchData = CTAUtil.getCTAAlertsURI().build();
-			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
+			fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 			return xmlMapper.readValue(fetchedResultsStream, CTAAlerts.class);
@@ -66,9 +67,10 @@ public class CTAXmlParser {
 	}
 	
 	public static CTAArrivals getCTAArrivals(String stationId, String maxArrivals){
+		InputStream fetchedResultsStream = null;
 		try {
 			URI uriToFetchData = CTAUtil.getCTAArrivalsURI(stationId, maxArrivals).build();
-			InputStream fetchedResultsStream = processAPIRequest(uriToFetchData);
+			fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 			return xmlMapper.readValue(fetchedResultsStream, CTAArrivals.class);
@@ -83,7 +85,7 @@ public class CTAXmlParser {
 	 * @param type
 	 * @return
 	 */
-	private static InputStream processAPIRequest(URI uri){
+	public static InputStream processAPIRequest(URI uri){
 		URI uriToFetchData = uri;
 		HttpGet request;
 		try {
@@ -92,7 +94,7 @@ public class CTAXmlParser {
 			request.addHeader(HttpHeaders.USER_AGENT, "Mozilla/5.0");
 			request.addHeader(HttpHeaders.CONTENT_TYPE, "text/xml; charset=utf-8");
 			//make sure to reset the connection - might hang otherwise
-			client = HttpClientBuilder.create().setDefaultRequestConfig(requestConfig).build();
+			HttpClient client = CTAXmlParser.getHttpClient();
 			HttpResponse responseTrainStations = client.execute(request);
 			HttpEntity entity = responseTrainStations.getEntity(); 
 			return entity.getContent();

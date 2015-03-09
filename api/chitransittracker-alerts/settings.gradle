@@ -1,0 +1,2 @@
+rootProject.name='chitransittracker-alerts'
+include 'chitransittracker-api'

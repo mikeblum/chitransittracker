@@ -1,1 +1,1 @@
-include "chitransittracker-api", "chitransittracker-routes"
+include "chitransittracker-api", "chitransittracker-routes", "chitransittracker-alerts"

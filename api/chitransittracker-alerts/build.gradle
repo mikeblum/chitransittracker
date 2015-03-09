@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin:'application'
+
+repositories {
+	mavenCentral()
+}
+
+mainClassName = "com.chitransittracker.Driver"
+
+dependencies {
+    compile (
+    	project(':chitransittracker-api')
+    )
+}

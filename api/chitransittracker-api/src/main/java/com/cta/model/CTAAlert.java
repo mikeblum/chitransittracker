@@ -27,7 +27,7 @@ public class CTAAlert {
 	@JacksonXmlProperty(localName = "Impact")
 	private String impact;
 	@JacksonXmlProperty(localName = "EventStart")
-	private String eventStart;
+	private DateTime eventStart;
 	@JacksonXmlProperty(localName = "EventEnd")
 	private String eventEnd;
 	@JacksonXmlProperty(localName = "TBD")
@@ -47,4 +47,33 @@ public class CTAAlert {
 	private int ttim;
 	@JacksonXmlProperty(localName = "GUID")
 	private String guid;
+	
+	public void setEventStart(String eventStart){
+		this.eventStart = CTAUtil.parseDateTime(eventStart);
+	}
+	
+	public Object[] getAttributes(){
+		Object[] attributes = new Object[13];
+		attributes[0] = this.alertId;
+		attributes[1] = this.headline;
+		attributes[2] = this.shortDescription;
+		attributes[3] = this.fullDescription;
+		attributes[4] = this.severityScore;
+		attributes[5] = this.severityColor;
+		attributes[6] = this.severityCSS;
+		attributes[7] = this.impact;
+		attributes[8] = this.eventStart;
+		attributes[9] = this.eventEnd;
+		attributes[10] = this.tbd;
+		attributes[11] = this.majorAlert;
+		attributes[12] = AlertURL.toString();
+		return attributes;
+	}
+	
+	/**
+	 * get comma-seperated list of attributes
+	 */
+	public String toString(){
+		return StringUtils.join(getAttributes(), ',');
+	}
 }

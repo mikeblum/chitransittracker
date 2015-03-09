@@ -7,6 +7,7 @@ import static org.mockito.Mockito.mock;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
 import java.net.URISyntaxException;
 
 import org.apache.commons.io.FileUtils;
@@ -14,18 +15,24 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Matchers;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTAArrivals;
 import com.cta.model.CTARoutes;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 
 public class CTAXmlParserTest {
+	CTAXmlParser mockParser;
 	HttpClient mockClient;
 	HttpGet mockGet;
 	HttpResponse mockResponse;
@@ -34,15 +41,13 @@ public class CTAXmlParserTest {
 	
 	@Before
 	public void setUp() throws ClientProtocolException, IOException {
-		mockClient = mock(HttpClient.class);
-		
-		CTAXmlParser.setHttpClient(mockClient);
-		
 		mockGet = mock(HttpGet.class);
 		mockResponse = mock(HttpResponse.class);
 		mockEntity = mock(HttpEntity.class);
-		Mockito.when(mockClient.execute(Matchers.any(HttpGet.class))).thenReturn(mockResponse);
-		Mockito.when(mockResponse.getEntity()).thenReturn(mockEntity);
+		mockParser = Mockito.mock(CTAXmlParser.class);
+		mockClient = Mockito.mock(HttpClient.class); 
+		HttpResponse response = Mockito.mock(HttpResponse.class);
+		
 		//mimick the normally spring injected values
 		CTAUtil.user_agent = "Mozilla/5.0";
 		CTAUtil.RAIL = "rail";
@@ -75,8 +80,8 @@ public class CTAXmlParserTest {
 	@Test
 	public void testDeserializingTrainLines() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/train_lines.xml"));
-		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockTrainLines = CTAXmlParser.getCTARoutesInfo(CTAUtil.RAIL);
+		XmlMapper xmlMapper = new XmlMapper();
+		CTARoutes mockTrainLines = xmlMapper.readValue(mockXml, CTARoutes.class);
 		//9 cta train lines
 		assertThat(mockTrainLines.getRoutes().size()).isEqualTo(9);
 	}
@@ -90,8 +95,8 @@ public class CTAXmlParserTest {
 	@Test
 	public void testDeserializingTrainStations() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/stations.xml"));
-		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockTrainStations = CTAXmlParser.getCTARoutesInfo(CTAUtil.STATION);
+		XmlMapper xmlMapper = new XmlMapper();
+		CTARoutes mockTrainStations = xmlMapper.readValue(mockXml, CTARoutes.class);
 		//209 cta train stations
 		assertThat(mockTrainStations.getRoutes().size()).isEqualTo(209);
 	}
@@ -105,8 +110,8 @@ public class CTAXmlParserTest {
 	@Test
 	public void testDeserializingBusStops() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/bus_routes.xml"));
-		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTARoutes mockBusRoutes = CTAXmlParser.getCTARoutesInfo(CTAUtil.BUS);
+		XmlMapper xmlMapper = new XmlMapper();
+		CTARoutes mockBusRoutes = xmlMapper.readValue(mockXml, CTARoutes.class);
 		//209 cta train stations
 		assertThat(mockBusRoutes.getRoutes().size()).isEqualTo(128);
 	}
@@ -120,18 +125,16 @@ public class CTAXmlParserTest {
 	@Test
 	public void testDeserializingAlerts() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/alerts.xml"));
-		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		CTAAlerts mockAlerts = CTAXmlParser.getCTAAlerts();
-		//alerts
+		XmlMapper xmlMapper = new XmlMapper();
+		CTAAlerts mockAlerts = xmlMapper.readValue(mockXml, CTAAlerts.class);
 		assertThat(mockAlerts.getAlerts().size()).isEqualTo(31);
 	}
 	
 	@Test
 	public void testDeserializingArrivals() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/arrivals.xml"));
-		Mockito.when(mockEntity.getContent()).thenReturn(mockXml);
-		String mockStationId = "12345";
-		CTAArrivals mockArrivals = CTAXmlParser.getCTAArrivals("1234", "5");
+		XmlMapper xmlMapper = new XmlMapper();
+		CTAArrivals mockArrivals = xmlMapper.readValue(mockXml, CTAArrivals.class);
 		//4 predictions
 		assertThat(mockArrivals.getArrivals().size()).isEqualTo(4);
 	}

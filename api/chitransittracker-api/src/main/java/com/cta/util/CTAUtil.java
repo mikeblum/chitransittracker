@@ -1,5 +1,6 @@
 package com.cta.util;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
@@ -60,6 +61,9 @@ public class CTAUtil {
 	 */
 	public static DateTime parseDateTime(String timestamp){
 		DateTime result = null;
+		if(timestamp == null || StringUtils.equalsIgnoreCase(timestamp, "n/a")){
+			result = new DateTime();
+		}
 		try{
 			result = CTA_DATE_TIME_HMS.parseDateTime(timestamp);
 		}catch(Exception hmsExpcetion){
