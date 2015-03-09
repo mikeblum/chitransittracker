@@ -29,7 +29,7 @@ public class CTAAlert {
 	@JacksonXmlProperty(localName = "EventStart")
 	private DateTime eventStart;
 	@JacksonXmlProperty(localName = "EventEnd")
-	private String eventEnd;
+	private DateTime eventEnd;
 	@JacksonXmlProperty(localName = "TBD")
 	private int tbd;
 	@JacksonXmlProperty(localName = "MajorAlert")
@@ -50,6 +50,15 @@ public class CTAAlert {
 	
 	public void setEventStart(String eventStart){
 		this.eventStart = CTAUtil.parseDateTime(eventStart);
+	}
+	
+	public void setEventEnd(String eventEnd){
+		//issue with cta xml where eventEnd may be blank, the string N/A, or null
+		if(eventEnd == null || StringUtils.equalsIgnoreCase(eventEnd, "N/A")){
+			this.eventEnd = null;
+		}else{
+			this.eventEnd = CTAUtil.parseDateTime(eventEnd);
+		}
 	}
 	
 	public Object[] getAttributes(){

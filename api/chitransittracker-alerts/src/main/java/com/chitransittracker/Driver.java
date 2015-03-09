@@ -31,7 +31,7 @@ public class Driver {
 	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
 	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
 	
-	static String alert_columns = "alert_id text, headline text, short_desc text, full_desc text, severity_score integer, severity_color text, severity_css text, impact integer, event_start timestamp, event_end text, tbd integer, major_alert integer, alert_url text";
+	static String alert_columns = "alert_id text, headline text, short_desc text, full_desc text, severity_score integer, severity_color text, severity_css text, impact integer, event_start timestamp, event_end timestamp, tbd integer, major_alert integer, alert_url text";
 	static String addModiedTrigger = "CREATE OR REPLACE FUNCTION update_modified_column()" +	
 			"RETURNS TRIGGER AS $$ BEGIN " +
 			    "NEW.last_modified = now();" +
