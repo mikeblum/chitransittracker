@@ -32,7 +32,7 @@ public class Driver {
 	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
 	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
 	
-	static String route_columns = "route_name text,route_color text,route_text_color text,service_id text,route_url text,route_status text,route_status_color text,last_modified timestamp default now()";
+	static String route_columns = "route_name text,route_color text,route_text_color text,service_id text, route_url text,route_status text,route_status_color text, type text, last_modified timestamp default now()";
 	
 	static String addModiedTrigger = "CREATE OR REPLACE FUNCTION update_modified_column()" +	
 			"RETURNS TRIGGER AS $$ BEGIN " +
@@ -126,43 +126,49 @@ public class Driver {
 		try {
 			//Create generic routes table
 			Statement createCTALinesTable = pgConnection.createStatement();
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_rail_stations(" + route_columns + ");";
+			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns + ");";
 			createCTALinesTable.execute(createRoutesTable);
 			logger.debug("CTA Rail Stations table created!");
 			
 			//clean up old routes
 			Statement deleteOldRoutes = pgConnection.createStatement();
-			int deletedRows = deleteOldRoutes.executeUpdate("DELETE FROM cta_rail_stations;");
-			logger.debug("DELETE rows from cta_rail_stations: " + deletedRows);
+			int deletedRows = deleteOldRoutes.executeUpdate("DELETE FROM cta_routes;");
+			logger.debug("DELETE rows from cta_routes: " + deletedRows);
 			
 			//add a modifed column to track stale records
 			Statement modifedTrigger = pgConnection.createStatement();
 			
 			//deploy trigger and apply to the cta_rail_lines table
 			boolean triggerAdded = modifedTrigger.execute(addModiedTrigger);
-			logger.debug("last_modified trigger cta_rail_stations: " + triggerAdded);
+			logger.debug("last_modified trigger cta_routes: " + triggerAdded);
 			//drop old trigger
-			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_rail_stations;");
+			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_routes;");
 			
 			Statement applyTrigger = pgConnection.createStatement();
-			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_rail_stations FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
+			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_routes FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
 			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
 			logger.debug("Tigger deployed for last_modifed: " + triggerAddedToTable);
 			
-			String insertQuery = "INSERT INTO cta_rail_stations (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color) VALUES (?, ?, ?, ?, ?, ?, ?);";
+			String insertQuery = "INSERT INTO cta_routes (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement insertCTARailStations = pgConnection.prepareStatement(insertQuery);
 			//create a table for all CTA Rail Lines
 			Iterator<CTARoute> railStationsItr = ctaRailStations.getRoutes().iterator();
 			int totalRows = 0;
 			while(railStationsItr.hasNext()){
-				CTARoute railStation = railStationsItr.next();
 				int index = 1; //prepared statements index starts at 1
+				CTARoute railStation = railStationsItr.next();
 				for(String attribute : railStation.getAttributes()){
 					insertCTARailStations.setString(index++, attribute);
 				}
-				totalRows += insertCTARailStations.executeUpdate();
-				
+				//set type to bus
+				insertCTARailStations.setString(index++, "RAIL");
+				try{
+					totalRows += insertCTARailStations.executeUpdate();	
+				}catch(Exception e){
+					logger.debug("Failed to insert row: " + totalRows, e);
+				}
 			}
+			
 			logger.debug("INSERT CTA STATIONS: " + insertQuery);
 			logger.debug("inserted " + totalRows + " CTA Rail Stations into pg");
 		} catch (SQLException e) {
@@ -177,14 +183,11 @@ public class Driver {
 		try {
 			//Create generic routes table
 			Statement createCTABusRoutesTable = pgConnection.createStatement();
-			String createBusRoutesTable = "CREATE TABLE IF NOT EXISTS cta_bus_stops(" + route_columns + ");";
+			String createBusRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns + ");";
 			createCTABusRoutesTable.execute(createBusRoutesTable);
 			logger.debug("CTA Bus Stops table created!");
 			
-			//clean up old routes
-			Statement deleteOldRoutes = pgConnection.createStatement();
-			int deletedRows = deleteOldRoutes.executeUpdate("DELETE FROM cta_bus_stops;");
-			logger.debug("DELETE rows from cta_bus_stops: " + deletedRows);
+			//DO NOt CLEAR TABLE - RAIL already here
 			
 			//add a modifed column to track stale records
 			Statement modifedTrigger = pgConnection.createStatement();
@@ -193,27 +196,33 @@ public class Driver {
 			boolean triggerAdded = modifedTrigger.execute(addModiedTrigger);
 			logger.debug("last_modified trigger: " + triggerAdded);
 			//drop old trigger
-			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_bus_stops;");
+			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_routes;");
 			
 			Statement applyTrigger = pgConnection.createStatement();
-			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_bus_stops FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
+			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_routes FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
 			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
-			logger.debug("Tigger deployed for last_modifed cta_bus_stops: " + triggerAddedToTable);
+			logger.debug("Tigger deployed for last_modifed cta_routes: " + triggerAddedToTable);
 			
-			String insertQuery = "INSERT INTO cta_bus_stops (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color) VALUES (?, ?, ?, ?, ?, ?, ?);";
-			PreparedStatement insertCTARailStations = pgConnection.prepareStatement(insertQuery);
+			String insertQuery = "INSERT INTO cta_routes (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+			PreparedStatement insertCTABusStops = pgConnection.prepareStatement(insertQuery);
 			//create a table for all CTA Bus Stops
 			Iterator<CTARoute> busStopsItr = ctaBusStops.getRoutes().iterator();
 			int totalRows = 0;
 			while(busStopsItr.hasNext()){
-				CTARoute railStation = busStopsItr.next();
 				int index = 1; //prepared statements index starts at 1
+				CTARoute railStation = busStopsItr.next();
 				for(String attribute : railStation.getAttributes()){
-					insertCTARailStations.setString(index++, attribute);
+					insertCTABusStops.setString(index++, attribute);
 				}
-				totalRows += insertCTARailStations.executeUpdate();
-				
+				//set type to bus
+				insertCTABusStops.setString(index++, "BUS");
+				try{
+					totalRows += insertCTABusStops.executeUpdate();	
+				}catch(Exception e){
+					logger.debug("Failed to insert row: " + totalRows, e);
+				}
 			}
+			
 			logger.debug("INSERT CTA BUS STOPS: " + insertQuery);
 			logger.debug("inserted " + totalRows + " CTA Bus Stops into pg");
 		} catch (SQLException e) {

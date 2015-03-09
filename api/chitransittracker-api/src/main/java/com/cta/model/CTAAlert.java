@@ -31,11 +31,11 @@ public class CTAAlert {
 	@JacksonXmlProperty(localName = "EventEnd")
 	private DateTime eventEnd;
 	@JacksonXmlProperty(localName = "TBD")
-	private int tbd;
+	private String tbd;
 	@JacksonXmlProperty(localName = "MajorAlert")
-	private int majorAlert;
+	private String majorAlert;
 	@JacksonXmlProperty(localName = "AlertURL")
-	private URI AlertURL;
+	private URI alertURL;
 	
 	//this alert impacts the following service:
 	@JacksonXmlProperty(localName = "ImpactedService")
@@ -62,7 +62,7 @@ public class CTAAlert {
 	}
 	
 	public Object[] getAttributes(){
-		Object[] attributes = new Object[13];
+		Object[] attributes = new Object[14];
 		attributes[0] = this.alertId;
 		attributes[1] = this.headline;
 		attributes[2] = this.shortDescription;
@@ -75,7 +75,10 @@ public class CTAAlert {
 		attributes[9] = this.eventEnd;
 		attributes[10] = this.tbd;
 		attributes[11] = this.majorAlert;
-		attributes[12] = AlertURL.toString();
+		attributes[12] = this.alertURL.toString();
+		//reference the service impacted by this alert
+		attributes[13] = this.impactedService.getImpactedServices().get(0).getServiceId();
+		
 		return attributes;
 	}
 	

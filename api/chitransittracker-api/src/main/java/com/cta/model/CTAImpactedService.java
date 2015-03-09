@@ -16,4 +16,8 @@ public class CTAImpactedService {
 	//unwrapping is important since the RouteInfo objects have no wrapper
 	@JacksonXmlElementWrapper(useWrapping = false)
 	List<CTAService> services;
+	
+	public List<CTAService> getImpactedServices(){
+		return this.services;
+	}
 }

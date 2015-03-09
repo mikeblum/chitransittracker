@@ -1,14 +1,19 @@
 package com.chitransittracker;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 
@@ -31,7 +36,9 @@ public class Driver {
 	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
 	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
 	
-	static String alert_columns = "alert_id text, headline text, short_desc text, full_desc text, severity_score integer, severity_color text, severity_css text, impact integer, event_start timestamp, event_end timestamp, tbd integer, major_alert integer, alert_url text";
+	//key is the column name and the value is the type - order is important
+	static LinkedHashMap<String, String> alert_columns = new LinkedHashMap<String, String>();
+	
 	static String addModiedTrigger = "CREATE OR REPLACE FUNCTION update_modified_column()" +	
 			"RETURNS TRIGGER AS $$ BEGIN " +
 			    "NEW.last_modified = now();" +
@@ -40,11 +47,27 @@ public class Driver {
 	
 	public static void main(String[] args) throws InterruptedException{
 		long start_time = System.currentTimeMillis();
-		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
-												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
-												 .setUsername(System.getenv(POSTGRES_USER_NAME))
-												 .setPassword(System.getenv(POSTGRES_PASSWORD))
-												 .setDbName(System.getenv(POSTGRES_DATABASE));
+		
+		//build map of columns and their respective types
+		alert_columns.put("alert_id", "text");
+		alert_columns.put("headline", "text");
+		alert_columns.put("short_desc", "text");
+		alert_columns.put("full_desc", "text");
+		alert_columns.put("severity_score", "integer");
+		alert_columns.put("severity_color", "text");
+		alert_columns.put("severity_css", "text");
+		alert_columns.put("impact", "text");
+		alert_columns.put("event_start", "timestamp");
+		alert_columns.put("event_end", "timestamp");
+		alert_columns.put("tbd", "text");
+		alert_columns.put("major_alert", "text");
+		alert_columns.put("alert_url", "text");
+		alert_columns.put("service_id", "text");
+		injectedDetails = new ConnectionDetails().setHost("localhost")
+												 .setPort(5432)
+												 .setUsername("admin")
+												 .setPassword("cta")
+												 .setDbName("chitransittracker");
 		ctaParser = new CTAXmlParser();
 		logger.debug("Indexing CTA Alerts...");
 		Driver.indexCTAAlerts();
@@ -65,7 +88,14 @@ public class Driver {
 			logger.debug("CTA Alerts: " + ctaAlerts.getAlerts().size());
 			//Create generic routes table
 			Statement createCTALinesTable = pgConnection.createStatement();
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_alerts(" + alert_columns + ");";
+			//generate comma seperated listing of column name column type, 
+			List<String> colValPairs = new ArrayList(alert_columns.keySet().size());
+			Iterator<String> columnNamesItr = alert_columns.keySet().iterator();
+			while(columnNamesItr.hasNext()){
+				String columnName = columnNamesItr.next();
+				colValPairs.add(columnName + " " + alert_columns.get(columnName));
+			}
+			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_alerts(" + StringUtils.join(colValPairs, ", ") + ");";
 			createCTALinesTable.execute(createRoutesTable);
 			logger.debug("CTA Alerts table created!");
 			
@@ -88,7 +118,7 @@ public class Driver {
 			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
 			logger.debug("Tigger deployed for last_modifed: " + triggerAddedToTable);
 			
-			String insertQuery = "INSERT INTO cta_alerts (alert_id, headline, short_desc, full_desc, severity_score, severity_color, severity_css, impact, event_start, event_end, tbd, major_alert, alert_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+			String insertQuery = "INSERT INTO cta_alerts (alert_id, headline, short_desc, full_desc, severity_score, severity_color, severity_css, impact, event_start, event_end, tbd, major_alert, alert_url, service_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 			PreparedStatement insertCTAAlerts = pgConnection.prepareStatement(insertQuery);
 			//create a table for all CTA Rail Lines
 			Iterator<CTAAlert> alertsItr = ctaAlerts.getAlerts().iterator();
@@ -96,14 +126,16 @@ public class Driver {
 			while(alertsItr.hasNext()){
 				CTAAlert ctaAlert = alertsItr.next();
 				int index = 1; //prepared statements index starts at 1
+				Iterator<String> colItr = alert_columns.keySet().iterator();
 				for(Object attribute : ctaAlert.getAttributes()){
-					if(attribute instanceof Integer){
+					String type = alert_columns.get(colItr.next());
+					if(StringUtils.equalsIgnoreCase(type, "integer")){
 						if(attribute == null){
 							insertCTAAlerts.setNull(index++, Types.INTEGER);
 						}else{
 							insertCTAAlerts.setInt(index++, (Integer) attribute);
 						}
-					}else if(attribute instanceof DateTime){
+					}else if(StringUtils.equalsIgnoreCase(type, "timestamp")){
 						if(attribute == null){
 							insertCTAAlerts.setNull(index++, Types.DATE);
 						}else{
