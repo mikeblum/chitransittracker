@@ -49,6 +49,7 @@ public class Driver {
 		long start_time = System.currentTimeMillis();
 		
 		//build map of columns and their respective types
+		alert_columns.put("id", "serial"); //<-- unique identifier
 		alert_columns.put("alert_id", "text");
 		alert_columns.put("headline", "text");
 		alert_columns.put("short_desc", "text");
@@ -63,11 +64,11 @@ public class Driver {
 		alert_columns.put("major_alert", "text");
 		alert_columns.put("alert_url", "text");
 		alert_columns.put("service_id", "text");
-		injectedDetails = new ConnectionDetails().setHost("localhost")
-												 .setPort(5432)
-												 .setUsername("admin")
-												 .setPassword("cta")
-												 .setDbName("chitransittracker");
+		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
+												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
+												 .setUsername(System.getenv(POSTGRES_USER_NAME))
+												 .setPassword(System.getenv(POSTGRES_PASSWORD))
+												 .setDbName(System.getenv(POSTGRES_DATABASE));
 		ctaParser = new CTAXmlParser();
 		logger.debug("Indexing CTA Alerts...");
 		Driver.indexCTAAlerts();
@@ -82,8 +83,9 @@ public class Driver {
 	
 	private static void indexCTAAlerts(){
 		Connection pgConnection = new PGConnector(injectedDetails).getDBConnection();
-		
+	
 		try {
+			logger.debug(pgConnection.getMetaData().getURL());
 			CTAAlerts ctaAlerts = ctaParser.getCTAAlerts();
 			logger.debug("CTA Alerts: " + ctaAlerts.getAlerts().size());
 			//Create generic routes table
@@ -127,6 +129,7 @@ public class Driver {
 				CTAAlert ctaAlert = alertsItr.next();
 				int index = 1; //prepared statements index starts at 1
 				Iterator<String> colItr = alert_columns.keySet().iterator();
+				colItr.next(); //pass the unique id column
 				for(Object attribute : ctaAlert.getAttributes()){
 					String type = alert_columns.get(colItr.next());
 					if(StringUtils.equalsIgnoreCase(type, "integer")){

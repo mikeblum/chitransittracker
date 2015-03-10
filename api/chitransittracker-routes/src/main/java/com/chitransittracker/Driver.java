@@ -4,13 +4,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.chitransittracker.jdbc.ConnectionDetails;
 import com.chitransittracker.jdbc.PGConnector;
@@ -32,7 +33,9 @@ public class Driver {
 	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
 	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
 	
-	static String route_columns = "route_name text,route_color text,route_text_color text,service_id text, route_url text,route_status text,route_status_color text, type text, last_modified timestamp default now()";
+	private static String route_columns_and_types;
+	
+	static LinkedHashMap<String, String> route_columns = new LinkedHashMap<String, String>();
 	
 	static String addModiedTrigger = "CREATE OR REPLACE FUNCTION update_modified_column()" +	
 			"RETURNS TRIGGER AS $$ BEGIN " +
@@ -42,6 +45,28 @@ public class Driver {
 	
 	public static void main(String[] args) throws InterruptedException{
 		long start_time = System.currentTimeMillis();
+		
+		route_columns.put("id", "serial"); //<-- unique identifier
+		route_columns.put("route_name", "text");
+		route_columns.put("route_color", "text");
+		route_columns.put("route_text_color", "text");
+		route_columns.put("service_id", "text");
+		route_columns.put("route_url", "text");
+		route_columns.put("route_status", "text");
+		route_columns.put("route_status_color", "text");
+		route_columns.put("type", "text");
+		
+		//generate comma seperated listing of column name column type, 
+		List<String> colValPairs = new ArrayList(route_columns.keySet().size());
+		Iterator<String> columnNamesItr = route_columns.keySet().iterator();
+		while(columnNamesItr.hasNext()){
+			String columnName = columnNamesItr.next();
+			colValPairs.add(columnName + " " + route_columns.get(columnName));
+		}
+		
+		route_columns_and_types = StringUtils.join(colValPairs, ", ");
+		
+		
 		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
 												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
 												 .setUsername(System.getenv(POSTGRES_USER_NAME))
@@ -76,7 +101,8 @@ public class Driver {
 		try {
 			//Create generic routes table
 			Statement createCTALinesTable = pgConnection.createStatement();
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_rail_lines(" + route_columns + ");";
+			
+			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_rail_lines(" + route_columns_and_types + ");";
 			createCTALinesTable.execute(createRoutesTable);
 			logger.debug("CTA Rail Lines table created!");
 			
@@ -126,7 +152,7 @@ public class Driver {
 		try {
 			//Create generic routes table
 			Statement createCTALinesTable = pgConnection.createStatement();
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns + ");";
+			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns_and_types + ");";
 			createCTALinesTable.execute(createRoutesTable);
 			logger.debug("CTA Rail Stations table created!");
 			
@@ -183,7 +209,7 @@ public class Driver {
 		try {
 			//Create generic routes table
 			Statement createCTABusRoutesTable = pgConnection.createStatement();
-			String createBusRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns + ");";
+			String createBusRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns_and_types + ");";
 			createCTABusRoutesTable.execute(createBusRoutesTable);
 			logger.debug("CTA Bus Stops table created!");
 			
