@@ -55,7 +55,7 @@ public class Driver {
 		route_columns.put("route_status", "text");
 		route_columns.put("route_status_color", "text");
 		route_columns.put("type", "text");
-		
+		route_columns.put("last_modified", "timestamp");
 		//generate comma seperated listing of column name column type, 
 		List<String> colValPairs = new ArrayList(route_columns.keySet().size());
 		Iterator<String> columnNamesItr = route_columns.keySet().iterator();

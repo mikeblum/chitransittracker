@@ -64,6 +64,7 @@ public class Driver {
 		alert_columns.put("major_alert", "text");
 		alert_columns.put("alert_url", "text");
 		alert_columns.put("service_id", "text");
+		alert_columns.put("last_modified", "timestamp");
 		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
 												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
 												 .setUsername(System.getenv(POSTGRES_USER_NAME))
