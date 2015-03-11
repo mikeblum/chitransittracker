@@ -26,6 +26,7 @@ public class CTAUtil {
 	protected static String base = "lapi.transitchicago.com/api/";
 	protected static String version = "1.0";
 	
+	
 	//cta aspx endpoints
 	protected static String routes = "routes.aspx";
 	protected static String alerts = "alerts.aspx";

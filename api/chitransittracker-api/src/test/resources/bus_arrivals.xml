@@ -1,0 +1,32 @@
+<bustime-response>
+	<prd>
+		<tmstmp>20150310 23:45</tmstmp>
+		<typ>A</typ>
+		<stpnm>Stockton & Lincoln</stpnm>
+		<stpid>1085</stpid>
+		<vid>4361</vid>
+		<dstp>3174</dstp>
+		<rt>151</rt>
+		<rtdir>Southbound</rtdir>
+		<des>Union Station</des>
+		<prdtm>20150310 23:48</prdtm>
+		<tablockid>151 -561</tablockid>
+		<tatripid>400</tatripid>
+		<zone/>
+	</prd>
+	<prd>
+		<tmstmp>20150310 23:45</tmstmp>
+		<typ>A</typ>
+		<stpnm>Stockton & Lincoln</stpnm>
+		<stpid>1085</stpid>
+		<vid>4336</vid>
+		<dstp>23380</dstp>
+		<rt>151</rt>
+		<rtdir>Southbound</rtdir>
+		<des>Union Station</des>
+		<prdtm>20150311 00:07</prdtm>
+		<tablockid>151 -564</tablockid>
+		<tatripid>398</tatripid>
+		<zone/>
+	</prd>
+</bustime-response>

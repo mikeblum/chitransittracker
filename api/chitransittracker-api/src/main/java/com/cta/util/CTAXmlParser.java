@@ -13,6 +13,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 
+import com.cta.bus.model.CTABusDirections;
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTAArrivals;
 import com.cta.model.CTARoutes;
@@ -76,6 +77,20 @@ public class CTAXmlParser {
 			return xmlMapper.readValue(fetchedResultsStream, CTAArrivals.class);
 		} catch (Exception e) {
 			logger.error("Failed to retireve CTA arrivals for " + stationId, e);
+		}
+		return null;
+	}
+	
+	public static CTABusDirections getBusRouteDirections(String routeNumber){
+		InputStream fetchedResultsStream = null;
+		try {
+			URI uriToFetchData = CTABusUtil.getBusRouteDirectionsURI(routeNumber).build();
+			fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
+			XmlMapper xmlMapper = new XmlMapper();
+			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+			return xmlMapper.readValue(fetchedResultsStream, CTABusDirections.class);
+		} catch (Exception e) {
+			logger.error("Failed to retireve cardinal directions for bus route: " + routeNumber, e);
 		}
 		return null;
 	}

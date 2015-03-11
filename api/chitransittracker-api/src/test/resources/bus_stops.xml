@@ -1,0 +1,680 @@
+<bustime-response>
+<stop>
+<stpid>1053</stpid>
+<stpnm>4242 N Sheridan</stpnm>
+<lat>41.95929862297</lat>
+<lon>-87.65469789505</lon>
+</stop>
+<stop>
+<stpid>17046</stpid>
+<stpnm>Adams &amp; Clark</stpnm>
+<lat>41.879478900014</lat>
+<lon>-87.630654573441</lon>
+</stop>
+<stop>
+<stpid>1108</stpid>
+<stpnm>Adams &amp; S. Wacker</stpnm>
+<lat>41.879383041994</lat>
+<lon>-87.637048959732</lon>
+</stop>
+<stop>
+<stpid>4732</stpid>
+<stpnm>Adams &amp; State</stpnm>
+<lat>41.879502864496</lat>
+<lon>-87.628160119056</lon>
+</stop>
+<stop>
+<stpid>77</stpid>
+<stpnm>Adams &amp; Wabash</stpnm>
+<lat>41.879538811203</lat>
+<lon>-87.625778317451</lon>
+</stop>
+<stop>
+<stpid>80</stpid>
+<stpnm>Adams &amp; Wells</stpnm>
+<lat>41.87943895919</lat>
+<lon>-87.63408780098</lon>
+</stop>
+<stop>
+<stpid>14914</stpid>
+<stpnm>Belmont &amp; Broadway</stpnm>
+<lat>41.940000481349</lat>
+<lon>-87.644054889679</lon>
+</stop>
+<stop>
+<stpid>14150</stpid>
+<stpnm>Belmont &amp; Halsted Terminal</stpnm>
+<lat>41.94021595698</lat>
+<lon>-87.648775577545</lon>
+</stop>
+<stop>
+<stpid>4987</stpid>
+<stpnm>Belmont &amp; Orchard</stpnm>
+<lat>41.939968558972</lat>
+<lon>-87.646924853325</lon>
+</stop>
+<stop>
+<stpid>4990</stpid>
+<stpnm>Belmont &amp; Pine Grove</stpnm>
+<lat>41.940016442532</lat>
+<lon>-87.642059326172</lon>
+</stop>
+<stop>
+<stpid>9291</stpid>
+<stpnm>Belmont &amp; Sheridan</stpnm>
+<lat>41.940084277514</lat>
+<lon>-87.639774084091</lon>
+</stop>
+<stop>
+<stpid>6592</stpid>
+<stpnm>Canal &amp; Jackson</stpnm>
+<lat>41.879339107021</lat>
+<lon>-87.639656066895</lon>
+</stop>
+<stop>
+<stpid>14176</stpid>
+<stpnm>Clark &amp; Arthur Terminal</stpnm>
+<lat>41.998878025417</lat>
+<lon>-87.671290040016</lon>
+</stop>
+<stop>
+<stpid>1739</stpid>
+<stpnm>Devon &amp; Clark</stpnm>
+<lat>41.998056778501</lat>
+<lon>-87.67016351223</lon>
+</stop>
+<stop>
+<stpid>1741</stpid>
+<stpnm>Devon &amp; Glenwood</stpnm>
+<lat>41.998108605076</lat>
+<lon>-87.665614485741</lon>
+</stop>
+<stop>
+<stpid>1740</stpid>
+<stpnm>Devon &amp; Greenview</stpnm>
+<lat>41.998072725144</lat>
+<lon>-87.668033838272</lon>
+</stop>
+<stop>
+<stpid>1743</stpid>
+<stpnm>Devon &amp; Lakewood</stpnm>
+<lat>41.998120565049</lat>
+<lon>-87.663189768791</lon>
+</stop>
+<stop>
+<stpid>1744</stpid>
+<stpnm>Devon &amp; Magnolia</stpnm>
+<lat>41.998140498332</lat>
+<lon>-87.661628723145</lon>
+</stop>
+<stop>
+<stpid>14671</stpid>
+<stpnm>Howard &amp; Ashland</stpnm>
+<lat>42.019341988549</lat>
+<lon>-87.670592665672</lon>
+</stop>
+<stop>
+<stpid>14672</stpid>
+<stpnm>Howard &amp; Bosworth</stpnm>
+<lat>42.019330032565</lat>
+<lon>-87.669337391853</lon>
+</stop>
+<stop>
+<stpid>1011</stpid>
+<stpnm>Howard &amp; Sheridan</stpnm>
+<lat>42.019198516596</lat>
+<lon>-87.666247487068</lon>
+</stop>
+<stop>
+<stpid>1063</stpid>
+<stpnm>Lake Shore &amp; Addison</stpnm>
+<lat>41.948587020573</lat>
+<lon>-87.643470168114</lon>
+</stop>
+<stop>
+<stpid>1069</stpid>
+<stpnm>Lake Shore &amp; Aldine</stpnm>
+<lat>41.942143234404</lat>
+<lon>-87.639918923378</lon>
+</stop>
+<stop>
+<stpid>1090</stpid>
+<stpnm>Lake Shore &amp; Banks</stpnm>
+<lat>41.906636872349</lat>
+<lon>-87.625515460968</lon>
+</stop>
+<stop>
+<stpid>1064</stpid>
+<stpnm>Lake Shore &amp; Brompton</stpnm>
+<lat>41.947577603595</lat>
+<lon>-87.642896175385</lon>
+</stop>
+<stop>
+<stpid>1088</stpid>
+<stpnm>Lake Shore &amp; Burton</stpnm>
+<lat>41.909247837613</lat>
+<lon>-87.626153826714</lon>
+</stop>
+<stop>
+<stpid>1095</stpid>
+<stpnm>Lake Shore &amp; Cedar</stpnm>
+<lat>41.902261070338</lat>
+<lon>-87.624496221542</lon>
+</stop>
+<stop>
+<stpid>1065</stpid>
+<stpnm>Lake Shore &amp; Cornelia</stpnm>
+<lat>41.946620039119</lat>
+<lon>-87.642332911491</lon>
+</stop>
+<stop>
+<stpid>1093</stpid>
+<stpnm>Lake Shore &amp; Division</stpnm>
+<lat>41.903822180101</lat>
+<lon>-87.624979019165</lon>
+</stop>
+<stop>
+<stpid>1094</stpid>
+<stpnm>Lake Shore &amp; Elm</stpnm>
+<lat>41.903307137876</lat>
+<lon>-87.624812722206</lon>
+</stop>
+<stop>
+<stpid>1091</stpid>
+<stpnm>Lake Shore &amp; Goethe</stpnm>
+<lat>41.905666715844</lat>
+<lon>-87.625274062157</lon>
+</stop>
+<stop>
+<stpid>1061</stpid>
+<stpnm>Lake Shore &amp; Grace</stpnm>
+<lat>41.952081953511</lat>
+<lon>-87.645063400269</lon>
+</stop>
+<stop>
+<stpid>1067</stpid>
+<stpnm>Lake Shore &amp; Hawthorne</stpnm>
+<lat>41.944676937001</lat>
+<lon>-87.641286849976</lon>
+</stop>
+<stop>
+<stpid>1070</stpid>
+<stpnm>Lake Shore &amp; Melrose</stpnm>
+<lat>41.941337216564</lat>
+<lon>-87.63963997364</lon>
+</stop>
+<stop>
+<stpid>1087</stpid>
+<stpnm>Lake Shore &amp; North Ave</stpnm>
+<lat>41.910509366664</lat>
+<lon>-87.626282572746</lon>
+</stop>
+<stop>
+<stpid>1096</stpid>
+<stpnm>Lake Shore &amp; Oak</stpnm>
+<lat>41.900943479968</lat>
+<lon>-87.624287009239</lon>
+</stop>
+<stop>
+<stpid>1068</stpid>
+<stpnm>Lake Shore &amp; Roscoe</stpnm>
+<lat>41.943571696438</lat>
+<lon>-87.640686035156</lon>
+</stop>
+<stop>
+<stpid>1089</stpid>
+<stpnm>Lake Shore &amp; Schiller</stpnm>
+<lat>41.907567090873</lat>
+<lon>-87.625751495361</lon>
+</stop>
+<stop>
+<stpid>1092</stpid>
+<stpnm>Lake Shore &amp; Scott</stpnm>
+<lat>41.904704529605</lat>
+<lon>-87.62510240078</lon>
+</stop>
+<stop>
+<stpid>1066</stpid>
+<stpnm>Lake Shore &amp; Stratford</stpnm>
+<lat>41.945945745504</lat>
+<lon>-87.641957402229</lon>
+</stop>
+<stop>
+<stpid>1062</stpid>
+<stpnm>Lake Shore &amp; Waveland</stpnm>
+<lat>41.9502507283</lat>
+<lon>-87.644478678703</lon>
+</stop>
+<stop>
+<stpid>1097</stpid>
+<stpnm>Michigan &amp; Delaware</stpnm>
+<lat>41.899410249676</lat>
+<lon>-87.624244093895</lon>
+</stop>
+<stop>
+<stpid>1100</stpid>
+<stpnm>Michigan &amp; Erie</stpnm>
+<lat>41.894351127152</lat>
+<lon>-87.624362111092</lon>
+</stop>
+<stop>
+<stpid>1103</stpid>
+<stpnm>Michigan &amp; Hubbard (Wrigley Bldg.)</stpnm>
+<lat>41.890138213421</lat>
+<lon>-87.624249458313</lon>
+</stop>
+<stop>
+<stpid>1102</stpid>
+<stpnm>Michigan &amp; Illinois</stpnm>
+<lat>41.891136559331</lat>
+<lon>-87.624297738075</lon>
+</stop>
+<stop>
+<stpid>1105</stpid>
+<stpnm>Michigan &amp; Lake/Randolph</stpnm>
+<lat>41.885106312544</lat>
+<lon>-87.624635696411</lon>
+</stop>
+<stop>
+<stpid>1107</stpid>
+<stpnm>Michigan &amp; Madison/Monroe</stpnm>
+<lat>41.881216301693</lat>
+<lon>-87.624523043633</lon>
+</stop>
+<stop>
+<stpid>1101</stpid>
+<stpnm>Michigan &amp; Ohio</stpnm>
+<lat>41.892717907321</lat>
+<lon>-87.624335289001</lon>
+</stop>
+<stop>
+<stpid>1098</stpid>
+<stpnm>Michigan &amp; Pearson</stpnm>
+<lat>41.897789138027</lat>
+<lon>-87.624233365059</lon>
+</stop>
+<stop>
+<stpid>1104</stpid>
+<stpnm>Michigan &amp; South Water</stpnm>
+<lat>41.886935414427</lat>
+<lon>-87.624651789665</lon>
+</stop>
+<stop>
+<stpid>14488</stpid>
+<stpnm>Michigan &amp; Superior</stpnm>
+<lat>41.895832569164</lat>
+<lon>-87.624372839928</lon>
+</stop>
+<stop>
+<stpid>1106</stpid>
+<stpnm>Michigan &amp; Washington</stpnm>
+<lat>41.883428924177</lat>
+<lon>-87.624565958977</lon>
+</stop>
+<stop>
+<stpid>14095</stpid>
+<stpnm>Paulina &amp; Howard Terminal</stpnm>
+<lat>42.017739866701</lat>
+<lon>-87.672979831696</lon>
+</stop>
+<stop>
+<stpid>1045</stpid>
+<stpnm>Sheridan &amp; Ainslie</stpnm>
+<lat>41.97140036776</lat>
+<lon>-87.654917836189</lon>
+</stop>
+<stop>
+<stpid>1036</stpid>
+<stpnm>Sheridan &amp; Ardmore</stpnm>
+<lat>41.987455363382</lat>
+<lon>-87.655357718468</lon>
+</stop>
+<stop>
+<stpid>1044</stpid>
+<stpnm>Sheridan &amp; Argyle</stpnm>
+<lat>41.973143244444</lat>
+<lon>-87.654960751534</lon>
+</stop>
+<stop>
+<stpid>1028</stpid>
+<stpnm>Sheridan &amp; Arthur</stpnm>
+<lat>42.000185619994</lat>
+<lon>-87.66077041626</lon>
+</stop>
+<stop>
+<stpid>1040</stpid>
+<stpnm>Sheridan &amp; Balmoral</stpnm>
+<lat>41.979803226281</lat>
+<lon>-87.655121684074</lon>
+</stop>
+<stop>
+<stpid>1073</stpid>
+<stpnm>Sheridan &amp; Barry</stpnm>
+<lat>41.937538421069</lat>
+<lon>-87.639511227608</lon>
+</stop>
+<stop>
+<stpid>1041</stpid>
+<stpnm>Sheridan &amp; Berwyn</stpnm>
+<lat>41.977992737277</lat>
+<lon>-87.655073404312</lon>
+</stop>
+<stop>
+<stpid>1012</stpid>
+<stpnm>Sheridan &amp; Birchwood</stpnm>
+<lat>42.018026816865</lat>
+<lon>-87.665684223175</lon>
+</stop>
+<stop>
+<stpid>1072</stpid>
+<stpnm>Sheridan &amp; Briar</stpnm>
+<lat>41.938583910466</lat>
+<lon>-87.639548778534</lon>
+</stop>
+<stop>
+<stpid>15290</stpid>
+<stpnm>Sheridan &amp; Broadway</stpnm>
+<lat>41.952711666667</lat>
+<lon>-87.649861666665</lon>
+</stop>
+<stop>
+<stpid>1029</stpid>
+<stpnm>Sheridan &amp; Broadway/Devon</stpnm>
+<lat>41.998164418264</lat>
+<lon>-87.660427093506</lon>
+</stop>
+<stop>
+<stpid>1052</stpid>
+<stpnm>Sheridan &amp; Broadway/Montrose</stpnm>
+<lat>41.96081046953</lat>
+<lon>-87.654735445976</lon>
+</stop>
+<stop>
+<stpid>1038</stpid>
+<stpnm>Sheridan &amp; Bryn Mawr</stpnm>
+<lat>41.983487851077</lat>
+<lon>-87.655234336853</lon>
+</stop>
+<stop>
+<stpid>1054</stpid>
+<stpnm>Sheridan &amp; Buena</stpnm>
+<lat>41.958213581695</lat>
+<lon>-87.654676437378</lon>
+</stop>
+<stop>
+<stpid>1039</stpid>
+<stpnm>Sheridan &amp; Catalpa</stpnm>
+<lat>41.981693417583</lat>
+<lon>-87.655191421509</lon>
+</stop>
+<stop>
+<stpid>1016</stpid>
+<stpnm>Sheridan &amp; Chase</stpnm>
+<lat>42.013770256594</lat>
+<lon>-87.66403734684</lon>
+</stop>
+<stop>
+<stpid>1055</stpid>
+<stpnm>Sheridan &amp; Cuyler</stpnm>
+<lat>41.95633466138</lat>
+<lon>-87.65461742878</lon>
+</stop>
+<stop>
+<stpid>1077</stpid>
+<stpnm>Sheridan &amp; Diversey</stpnm>
+<lat>41.932993136261</lat>
+<lon>-87.639371752739</lon>
+</stop>
+<stop>
+<stpid>1018</stpid>
+<stpnm>Sheridan &amp; Estes</stpnm>
+<lat>42.011438592988</lat>
+<lon>-87.662857174873</lon>
+</stop>
+<stop>
+<stpid>1022</stpid>
+<stpnm>Sheridan &amp; Farwell</stpnm>
+<lat>42.006551786519</lat>
+<lon>-87.661274671555</lon>
+</stop>
+<stop>
+<stpid>1042</stpid>
+<stpnm>Sheridan &amp; Foster</stpnm>
+<lat>41.97622606513</lat>
+<lon>-87.655041217804</lon>
+</stop>
+<stop>
+<stpid>1058</stpid>
+<stpnm>Sheridan &amp; Fremont</stpnm>
+<lat>41.952688360722</lat>
+<lon>-87.651720643044</lon>
+</stop>
+<stop>
+<stpid>1034</stpid>
+<stpnm>Sheridan &amp; Glenlake</stpnm>
+<lat>41.992184155555</lat>
+<lon>-87.6554864645</lon>
+</stop>
+<stop>
+<stpid>1033</stpid>
+<stpnm>Sheridan &amp; Granville</stpnm>
+<lat>41.994424826478</lat>
+<lon>-87.655577659607</lon>
+</stop>
+<stop>
+<stpid>1019</stpid>
+<stpnm>Sheridan &amp; Greenleaf</stpnm>
+<lat>42.010210947716</lat>
+<lon>-87.662470936775</lon>
+</stop>
+<stop>
+<stpid>1046</stpid>
+<stpnm>Sheridan &amp; Gunnison</stpnm>
+<lat>41.969920679874</lat>
+<lon>-87.654874920845</lon>
+</stop>
+<stop>
+<stpid>1037</stpid>
+<stpnm>Sheridan &amp; Hollywood</stpnm>
+<lat>41.985334070977</lat>
+<lon>-87.655293345451</lon>
+</stop>
+<stop>
+<stpid>1056</stpid>
+<stpnm>Sheridan &amp; Irving Park</stpnm>
+<lat>41.954419781136</lat>
+<lon>-87.654579877853</lon>
+</stop>
+<stop>
+<stpid>1014</stpid>
+<stpnm>Sheridan &amp; Jarvis</stpnm>
+<lat>42.015830818068</lat>
+<lon>-87.66507267952</lon>
+</stop>
+<stop>
+<stpid>1031</stpid>
+<stpnm>Sheridan &amp; Kenmore</stpnm>
+<lat>41.998204284796</lat>
+<lon>-87.656886577606</lon>
+</stop>
+<stop>
+<stpid>1047</stpid>
+<stpnm>Sheridan &amp; Lawrence</stpnm>
+<lat>41.968963451072</lat>
+<lon>-87.654853463173</lon>
+</stop>
+<stop>
+<stpid>1048</stpid>
+<stpnm>Sheridan &amp; Leland</stpnm>
+<lat>41.967068893328</lat>
+<lon>-87.654832005501</lon>
+</stop>
+<stop>
+<stpid>1027</stpid>
+<stpnm>Sheridan &amp; Loyola (Red Line)</stpnm>
+<lat>42.001421431633</lat>
+<lon>-87.660807967186</lon>
+</stop>
+<stop>
+<stpid>1020</stpid>
+<stpnm>Sheridan &amp; Lunt</stpnm>
+<lat>42.009031110452</lat>
+<lon>-87.662090063095</lon>
+</stop>
+<stop>
+<stpid>1051</stpid>
+<stpnm>Sheridan &amp; Montrose</stpnm>
+<lat>41.961843610532</lat>
+<lon>-87.654772996902</lon>
+</stop>
+<stop>
+<stpid>1021</stpid>
+<stpnm>Sheridan &amp; Morse</stpnm>
+<lat>42.007767544251</lat>
+<lon>-87.661660909653</lon>
+</stop>
+<stop>
+<stpid>1025</stpid>
+<stpnm>Sheridan &amp; North Shore</stpnm>
+<lat>42.003342871738</lat>
+<lon>-87.660872340202</lon>
+</stop>
+<stop>
+<stpid>1075</stpid>
+<stpnm>Sheridan &amp; Oakdale</stpnm>
+<lat>41.935395513279</lat>
+<lon>-87.639414668083</lon>
+</stop>
+<stop>
+<stpid>1060</stpid>
+<stpnm>Sheridan &amp; Pine Grove</stpnm>
+<lat>41.952796077189</lat>
+<lon>-87.647691965103</lon>
+</stop>
+<stop>
+<stpid>1023</stpid>
+<stpnm>Sheridan &amp; Pratt</stpnm>
+<lat>42.005387826199</lat>
+<lon>-87.660925984383</lon>
+</stop>
+<stop>
+<stpid>1032</stpid>
+<stpnm>Sheridan &amp; Rosemont</stpnm>
+<lat>41.99623086146</lat>
+<lon>-87.655631303787</lon>
+</stop>
+<stop>
+<stpid>1057</stpid>
+<stpnm>Sheridan &amp; Sheffield</stpnm>
+<lat>41.952648465688</lat>
+<lon>-87.654166817665</lon>
+</stop>
+<stop>
+<stpid>1015</stpid>
+<stpnm>Sheridan &amp; Sherwin</stpnm>
+<lat>42.014882250672</lat>
+<lon>-87.664659619331</lon>
+</stop>
+<stop>
+<stpid>1050</stpid>
+<stpnm>Sheridan &amp; Sunnyside</stpnm>
+<lat>41.963383318545</lat>
+<lon>-87.654799818993</lon>
+</stop>
+<stop>
+<stpid>1076</stpid>
+<stpnm>Sheridan &amp; Surf</stpnm>
+<lat>41.934182364101</lat>
+<lon>-87.639371752739</lon>
+</stop>
+<stop>
+<stpid>1035</stpid>
+<stpnm>Sheridan &amp; Thorndale</stpnm>
+<lat>41.989947392923</lat>
+<lon>-87.655427455902</lon>
+</stop>
+<stop>
+<stpid>1017</stpid>
+<stpnm>Sheridan &amp; Touhy</stpnm>
+<lat>42.012749915175</lat>
+<lon>-87.663457989693</lon>
+</stop>
+<stop>
+<stpid>1074</stpid>
+<stpnm>Sheridan &amp; Wellington</stpnm>
+<lat>41.936417094688</lat>
+<lon>-87.639457583427</lon>
+</stop>
+<stop>
+<stpid>1049</stpid>
+<stpnm>Sheridan &amp; Wilson</stpnm>
+<lat>41.965202200279</lat>
+<lon>-87.654821276665</lon>
+</stop>
+<stop>
+<stpid>1043</stpid>
+<stpnm>Sheridan &amp; Winona</stpnm>
+<lat>41.975093454948</lat>
+<lon>-87.655014395714</lon>
+</stop>
+<stop>
+<stpid>1030</stpid>
+<stpnm>Sheridan &amp; Winthrop</stpnm>
+<lat>41.998192324839</lat>
+<lon>-87.658501267433</lon>
+</stop>
+<stop>
+<stpid>1080</stpid>
+<stpnm>Stockton &amp; Arlington</stpnm>
+<lat>41.926539791898</lat>
+<lon>-87.637783885002</lon>
+</stop>
+<stop>
+<stpid>1084</stpid>
+<stpnm>Stockton &amp; Armitage</stpnm>
+<lat>41.918776555443</lat>
+<lon>-87.634581327438</lon>
+</stop>
+<stop>
+<stpid>1083</stpid>
+<stpnm>Stockton &amp; Dickens</stpnm>
+<lat>41.920313312187</lat>
+<lon>-87.635659575462</lon>
+</stop>
+<stop>
+<stpid>1081</stpid>
+<stpnm>Stockton &amp; Fullerton</stpnm>
+<lat>41.925522043489</lat>
+<lon>-87.636040449142</lon>
+</stop>
+<stop>
+<stpid>1086</stpid>
+<stpnm>Stockton &amp; LaSalle</stpnm>
+<lat>41.913655096329</lat>
+<lon>-87.631754279137</lon>
+</stop>
+<stop>
+<stpid>1085</stpid>
+<stpnm>Stockton &amp; Lincoln</stpnm>
+<lat>41.915722890008</lat>
+<lon>-87.63307929039</lon>
+</stop>
+<stop>
+<stpid>1079</stpid>
+<stpnm>Stockton &amp; Roslyn</stpnm>
+<lat>41.928315823762</lat>
+<lon>-87.63890504837</lon>
+</stop>
+<stop>
+<stpid>1082</stpid>
+<stpnm>Stockton &amp; Webster</stpnm>
+<lat>41.922149388604</lat>
+<lon>-87.635761499405</lon>
+</stop>
+<stop>
+<stpid>1078</stpid>
+<stpnm>Stockton &amp; Wrightwood</stpnm>
+<lat>41.931324987362</lat>
+<lon>-87.639039158821</lon>
+</stop>
+</bustime-response>

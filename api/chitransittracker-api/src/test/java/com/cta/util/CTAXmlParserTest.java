@@ -7,7 +7,6 @@ import static org.mockito.Mockito.mock;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
 import java.net.URISyntaxException;
 
 import org.apache.commons.io.FileUtils;
@@ -15,19 +14,16 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Matchers;
-import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 
+import com.cta.bus.model.CTABusDirections;
+import com.cta.bus.model.CTABusStops;
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTAArrivals;
 import com.cta.model.CTARoutes;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 
@@ -137,6 +133,24 @@ public class CTAXmlParserTest {
 		CTAArrivals mockArrivals = xmlMapper.readValue(mockXml, CTAArrivals.class);
 		//4 predictions
 		assertThat(mockArrivals.getArrivals().size()).isEqualTo(4);
+	}
+	
+	@Test
+	public void testDeserialzingBusRouteDirections() throws IOException{
+		mockXml = FileUtils.openInputStream(new File("src/test/resources/bus_directions.xml"));
+		XmlMapper xmlMapper = new XmlMapper();
+		CTABusDirections mockDirections = xmlMapper.readValue(mockXml, CTABusDirections.class);
+		//2 directions
+		assertThat(mockDirections.getDirections().size()).isEqualTo(2);
+	}
+	
+	@Test
+	public void testDeserialzingBusStops() throws IOException{
+		mockXml = FileUtils.openInputStream(new File("src/test/resources/bus_stops.xml"));
+		XmlMapper xmlMapper = new XmlMapper();
+		CTABusStops mockBusStops = xmlMapper.readValue(mockXml, CTABusStops.class);
+		//2 directions
+		assertThat(mockBusStops.getBusStops().size()).isEqualTo(113);
 	}
 
 }
