@@ -1,20 +1,21 @@
 package com.chitransittracker;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.apache.solr.client.solrj.SolrClient;
+import org.apache.solr.common.SolrInputDocument;
+import org.joda.time.DateTime;
 
 import com.chitransittracker.jdbc.ConnectionDetails;
-import com.chitransittracker.jdbc.PGConnector;
+import com.chitransittracker.jdbc.SolrConnector;
+import com.cta.bus.model.CTABusDirections;
+import com.cta.bus.model.CTABusRoute;
+import com.cta.bus.model.CTABusRoutes;
+import com.cta.bus.model.CTABusStop;
+import com.cta.bus.model.CTABusStops;
 import com.cta.model.CTARoute;
 import com.cta.model.CTARoutes;
 import com.cta.util.CTAUtil;
@@ -23,55 +24,45 @@ import com.cta.util.CTAXmlParser;
 public class Driver {
 	static Logger logger = Logger.getLogger(Driver.class);
 	
-	static ConnectionDetails injectedDetails;
 	static CTAXmlParser ctaParser;
 	
 	//env variables for holding db credentials
-	private static final String POSTGRES_HOST_NAME 	= "POSTGRES_HOST_NAME";
-	private static final String POSTGRES_PORT 		= "POSTGRES_PORT";
-	private static final String POSTGRES_USER_NAME 	= "POSTGRES_USER_NAME";
-	private static final String POSTGRES_PASSWORD 	= "POSTGRES_PASSWORD";
-	private static final String POSTGRES_DATABASE 	= "POSTGRES_DATABASE";
+	private static final String SOLR_HOST_NAME 	= "SOLR_HOST_NAME";
+	private static final String SOLR_PORT 		= "SOLR_PORT";
 	
-	private static String route_columns_and_types;
+	static ConnectionDetails injectedDetails = new ConnectionDetails()
+												.setHost(System.getenv(SOLR_HOST_NAME))
+												.setPort(Integer.parseInt(System.getenv(SOLR_PORT)));
 	
-	static LinkedHashMap<String, String> route_columns = new LinkedHashMap<String, String>();
+	private static String[] attributeNames = {
+			"route_name",
+			"address",
+			"route_color",
+			"route_text_color",
+			"service_id",
+			"route_url",
+			"route_status",
+			"route_status_color",
+			"type"
+		};
 	
-	static String addModiedTrigger = "CREATE OR REPLACE FUNCTION update_modified_column()" +	
-			"RETURNS TRIGGER AS $$ BEGIN " +
-			    "NEW.last_modified = now();" +
-			    "RETURN NEW;" +	
-			"END; $$ language 'plpgsql';";
+	private static String[] busStopAttributeNames = {
+		"stop_id",
+		"stop_number",
+		"location",
+		"service_id",
+		"route_name",
+		"route_color",
+		"direction",
+		"type"
+	};
+	
+	private static String TYPE_RAIL = "RAIL";
+	private static String TYPE_BUS = "BUS";
 	
 	public static void main(String[] args) throws InterruptedException{
 		long start_time = System.currentTimeMillis();
-		
-		route_columns.put("id", "serial"); //<-- unique identifier
-		route_columns.put("route_name", "text");
-		route_columns.put("route_color", "text");
-		route_columns.put("route_text_color", "text");
-		route_columns.put("service_id", "text");
-		route_columns.put("route_url", "text");
-		route_columns.put("route_status", "text");
-		route_columns.put("route_status_color", "text");
-		route_columns.put("type", "text");
-		route_columns.put("last_modified", "timestamp");
-		//generate comma seperated listing of column name column type, 
-		List<String> colValPairs = new ArrayList(route_columns.keySet().size());
-		Iterator<String> columnNamesItr = route_columns.keySet().iterator();
-		while(columnNamesItr.hasNext()){
-			String columnName = columnNamesItr.next();
-			colValPairs.add(columnName + " " + route_columns.get(columnName));
-		}
-		
-		route_columns_and_types = StringUtils.join(colValPairs, ", ");
-		
-		
-		injectedDetails = new ConnectionDetails().setHost(System.getenv(POSTGRES_HOST_NAME))
-												 .setPort(Integer.parseInt(System.getenv(POSTGRES_PORT)))
-												 .setUsername(System.getenv(POSTGRES_USER_NAME))
-												 .setPassword(System.getenv(POSTGRES_PASSWORD))
-												 .setDbName(System.getenv(POSTGRES_DATABASE));
+
 		ctaParser = new CTAXmlParser();
 		logger.debug("Indexing CTA Rail Lines...");
 		//index the CTA Rail Lines
@@ -81,8 +72,11 @@ public class Driver {
 		//index CTA Rail Stations
 		Driver.indexCTARailStations();
 		Thread.sleep(1000);
-		logger.debug("Indexing CTA Bus Stops...");
-		//index CTA Bus Stations
+		logger.debug("Indexing CTA Bus Routes...");
+		//index CTA Bus Routes
+		Driver.indexCTABusRoutes();
+		Thread.sleep(1000);
+		//index CTA Bus Stops
 		Driver.indexCTABusStops();
 		logger.debug("Done indexing CTA Train Lines, Stations, and Bus Stops");
 		long end_time = System.currentTimeMillis();
@@ -95,163 +89,151 @@ public class Driver {
 	}
 	
 	private static void indexCTARailLines(){
-		Connection pgConnection = new PGConnector(injectedDetails).getDBConnection();
 		CTARoutes ctaRailLines = ctaParser.getCTARoutesInfo(CTAUtil.RAIL);
 		logger.debug("CTA Rail Lines: " + ctaRailLines.getRoutes().size());
 		try {
-			//Create generic routes table
-			Statement createCTALinesTable = pgConnection.createStatement();
-			
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_rail_lines(" + route_columns_and_types + ");";
-			createCTALinesTable.execute(createRoutesTable);
-			logger.debug("CTA Rail Lines table created!");
-			
-			//clean up old routes
-			Statement deleteOldRoutes = pgConnection.createStatement();
-			int deletedRows = deleteOldRoutes.executeUpdate("DELETE FROM cta_rail_lines;");
-			logger.debug("DELETE rows from cta_rail_lines: " + deletedRows);
-			
-			//add a modifed column to track stale records
-			Statement modifedTrigger = pgConnection.createStatement();
-			
-			//deploy trigger and apply to the cta_rail_lines table
-			boolean triggerAdded = modifedTrigger.execute(addModiedTrigger);
-			logger.debug("last_modified trigger cta_rail_lines: " + triggerAdded);
-			//drop old trigger
-			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_rail_lines;");
-			
-			Statement applyTrigger = pgConnection.createStatement();
-			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_rail_lines FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
-			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
-			logger.debug("Tigger deployed for last_modifed: " + triggerAddedToTable);
-			
-			String insertQuery = "INSERT INTO cta_rail_lines (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color) VALUES (?, ?, ?, ?, ?, ?, ?);";
-			PreparedStatement insertCTARailLines = pgConnection.prepareStatement(insertQuery);
-			//create a table for all CTA Rail Lines
-			Iterator<CTARoute> railLinesItr = ctaRailLines.getRoutes().iterator();
-			int totalRows = 0;
-			while(railLinesItr.hasNext()){
-				CTARoute railLine = railLinesItr.next();
-				int index = 1; //prepared statements index starts at 1
-				for(String attribute : railLine.getAttributes()){
-					insertCTARailLines.setString(index++, attribute);
+			injectedDetails.setDbName("cta_rail_lines");
+			SolrConnector solrConnector = new SolrConnector(injectedDetails);
+			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+			//clean index
+			solrServer.deleteByQuery("*:*");
+			Iterator<CTARoute> ctaRouteItr = ctaRailLines.getRoutes().iterator();
+			while(ctaRouteItr.hasNext()){
+				CTARoute ctaRoute = ctaRouteItr.next();
+				Object[] attributes = ctaRoute.getAttributes();
+				SolrInputDocument solrDoc = new SolrInputDocument();
+				solrDoc.addField( "id", UUID.randomUUID());
+				for(int index = 0; index < attributes.length; index++){
+					//if its a date Solr expects a certain format
+					if(attributes[index] instanceof DateTime){
+						solrDoc.addField(attributeNames[index], SolrConnector.getSolrDateTimeFormat().print((DateTime) attributes[index]));
+					}else{
+						solrDoc.addField(attributeNames[index], attributes[index]);
+					}
 				}
-				totalRows += insertCTARailLines.executeUpdate();
+				solrDoc.addField("last_modified", SolrConnector.getSolrDateTimeFormat().print(new DateTime()) );
+			    solrServer.add(solrDoc);
 			}
-			logger.debug("INSERT CTA LINES: " + insertQuery);
-			logger.debug("inserted " + totalRows + " CTA Rail Lines into pg");
-		} catch (SQLException e) {
+			solrServer.commit();
+			logger.debug("inserted " + ctaRailLines.getRoutes().size() + " CTA Rail Lines into solr");
+		} catch (Exception e) {
 			logger.debug("Failed to insert CTA rail lines", e);
 		}
 	}
 	
 	private static void indexCTARailStations(){
-		Connection pgConnection = new PGConnector(injectedDetails).getDBConnection();
 		CTARoutes ctaRailStations = ctaParser.getCTARoutesInfo(CTAUtil.STATION);
 		logger.debug("CTA Stations: " + ctaRailStations.getRoutes().size());
 		try {
-			//Create generic routes table
-			Statement createCTALinesTable = pgConnection.createStatement();
-			String createRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns_and_types + ");";
-			createCTALinesTable.execute(createRoutesTable);
-			logger.debug("CTA Rail Stations table created!");
-			
-			//clean up old routes
-			Statement deleteOldRoutes = pgConnection.createStatement();
-			int deletedRows = deleteOldRoutes.executeUpdate("DELETE FROM cta_routes;");
-			logger.debug("DELETE rows from cta_routes: " + deletedRows);
-			
-			//add a modifed column to track stale records
-			Statement modifedTrigger = pgConnection.createStatement();
-			
-			//deploy trigger and apply to the cta_rail_lines table
-			boolean triggerAdded = modifedTrigger.execute(addModiedTrigger);
-			logger.debug("last_modified trigger cta_routes: " + triggerAdded);
-			//drop old trigger
-			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_routes;");
-			
-			Statement applyTrigger = pgConnection.createStatement();
-			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_routes FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
-			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
-			logger.debug("Tigger deployed for last_modifed: " + triggerAddedToTable);
-			
-			String insertQuery = "INSERT INTO cta_routes (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
-			PreparedStatement insertCTARailStations = pgConnection.prepareStatement(insertQuery);
-			//create a table for all CTA Rail Lines
-			Iterator<CTARoute> railStationsItr = ctaRailStations.getRoutes().iterator();
-			int totalRows = 0;
-			while(railStationsItr.hasNext()){
-				int index = 1; //prepared statements index starts at 1
-				CTARoute railStation = railStationsItr.next();
-				for(String attribute : railStation.getAttributes()){
-					insertCTARailStations.setString(index++, attribute);
+			injectedDetails.setDbName("cta_routes");
+			SolrConnector solrConnector = new SolrConnector(injectedDetails);
+			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+			//clean index
+			solrServer.deleteByQuery("*:*");
+			Iterator<CTARoute> ctaRouteItr = ctaRailStations.getRoutes().iterator();
+			while(ctaRouteItr.hasNext()){
+				CTARoute ctaRoute = ctaRouteItr.next();
+				ctaRoute.setType(TYPE_RAIL);
+				Object[] attributes = ctaRoute.getAttributes();
+				SolrInputDocument solrDoc = new SolrInputDocument();
+				solrDoc.addField( "id", UUID.randomUUID());
+				for(int index = 0; index < attributes.length; index++){
+					//if its a date Solr expects a certain format
+					if(attributes[index] instanceof DateTime){
+						solrDoc.addField(attributeNames[index], SolrConnector.getSolrDateTimeFormat().print((DateTime) attributes[index]));
+					}else{
+						solrDoc.addField(attributeNames[index], attributes[index]);
+					}
 				}
-				//set type to bus
-				insertCTARailStations.setString(index++, "RAIL");
-				try{
-					totalRows += insertCTARailStations.executeUpdate();	
-				}catch(Exception e){
-					logger.debug("Failed to insert row: " + totalRows, e);
-				}
+				solrDoc.addField("last_modified", SolrConnector.getSolrDateTimeFormat().print(new DateTime()) );
+			    solrServer.add(solrDoc);
 			}
-			
-			logger.debug("INSERT CTA STATIONS: " + insertQuery);
-			logger.debug("inserted " + totalRows + " CTA Rail Stations into pg");
-		} catch (SQLException e) {
+			solrServer.commit();
+			logger.debug("inserted " + ctaRailStations.getRoutes().size() + " CTA Rail Stations into solr");
+		} catch (Exception e) {
 			logger.debug("Failed to insert CTA rail stations", e);
 		}
 	}
 	
-	private static void indexCTABusStops(){
-		Connection pgConnection = new PGConnector(injectedDetails).getDBConnection();
-		CTARoutes ctaBusStops = ctaParser.getCTARoutesInfo(CTAUtil.BUS);
-		logger.debug("CTA Bus Lines: " + ctaBusStops.getRoutes().size());
+	private static void indexCTABusRoutes(){
+		CTARoutes ctaBusRoutes = ctaParser.getCTARoutesInfo(CTAUtil.BUS);
+		logger.debug("CTA Bus Lines: " + ctaBusRoutes.getRoutes().size());
 		try {
-			//Create generic routes table
-			Statement createCTABusRoutesTable = pgConnection.createStatement();
-			String createBusRoutesTable = "CREATE TABLE IF NOT EXISTS cta_routes(" + route_columns_and_types + ");";
-			createCTABusRoutesTable.execute(createBusRoutesTable);
-			logger.debug("CTA Bus Stops table created!");
-			
-			//DO NOt CLEAR TABLE - RAIL already here
-			
-			//add a modifed column to track stale records
-			Statement modifedTrigger = pgConnection.createStatement();
-			
-			//deploy trigger and apply to the cta_rail_lines table
-			boolean triggerAdded = modifedTrigger.execute(addModiedTrigger);
-			logger.debug("last_modified trigger: " + triggerAdded);
-			//drop old trigger
-			pgConnection.createStatement().execute("DROP TRIGGER IF EXISTS update_route_modtime ON cta_routes;");
-			
-			Statement applyTrigger = pgConnection.createStatement();
-			String applyTriggerQuery = "CREATE TRIGGER update_route_modtime BEFORE UPDATE ON cta_routes FOR EACH ROW EXECUTE PROCEDURE  update_modified_column();";
-			boolean triggerAddedToTable = applyTrigger.execute(applyTriggerQuery);
-			logger.debug("Tigger deployed for last_modifed cta_routes: " + triggerAddedToTable);
-			
-			String insertQuery = "INSERT INTO cta_routes (route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
-			PreparedStatement insertCTABusStops = pgConnection.prepareStatement(insertQuery);
-			//create a table for all CTA Bus Stops
-			Iterator<CTARoute> busStopsItr = ctaBusStops.getRoutes().iterator();
-			int totalRows = 0;
-			while(busStopsItr.hasNext()){
-				int index = 1; //prepared statements index starts at 1
-				CTARoute railStation = busStopsItr.next();
-				for(String attribute : railStation.getAttributes()){
-					insertCTABusStops.setString(index++, attribute);
+			injectedDetails.setDbName("cta_routes");
+			SolrConnector solrConnector = new SolrConnector(injectedDetails);
+			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+			//dont' clean the index, rail stations already cleaned up
+			Iterator<CTARoute> ctaRouteItr = ctaBusRoutes.getRoutes().iterator();
+			while(ctaRouteItr.hasNext()){
+				CTARoute ctaRoute = ctaRouteItr.next();
+				ctaRoute.setType(TYPE_BUS);
+				Object[] attributes = ctaRoute.getAttributes();
+				SolrInputDocument solrDoc = new SolrInputDocument();
+				solrDoc.addField( "id", UUID.randomUUID());
+				for(int index = 0; index < attributes.length; index++){
+					//if its a date Solr expects a certain format
+					if(attributes[index] instanceof DateTime){
+						solrDoc.addField(attributeNames[index], SolrConnector.getSolrDateTimeFormat().print((DateTime) attributes[index]));
+					}else{
+						solrDoc.addField(attributeNames[index], attributes[index]);
+					}
 				}
-				//set type to bus
-				insertCTABusStops.setString(index++, "BUS");
-				try{
-					totalRows += insertCTABusStops.executeUpdate();	
-				}catch(Exception e){
-					logger.debug("Failed to insert row: " + totalRows, e);
+				solrDoc.addField("last_modified", SolrConnector.getSolrDateTimeFormat().print(new DateTime()) );
+			    solrServer.add(solrDoc);
+			}
+			solrServer.commit();
+			logger.debug("inserted " + ctaBusRoutes.getRoutes().size() + " CTA Bus Routes into solr");
+		} catch (Exception e) {
+			logger.debug("Failed to insert CTA bus stops", e);
+		}
+	}
+	
+	private static void indexCTABusStops(){
+		CTABusRoutes ctaBusRoutes = ctaParser.getBusRoutes();
+		logger.debug("CTA Bus Lines: " + ctaBusRoutes.getBusRoutes().size());
+		try {
+			injectedDetails.setDbName("cta_routes");
+			SolrConnector solrConnector = new SolrConnector(injectedDetails);
+			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+			//don't clean the index, rail stations already cleaned up
+			Iterator<CTABusRoute> ctaBusRouteItr = ctaBusRoutes.getBusRoutes().iterator();
+			int numBusStops = 0;
+			while(ctaBusRouteItr.hasNext()){
+				CTABusRoute ctaRoute = ctaBusRouteItr.next();
+				logger.debug("Getting cardinal directions for: " + ctaRoute.getRouteNumber());
+				//get all cardinal directions for this route
+				CTABusDirections cardinalDirections = CTAXmlParser.getBusRouteDirections(ctaRoute.getRouteNumber());
+				//get stops for this direction
+				for(String direction: cardinalDirections.getDirections()){
+					logger.debug("Processing " + ctaRoute.getRouteNumber() + " direction: " + direction);
+					CTABusStops busStops = CTAXmlParser.getBusStops(ctaRoute.getRouteNumber(), direction);
+					for(CTABusStop busStop: busStops.getBusStops()){
+						//build up bus stop record that references the bus route metadata
+						busStop.setType(TYPE_BUS);
+						busStop.setDirection(direction);
+						busStop.setRouteName(ctaRoute.getRouteName());
+						busStop.setRouteNumber(ctaRoute.getRouteNumber());
+						busStop.setRouteColor(ctaRoute.getRouteColor());
+						Object[] attributes = busStop.getAttributes();
+						SolrInputDocument solrDoc = new SolrInputDocument();
+						solrDoc.addField( "id", UUID.randomUUID());
+						for(int index = 0; index < attributes.length; index++){
+							//if its a date Solr expects a certain format
+							if(attributes[index] instanceof DateTime){
+								solrDoc.addField(busStopAttributeNames[index], SolrConnector.getSolrDateTimeFormat().print((DateTime) attributes[index]));
+							}else{
+								solrDoc.addField(busStopAttributeNames[index], attributes[index]);
+							}
+						}
+						solrDoc.addField("last_modified", SolrConnector.getSolrDateTimeFormat().print(new DateTime()) );
+					    solrServer.add(solrDoc);
+					    numBusStops++;
+					}
 				}
 			}
-			
-			logger.debug("INSERT CTA BUS STOPS: " + insertQuery);
-			logger.debug("inserted " + totalRows + " CTA Bus Stops into pg");
-		} catch (SQLException e) {
+			solrServer.commit();
+			logger.debug("inserted " + numBusStops + " CTA Bus Stops into solr");
+		} catch (Exception e) {
 			logger.debug("Failed to insert CTA bus stops", e);
 		}
 	}

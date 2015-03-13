@@ -12,6 +12,7 @@ public class CTARoute {
 	
 	@JacksonXmlProperty(localName = "Route")
 	private String routeName;
+	private String address;
 	@JacksonXmlProperty(localName = "RouteColorCode")
 	private String routeColorCode;
 	@JacksonXmlProperty(localName = "RouteTextColor")
@@ -24,59 +25,65 @@ public class CTARoute {
 	private String routeStatus;
 	@JacksonXmlProperty(localName = "RouteStatusColor")
 	private String routeStatusColor;
+	private String type;
+	
+	public void setType(String type){
+		this.type = type;
+	}
 	
 	public String getRouteName() {
 		return routeName;
 	}
-	public void setRouteName(String routeName) {
-		this.routeName = routeName;
+
+	public String getAddress() {
+		return address;
 	}
+
 	public String getRouteColorCode() {
 		return routeColorCode;
 	}
-	public void setRouteColorCode(String routeColorCode) {
-		this.routeColorCode = routeColorCode;
-	}
+
 	public String getRouteTextColor() {
 		return routeTextColor;
 	}
-	public void setRouteTextColor(String routeTextColor) {
-		this.routeTextColor = routeTextColor;
-	}
+
 	public String getServiceId() {
 		return serviceId;
 	}
-	public void setServiceId(String serviceId) {
-		this.serviceId = serviceId;
-	}
+
 	public URI getRouteUrl() {
 		return routeUrl;
 	}
-	public void setRouteUrl(URI routeUrl) {
-		this.routeUrl = routeUrl;
-	}
+
 	public String getRouteStatus() {
 		return routeStatus;
 	}
-	public void setRouteStatus(String routeStatus) {
-		this.routeStatus = routeStatus;
-	}
+
 	public String getRouteStatusColor() {
 		return routeStatusColor;
 	}
-	public void setRouteStatusColor(String routeStatusColor) {
-		this.routeStatusColor = routeStatusColor;
-	}
-	
+
 	public String[] getAttributes(){
-		String[] attributes = new String[7];
-		attributes[0] = this.routeName;
-		attributes[1] = this.routeColorCode;
-		attributes[2] = this.routeTextColor;
-		attributes[3] = this.serviceId;
-		attributes[4] = this.routeUrl.toString();
-		attributes[5] = this.routeStatus;
-		attributes[6] = this.routeStatusColor;
+		//example route name
+		//35th-Bronzeville-IIT | 16 E. 35th St., Chicago, IL 60616
+		//split so that searching occurs on the station name OR the address
+		String[] routeParts = StringUtils.split(this.routeName, '|');
+		//replace all ampersands with and
+		//Museum of Science & Industry
+		String routeName = StringUtils.trim(routeParts[0]);
+		routeName = StringUtils.replace(routeName, "&", "and");
+		String[] attributes = {
+				routeName,
+				routeParts.length == 2 ? StringUtils.trim(routeParts[1]) : "",
+				this.routeColorCode,
+				this.routeTextColor,
+				this.serviceId,
+				this.routeUrl.toString(),
+				this.routeStatus,
+				this.routeStatusColor,
+				this.type
+		};
+		
 		return attributes;
 	}
 	

@@ -1,0 +1,29 @@
+<dataConfig>
+   <dataSource 
+        type="JdbcDataSource" 
+        driver="org.postgresql.Driver" 
+        url="jdbc:postgresql://localhost:5432/chitransittracker" 
+        user="admin" 
+        password="cta" 
+        readOnly="true" 
+        autoCommit="false" 
+        transactionIsolation="TRANSACTION_READ_COMMITTED" 
+        holdability="CLOSE_CURSORS_AT_COMMIT"
+    />
+   <document>
+    <entity name="routes" 
+            query="select id, route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type, last_modified from cta_routes;">
+       <field column="id" name="id"/>
+       <field column="route_name" name="route_name"/>
+       <field column="route_color" name="route_color"/>
+       <field column="route_text_color" name="route_text_color"/>
+       <field column="service_id" name="service_id"/>
+       <field column="route_url" name="route_url"/>
+       <field column="route_status" name="route_status"/>
+       <field column="route_status_color" name="route_status_color"/>
+       <field column="type" name="type"/>
+       <field column="last_modified" name="last_modified"/>
+    </entity>
+  </document>
+</dataConfig>
+

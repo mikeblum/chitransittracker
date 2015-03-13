@@ -3,6 +3,8 @@ package com.cta.util;
 import static org.junit.Assert.fail;
 import static org.fest.assertions.api.Assertions.*;
 
+import java.net.URISyntaxException;
+
 import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 import org.junit.Test;
@@ -68,6 +70,46 @@ public class CTAUtilTest {
 		}catch(Exception e){
 			fail("Failed to parse CTA arrivals time");
 			logger.debug("Failed to parse CTA arrivals time", e);
+		}
+	}
+	
+	@Test
+	public void testCTABaseUrl(){
+		String expectedUrl = "http://lapi.transitchicago.com/api/";
+		try {
+			String builtUrl = CTAUtil.getAPIBase().build().toString();
+			assertThat(builtUrl).isEqualTo(expectedUrl);
+		} catch (URISyntaxException e) {
+			fail("API Base URI build failure");
+		}
+	}
+	
+	@Test
+	public void testGetTrainLinesURI(){
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.RAIL;
+		assertThat(CTAUtil.getCTARoutesURI("rail").toString()).isEqualTo(expectedUrl);
+	}
+	
+	@Test
+	public void testGetTrainStationsURI(){
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.STATION;
+		assertThat(CTAUtil.getCTARoutesURI(CTAUtil.STATION).toString()).isEqualTo(expectedUrl);
+	}
+	
+	@Test
+	public void testGetBusesURI(){
+		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.BUS;
+		assertThat(CTAUtil.getCTARoutesURI(CTAUtil.BUS).toString()).isEqualTo(expectedUrl);
+	}
+	
+	@Test
+	public void testGetBusAPIBaseURI(){
+		String expectedUrl = "http://www.ctabustracker.com/bustime/api/";
+		try {
+			assertThat(CTABusUtil.getAPIBase().build().toString()).isEqualTo(expectedUrl);
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 }

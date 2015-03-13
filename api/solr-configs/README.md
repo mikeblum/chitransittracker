@@ -1,0 +1,1 @@
+These Solr configs drive the CTA buses, trains, and rail lines. Buses and Trains are indexed in cta_routes.

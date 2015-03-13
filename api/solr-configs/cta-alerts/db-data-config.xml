@@ -1,0 +1,35 @@
+<dataConfig>
+   <dataSource 
+        type="JdbcDataSource" 
+        driver="org.postgresql.Driver" 
+        url="jdbc:postgresql://localhost:5432/chitransittracker" 
+        user="admin" 
+        password="cta" 
+        readOnly="true" 
+        autoCommit="false" 
+        transactionIsolation="TRANSACTION_READ_COMMITTED" 
+        holdability="CLOSE_CURSORS_AT_COMMIT"
+    />
+   <document>
+    <entity name="alerts" 
+            query="select id, alert_id, headline, short_desc, full_desc, severity_score, severity_color, severity_css, impact, event_start, event_end, tbd, major_alert, alert_url, service_id, last_modified from cta_alerts;">
+       <field column="id" name="id"/>
+       <field column="alert_id" name="alert_id"/>
+       <field column="headline" name="headline"/>
+       <field column="short_desc" name="short_desc"/>
+       <field column="full_desc" name="full_desc"/>
+       <field column="severity_score" name="severity_score"/>
+       <field column="severity_color" name="severity_color"/>
+       <field column="severity_css" name="severity_css"/>
+       <field column="impact" name="impact"/>
+       <field column="event_start" name="event_start"/>
+       <field column="event_end" name="event_end"/>
+       <field column="tbd" name="tbd"/>
+       <field column="major_alert" name="major_alert"/>
+       <field column="alert_url" name="alert_url"/>
+       <field column="service_id" name="service_id"/>
+       <field column="last_modified" name="last_modified"/>
+    </entity>
+  </document>
+</dataConfig>
+

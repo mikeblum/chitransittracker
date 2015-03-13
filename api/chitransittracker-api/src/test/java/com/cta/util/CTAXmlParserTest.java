@@ -20,6 +20,7 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import com.cta.bus.model.CTABusDirections;
+import com.cta.bus.model.CTABusRoutes;
 import com.cta.bus.model.CTABusStops;
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTAArrivals;
@@ -57,23 +58,6 @@ public class CTAXmlParserTest {
 	}
 	
 	@Test
-	public void testCTABaseUrl(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/";
-		try {
-			String builtUrl = CTAUtil.getAPIBase().build().toString();
-			assertThat(builtUrl).isEqualTo(expectedUrl);
-		} catch (URISyntaxException e) {
-			fail("API Base URI build failure");
-		}
-	}
-	
-	@Test
-	public void testGetTrainLinesURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.RAIL;
-		assertThat(CTAUtil.getCTARoutesURI("rail").toString()).isEqualTo(expectedUrl);
-	}
-	
-	@Test
 	public void testDeserializingTrainLines() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/train_lines.xml"));
 		XmlMapper xmlMapper = new XmlMapper();
@@ -83,24 +67,12 @@ public class CTAXmlParserTest {
 	}
 	
 	@Test
-	public void testGetTrainStationsURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.STATION;
-		assertThat(CTAUtil.getCTARoutesURI(CTAUtil.STATION).toString()).isEqualTo(expectedUrl);
-	}
-	
-	@Test
 	public void testDeserializingTrainStations() throws IOException{
 		mockXml = FileUtils.openInputStream(new File("src/test/resources/stations.xml"));
 		XmlMapper xmlMapper = new XmlMapper();
 		CTARoutes mockTrainStations = xmlMapper.readValue(mockXml, CTARoutes.class);
 		//209 cta train stations
 		assertThat(mockTrainStations.getRoutes().size()).isEqualTo(209);
-	}
-	
-	@Test
-	public void testGetBusesURI(){
-		String expectedUrl = "http://lapi.transitchicago.com/api/1.0/routes.aspx?type=" + CTAUtil.BUS;
-		assertThat(CTAUtil.getCTARoutesURI(CTAUtil.BUS).toString()).isEqualTo(expectedUrl);
 	}
 	
 	@Test
@@ -152,5 +124,4 @@ public class CTAXmlParserTest {
 		//2 directions
 		assertThat(mockBusStops.getBusStops().size()).isEqualTo(113);
 	}
-
 }

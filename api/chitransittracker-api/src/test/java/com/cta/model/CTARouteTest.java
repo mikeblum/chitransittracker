@@ -21,13 +21,6 @@ public class CTARouteTest {
 		mockAttributes[5] = "Normal";
 		mockAttributes[6] = "#FFFFF";
 		CTARoute mockRoute = new CTARoute();
-		mockRoute.setRouteName(mockAttributes[0]);
-		mockRoute.setRouteColorCode(mockAttributes[1]);
-		mockRoute.setRouteTextColor(mockAttributes[2]);
-		mockRoute.setServiceId(mockAttributes[3]);
-		mockRoute.setRouteUrl(uri.build());
-		mockRoute.setRouteStatus(mockAttributes[5]);
-		mockRoute.setRouteStatusColor(mockAttributes[6]);
 		assertThat(mockRoute.toString()).isEqualTo(StringUtils.join(mockAttributes, ','));
 	}
 }

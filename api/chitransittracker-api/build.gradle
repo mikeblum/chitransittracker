@@ -21,9 +21,8 @@ dependencies {
 		'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.4.0',
 		'joda-time:joda-time:2.3',
 		'org.json:json:20140107',
-		'postgresql:postgresql:9.1-901-1.jdbc4'
-//		'org.apache.solr:solr-core:5.0.0',
-//		'org.apache.solr:solr-solrj:5.0.0'
+		'postgresql:postgresql:9.1-901-1.jdbc4',
+		'org.apache.solr:solr-solrj:5.0.0'
 	)
 	providedCompile 'javax.servlet:servlet-api:2.5'
 	providedCompile 'org.apache.tomcat:tomcat-servlet-api:8.0.8'
