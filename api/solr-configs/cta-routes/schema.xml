@@ -98,6 +98,7 @@
      default: a value that should be used if no value is specified
        when adding a document.
    -->
+   <field name="text" type="text_general" indexed="true" stored="false" multiValued="true"/>
 
    <!-- field names should consist of alphanumeric or underscore characters only and
       not start with a digit.  This is not currently strictly enforced,
@@ -122,7 +123,7 @@
    -->   
   <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
         
-  <field name="route_name" type="text_general" indexed="true" stored="true"/> 
+  <field name="route_name" type="text_general" indexed="true" stored="true"/><field name="address" type="text_general" indexed="true" stored="true"/> 
   <field name="route_color" type="string" indexed="true" stored="true"/> 
   <field name="route_text_color" type="string" indexed="true" stored="true"/> 
   <field name="service_id" type="text_general" indexed="true" stored="true"/>  
@@ -131,6 +132,13 @@
   <field name="route_status_color" type="string" indexed="true" stored="true"/>
   <field name="type" type="string" indexed="true" stored="true"/>
   <field name="last_modified" type="date" indexed="true" stored="true"/>
+
+
+  <field name="stop_id" type="string" indexed="true" stored="true"/>
+  <field name="stop_name" type="string" indexed="true" stored="true"/>
+  <field name="stop_number" type="string" indexed="true" stored="true"/>
+  <field name="direction" type="string" indexed="true" stored="true"/>
+  <field name="location" type="location" indexed="true" stored="true"/>
 
    <!--
      Some fields such as popularity and manu_exact could be modified to

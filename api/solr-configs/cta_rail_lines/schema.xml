@@ -98,7 +98,7 @@
      default: a value that should be used if no value is specified
        when adding a document.
    -->
-
+   <field name="text" type="text_general" indexed="true" stored="false" multiValued="true"/>
    <!-- field names should consist of alphanumeric or underscore characters only and
       not start with a digit.  This is not currently strictly enforced,
       but other field names will not have first class support from all components
@@ -122,7 +122,8 @@
    -->   
   <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" /> 
         
-  <field name="route_name" type="text_general" indexed="true" stored="true"/> 
+  <field name="route_name" type="text_general" indexed="true" stored="true"/>
+  <field name="address" type="text_general" indexed="true" stored="true"/> 
   <field name="route_color" type="string" indexed="true" stored="true"/> 
   <field name="route_text_color" type="string" indexed="true" stored="true"/> 
   <field name="service_id" type="text_general" indexed="true" stored="true"/>  

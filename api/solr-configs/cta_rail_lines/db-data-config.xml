@@ -15,6 +15,7 @@
             query="select id, route_name, route_color, route_text_color, service_id, route_url, route_status, route_status_color, type, last_modified from cta_rail_lines;">
        <field column="id" name="id"/>
        <field column="route_name" name="route_name"/>
+       <field column="address" name="address"/>
        <field column="route_color" name="route_color"/>
        <field column="route_text_color" name="route_text_color"/>
        <field column="service_id" name="service_id"/>
