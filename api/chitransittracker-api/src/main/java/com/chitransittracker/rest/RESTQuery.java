@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.chitransittracker.solr.impl.SolrQueryCTAStops;
+
 /**
  * Endpoints for exposing all CTA Bus, Train, and Rail Lines
  * @author mblum
@@ -21,11 +23,11 @@ public class RESTQuery {
 	Logger logger = Logger.getLogger(RESTArrivals.class);
 	TypeReference typeRef = new TypeReference<HashMap<String,String>>(){};
 	
-	@RequestMapping(value="/query", method=RequestMethod.GET)
+	@RequestMapping(value="/nearby-stops", method=RequestMethod.GET)
 	public List<Map<String, String>> getRoutes(
-			 @RequestParam(value="id", required=true) String routeQuery,
+			 @RequestParam(value="loc", required=true) String location,
 			 @RequestParam(value="max", required=false) String numResults
 	     ){
-		return null;
+		return SolrQueryCTAStops.getNearbyStops(location);
 	}
 }

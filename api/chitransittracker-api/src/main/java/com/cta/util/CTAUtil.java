@@ -12,7 +12,7 @@ public class CTAUtil {
 	private static Logger logger = Logger.getLogger(CTAUtil.class);
 	public static DateTimeFormatter CTA_DATE_TIME_HMS = DateTimeFormat.forPattern("yyyyMMdd HH:mm:ss");
 	public static DateTimeFormatter CTA_DATE_TIME_HM = DateTimeFormat.forPattern("yyyyMMdd HH:mm");
-	public static DateTimeFormatter CTA_DATE = DateTimeFormat.forPattern("yyyyMMdd");
+	public static DateTimeFormatter CTA_DATE_ONLY = DateTimeFormat.forPattern("yyyyMMdd");
 	
 	private static String CTA_API_BUS_KEY;
 	private static String CTA_API_TRAIN_KEY;
@@ -71,7 +71,7 @@ public class CTAUtil {
 			try{
 				result = CTA_DATE_TIME_HM.parseDateTime(timestamp);
 			}catch(Exception hmException){
-				result = CTA_DATE.parseDateTime(timestamp);
+				result = CTA_DATE_ONLY.parseDateTime(timestamp);
 			}
 		}
 		return result;

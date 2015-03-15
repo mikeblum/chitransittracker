@@ -48,7 +48,7 @@ public class Driver {
 	
 	private static String[] busStopAttributeNames = {
 		"stop_id",
-		"stop_number",
+		"stop_name",
 		"location",
 		"service_id",
 		"route_name",
@@ -125,7 +125,7 @@ public class Driver {
 		CTARoutes ctaRailStations = ctaParser.getCTARoutesInfo(CTAUtil.STATION);
 		logger.debug("CTA Stations: " + ctaRailStations.getRoutes().size());
 		try {
-			injectedDetails.setDbName("cta_routes");
+			injectedDetails.setDbName("cta_stops");
 			SolrConnector solrConnector = new SolrConnector(injectedDetails);
 			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
 			//clean index
@@ -159,10 +159,11 @@ public class Driver {
 		CTARoutes ctaBusRoutes = ctaParser.getCTARoutesInfo(CTAUtil.BUS);
 		logger.debug("CTA Bus Lines: " + ctaBusRoutes.getRoutes().size());
 		try {
-			injectedDetails.setDbName("cta_routes");
+			injectedDetails.setDbName("cta_bus_lines");
 			SolrConnector solrConnector = new SolrConnector(injectedDetails);
 			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
-			//dont' clean the index, rail stations already cleaned up
+			//clean index
+			solrServer.deleteByQuery("*:*");
 			Iterator<CTARoute> ctaRouteItr = ctaBusRoutes.getRoutes().iterator();
 			while(ctaRouteItr.hasNext()){
 				CTARoute ctaRoute = ctaRouteItr.next();
@@ -192,10 +193,10 @@ public class Driver {
 		CTABusRoutes ctaBusRoutes = ctaParser.getBusRoutes();
 		logger.debug("CTA Bus Lines: " + ctaBusRoutes.getBusRoutes().size());
 		try {
-			injectedDetails.setDbName("cta_routes");
+			injectedDetails.setDbName("cta_stops");
 			SolrConnector solrConnector = new SolrConnector(injectedDetails);
 			SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
-			//don't clean the index, rail stations already cleaned up
+			//don't clean the index, rail stops already cleaned up
 			Iterator<CTABusRoute> ctaBusRouteItr = ctaBusRoutes.getBusRoutes().iterator();
 			int numBusStops = 0;
 			while(ctaBusRouteItr.hasNext()){

@@ -46,7 +46,6 @@ public class Driver {
 									   "service_id"
 									  };
 	
-	private static DateTimeFormatter solrDateFormatter = DateTimeFormat.forPattern("yyyy-MM-dd'T'HH:mm:sss'Z'");
 	
 	public static void main(String[] args) throws InterruptedException{
 		long start_time = System.currentTimeMillis();

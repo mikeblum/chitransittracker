@@ -14,7 +14,7 @@ public class CTABusStop {
 	@JacksonXmlProperty(localName = "stpid")
 	private String stopId;
 	@JacksonXmlProperty(localName = "stpnm")
-	private String stopNumber;
+	private String stopName;
 	@JacksonXmlProperty(localName = "lat")
 	private String latitude;
 	@JacksonXmlProperty(localName = "lon")
@@ -29,8 +29,8 @@ public class CTABusStop {
 	public String getStopId() {
 		return stopId;
 	}
-	public String getStopNumber() {
-		return stopNumber;
+	public String getStopNamer() {
+		return stopName;
 	}
 	public String getLatitude() {
 		return latitude;
@@ -72,7 +72,7 @@ public class CTABusStop {
 	public String[] getAttributes(){
 		String[] attributes = {
 			this.stopId,
-			this.stopNumber,
+			this.stopName,
 			StringUtils.join(new String[]{this.latitude, this.longitude}, ", "),
 			this.routeNumber,
 			this.routeName,
