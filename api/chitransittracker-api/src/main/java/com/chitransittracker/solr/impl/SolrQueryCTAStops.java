@@ -1,6 +1,5 @@
 package com.chitransittracker.solr.impl;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -13,11 +12,6 @@ import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
-import org.codehaus.jackson.JsonParseException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.type.TypeReference;
-import org.joda.time.ReadableInstant;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
@@ -43,16 +37,32 @@ public class SolrQueryCTAStops {
 		SolrConnector solrConnector = new SolrConnector(injectedDetails);
 		SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
 		List<Map<String, String>> searchResults = new ArrayList<Map<String, String>>();
-		SolrQuery query = new SolrQuery();
+		SolrQuery solrQuery = new SolrQuery();
 		//wt=json&sort=score%20asc&q={!geofilt%20score=distance%20sfield=location%20pt=41.952595,-87.648426%20d=.2}
-		query.setRequestHandler("/select")
+		solrQuery.setRequestHandler("/select")
 			 .setSort("score", SolrQuery.ORDER.asc)
 			 .setQuery("{!geofilt score=distance sfield=location pt=" + latLon +  " d=.2}");
-		logger.info(query.getQuery());
+		logger.info(solrQuery.getQuery());
+		
+		return processQuery(solrServer, solrQuery);
+	}
+	
+	public static List<Map<String, String>> getQueryableStops(String query){
+		SolrConnector solrConnector = new SolrConnector(injectedDetails);
+		SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+		List<Map<String, String>> searchResults = new ArrayList<Map<String, String>>();
+		SolrQuery solrQuery = new SolrQuery();
+		solrQuery.setRequestHandler("/select")
+			 .setSort("score", SolrQuery.ORDER.asc)
+			 .setQuery("route_name:*" + query + "* or stop_name:*" + query + "* &wt=json&indent=true");
+		logger.info(solrQuery.getQuery());
+		
+		return processQuery(solrServer, solrQuery);
+	}
+	
+	private static List<Map<String, String>> processQuery(SolrClient solrServer, SolrQuery query){
+		List<Map<String, String>> searchResults = new ArrayList<Map<String, String>>();
 		try {
-			ObjectMapper mapper = new ObjectMapper();
-			TypeReference typeRef = new TypeReference<HashMap<String,String>>(){};
-			
 			QueryResponse qResponse = solrServer.query(query);
 			Iterator<SolrDocument> resultsItr = qResponse.getResults().iterator();
 			while(resultsItr.hasNext()){

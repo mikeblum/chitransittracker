@@ -24,10 +24,18 @@ public class RESTQuery {
 	TypeReference typeRef = new TypeReference<HashMap<String,String>>(){};
 	
 	@RequestMapping(value="/nearby-stops", method=RequestMethod.GET)
-	public List<Map<String, String>> getRoutes(
+	public List<Map<String, String>> getNearbyStops(
 			 @RequestParam(value="loc", required=true) String location,
 			 @RequestParam(value="max", required=false) String numResults
 	     ){
 		return SolrQueryCTAStops.getNearbyStops(location);
+	}
+	
+	@RequestMapping(value="/query-stops", method=RequestMethod.GET)
+	public List<Map<String, String>> getQueriedStops(
+			 @RequestParam(value="q", required=true) String query,
+			 @RequestParam(value="max", required=false) String numResults
+		){
+		return SolrQueryCTAStops.getQueryableStops(query);
 	}
 }

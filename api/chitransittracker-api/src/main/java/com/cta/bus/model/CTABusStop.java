@@ -70,9 +70,12 @@ public class CTABusStop {
 	}
 	
 	public String[] getAttributes(){
+		//swap ampersands (&) "60th Street & Wabash"
+		String routeName = StringUtils.trim(this.stopName);
+		routeName = StringUtils.replace(routeName, "&", "and");
 		String[] attributes = {
 			this.stopId,
-			this.stopName,
+			routeName,
 			StringUtils.join(new String[]{this.latitude, this.longitude}, ", "),
 			this.routeNumber,
 			this.routeName,
