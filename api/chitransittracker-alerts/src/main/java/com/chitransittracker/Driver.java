@@ -8,8 +8,6 @@ import org.apache.log4j.Logger;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.common.SolrInputDocument;
 import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
 import com.chitransittracker.jdbc.ConnectionDetails;
 import com.chitransittracker.jdbc.SolrConnector;
@@ -83,12 +81,12 @@ public class Driver {
 				for(int index = 0; index < attributes.length; index++){
 					//if its a date Solr expects a certain format
 					if(attributes[index] instanceof DateTime){
-						solrDoc.addField(attributeNames[index], solrDateFormatter.print((DateTime) attributes[index]));
+						solrDoc.addField(attributeNames[index], SolrConnector.getSolrDateTimeFormat().print((DateTime) attributes[index]));
 					}else{
 						solrDoc.addField(attributeNames[index], attributes[index]);
 					}
 				}
-				solrDoc.addField("last_modified", solrDateFormatter.print(new DateTime()) );
+				solrDoc.addField("last_modified", SolrConnector.getSolrDateTimeFormat().print(new DateTime()) );
 			    solrServer.add(solrDoc);
 			}
 			solrServer.commit();

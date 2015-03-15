@@ -73,6 +73,7 @@ public class CTAXmlParser {
 		InputStream fetchedResultsStream = null;
 		try {
 			URI uriToFetchData = CTAUtil.getCTAArrivalsURI(stationId, maxArrivals).build();
+			logger.debug(uriToFetchData);
 			fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
 			XmlMapper xmlMapper = new XmlMapper();
 			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
