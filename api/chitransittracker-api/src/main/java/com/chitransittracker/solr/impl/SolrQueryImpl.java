@@ -18,13 +18,14 @@ import org.joda.time.format.DateTimeFormatter;
 import com.chitransittracker.jdbc.ConnectionDetails;
 import com.chitransittracker.jdbc.SolrConnector;
 
-public class SolrQueryCTAStops {
+public class SolrQueryImpl {
 	
-	static Logger logger = Logger.getLogger(SolrQueryCTAStops.class);
+	static Logger logger = Logger.getLogger(SolrQueryImpl.class);
 	//env variables for holding db credentials
 	private static final String SOLR_HOST_NAME 	= "SOLR_HOST_NAME";
 	private static final String SOLR_PORT 		= "SOLR_PORT";
 	private static final String CTA_STOPS 		= "cta_stops";
+	private static final String CTA_ALERTS 		= "cta_alerts";
 	
 	public static DateTimeFormatter DB_DATE = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm:ss");
 	
@@ -32,6 +33,11 @@ public class SolrQueryCTAStops {
 												.setHost(System.getenv(SOLR_HOST_NAME))
 												.setPort(Integer.parseInt(System.getenv(SOLR_PORT)))
 												.setDbName(CTA_STOPS);
+	
+	static ConnectionDetails alerts_injectedDetails = new ConnectionDetails()
+													.setHost(System.getenv(SOLR_HOST_NAME))
+													.setPort(Integer.parseInt(System.getenv(SOLR_PORT)))
+													.setDbName(CTA_ALERTS);
 	
 	public static List<Map<String, String>> getNearbyStops(String latLon){
 		SolrConnector solrConnector = new SolrConnector(injectedDetails);
@@ -54,7 +60,20 @@ public class SolrQueryCTAStops {
 		SolrQuery solrQuery = new SolrQuery();
 		solrQuery.setRequestHandler("/select")
 			 .setSort("score", SolrQuery.ORDER.asc)
-			 .setQuery("route_name:*" + query + "* or stop_name:*" + query + "* &wt=json&indent=true");
+			 .setQuery("route_name:*" + query + "* or stop_name:*" + query + "* or stop_id:*" + query + "* &wt=json&indent=true");
+		logger.info(solrQuery.getQuery());
+		
+		return processQuery(solrServer, solrQuery);
+	}
+	
+	public static List<Map<String, String>> getQueryableAlerts(String query){
+		SolrConnector solrConnector = new SolrConnector(alerts_injectedDetails);
+		SolrClient solrServer = (SolrClient) solrConnector.getDBConnection();
+		List<Map<String, String>> searchResults = new ArrayList<Map<String, String>>();
+		SolrQuery solrQuery = new SolrQuery();
+		solrQuery.setRequestHandler("/select")
+			 .setSort("score", SolrQuery.ORDER.asc)
+			 .setQuery("service_id:" + query + "&wt=json&indent=true");
 		logger.info(solrQuery.getQuery());
 		
 		return processQuery(solrServer, solrQuery);
