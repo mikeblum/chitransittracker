@@ -1,32 +1,47 @@
 <bustime-response>
-	<prd>
-		<tmstmp>20150310 23:45</tmstmp>
-		<typ>A</typ>
-		<stpnm>Stockton & Lincoln</stpnm>
-		<stpid>1085</stpid>
-		<vid>4361</vid>
-		<dstp>3174</dstp>
-		<rt>151</rt>
-		<rtdir>Southbound</rtdir>
-		<des>Union Station</des>
-		<prdtm>20150310 23:48</prdtm>
-		<tablockid>151 -561</tablockid>
-		<tatripid>400</tatripid>
-		<zone/>
-	</prd>
-	<prd>
-		<tmstmp>20150310 23:45</tmstmp>
-		<typ>A</typ>
-		<stpnm>Stockton & Lincoln</stpnm>
-		<stpid>1085</stpid>
-		<vid>4336</vid>
-		<dstp>23380</dstp>
-		<rt>151</rt>
-		<rtdir>Southbound</rtdir>
-		<des>Union Station</des>
-		<prdtm>20150311 00:07</prdtm>
-		<tablockid>151 -564</tablockid>
-		<tatripid>398</tatripid>
-		<zone/>
-	</prd>
+<prd>
+<tmstmp>20150317 22:52</tmstmp>
+<typ>A</typ>
+<stpnm>Madison &amp; Jefferson</stpnm>
+<stpid>456</stpid>
+<vid>2004</vid>
+<dstp>563</dstp>
+<rt>20</rt>
+<rtdir>Westbound</rtdir>
+<des>Austin</des>
+<prdtm>20150317 22:52</prdtm>
+<tablockid>20 -811</tablockid>
+<tatripid>1040762</tatripid>
+<zone/>
+</prd>
+<prd>
+<tmstmp>20150317 22:52</tmstmp>
+<typ>A</typ>
+<stpnm>Madison &amp; Jefferson</stpnm>
+<stpid>456</stpid>
+<vid>1451</vid>
+<dstp>10666</dstp>
+<rt>20</rt>
+<rtdir>Westbound</rtdir>
+<des>Austin</des>
+<prdtm>20150317 23:07</prdtm>
+<tablockid>20 -860</tablockid>
+<tatripid>1040763</tatripid>
+<zone/>
+</prd>
+<prd>
+<tmstmp>20150317 22:52</tmstmp>
+<typ>A</typ>
+<stpnm>Madison &amp; Jefferson</stpnm>
+<stpid>456</stpid>
+<vid>6541</vid>
+<dstp>22916</dstp>
+<rt>20</rt>
+<rtdir>Westbound</rtdir>
+<des>Austin</des>
+<prdtm>20150317 23:18</prdtm>
+<tablockid>20 -814</tablockid>
+<tatripid>1040764</tatripid>
+<zone/>
+</prd>
 </bustime-response>

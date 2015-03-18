@@ -1,13 +1,11 @@
 package com.cta.util;
 
 import static org.fest.assertions.api.Assertions.assertThat;
-import static org.junit.Assert.fail;
 import static org.mockito.Mockito.mock;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpEntity;
@@ -19,8 +17,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import com.cta.bus.model.CTABusArrivals;
 import com.cta.bus.model.CTABusDirections;
-import com.cta.bus.model.CTABusRoutes;
 import com.cta.bus.model.CTABusStops;
 import com.cta.model.CTAAlerts;
 import com.cta.model.CTAArrivals;
@@ -124,4 +122,14 @@ public class CTAXmlParserTest {
 		//2 directions
 		assertThat(mockBusStops.getBusStops().size()).isEqualTo(113);
 	}
+	
+	@Test
+	public void testDeserialzingBusPredictionsForAStop() throws IOException{
+		mockXml = FileUtils.openInputStream(new File("src/test/resources/bus_arrivals.xml"));
+		XmlMapper xmlMapper = new XmlMapper();
+		CTABusArrivals mockBusStops = xmlMapper.readValue(mockXml, CTABusArrivals.class);
+		//2 directions
+		assertThat(mockBusStops.getArrivals().size()).isEqualTo(3);
+	}
+	
 }

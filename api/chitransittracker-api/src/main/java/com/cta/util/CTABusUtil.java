@@ -45,12 +45,12 @@ public class CTABusUtil extends CTAUtil{
 		return busRouteStopsURI;
 	}
 	
-	protected static URIBuilder getBusStopPredictions(String routeNumber, String stopId, String maxResults){
+	protected static URIBuilder getBusStopPredictions(String stopId, String routeNumber, String maxResults){
 		URIBuilder busRouteStopsURI = CTABusUtil.getAPIBase();
 		busRouteStopsURI.setPath(CTABusUtil.version + "/" + CTABusUtil.PREDICTIONS)
 				 .setParameter("key", CTAUtil.getCTA_API_BUS_KEY())
 				 .setParameter("rt", routeNumber)
-				 .setParameter("stopid", stopId)
+				 .setParameter("stpid", stopId)
 				 .setParameter("top", maxResults);
 		return busRouteStopsURI;
 	}

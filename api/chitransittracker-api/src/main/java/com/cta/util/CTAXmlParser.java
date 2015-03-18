@@ -13,6 +13,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.log4j.Logger;
 
+import com.cta.bus.model.CTABusArrivals;
 import com.cta.bus.model.CTABusDirections;
 import com.cta.bus.model.CTABusRoutes;
 import com.cta.bus.model.CTABusStops;
@@ -124,6 +125,21 @@ public class CTAXmlParser {
 			return xmlMapper.readValue(fetchedResultsStream, CTABusStops.class);
 		} catch (Exception e) {
 			logger.error("Failed to retireve CTA Bus stops", e);
+		}
+		return null;
+	}
+	
+	public static CTABusArrivals getBusPredictions(String stopId, String maxResults){
+		InputStream fetchedResultsStream = null;
+		try{
+			URI uriToFetchData = CTABusUtil.getBusStopPredictions(stopId, "", maxResults).build();
+			logger.debug(uriToFetchData.toURL().toString());
+			fetchedResultsStream = CTAXmlParser.processAPIRequest(uriToFetchData);
+			XmlMapper xmlMapper = new XmlMapper();
+			xmlMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+			return xmlMapper.readValue(fetchedResultsStream, CTABusArrivals.class);
+		}catch(Exception e){
+			logger.error("Failed to retireve CTA Bus arrival predictions for " + stopId, e);
 		}
 		return null;
 	}
