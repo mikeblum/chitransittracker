@@ -1,6 +1,6 @@
 package com.cta.bus.model;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 

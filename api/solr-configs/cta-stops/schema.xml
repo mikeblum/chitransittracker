@@ -247,8 +247,19 @@
     <!-- The StrField type is not analyzed, but indexed/stored verbatim.
        It supports doc values but in that case the field needs to be
        single-valued and either required or have a default value.
-      -->
+      
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+        -->
+    <fieldType name="string" class="solr.TextField">
+        <analyzer type="index">
+            <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+            <filter class="solr.LowerCaseFilterFactory"/>
+        </analyzer>
+        <analyzer type="query">
+            <tokenizer class="solr.WhitespaceTokenizerFactory"/>
+                <filter class="solr.LowerCaseFilterFactory"/>
+            </analyzer>
+    </fieldType>
 
     <!-- boolean type: "true" or "false" -->
     <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
